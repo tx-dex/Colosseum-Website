@@ -1,0 +1,6 @@
+vendor
+static
+docker-mounts
+node_modules
+DRUPAL_MODULES
+dokcer-compose.yml

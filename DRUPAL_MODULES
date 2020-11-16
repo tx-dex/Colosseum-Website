@@ -1,0 +1,11 @@
+# module names listed here will be enabled automatically
+pathauto
+paragraphs
+menu_trail_by_path
+twig_tweak
+twig_field_value
+field_group
+quick_node_clone
+smtp
+address
+recaptcha
