@@ -139,3 +139,5 @@ node_modules
 *.scssc
 *.map
 bower_components
+/.editorconfig
+/.gitattributes
