@@ -2,7 +2,7 @@ version: '3.7'
 services:
   traefik:
     image: traefik:v2.2
-    container_name: academy_traefik
+    container_name: colosseum_www_traefik
     command:
       #- "--log.level=DEBUG"
       - "--api.insecure=true"
@@ -16,7 +16,7 @@ services:
       - "/var/run/docker.sock:/var/run/docker.sock:ro"
   drupal:
     image: thp.sangre.fi:4999/colosseum/academy:master
-    container_name: academy_drupal
+    container_name: colosseum_www_drupal
     environment:
       TZ: "Europe/Helsinki"
       XDEBUG_CONFIG: remote_host=10.254.254.254
@@ -34,7 +34,7 @@ services:
       STRIPE_WEBHOOK_SECRET: "whsec_28bwTBdYIhFFxuYTJj8wua6N51NVyYXK"
       REGISTRATION_ADMIN_EMAIL: "academy@colosseumdental.com"
     labels:
-      - "traefik.http.routers.site.rule=Host(`academy.localhost`)"
+      - "traefik.http.routers.site.rule=Host(`col.localhost`)"
     volumes:
       - "site-files:/var/www/web/sites/default/files"
       - "./config-sync:/var/www/config-sync"
@@ -44,7 +44,7 @@ services:
       - "./composer.json:/var/www/composer.json"
       - "./composer.lock:/var/www/composer.lock"
   mysql:
-    container_name: academy_mysql
+    container_name: colosseum_www_mysql
     image: library/mysql:5.7
     environment:
       MYSQL_ROOT_PASSWORD: "qwerty123"
