@@ -16289,7 +16289,15 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
 .toolbar-vertical .navbar-main {
   top: 39px;
 }
+.toolbar-fixed.toolbar-horizontal .navbar-main .navbar-collapse,
+.toolbar-fixed.toolbar-vertical .navbar-main .navbar-collapse,
+.toolbar-vertical .navbar-main .navbar-collapse {
+  top: 39px;
+}
 .toolbar-fixed.toolbar-horizontal.toolbar-tray-open .navbar-main {
+  top: 79px;
+}
+.toolbar-fixed.toolbar-horizontal.toolbar-tray-open .navbar-main .navbar-collapse {
   top: 79px;
 }
 
