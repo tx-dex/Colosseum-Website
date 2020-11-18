@@ -16077,7 +16077,7 @@ html [type=button]:focus,
   width: 100%;
   padding: 0;
   z-index: 10;
-  background-color: inherit;
+  background-color: #F6F9FB;
 }
 .navbar-main .navbar-brand {
   position: relative;

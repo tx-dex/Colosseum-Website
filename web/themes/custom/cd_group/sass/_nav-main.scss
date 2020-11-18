@@ -9,7 +9,7 @@
   width: 100%;
   padding: 0;
   z-index: 10;
-  background-color: inherit;
+  background-color: $brand-blue-lighter;
 
   > .container-fullwidth {
     @extend .container-fullwidth;
