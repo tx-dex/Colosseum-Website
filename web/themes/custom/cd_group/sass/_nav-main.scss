@@ -341,7 +341,7 @@ body.main-menu-opened .navbar-main {
 .toolbar-fixed.toolbar-horizontal,
 .toolbar-fixed.toolbar-vertical,
 .toolbar-vertical {
-  .navbar-top.fixed-top {
+  .navbar-main {
     top: 39px;
   }
 
@@ -351,7 +351,7 @@ body.main-menu-opened .navbar-main {
 }
 
 .toolbar-fixed.toolbar-horizontal.toolbar-tray-open {
-  .navbar-top.fixed-top {
+  .navbar-main {
     top: 79px;
   }
 }

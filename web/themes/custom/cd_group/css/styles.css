@@ -16284,12 +16284,12 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   z-index: 10000;
 }
 
-.toolbar-fixed.toolbar-horizontal .navbar-top.fixed-top,
-.toolbar-fixed.toolbar-vertical .navbar-top.fixed-top,
-.toolbar-vertical .navbar-top.fixed-top {
+.toolbar-fixed.toolbar-horizontal .navbar-main,
+.toolbar-fixed.toolbar-vertical .navbar-main,
+.toolbar-vertical .navbar-main {
   top: 39px;
 }
-.toolbar-fixed.toolbar-horizontal.toolbar-tray-open .navbar-top.fixed-top {
+.toolbar-fixed.toolbar-horizontal.toolbar-tray-open .navbar-main {
   top: 79px;
 }
 
