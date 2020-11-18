@@ -50,32 +50,35 @@
                 </div>
                 <div class="col-country-links">
                     <h5 class="small-ac-title">Countries</h5>
-                    <ul class="nav nav-countries">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" target="_blank">Denmark</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" target="_blank">Finland</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" target="_blank">Germany</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" target="_blank">Italy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" target="_blank">Norway</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" target="_blank">Sweden</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" target="_blank">Switzerland</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" target="_blank">UK</a>
-                        </li>
-                    </ul>
+                    {{ drupal_view('countries', 'block_1') }}
+                    {#<nav role="navigation" class="countries-nav">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" target="_blank">Denmark</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" target="_blank">Finland</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" target="_blank">Germany</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" target="_blank">Italy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" target="_blank">Norway</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" target="_blank">Sweden</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" target="_blank">Switzerland</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" target="_blank">UK</a>
+                            </li>
+                        </ul>
+                    </nav>#}
                 </div>
             </div>
         </div>

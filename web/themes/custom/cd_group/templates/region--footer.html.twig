@@ -1,6 +1,4 @@
 
-{# {{ drupal_menu('footer-secondary-menu') }} #}
-
 <footer class="footer">
     <div class="container-fullwidth">
         <div class="row">
@@ -53,7 +51,8 @@
             </div>
             <div class="col-md-4">
                 <h6 class="nav-title">Countries</h6>
-                <nav role="navigation" class="footer-countries-nav">
+                {{ drupal_view('countries', 'block_1') }}
+                {#<nav role="navigation" class="countries-nav">
                     <ul class="nav">
                         <li class="nav-item">
                             <a class="nav-link" href="#" target="_blank">Denmark</a>
@@ -80,7 +79,7 @@
                             <a class="nav-link" href="#" target="_blank">UK</a>
                         </li>
                     </ul>
-                </nav>
+                </nav>#}
             </div>
         </div>
         <div class="row align-items-center">
@@ -93,11 +92,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <nav role="navigation" class="nav footer-policies-nav">
-                    <a class="nav-link" href="#">Terms</a>
-                    <a class="nav-link" href="#">Policies</a>
-                    <a class="nav-link" href="#">Compliances</a>
-                </nav>
+                {{ drupal_menu('footer-policies-menu') }}
             </div>
         </div>
         {{ content }}

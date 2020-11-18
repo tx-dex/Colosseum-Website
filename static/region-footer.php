@@ -51,7 +51,7 @@
             </div>
             <div class="col-md-4">
                 <h6 class="nav-title">Countries</h6>
-                <nav role="navigation" class="footer-countries-nav">
+                <nav role="navigation" class="countries-nav">
                     <ul class="nav">
                         <li class="nav-item">
                             <a class="nav-link" href="#" target="_blank">Denmark</a>

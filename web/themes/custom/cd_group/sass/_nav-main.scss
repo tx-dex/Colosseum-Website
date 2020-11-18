@@ -86,7 +86,7 @@
       width: 100%;
       padding: 0.5rem 0 1.5rem;
 
-      .nav-countries {
+      .countries-nav .nav{
 
         .nav-item {
           margin-right: 1rem;
@@ -122,7 +122,7 @@
       .col-country-links {
         max-width: 600px;
 
-        .nav-countries {
+        .countries-nav .nav {
           display: block;
           columns: 10px 4;
 
@@ -177,7 +177,7 @@
         width: 30%;
         padding: 1rem 0 0;
 
-        .nav-countries {
+        .countries-nav .nav {
           columns: 10px 2;
 
           .nav-link {
@@ -234,7 +234,7 @@
       }
 
       .col-country-links {
-        .nav-countries {
+        .countries-nav .nav{
           .nav-link {
             font-size: 1.125rem;
           }
@@ -261,7 +261,7 @@
           font-size: 1rem;
           margin-bottom: 1rem;
         }
-        .nav-countries {
+        .countries-nav .nav {
           .nav-link {
             font-size: 1.25rem;
           }
