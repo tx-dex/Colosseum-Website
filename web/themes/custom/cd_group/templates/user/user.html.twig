@@ -17,39 +17,8 @@
  */
 #}
 
-{% if user_first_name is not empty and user_last_name is not empty %}
-    {% set helloname = user_first_name %}
-{% else %}
-    {% set helloname = user_name %}
-{% endif %}
-
-<section class="page-section page-section-basic-page account-page">
+<section class="page-section">
     <div class="container-fullwidth">
-        <div class="hello-box">
-            <h3>
-                Welcome, {{ helloname }}
-            </h3>
-            <p class="lg-text">
-                Please check that your account information is correct before enrolling to courses.
-            </p>
-            <a href="{{ user_edit_url }}" class="btn btn-primary add-fwd-icon">Edit account</a>
-        </div>
-
-        <h1 class="hero-title">My courses</h1>
-
-        {% if enrolled_courses is empty %}
-            <div class="no-courses-box">
-                <i class="material-icons">search</i>
-                <p>
-                    You have not enrolled to any courses at the moment
-                </p>
-                <p>
-                    Are you looking to join our <a href="{{ path('entity.node.canonical', {'node': 92}) }}">Master Curriculum Program</a> courses or <a href="{{ path('entity.node.canonical', {'node': 88}) }}">Focus Training</a> courses?
-                </p>
-            </div>
-        {% else %}
-            {# List of users courses #}
-            {{ enrolled_courses }}
-        {% endif %}
+        {{ content }}
     </div>
 </section>

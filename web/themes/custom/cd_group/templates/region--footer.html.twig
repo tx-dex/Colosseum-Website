@@ -1,33 +1,104 @@
 
+{#{{ content }}
+{{ drupal_menu('footer-secondary-menu') }}#}
+
 <footer class="footer">
     <div class="container-fullwidth">
         <div class="row">
-            <div class="col-md-6 col-left">
+            <div class="col-md-4">
                 <a class="footer-logo" href="/">
-                    <img src="{{ base_path ~ directory }}/img/ca-logo-white.png" alt="Colosseum Academy logo">
+                    <img src="{{ base_path ~ directory }}/img/cdg-logo-white.svg" alt="Colosseum Dental Group logo">
                 </a>
                 <div class="footer-contact-info">
                     <p class="contact">
-                        <a href="mailto:academy@colosseumdental.com" target="_blank"><span>academy@colosseumdental.com</span></a>
-                        {#<a href="tel:+4746473830" target="_blank"><span>+47 464 73 830</span></a>#}
+                        <a href=""><span>info@colosseumdental.com</span></a>
+                        <a href=""><span>+47 464 73 830</span></a>
                     </p>
                     <p class="address">
                         Colosseum Academy<br>
-                        Sørkedalsveien 10C<br>
-                        0369 Oslo
+                        Sørkedalsveien 10A<br>
+                        0368 Oslo
                     </p>
                 </div>
             </div>
-            <div class="col-md-6 col-right">
-                <div class="navbar navbar-dark navbar-footer">
-                    {{ content }}
-                </div>
-                <div class="footer-secondary-nav">
-                    {{ drupal_menu('footer-secondary-menu') }}
-                </div>
+            <div class="col-md-4">
+                <h6 class="nav-title">Colosseum Dental Group</h6>
+                <nav role="navigation" class="footer-main-nav">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Medical board</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Selling your practice</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Academy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Charitable cause</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-4">
+                <h6 class="nav-title">Countries</h6>
+                <nav role="navigation" class="footer-countries-nav">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" target="_blank">Denmark</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" target="_blank">Finland</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" target="_blank">Germany</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" target="_blank">Italy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" target="_blank">Norway</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" target="_blank">Sweden</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" target="_blank">Switzerland</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" target="_blank">UK</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-4">
                 <div class="footer-copyright">
-                    <div class="copyright">© Colosseum Dental Group {{ 'now'|date('Y') }}</div>
+                    <div class="copyright">Copyright © Colosseum Dental Group {{ 'now'|date('Y') }}.</div>
                 </div>
+            </div>
+            <div class="col-md-4">
+                <nav role="navigation" class="nav footer-policies-nav">
+                    <a class="nav-link" href="#">Terms</a>
+                    <a class="nav-link" href="#">Policies</a>
+                    <a class="nav-link" href="#">Compliances</a>
+                </nav>
             </div>
         </div>
     </div>
