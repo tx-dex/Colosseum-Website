@@ -64,7 +64,7 @@
       width: 100%;
       padding: 1rem 0 .5rem;
 
-      .nav-main-full {
+      .nav-main-full .nav {
         flex-direction: column;
 
         .nav-link {
@@ -114,7 +114,7 @@
       .col-main-links {
         max-width: 600px;
 
-        .nav-main-full {
+        .nav-main-full .nav {
           display: block;
           columns: 10px 2;
         }
@@ -167,7 +167,7 @@
         width: 70%;
         padding: 0;
 
-        .nav-main-full {
+        .nav-main-full .nav {
           .nav-link {
             font-size: 1.375rem;
           }
@@ -212,7 +212,7 @@
       }
 
       .col-main-links {
-        .nav-main-full {
+        .nav-main-full .nav {
           .nav-link {
             font-size: 1.5rem;
           }
@@ -227,7 +227,7 @@
       .col-main-links {
         max-width: 800px;
 
-        .nav-main-full {
+        .nav-main-full .nav {
           .nav-link {
             font-size: 2rem;
           }
@@ -250,7 +250,7 @@
       .col-main-links {
         max-width: 900px;
 
-        .nav-main-full {
+        .nav-main-full .nav {
           .nav-link {
             font-size: 2.5rem;
           }

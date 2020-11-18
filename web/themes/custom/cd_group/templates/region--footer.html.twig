@@ -21,65 +21,12 @@
             <div class="col-md-4">
                 <h6 class="nav-title">Colosseum Dental Group</h6>
                 <nav role="navigation" class="footer-main-nav">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Medical board</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Selling your practice</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Careers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Academy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Charitable cause</a>
-                        </li>
-                    </ul>
+                    {{ content }}
                 </nav>
             </div>
             <div class="col-md-4">
                 <h6 class="nav-title">Countries</h6>
                 {{ drupal_view('countries', 'block_1') }}
-                {#<nav role="navigation" class="countries-nav">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" target="_blank">Denmark</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" target="_blank">Finland</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" target="_blank">Germany</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" target="_blank">Italy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" target="_blank">Norway</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" target="_blank">Sweden</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" target="_blank">Switzerland</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" target="_blank">UK</a>
-                        </li>
-                    </ul>
-                </nav>#}
             </div>
         </div>
         <div class="row align-items-center">
@@ -95,6 +42,5 @@
                 {{ drupal_menu('footer-policies-menu') }}
             </div>
         </div>
-        {{ content }}
     </div>
 </footer>
