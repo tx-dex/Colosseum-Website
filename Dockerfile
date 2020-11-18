@@ -14,7 +14,6 @@ RUN apt-get update && apt-get install yarn git iputils-ping mariadb-client libgm
     && docker-php-ext-install gd \
     && a2enmod rewrite \
     && a2enmod alias \
-    && mkdir -p /var/www/d8-config-sync && chmod a+rw /var/www/d8-config-sync \
     && pecl install xdebug redis \
     && touch /tmp/xdebug.log \
     && chown www-data:www-data /tmp/xdebug.log \
@@ -22,13 +21,13 @@ RUN apt-get update && apt-get install yarn git iputils-ping mariadb-client libgm
     && docker-php-ext-enable redis \
     && rm -rf /var/lib/apt/lists/*
 
-VOLUME /var/www/config-sync
 WORKDIR /var/www/
 COPY web web
 COPY patches patches
-COPY docker/drupal9 ./web/sites/default/
-COPY docker/drupal9 ./web/sites/
-COPY docker/drupal9 ./web/sites/default/
+COPY config-sync config-sync
+COPY docker/drupal9/settings.php ./web/sites/default/settings.php
+COPY docker/drupal9/settings.development.php ./web/sites/default/settings.development.php
+COPY docker/drupal9/development.services.yml ./web/sites/development.services.yml
 COPY composer.json ./
 COPY composer.lock ./
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
