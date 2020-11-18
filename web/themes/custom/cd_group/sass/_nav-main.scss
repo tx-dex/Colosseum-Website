@@ -92,7 +92,8 @@
           margin-right: 1rem;
         }
 
-        .nav-link {
+        .nav-item a {
+          @extend .nav-link;
           color: $default-text-color;
           font-weight: $font-weight-medium;
           font-size: .875rem;
@@ -180,7 +181,7 @@
         .countries-nav .nav {
           columns: 10px 2;
 
-          .nav-link {
+          .nav-item a {
             font-size: 1rem;
           }
         }
@@ -235,7 +236,7 @@
 
       .col-country-links {
         .countries-nav .nav{
-          .nav-link {
+          .nav-item a {
             font-size: 1.125rem;
           }
         }
@@ -262,7 +263,7 @@
           margin-bottom: 1rem;
         }
         .countries-nav .nav {
-          .nav-link {
+          .nav-item a {
             font-size: 1.25rem;
           }
         }

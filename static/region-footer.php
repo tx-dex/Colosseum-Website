@@ -54,28 +54,28 @@
                 <nav role="navigation" class="countries-nav">
                     <ul class="nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#" target="_blank">Denmark</a>
+                            <a href="#" target="_blank">Denmark</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" target="_blank">Finland</a>
+                            <a href="#" target="_blank">Finland</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" target="_blank">Germany</a>
+                            <a href="#" target="_blank">Germany</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" target="_blank">Italy</a>
+                            <a href="#" target="_blank">Italy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" target="_blank">Norway</a>
+                            <a href="#" target="_blank">Norway</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" target="_blank">Sweden</a>
+                            <a href="#" target="_blank">Sweden</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" target="_blank">Switzerland</a>
+                            <a href="#" target="_blank">Switzerland</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" target="_blank">UK</a>
+                            <a href="#" target="_blank">UK</a>
                         </li>
                     </ul>
                 </nav>
