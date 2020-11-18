@@ -38,19 +38,6 @@ if (!empty($_ENV['MODE']) && $_ENV['MODE'] == 'DEV') {
   include 'settings.development.php';
 }
 
-if (!empty($_ENV['STRIPE_SECRET_KEY']) && !empty($_ENV['STRIPE_PUBLIC_KEY'])) {
-  $settings['stripe_secret_key'] = $_ENV['STRIPE_SECRET_KEY'];
-  $settings['stripe_public_key'] = $_ENV['STRIPE_PUBLIC_KEY'];
-}
-
-if (!empty($_ENV['STRIPE_WEBHOOK_SECRET'])) {
-  $settings['stripe_webhook_secret'] = $_ENV['STRIPE_WEBHOOK_SECRET'];
-}
-
-if (!empty($_ENV['REGISTRATION_ADMIN_EMAIL'])) {
-  $settings['registration_admin_email'] = $_ENV['REGISTRATION_ADMIN_EMAIL'];
-}
-
 if (!empty($_ENV['REDIS_CACHE'])) {
   $settings['redis.connection']['interface'] = 'PhpRedis';
   $settings['redis.connection']['host'] = !empty($_ENV['REDIS_HOST']) ? $_ENV['REDIS_HOST'] : 'redis';
@@ -65,15 +52,3 @@ if (!empty($_ENV['REDIS_CACHE'])) {
   $class_loader->addPsr4('Drupal\\redis\\', 'modules/contrib/redis/src');
 }
 
-$settings['whitelisted_domains'] = [
-  'colosseumdental.com',
-  'oral.fi',
-  'smile.se',
-  'colosseum.no',
-  'colosseumklinikken.dk',
-  'swiss-smile.com',
-  'odontosalute.it',
-  'colosseumdental.co.uk',
-  'colosseumdental.de',
-  'twinkle.fi'
-];
