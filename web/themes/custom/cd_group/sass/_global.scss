@@ -422,11 +422,11 @@ body {
   &.toolbar-fixed.toolbar-horizontal,
   &.toolbar-fixed.toolbar-vertical,
   &.toolbar-vertical {
-    padding-top: $navbar-height-xs + 39px;
+    padding-top: $navbar-height-xs + 39px !important;
   }
 
   &.toolbar-fixed.toolbar-horizontal.toolbar-tray-open {
-    padding-top: $navbar-height-xs + 79px;
+    padding-top: $navbar-height-xs + 79px !important;
   }
 
   @include media-breakpoint-up(md) {
@@ -434,11 +434,11 @@ body {
     &.toolbar-fixed.toolbar-horizontal,
     &.toolbar-fixed.toolbar-vertical,
     &.toolbar-vertical {
-      padding-top: $navbar-height-md + 39px;
+      padding-top: $navbar-height-md + 39px !important;
     }
 
     &.toolbar-fixed.toolbar-horizontal.toolbar-tray-open {
-      padding-top: $navbar-height-md + 79px;
+      padding-top: $navbar-height-md + 79px !important;
     }
 
   }
@@ -446,11 +446,11 @@ body {
     &.toolbar-fixed.toolbar-horizontal,
     &.toolbar-fixed.toolbar-vertical,
     &.toolbar-vertical {
-      padding-top: $navbar-height-lg + 39px;
+      padding-top: $navbar-height-lg + 39px !important;
     }
 
     &.toolbar-fixed.toolbar-horizontal.toolbar-tray-open {
-      padding-top: $navbar-height-lg + 79px;
+      padding-top: $navbar-height-lg + 79px !important;
     }
   }
 }
