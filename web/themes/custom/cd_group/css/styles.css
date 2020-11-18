@@ -15243,6 +15243,29 @@ body.is_admin .dialog-off-canvas-main-canvas > div[data-drupal-messages] {
   color: #fff;
 }
 
+body.toolbar-fixed.toolbar-horizontal, body.toolbar-fixed.toolbar-vertical, body.toolbar-vertical {
+  padding-top: 93px;
+}
+body.toolbar-fixed.toolbar-horizontal.toolbar-tray-open {
+  padding-top: 133px;
+}
+@media (min-width: 768px) {
+  body.toolbar-fixed.toolbar-horizontal, body.toolbar-fixed.toolbar-vertical, body.toolbar-vertical {
+    padding-top: 129px;
+  }
+  body.toolbar-fixed.toolbar-horizontal.toolbar-tray-open {
+    padding-top: 169px;
+  }
+}
+@media (min-width: 1024px) {
+  body.toolbar-fixed.toolbar-horizontal, body.toolbar-fixed.toolbar-vertical, body.toolbar-vertical {
+    padding-top: 161px;
+  }
+  body.toolbar-fixed.toolbar-horizontal.toolbar-tray-open {
+    padding-top: 201px;
+  }
+}
+
 h1, .h1 {
   font-size: 2.25rem;
   line-height: 1.2;
@@ -16294,6 +16317,7 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
 .toolbar-vertical .navbar-main .navbar-collapse {
   top: 39px;
 }
+
 .toolbar-fixed.toolbar-horizontal.toolbar-tray-open .navbar-main {
   top: 79px;
 }

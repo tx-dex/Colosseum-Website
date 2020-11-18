@@ -413,3 +413,44 @@ body.is_admin .dialog-off-canvas-main-canvas {
     }
   }
 }
+
+// Drupal admin overrides
+// -------------------------------------
+
+body {
+
+  &.toolbar-fixed.toolbar-horizontal,
+  &.toolbar-fixed.toolbar-vertical,
+  &.toolbar-vertical {
+    padding-top: $navbar-height-xs + 39px;
+  }
+
+  &.toolbar-fixed.toolbar-horizontal.toolbar-tray-open {
+    padding-top: $navbar-height-xs + 79px;
+  }
+
+  @include media-breakpoint-up(md) {
+
+    &.toolbar-fixed.toolbar-horizontal,
+    &.toolbar-fixed.toolbar-vertical,
+    &.toolbar-vertical {
+      padding-top: $navbar-height-md + 39px;
+    }
+
+    &.toolbar-fixed.toolbar-horizontal.toolbar-tray-open {
+      padding-top: $navbar-height-md + 79px;
+    }
+
+  }
+  @include media-breakpoint-up(lg) {
+    &.toolbar-fixed.toolbar-horizontal,
+    &.toolbar-fixed.toolbar-vertical,
+    &.toolbar-vertical {
+      padding-top: $navbar-height-lg + 39px;
+    }
+
+    &.toolbar-fixed.toolbar-horizontal.toolbar-tray-open {
+      padding-top: $navbar-height-lg + 79px;
+    }
+  }
+}
