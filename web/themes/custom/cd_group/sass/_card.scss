@@ -1,0 +1,57 @@
+// Card
+// -------------------------------------
+
+.card {
+  box-shadow: $default-box-shadow;
+  border: none;
+  width: 100%;
+
+  @include disable-selection;
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    background: transparent;
+
+    + .card-body {
+      padding-top: 0;
+    }
+  }
+
+  .card-img-wrapper {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+    background-color: #fafafa;
+    overflow: hidden;
+
+    .card-img {
+      display: block;
+      border-radius: 0;
+    }
+  }
+
+  .card-body {
+    padding: 1rem $card-spacer-x;
+  }
+
+  .card-footer {
+    border-top: 1px solid #DBDDE1;
+    padding: 0;
+  }
+
+}
+
+.card-list {
+  .card {
+    margin-bottom: 1rem;
+  }
+
+  .card:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .load-more-items {
+    margin: 1rem 0;
+  }
+}

@@ -1,0 +1,14 @@
+{% if page.header %}
+    {{ page.header }}
+{% endif %}
+
+<section class="page-section page-section-basic-page">
+    <div class="container-sm">
+        <h1 class="display-1 page-title">Oops!</h1>
+        {{ page.content }}
+    </div>
+</section>
+
+{% if page.footer %}
+    {{ page.footer }}
+{% endif %}

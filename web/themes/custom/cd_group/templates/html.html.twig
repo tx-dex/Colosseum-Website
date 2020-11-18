@@ -1,0 +1,89 @@
+{% set body_classes = [
+    logged_in ? 'user-logged-in',
+    is_admin ? 'is_admin',
+    not root_path ? 'path-frontpage' : 'path-' ~ root_path|clean_class,
+    node_type ? 'page-node-type-' ~ node_type|clean_class,
+    db_offline ? 'db-offline',
+] %}
+
+<!DOCTYPE html>
+<html{{ html_attributes }}>
+<head>
+
+    <head-placeholder token="{{ placeholder_token|raw }}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {# <title>{{ head_title|safe_join(' | ') }}</title> #}
+    <title>{{ head_title.title }}</title>
+
+    {# Add font import here if from google etc... #}
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,900&display=swap&subset=latin-ext" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+    <css-placeholder token="{{ placeholder_token|raw }}">
+    <js-placeholder token="{{ placeholder_token|raw }}">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="themes/custom/cd_academy/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="themes/custom/cd_academy/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="themes/custom/cd_academy/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="themes/custom/cd_academy/img/favicons/site.webmanifest">
+    <link rel="icon" href="themes/custom/cd_academy/img/favicons/favicon.ico" type="image/x-icon"/>
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--  Modernizr  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+</head>
+<body{{ attributes.addClass(body_classes) }}>
+
+{% if is_admin %}
+    <a href="{{ node_edit_url }}" class="btn-edit-current-page">{{ 'Edit current page'|t }}</a>
+{% endif %}
+
+{{ page_top }}
+{{ page }}
+{{ page_bottom }}
+
+<js-bottom-placeholder token="{{ placeholder_token|raw }}">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJ17DYBF5X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag('js', new Date());
+      gtag('config', 'G-RJ17DYBF5X');
+
+    </script>
+    {# Osano Cookie consent #}
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": {
+            "background": "#006ba6"
+          },
+          "button": {
+            "background": "#fff",
+            "color": "#006ba6"
+          }
+        },
+        "content": {
+          "message": "This website uses cookies to gather analytics and ensure you get the best experience on our website. We handle the data according to our privacy policy.",
+          "dismiss": "Got it!",
+          "link": "Read more",
+          "href": "https://academy.colosseumdental.com/privacy-policy"
+        },
+        "theme": "colosseum"
+      });
+    </script>
+</body>
+</html>
+

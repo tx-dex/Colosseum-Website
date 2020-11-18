@@ -1,0 +1,52 @@
+{#
+/**
+ * @file
+ * Theme override to display a media item.
+ *
+ * Available variables:
+ * - name: Name of the media.
+ * - content: Media content.
+ *
+ * @see template_preprocess_media()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+    set typeClass = 'media--type-' ~ media.bundle()|clean_class
+%}
+
+{% set filemime = content.field_media_document[0]['#file'].filemime.value %}
+
+{% if filemime matches '/pdf/' %}
+    {% set filemime = 'pdf' %}
+{% elseif filemime matches '/presentationml/' %}
+    {% set filemime = 'microsoftpowerpoint' %}
+{% elseif filemime matches '/wordprocessingml/' %}
+    {% set filemime = 'microsoftword' %}
+{% elseif filemime matches '/spreadsheetml/' %}
+    {% set filemime = 'microsoftexcel' %}
+{% else %}
+    {% set filemime = 'file' %}
+{% endif %}
+
+{% if content %}
+    <div class="document-list-item" {{ attributes.addClass(typeClass) }}>
+        <div class="type-icon ">
+            <span class="cdg-icon-{{ filemime }}">
+                <span class="sr-only">{{ content.field_media_document[0]['#file'].filemime.value }}</span>
+            </span>
+        </div>
+        <div class="title">
+            {% if content.field_title|render|trim is not empty %}
+                {{ content.field_title }}
+            {% else %}
+                {{ content.field_media_document[0]['#file'].filename.value }}
+            {% endif %}
+        </div>
+        <div class="download">
+            <a href="{{ file_url(content.field_media_document[0]['#file'].uri.value) }}" class="btn btn-link btn-download" target="_blank"><i class="material-icons file_download"></i>Download</a>
+        </div>
+    </div>
+{% endif %}

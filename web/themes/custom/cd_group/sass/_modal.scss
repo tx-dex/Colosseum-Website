@@ -1,0 +1,87 @@
+// Modals
+// -------------------------------------
+
+.modal {
+
+  padding: 0 !important;
+
+  .modal-dialog {
+    //margin: 15px;
+  }
+
+  .modal-header {
+    padding: $modal-inner-padding;
+  }
+  .modal-body {
+    padding: 0 $modal-inner-padding $modal-inner-padding;
+  }
+
+  .modal-footer {
+    padding-top: 0;
+    padding-bottom: $modal-inner-padding;
+    justify-content: flex-start;
+
+    .btn {
+      margin: 0 .75rem 0 0;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    .modal-dialog {
+      width: 90%;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .modal-header {
+      padding: $modal-inner-padding-lg $modal-inner-padding-lg 1rem;
+    }
+
+    .modal-body {
+      padding: 0 $modal-inner-padding-lg $modal-inner-padding-lg;
+    }
+
+    .modal-footer {
+      padding: 0 $modal-inner-padding-lg $modal-inner-padding-lg;
+    }
+  }
+}
+
+#videoModal {
+
+  padding: 0 !important;
+
+  .modal-dialog {
+    margin: 1.5rem auto 2rem;
+    padding: 0 1rem;
+  }
+
+  .modal-content {
+    background-color: transparent;
+  }
+  .modal-header {
+    position: relative;
+    padding: 0 0 .5rem;
+    background-color: transparent;
+
+    .close {
+      color: $white;
+      opacity: 1;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    .modal-dialog {
+      max-width: 90%;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .modal-dialog {
+      max-width: 900px;
+    }
+  }
+}
+
+
+

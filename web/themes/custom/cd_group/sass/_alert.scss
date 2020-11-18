@@ -1,0 +1,16 @@
+// Alert
+// -------------------------------------
+
+.alert-container {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.alert {
+  text-align: center;
+  box-shadow: $default-box-shadow;
+  margin: 0;
+}

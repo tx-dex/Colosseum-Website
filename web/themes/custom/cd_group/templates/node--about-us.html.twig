@@ -1,0 +1,109 @@
+{#
+    About us page
+#}
+
+<section class="hero hero-basic">
+    <div class="hero-content align-items-center">
+        <div class="container">
+            <h1 class="hero-title">{{ label }}</h1>
+        </div>
+    </div>
+</section>
+
+<!-- Video Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close text-white" data-dismiss="modal"><i class="material-icons">close</i></button>
+            </div>
+            <div class="modal-body bg-dark p-0">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="page-section-about-us-img">
+    <div class="section-img">
+        <img src="{{ node.field_main_image.entity.field_media_image.entity.uri.value | image_style('about_us_image') }}" alt="{{ node.field_main_image.entity.field_media_image.alt }}">
+        <button class="btn btn-white btn-play"
+                data-toggle="modal"
+                data-target="#videoModal"
+                data-video="{% spaceless %}{{ content.field_video_url|escape|striptags('<!-- -->') }}{% endspaceless %}"
+        >
+            Video introduction <span class="play-icon"><i class="material-icons">play_arrow</i></span>
+        </button>
+    </div>
+</section>
+
+<section class="page-section page-section-about-us-main">
+    <div class="container-fullwidth article-content">
+        <div class="row">
+            <div class="col-lg-7">
+                <h2 class="section-title">
+                    {{ content.field_page_subtitle }}
+                </h2>
+            </div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-lg-9">
+                <div class="columns-2">
+                    {{ content.body }}
+                </div>
+                <div class="section-cta">
+                    {#<a href="/courses" class="btn btn-primary add-fwd-icon">See all courses</a>#}
+                    {% for key, item in content.field_main_section_links if key|first != '#' %}
+                        <a href="{{ item['#url'] }}" class="btn btn-link add-fwd-icon">{{ item['#title'] }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% if content.field_extra_page_content|render|trim is not empty %}
+    <section class="page-section">
+        <div class="container">
+            {{ content.field_extra_page_content }}
+        </div>
+    </section>
+{% endif %}
+
+<section class="page-section page-section-about-us-team">
+    <div class="container-fullwidth">
+        <div class="row justify-content-between">
+            <div class="col-md-5">
+                <h2 class="section-title">{{ content.field_page_subtitle_2 }}</h2>
+            </div>
+            <div class="col-md-6 section-intro">
+                {{ content.field_team_section_content }}
+            </div>
+        </div>
+
+        {#<div class="row team-grid">
+        {% for i, value in content.field_team_members if i|first != '#'  %}
+            {% if node.field_team_members[i].entity.title.value is not empty %}
+                <div class="col-sm-6 col-lg-4">
+                    <div class="person-card">
+                        {% set nid_value = node.field_team_members[i].entity.nid.0.value %}
+                        {% if node.field_team_members[i].entity.field_main_image.entity.field_media_image.entity.uri.value is not empty %}
+                            <img src="{{ node.field_team_members[i].entity.field_main_image.entity.field_media_image.entity.uri.value | image_style('frontpage_feature') }}" alt="{{ node.field_team_members[i].entity.field_main_image.entity.field_media_image.alt }}">
+                        {% endif %}
+                        <h5 class="person-name">{{ node.field_team_members[i].entity.title.value }}</h5>
+                        <p class="person-title">
+                            {{ node.field_team_members[i].entity.field_job_title.value }}
+                        </p>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+        </div>#}
+
+        {{ content.field_team_sections }}
+
+    </div>
+</section>

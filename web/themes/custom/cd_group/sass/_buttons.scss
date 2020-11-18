@@ -1,0 +1,160 @@
+// Buttons & links
+// -------------------------------------
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+
+.btn {
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &.btn-primary,
+  &.btn-primary:not(:disabled):not(.disabled) {
+    color: $white;
+    box-shadow: $default-box-shadow;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $white;
+    }
+  }
+
+  &.btn-outline-primary,
+  &.btn-outline-primary:not(:disabled):not(.disabled) {
+    &:hover,
+    &:active,
+    &:focus {
+      color: $link-hover-color;
+      border-color: $link-hover-color;
+      background-color: transparent;
+    }
+  }
+
+  &.btn-white,
+  &.btn-white:not(:disabled):not(.disabled) {
+    color: $primary;
+    background-color: $white;
+    box-shadow: $default-box-shadow;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $link-hover-color;
+    }
+  }
+
+  &.btn-green,
+  &.btn-green:not(:disabled):not(.disabled) {
+    color: $white;
+    background-color: $brand-green;
+    box-shadow: $default-box-shadow;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: darken($brand-green, 5%);
+    }
+  }
+
+  &.btn-link,
+  &.btn-link:not(:disabled):not(.disabled) {
+    color: $primary;
+    padding: $btn-padding-y 0;
+    font-weight: $font-weight-medium;
+    border-radius: 0;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $link-hover-color;
+      text-decoration: none;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  &.btn-full-width {
+    width: 100%;
+  }
+
+  &.btn-xs {
+    font-size: $font-size-md;
+    padding: 0.3rem 1rem;
+  }
+
+  &.btn-play {
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    width: auto;
+    height: 55px;
+    padding-left: $btn-padding-x;
+
+    .play-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100%;
+      background-color: $brand-blue;
+      color: $white;
+      width: 55px;
+      height: 55px;
+      margin-left: 1rem;
+    }
+  }
+
+  &.btn-round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.750rem;
+    height: 3.750rem;
+    padding: 0;
+    border-radius: 100%;
+  }
+
+  &.add-back-icon {
+    &:before {
+      @extend .material-icons, .arrow_back, :before;
+      vertical-align: middle;
+      font-size: 1.3rem;
+      margin: -1px .3rem 0 0;
+    }
+  }
+
+  &.add-fwd-icon {
+    &:after {
+      @extend .material-icons;
+      content: "\e5c8";
+      vertical-align: middle;
+      font-size: 1.3rem;
+      margin: -1px 0 0 .3rem;
+    }
+  }
+
+  > .material-icons {
+    vertical-align: middle;
+    font-size: 1.3rem;
+    margin: -1px 0 0 .3rem;
+  }
+}

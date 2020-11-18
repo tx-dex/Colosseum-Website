@@ -1,0 +1,24 @@
+{#
+/**
+ * @file
+ * Theme override to display a media item.
+ *
+ * Available variables:
+ * - name: Name of the media.
+ * - content: Media content.
+ *
+ * @see template_preprocess_media()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% if content %}
+    {{ content }}
+
+    {#<ol>
+        {% for key, value in content.field_media_image  %}
+            <li>{{ key }}</li>
+        {% endfor %}
+    </ol>#}
+{% endif %}

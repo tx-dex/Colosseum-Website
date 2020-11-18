@@ -1,0 +1,122 @@
+
+button, input, optgroup, select, textarea {
+  //font-family: $font-family-base;
+}
+
+.custom-switch {
+  .custom-control-label {
+    font-weight: $font-weight-normal;
+  }
+
+  .custom-control-label::before {
+    height: 1rem;
+    background-color: #D2D6DB;
+    border: none;
+  }
+
+  .custom-control-label::after {
+    top: 0.15rem;
+    left: -2.8rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: #F1F1F1;
+    box-shadow: $default-box-shadow;
+  }
+
+  .custom-control-input:not(:disabled):active ~ .custom-control-label::before {
+    background-color: lighten($primary, 25%);
+  }
+
+  .custom-control-input:not(:disabled):active ~ .custom-control-label::after {
+    background-color: $primary;
+  }
+
+  .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: lighten($primary, 25%);
+  }
+
+  .custom-control-input:checked ~ .custom-control-label::after {
+    background-color: $primary;
+    transform: translateX(1.2rem);
+  }
+}
+
+.custom-checkbox,
+.custom-radio {
+
+  .custom-control-label {
+    font-weight: $font-weight-normal;
+  }
+
+  .custom-control-label::before,
+  .custom-control-label::after {
+    //top: 0.071rem;
+  }
+
+  .custom-control-label::before {
+    box-shadow: $default-box-shadow;
+  }
+
+  .custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: $default-box-shadow;
+  }
+
+  .custom-control-input:checked ~ .custom-control-label::before {
+    box-shadow: none;
+  }
+}
+
+.form-select {
+  @extend .custom-select;
+}
+
+.form-text,
+.form-email,
+.form-textarea {
+  @extend .form-control;
+  margin: 0;
+}
+
+.button {
+  @extend .btn;
+}
+
+.button--primary {
+  @extend .btn-primary;
+}
+
+label {
+  font-weight: $font-weight-medium;
+  font-size: $font-size-base;
+}
+
+.form-item input.error,
+.form-item textarea.error,
+.form-item select.error {
+  border: 2px solid $brand-orange;
+}
+
+form {
+  .button.form-submit {
+    @extend .btn-primary;
+    margin: 1rem 0 0;
+  }
+
+  .form-actions .button.form-submit {
+    margin: 0;
+  }
+
+  .g-recaptcha {
+    margin: 2rem 0 0.5rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    .button.form-submit {
+      margin: 1.5rem 0 0;
+    }
+
+    .form-actions .button.form-submit {
+      margin: 0.5rem 0 0;
+    }
+  }
+}

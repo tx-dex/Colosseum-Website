@@ -1,0 +1,146 @@
+
+// Contact page specific styles
+// -------------------------------------
+
+.hero-contact {
+  min-height: 200px;
+  flex-direction: column;
+
+  .hero-content {
+    .hero-title {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.hero-contact-info {
+  font-size: 1.125rem;
+
+  .contact {
+    margin-bottom: 2rem;
+
+    a {
+      display: block;
+      width: auto;
+      color: $default-text-color;
+      margin-bottom: .5rem;
+
+      span {
+        display: inline-block;
+        line-height: 2;
+        border-bottom: 1px solid $border-color;
+        transition: border-color .25s ease-in-out;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: none;
+
+        span {
+          border-color: $default-text-color;
+        }
+      }
+    }
+  }
+
+  .address {
+    margin-bottom: .5rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: 1.325rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 1.65rem;
+  }
+}
+
+.page-section-contact-img {
+  position: relative;
+  background-color: $brand-blue-light;
+
+  &:before {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    content: '';
+    background-color: $white;
+    z-index: 0;
+  }
+
+  .section-img {
+    position: relative;
+
+    .btn-scroll-down {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    padding-top: 4rem;
+
+    .section-img {
+      width: 70%;
+      max-width: 900px;
+
+      .btn-scroll-down {
+        left: 0;
+      }
+    }
+  }
+}
+
+.page-section-contact-form {
+  background-color: $brand-blue-light;
+
+  .contact-form-box {
+    position: relative;
+    z-index: 1;
+    background-color: $white;
+    padding: 3rem $grid-gutter-width/2;
+    margin: 0 auto;
+    max-width: 980px;
+
+    .section-title {
+      margin-bottom: 1rem;
+    }
+
+    form {
+      margin-top: 2.5rem;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    padding: 0 $margin-width-md 4rem;
+
+    .contact-form-box {
+      margin-top: -5rem;
+      padding: 4rem;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 0 $margin-width-md 6rem;
+
+    .contact-form-box {
+      margin-top: -7rem;
+      padding: 5rem 7rem;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding: 0 $margin-width-md 6rem;
+
+    .contact-form-box {
+      margin-top: -7rem;
+    }
+  }
+}

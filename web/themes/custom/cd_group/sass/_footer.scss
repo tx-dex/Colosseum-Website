@@ -1,0 +1,152 @@
+// Footer
+// -------------------------------------
+
+.footer {
+  background-color: $brand-blue-darkest;
+  color: $white;
+  padding: 3rem 0;
+
+  .nav-title {
+    font-size: 1rem;
+    color: $white;
+    font-weight: $font-weight-bold;
+  }
+
+  .footer-logo {
+    display: block;
+    margin-bottom: 3rem;
+    img {
+      width: 200px;
+      @extend .img-fluid;
+    }
+  }
+
+  .footer-contact-info {
+    margin-bottom: 2rem;
+
+    .contact {
+      margin-bottom: 2rem;
+
+      a {
+        display: block;
+        width: auto;
+        color: $white;
+        margin-bottom: .5rem;
+
+        span {
+          display: inline-block;
+          line-height: 2;
+          border-bottom: 1px solid #344362;
+          transition: border-color .25s ease-in-out;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+          text-decoration: none;
+
+          span {
+            border-color: #fff;
+          }
+        }
+      }
+    }
+
+    .address {
+      margin-bottom: .5rem;
+    }
+  }
+
+  .footer-main-nav {
+    margin-bottom: 2rem;
+
+    .nav {
+      display: block;
+      columns: 10px 2;
+    }
+
+    .nav-item {
+      display: inline-block;
+      width: 100%;
+    }
+    .nav-link {
+      font-size: 1rem;
+      color: $white;
+      padding: .3rem 0;
+    }
+  }
+
+  .footer-countries-nav {
+    margin-bottom: 2rem;
+
+    .nav {
+      display: block;
+      columns: 10px 2;
+    }
+    .nav-link {
+      font-size: 1rem;
+      color: $white;
+      padding: .3rem 0;
+    }
+  }
+
+  .footer-policies-nav {
+    .nav-link {
+      font-size: 0.875rem;
+      color: $white;
+      padding-left: 0;
+      margin-right: .5rem;
+    }
+  }
+
+  .footer-copyright {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    font-size: 0.875rem;
+
+    .copyright {
+      margin-right: 3rem;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    padding: 5rem 0;
+
+    .footer-logo {
+      margin-top: -.2rem;
+
+      img {
+        width: 260px;
+      }
+    }
+
+    .footer-contact-info {
+      margin: 0;
+    }
+
+    .footer-main-nav {
+      .nav {
+        display: block;
+        columns: 10px 1;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 7rem 0;
+    width: (100% - $margin-width-md);
+
+    .footer-main-nav {
+      .nav {
+        display: block;
+        columns: 10px 2;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    width: (100% - $margin-width-xl);
+  }
+}

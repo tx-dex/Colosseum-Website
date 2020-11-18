@@ -1,0 +1,54 @@
+@import "variables";
+
+@import "mixins";
+
+@import "bootstrap";
+
+@import "icons-custom";
+
+$material-design-icons-font-directory-path: '../fonts/' !default;
+
+@import '../../../../../node_modules/material-design-icons-iconfont/src/material-design-icons';
+
+@import "animations";
+
+// General element styling & common styles
+// -------------------------------------
+
+@import "global";
+
+@import "typography";
+
+@import "forms";
+
+@import "buttons";
+
+@import "card";
+
+@import "alert";
+
+@import "modal";
+
+@import "grid";
+
+@import "modal";
+
+@import "nav-main";
+
+@import "footer";
+
+@import "heros";
+
+@import "cookie-consent-osano";
+
+// Page specific
+// -------------------------------------s
+
+@import "page-login";
+
+@import "page-front";
+
+@import "page-about-us";
+
+@import "page-contact";
+

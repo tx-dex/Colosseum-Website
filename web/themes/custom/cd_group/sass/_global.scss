@@ -1,0 +1,415 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  padding-top: $navbar-height-xs;
+
+  @include media-breakpoint-up(md) {
+    padding-top: $navbar-height-md;
+  }
+  @include media-breakpoint-up(lg) {
+    padding-top: $navbar-height-lg;
+  }
+}
+
+img {
+  @extend .img-fluid;
+}
+
+// Utility classes
+// -------------------------------------
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.v-center {
+  display: table;
+  height: 100%;
+}
+
+.v-center-el {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.arrow-box {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #FCA224;
+  border-radius: $border-radius;
+  padding: 1rem 1rem 0;
+
+  &:after,
+  &:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  &:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #ffffff;
+    border-width: 10px;
+    margin-left: -10px;
+  }
+  &:before {
+    border-color: rgba(252, 162, 36, 0);
+    border-top-color: #FCA224;
+    border-width: 11px;
+    margin-left: -11px;
+  }
+}
+
+.figure {
+  img {
+    @extend .img-fluid;
+  }
+}
+
+// Common ui elements
+
+.breadcrumb {
+  background-color: #fff;
+  padding: .5rem 0;
+  font-weight: $font-weight-medium;
+  font-size: .938rem;
+
+  a {
+
+  }
+
+  @include media-breakpoint-up(lg) {
+    //font-size: 1rem;
+    padding: 1rem 0;
+  }
+}
+
+.columns-2 {
+  @include media-breakpoint-up(md) {
+    column-count: 2;
+    column-gap: 40px;
+  }
+  @include media-breakpoint-up(lg) {
+    column-gap: 60px;
+  }
+  @include media-breakpoint-up(xl) {
+    column-gap: 100px;
+  }
+}
+
+.btn-scroll-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.500rem;
+  height: 4.500rem;
+  border-radius: 100%;
+  background-color: $brand-blue-light;
+  font-size: 1.75rem;
+  transition: background-color .2s ease-in-out;
+
+  .material-icons {
+    font-size: inherit;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    background-color: darken($brand-blue-light, 5%);
+  }
+
+  @include media-breakpoint-up(md) {
+    &.btn-scroll-down-lg {
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    &.btn-scroll-down-lg {
+      width: 7rem;
+      height: 7rem;
+      font-size: 2rem;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    &.btn-scroll-down-lg {
+      width: 9rem;
+      height: 9rem;
+      font-size: 2.5rem;
+    }
+  }
+}
+
+// Page section tabs
+// -------------------------------------
+
+.page-section-tabs {
+  border: none;
+
+  .nav-item {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+
+    .nav-link {
+      position: relative;
+      background-color: $white;
+      border: none;
+      font-weight: $font-weight-medium;
+      color: $default-text-color;
+      padding: 1rem $grid-gutter-width/2;
+
+      .badge {
+        display: inline-block;
+        margin: -.1rem 0 0 .4rem;
+        vertical-align: middle;
+      }
+    }
+
+    .nav-link.active {
+      background-color: transparent;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    .nav-item {
+      .nav-link {
+        padding: 1.2rem $grid-gutter-width/2;
+        font-size: 1.125rem;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .nav-item {
+      .nav-link {
+        padding: 1.5rem $margin-width-md-vw;
+        font-size: 1.375rem;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .nav-item {
+      .nav-link {
+        padding: 1.75rem $margin-width-md-vw;
+        font-size: 1.5rem;
+        font-weight: $font-weight-bold;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .nav-item {
+      .nav-link {
+        padding: 2.25rem $margin-width-xl-vw;
+        font-size: 1.625rem;
+      }
+    }
+  }
+}
+
+.tab-content {
+  padding: 3rem 0 0;
+
+  @include media-breakpoint-up(lg) {
+    padding: 4rem 0 0;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding: 5rem 0 0;
+  }
+}
+
+// Page section styles
+// -------------------------------------
+
+.page-section {
+  @include clearfix;
+  padding: 3rem 0;
+
+  @include media-breakpoint-up(md) {
+    padding: 4rem 0;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 5rem 0;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding: 7rem 0;
+  }
+}
+
+
+// Drupal messages
+// -------------------------------------
+
+.messages {
+  &.messages--status {
+    color: $brand-green;
+    border-color: #24c99f #24c99f #24c99f transparent;
+    background-color: $brand-green-light;
+    box-shadow: -8px 0 0 $brand-green;
+  }
+
+  &.messages--error {
+    color: darken($brand-orange, 20%);
+    border-color: $brand-orange-40 $brand-orange-40 $brand-orange-40 transparent;
+    background-color: $brand-orange-10;
+    box-shadow: -8px 0 0 $brand-orange  ;
+  }
+}
+
+// Hiding the messages in specific pages
+.registration-sent-content,
+.page-node-type-registration {
+  .messages.messages--status {
+    display: none !important;
+  }
+}
+
+.dialog-off-canvas-main-canvas {
+  > div[data-drupal-messages] {
+    display: none;
+  }
+}
+
+// Show the messages for admins
+body.is_admin .dialog-off-canvas-main-canvas {
+  > div[data-drupal-messages] {
+    display: block;
+  }
+}
+
+// Drupal specific
+// -------------------------------------
+
+.dialog-off-canvas-main-canvas {
+  height: 100%;
+}
+
+.btn-edit-current-page {
+  padding: 7px 10px;
+  position: fixed;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  color: #fff;
+  background-color: #000;
+  top: 0;
+  right: 0;
+  z-index: 10001;
+}
+
+.toolbar-vertical {
+  .btn-edit-current-page {
+    position: absolute;
+    display: block;
+  }
+
+  &.toolbar-fixed {
+    .btn-edit-current-page {
+      position: fixed;
+    }
+  }
+}
+
+// Dialog
+
+.ui-widget-overlay {
+  background: $modal-backdrop-bg;
+  opacity: $modal-backdrop-opacity;
+}
+
+.ui-dialog {
+
+  &.ui-widget.ui-widget-content {
+    border: none;
+  }
+
+  .ui-dialog-titlebar {
+    padding: 1rem;
+    border: none;
+    background: $brand-blue;
+    color: $white;
+    font-weight: $font-weight-medium;
+    font-size: 1.5rem;
+  }
+
+  .ui-dialog-content {
+    position: relative;
+    border: 0;
+    padding: 2rem 1rem;
+    background: none;
+    overflow: auto;
+    font-size: 1.125rem;
+  }
+
+  .ui-dialog-titlebar-close {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    width: 30px;
+    margin: -15px 0 0 0;
+    padding: 1px;
+    height: 30px;
+    overflow: hidden;
+    //color: transparent;
+
+    &:after {
+      display: block;
+      position: absolute;
+      @extend .material-icons;
+      text-indent: 0;
+      top: 0;
+      left: 0;
+      color: #fff;
+      content: "\e5cd";
+      width: 100%;
+      height: 100%;
+      font-size: 1.75rem;
+    }
+
+    .ui-button-icon.ui-icon.ui-icon-closethick {
+      //display: block;
+      //position: relative;
+      color: #fff;
+    }
+  }
+}

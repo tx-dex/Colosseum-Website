@@ -1,0 +1,64 @@
+.cc-window.cc-banner.cc-theme-colosseum,
+.cc-window.cc-floating.cc-theme-colosseum {
+  width: 100%;
+  bottom: 0 !important;
+  max-width: none;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+
+  .cc-message {
+    font-family: $font-family-sans-serif !important;
+    margin-bottom: 1.2rem;
+  }
+
+  .cc-compliance {
+    width: 120px !important;
+    flex: 0 0 auto;
+
+    &:hover,
+    &:active,
+    &:focus {
+      outline: none;
+      border: none;
+    }
+  }
+
+  &.cc-floating .cc-compliance>.cc-btn,
+  .cc-btn {
+    display: block;
+    font-family: $font-family-sans-serif;
+    font-size: 1rem;
+    font-weight: $font-weight-medium;
+    border: none;
+    color: $brand-blue;
+    width: 120px !important;
+    padding: $btn-padding-y-sm $btn-padding-x-sm;
+    border-radius: $btn-border-radius;
+
+    &:hover,
+    &:active,
+    &:focus {
+      outline: none;
+      border: none;
+    }
+  }
+
+  .cc-link {
+    padding: 0 !important;
+  }
+
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+    align-items: center;
+    padding: 1.5rem 2rem;
+
+    .cc-message {
+      flex: 1 1 auto;
+      max-width: 100%;
+      margin-right: 1em;
+      margin-bottom: 0;
+    }
+  }
+}
+
