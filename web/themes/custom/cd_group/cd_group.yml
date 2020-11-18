@@ -3,7 +3,6 @@ global-styling:
   css:
     theme:
       css/styles.css: {}
-
   js:
     js/dist/plugins.js: {}
     js/src/scripts.js: {}
