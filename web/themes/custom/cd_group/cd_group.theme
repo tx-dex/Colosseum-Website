@@ -181,6 +181,12 @@ function cd_group_theme_suggestions_views_view_unformatted_alter(&$suggestions, 
   }
 }
 
+function cd_group_theme_suggestions_views_view_list_alter(&$suggestions, $variables) {
+    if (isset($variables['view']) && !empty($variables['view']->id())) {
+        $suggestions[] = 'views_view_list__' . $variables['view']->id();
+    }
+}
+
 function cd_group_preprocess_region(&$variables) {
 
 }
