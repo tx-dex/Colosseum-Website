@@ -15142,6 +15142,18 @@ body {
   }
 }
 
+.article-list {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding: 0;
+}
+.article-list .item .article-title {
+  font-size: 1.3rem;
+}
+.article-list .item:hover, .article-list .item:active, .article-list .item:focus {
+  text-decoration: none;
+}
+
 .messages.messages--status {
   color: #00946E;
   border-color: #24c99f #24c99f #24c99f transparent;

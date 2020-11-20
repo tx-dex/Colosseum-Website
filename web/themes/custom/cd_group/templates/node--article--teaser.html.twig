@@ -2,13 +2,12 @@
     News article page
 #}
 
-<a href="{{ path('entity.node.canonical', {'node': node.id}) }}" class="">
-    <div class="card">
-        <h4 class="card-title">
-            {{ label }}
-        </h4>
-        <div class="article-content">
-            {{ content.body }}
-        </div>
+<a href="{{ path('entity.node.canonical', {'node': node.id}) }}" class="item">
+    <h4 class="card-title">
+        {{ label }}
+    </h4>
+    <div class="article-lead">
+        {#{{ content.body }}#}
     </div>
+    <button class="btn btn-link add-fwd-icon">Read more</button>
 </a>

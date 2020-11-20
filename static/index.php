@@ -14,6 +14,7 @@
                 <ul>
                     <li><a href="page-front.php">Front page</a></li>
                     <li><a href="page-about-us.php">About us page</a></li>
+                    <li><a href="page-newsroom.php">Newsroom page</a></li>
                     <li><a href="page-contact.php">Contact page</a></li>
                     <li><a href="page-basic.php">Privacy and terms</a></li>
                 </ul>
