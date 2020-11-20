@@ -1,0 +1,16 @@
+{#
+    Newsroom
+#}
+
+<section class="page-section page-section-basic-page">
+    <div class="container">
+        <h1 class="page-title">
+            {{ label }}
+        </h1>
+        <div class="article-content">
+            {{ content.body }}
+
+            {{ drupal_view('newsroom', 'block_1') }}
+        </div>
+    </div>
+</section>
