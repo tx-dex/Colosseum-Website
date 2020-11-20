@@ -1,0 +1,14 @@
+{#
+    News article page
+#}
+
+<a href="{{ path('entity.node.canonical', {'node': node.id}) }}" class="">
+    <div class="card">
+        <h4 class="card-title">
+            {{ label }}
+        </h4>
+        <div class="article-content">
+            {{ content.body }}
+        </div>
+    </div>
+</a>
