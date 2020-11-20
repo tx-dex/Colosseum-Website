@@ -1,0 +1,14 @@
+{#
+    Country page teaser
+#}
+
+<a href="{{ path('entity.node.canonical', {'node': node.id}) }}" class="item mb-4">
+    <h4>
+        {{ label }}
+    </h4>
+    <div class="article-lead">
+        {{ content.body }}
+    </div>
+    <button class="btn btn-link add-fwd-icon">Read more</button>
+</a>
+
