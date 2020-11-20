@@ -1,5 +1,14 @@
 <?php require 'region-header.php'; ?>
 
+    <nav aria-label="breadcrumb">
+        <div class="container-fullwidth">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Newsroom</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Library</li>
+            </ol>
+        </div>
+    </nav>
+
     <section class="page-section page-section-basic-page">
         <div class="container">
             <h1 class="page-title">Privacy & terms</h1>

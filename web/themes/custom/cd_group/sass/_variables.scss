@@ -529,3 +529,22 @@ $modal-footer-border-width:         $modal-header-border-width !default;
 $modal-header-padding-y:            $modal-inner-padding !default;
 $modal-header-padding-x:            $modal-inner-padding !default;
 $modal-header-padding:              $modal-header-padding-y $modal-header-padding-x !default; // Keep this for backwards compatibility
+
+
+// Breadcrumbs
+// --------------------------------
+
+$breadcrumb-font-size:              null !default;
+
+$breadcrumb-padding-y:              .75rem !default;
+$breadcrumb-padding-x:              0 !default;
+$breadcrumb-item-padding:           .5rem !default;
+
+$breadcrumb-margin-bottom:          1rem !default;
+
+$breadcrumb-bg:                     transparent !default;
+$breadcrumb-divider-color:          $lighter-text-color !default;
+$breadcrumb-active-color:           $default-text-color !default;
+$breadcrumb-divider:                quote("/") !default;
+
+$breadcrumb-border-radius:          $border-radius !default;

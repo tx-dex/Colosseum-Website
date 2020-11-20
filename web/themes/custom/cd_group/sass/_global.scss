@@ -100,22 +100,6 @@ img {
 
 // Common ui elements
 
-.breadcrumb {
-  background-color: #fff;
-  padding: .5rem 0;
-  font-weight: $font-weight-medium;
-  font-size: .938rem;
-
-  a {
-
-  }
-
-  @include media-breakpoint-up(lg) {
-    //font-size: 1rem;
-    padding: 1rem 0;
-  }
-}
-
 .columns-2 {
   @include media-breakpoint-up(md) {
     column-count: 2;

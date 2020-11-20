@@ -2,6 +2,15 @@
     News article page
 #}
 
+<nav aria-label="breadcrumb">
+    <div class="container-fullwidth">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ path('entity.node.canonical', {'node': 10}) }}">Newsroom</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{ label|u.truncate(20, '...', false) }}</li>
+        </ol>
+    </div>
+</nav>
+
 <section class="page-section page-section-basic-page">
     <div class="container">
         <h1 class="page-title">
