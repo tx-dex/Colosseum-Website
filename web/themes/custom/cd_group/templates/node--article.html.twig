@@ -2,6 +2,8 @@
     News article page
 #}
 
+{% set articleCategoryClass = content.field_article_category|render|striptags('<!-- -->')|lower|replace({' ':''})|trim %}
+
 <nav aria-label="breadcrumb">
     <div class="container-fullwidth">
         <ol class="breadcrumb">
@@ -13,7 +15,9 @@
 
 <section class="page-section page-section-basic-page">
     <div class="container">
-        <span class="category-badge">{{ content.field_article_category|render|striptags('<!-- -->')|lower|replace({' ':''})|trim }}</span>
+        <span class="category-badge {{ articleCategoryClass }}">
+            {{ content.field_article_category|render|striptags('<!-- -->')|trim }}
+        </span>
         <h1 class="page-title">
             {{ label }}
         </h1>

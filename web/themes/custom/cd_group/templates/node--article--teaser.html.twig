@@ -1,9 +1,11 @@
 {#
-    News article page
+    News article teaser
 #}
 
+{% set articleCategoryClass = content.field_article_category|render|striptags('<!-- -->')|lower|replace({' ':''})|trim %}
+
 <a href="{{ path('entity.node.canonical', {'node': node.id}) }}" class="item">
-    <span class="category-badge">{{ content.field_article_category|render|striptags('<!-- -->')|lower|replace({' ':''})|trim }}</span>
+    <span class="category-badge {{ articleCategoryClass }}">{{ content.field_article_category|render|striptags('<!-- -->')|trim }}</span>
     <h4 class="card-title">
         {{ label }}
     </h4>
