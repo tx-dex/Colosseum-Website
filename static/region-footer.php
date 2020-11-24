@@ -81,16 +81,23 @@
                 </nav>
             </div>
         </div>
-        <div class="row align-items-center">
-            <div class="col-md-4">
-
+        <div class="row footer-bottom-row">
+            <div class="col-md-6 col-lg-4 order-md-0">
+                <nav role="navigation" class="nav some-nav">
+                    <a class="nav-link" href="#" aria-label="Colosseum Dental in LinkedIn">
+                        <span class="cdg-icon-linkedin-square"></span>
+                    </a>
+                    <a class="nav-link" href="#" aria-label="Colosseum Dental in Facebook">
+                        <span class="cdg-icon-facebook-square"></span>
+                    </a>
+                </nav>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-12 col-lg-auto order-md-3 order-lg-1">
                 <div class="footer-copyright">
                     <div class="copyright">Copyright © Colosseum Dental Group 2020.</div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6 col-lg-auto order-md-1 order-lg-2 ml-lg-auto">
                 <nav role="navigation" class="nav footer-policies-nav">
                     <a class="nav-link" href="#">Terms</a>
                     <a class="nav-link" href="#">Policies</a>

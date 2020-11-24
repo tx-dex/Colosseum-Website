@@ -25,6 +25,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.cdg-icon-youtube-play:before {
+  content: "\e90b";
+}
+.cdg-icon-youtube-square:before {
+  content: "\e90c";
+}
+.cdg-icon-linkedin-square:before {
+  content: "\e908";
+}
+.cdg-icon-linkedin:before {
+  content: "\e909";
+}
+.cdg-icon-facebook-square:before {
+  content: "\e90a";
+}
 .cdg-icon-movie:before {
   content: "\e907";
 }
