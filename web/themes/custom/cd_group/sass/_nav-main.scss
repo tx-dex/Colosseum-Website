@@ -78,6 +78,10 @@
           &:active {
             color: $brand-blue;
           }
+
+          &.active {
+            color: $brand-blue;
+          }
         }
       }
     }

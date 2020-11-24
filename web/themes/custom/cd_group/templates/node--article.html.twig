@@ -13,9 +13,13 @@
 
 <section class="page-section page-section-basic-page">
     <div class="container">
+        <span class="category-badge">{{ content.field_article_category|render|striptags('<!-- -->')|lower|replace({' ':''})|trim }}</span>
         <h1 class="page-title">
             {{ label }}
         </h1>
+        <div class="article-lead">
+            {{ content.field_lead_text }}
+        </div>
         <div class="article-content">
             {{ content.body }}
         </div>

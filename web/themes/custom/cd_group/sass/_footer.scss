@@ -73,6 +73,10 @@
       font-size: 1rem;
       color: $white;
       padding: .3rem 0;
+
+      &.active {
+        color: #69B3E7;
+      }
     }
   }
 
@@ -112,6 +116,10 @@
       color: $white;
       padding-left: 0;
       margin-right: .5rem;
+
+      &.active {
+        color: #69B3E7;
+      }
 
       &:last-of-type {
         margin-right: 0;

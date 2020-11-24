@@ -3,11 +3,12 @@
 #}
 
 <a href="{{ path('entity.node.canonical', {'node': node.id}) }}" class="item">
+    <span class="category-badge">{{ content.field_article_category|render|striptags('<!-- -->')|lower|replace({' ':''})|trim }}</span>
     <h4 class="card-title">
         {{ label }}
     </h4>
-    <div class="article-lead">
-        {#{{ content.body }}#}
-    </div>
+    {#<div class="article-lead">
+        {{ content.field_lead_text }}
+    </div>#}
     <button class="btn btn-link add-fwd-icon">Read more</button>
 </a>

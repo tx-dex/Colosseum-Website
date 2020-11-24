@@ -16192,6 +16192,9 @@ html [type=button]:focus,
 .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .nav-link:hover, .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .footer .countries-nav .nav-item a:hover, .footer .countries-nav .nav-item .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav a:hover, .navbar-main .navbar-collapse .col-main-links .nav-main-full .col-country-links .countries-nav .nav .nav-item a:hover, .navbar-main .navbar-collapse .col-country-links .countries-nav .col-main-links .nav-main-full .nav .nav-item a:hover, .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .nav-link:focus, .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .footer .countries-nav .nav-item a:focus, .footer .countries-nav .nav-item .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav a:focus, .navbar-main .navbar-collapse .col-main-links .nav-main-full .col-country-links .countries-nav .nav .nav-item a:focus, .navbar-main .navbar-collapse .col-country-links .countries-nav .col-main-links .nav-main-full .nav .nav-item a:focus, .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .nav-link:active, .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .footer .countries-nav .nav-item a:active, .footer .countries-nav .nav-item .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav a:active, .navbar-main .navbar-collapse .col-main-links .nav-main-full .col-country-links .countries-nav .nav .nav-item a:active, .navbar-main .navbar-collapse .col-country-links .countries-nav .col-main-links .nav-main-full .nav .nav-item a:active {
   color: #006BA6;
 }
+.navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .nav-link.active, .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .footer .countries-nav .nav-item a.active, .footer .countries-nav .nav-item .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav a.active, .navbar-main .navbar-collapse .col-main-links .nav-main-full .col-country-links .countries-nav .nav .nav-item a.active, .navbar-main .navbar-collapse .col-country-links .countries-nav .col-main-links .nav-main-full .nav .nav-item a.active {
+  color: #006BA6;
+}
 .navbar-main .navbar-collapse .col-country-links {
   width: 100%;
   padding: 0.5rem 0 1.5rem;
@@ -16445,6 +16448,9 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   color: #fff;
   padding: 0.3rem 0;
 }
+.footer .footer-main-nav .nav-link.active, .footer .footer-main-nav .countries-nav .nav-item a.active, .footer .countries-nav .nav-item .footer-main-nav a.active, .footer .footer-main-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a.active, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .footer .footer-main-nav a.active {
+  color: #69B3E7;
+}
 .footer .countries-nav {
   margin-bottom: 2rem;
 }
@@ -16472,6 +16478,9 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   color: #fff;
   padding-left: 0;
   margin-right: 0.5rem;
+}
+.footer .footer-policies-nav .nav-link.active, .footer .footer-policies-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a.active, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .footer .footer-policies-nav a.active, .footer .footer-policies-nav .countries-nav .nav-item a.active, .footer .countries-nav .nav-item .footer-policies-nav a.active {
+  color: #69B3E7;
 }
 .footer .footer-policies-nav .nav-link:last-of-type, .footer .footer-policies-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a:last-of-type, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .footer .footer-policies-nav a:last-of-type, .footer .footer-policies-nav .countries-nav .nav-item a:last-of-type, .footer .countries-nav .nav-item .footer-policies-nav a:last-of-type {
   margin-right: 0;

@@ -99,7 +99,7 @@
             </div>
             <div class="col-md-6 col-lg-auto order-md-1 order-lg-2 ml-lg-auto">
                 <nav role="navigation" class="nav footer-policies-nav">
-                    <a class="nav-link" href="#">Terms</a>
+                    <a class="nav-link active" href="#">Terms</a>
                     <a class="nav-link" href="#">Policies</a>
                     <a class="nav-link" href="#">Compliances</a>
                 </nav>
