@@ -10,6 +10,11 @@
         </h1>
         <div class="article-content">
             {{ content.body }}
+
+            {% if content.field_iframe_embed is not empty %}
+                <p>Iframe:</p>
+                {{ content.field_iframe_embed.0.value }}
+            {% endif %}
         </div>
     </div>
 </section>
