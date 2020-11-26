@@ -1,6 +1,6 @@
 
 <footer class="footer">
-    <div class="container-fullwidth">
+    <div class="container-lg">
         <div class="row">
             <div class="col-md-4">
                 <a class="footer-logo" href="index.php">

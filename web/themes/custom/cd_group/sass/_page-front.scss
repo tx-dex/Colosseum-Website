@@ -14,24 +14,58 @@
     @include background-cover;
   }
 
-  .hero-content {
-    padding: 2rem 0;
+  .container-fullwidth {
     background-color: #fff;
   }
 
-  @include media-breakpoint-up(md) {
-    .hero-content {
-      width: 50%;
-      padding: 4rem 0;
+  .hero-content {
+    padding: 2rem 0;
+    background-color: #fff;
+
+    .h2, .h3 {
+      margin-bottom: 1rem;
     }
 
+    .btn {
+      margin-top: 1rem;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
     .hero-img {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 50%;
-      height: 100%;
-      padding: 0;
+      padding-bottom: 50%;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .hero-img {
+      padding-bottom: 45%;
+    }
+
+    .container-fullwidth {
+      background-color: transparent;
+    }
+
+    .hero-content {
+      width: 70%;
+      max-width: 700px;
+      padding: 3rem $margin-width-md;
+      margin-top: -15%;
+
+      .hero-lead {
+        font-size: 1.125rem;
+      }
+
+      .btn {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .hero-img {
+      padding-bottom: 0;
+      height: 500px;
     }
   }
 }
@@ -44,25 +78,40 @@
   h2 {
     margin-bottom: 3rem;
     max-width: 800px;
+    line-height: 1.3;
+
+    span {
+      color: $brand-blue;
+    }
   }
   .page-list {
     @extend .list-unstyled;
 
     .item {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
       margin-bottom: 1.5rem;
 
       h3 {
-        font-size: 1.333rem;
         margin-bottom: .75rem;
+        order: 1;
       }
 
       img {
         margin-bottom: 1rem;
+        order: 0;
       }
 
       p {
         margin-bottom: 0;
         color: $default-text-color;
+        order: 2;
+      }
+
+      .btn {
+        margin-right: auto;
+        order: 3;
       }
 
       &:focus,
@@ -84,12 +133,15 @@
 
     .page-list .item {
       h3 {
-        font-size: 1.5rem;
         margin-bottom: 1.25rem;
       }
 
-      p {
-        font-size: 1.125rem;
+      img {
+        margin-bottom: 1.5rem;
+      }
+
+      .btn {
+        margin-top: .5rem;
       }
     }
   }
@@ -97,6 +149,20 @@
   @include media-breakpoint-up(lg) {
     h2 {
       margin-bottom: 6rem;
+    }
+
+    .page-list .item {
+      h3 {
+        margin-bottom: 1.25rem;
+      }
+
+      img {
+        margin-bottom: 2rem;
+      }
+
+      .btn {
+        margin-top: 1rem;
+      }
     }
   }
 
@@ -118,25 +184,137 @@
     z-index: 2;
     margin: -4% $margin-width-sm 0;
     padding: 2rem $margin-width-sm;
-    background-color: $white;
+    background-color: $brand-blue-darkest;
     max-width: 500px;
+
+    .small-ac-title {
+      color: $white;
+      margin-bottom: 1rem;
+    }
+
+    p.h3 {
+      color: $brand-blue-light;
+      margin-bottom: 2rem;
+    }
   }
 
   @include media-breakpoint-up(md) {
+    img {
+      width: 95%;
+    }
     .content-box {
-      margin: -4% 0 0 $margin-width-md;
-      padding: 2.5rem $margin-width-md;
+      margin: -15% 0 0 auto;
+      padding: 3rem $margin-width-md;
       max-width: 600px;
+
+      .small-ac-title {
+        margin-bottom: 1.5rem;
+      }
+
+      p.h3 {
+        margin-bottom: 2.5rem;
+      }
     }
   }
 
   @include media-breakpoint-up(lg) {
-
+    .content-box {
+      margin: -15% 0 0 auto;
+      padding: 4rem $margin-width-md;
+      max-width: 700px;
+    }
   }
 
   @include media-breakpoint-up(xl) {
+    img {
+      width: 93%;
+    }
     .content-box {
-      margin: -4% 0 0 $margin-width-xl;
+      margin: -15rem 0 0 auto;
+      padding: 5rem $margin-width-md;
+      max-width: 800px;
+    }
+  }
+}
+
+// Find a clinic
+// -------------------------------------
+
+.page-section-find-a-clinic {
+  position: relative;
+  padding: 0;
+
+  .col-map {
+    width: 80%;
+    max-width: 770px;
+    min-height: 300px;
+    padding-bottom: 2rem;
+    margin-left: auto;
+    overflow: hidden;
+
+    img {
+      display: block;
+      margin-left: 3rem;
+    }
+  }
+
+  .cta {
+    position: absolute;
+    width: 100%;
+    top: 10%;
+
+    h2 {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+
+    .col-map {
+      img {
+        margin-left: 5rem;
+      }
+    }
+    .cta {
+      top: 20%;
+
+      h2 {
+        max-width: 90%;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .col-map {
+      width: 70%;
+      margin-left: auto;
+    }
+    .cta {
+      top: 20%;
+
+      h2 {
+        max-width: 70%;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .col-map {
+      width: 70%;
+      margin-left: auto;
+
+      img {
+        margin-left: 0;
+      }
+    }
+    .cta {
+      top: 20%;
+
+      h2 {
+        max-width: 60%;
+        margin-bottom: 3rem;
+      }
     }
   }
 }
@@ -211,4 +389,11 @@
       padding: 0 20px;
     }
   }
+}
+
+// Contact us
+
+.page-section-fp-contact {
+  background-color: $white;
+  padding: 0;
 }

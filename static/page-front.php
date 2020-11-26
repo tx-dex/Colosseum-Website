@@ -2,14 +2,13 @@
 
     <section class="hero-frontpage">
         <div class="hero-img" style="background-image: url(img/hero-example.jpg);"></div>
-        <div class="hero-content align-items-center">
-            <div class="container">
-                <h1 class="hero-title">Welcome to Colosseum Dental Group</h1>
-                <p class="hero-lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.</p>
-                <button class="btn btn-white btn-play" data-toggle="modal" data-target="#videoModal" data-video="https://www.youtube.com/embed/lQAUq_zs-XU">
-                    Video introduction <span class="play-icon"><i class="material-icons">play_arrow</i></span>
-                </button>
+        <div class="container-fullwidth">
+            <div class="hero-content">
+                <h1 class="h3 hero-title">Welcome to Colosseum Dental Group</h1>
+                <p class="hero-lead">We want to provide modern, quality dentistry services for the benefit of patients, dentists, employees and shareholders, striving for continuous growth and excellence.</p>
+                <a href="#" class="btn btn-primary add-fwd-icon">
+                    About us
+                </a>
             </div>
         </div>
     </section>
@@ -32,16 +31,16 @@
     </div>
 
     <section class="page-section page-section-fp-intro">
-        <div class="container-fullwidth">
+        <div class="container-lg">
             <h2 class="h3">
-                Colosseum Dental Group is a rapidly-growing company in the European dental services market.
+                Colosseum Dental Group is a <span>leading dentistry</span> company in the European dental services market.
             </h2>
             <ul class="page-list row">
                 <li class="col-md-4">
                     <a href="#" class="item">
-                        <h3>Medical governance</h3>
-                        <img src="img/frontpage-about-2.jpg" alt="img">
-                        <p>
+                        <h3 class="small-ac-title">Medical governance</h3>
+                        <img src="img/frontpage-featured-1.png" alt="img">
+                        <p class="h4">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         </p>
                         <button class="btn btn-link add-fwd-icon">Read more</button>
@@ -49,9 +48,9 @@
                 </li>
                 <li class="col-md-4">
                     <a href="#" class="item">
-                        <h3>Colosseum Academy</h3>
-                        <img src="img/frontpage-about-2.jpg" alt="img">
-                        <p>
+                        <h3 class="small-ac-title">Colosseum Academy</h3>
+                        <img src="img/frontpage-featured-2.png" alt="img">
+                        <p class="h4">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         </p>
                         <button class="btn btn-link add-fwd-icon">Read more</button>
@@ -59,9 +58,9 @@
                 </li>
                 <li class="col-md-4">
                     <a href="#" class="item">
-                        <h3>Innovation</h3>
-                        <img src="img/frontpage-about-2.jpg" alt="img">
-                        <p>
+                        <h3 class="small-ac-title">Innovation</h3>
+                        <img src="img/frontpage-featured-3.png" alt="img">
+                        <p class="h4">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         </p>
                         <button class="btn btn-link add-fwd-icon">Read more</button>
@@ -72,17 +71,28 @@
     </section>
 
     <section class="page-section page-section-fp-feature">
-        <img src="img/frontpage-team.jpg" alt="img">
+        <img src="img/frontpage-charitable-cause.jpg" alt="img">
         <div class="content-box">
-            <h3>Our charitable cause</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam</p>
-            <a href="#" class="btn btn-white add-fwd-icon">Read more</a>
+            <h3 class="small-ac-title">Our charitable cause</h3>
+            <p class="h3">Jacobs Foundation, one of the world’s leading charities for children and youth, is the ultimate economic beneficiary. </p>
+            <a href="#" class="btn btn-primary add-fwd-icon">Read more</a>
+        </div>
+    </section>
+
+    <section class="page-section page-section-find-a-clinic">
+        <div class="col-map">
+            <img src="img/frontpage-map.png" alt="Map">
+        </div>
+        <div class="cta">
+            <div class="container-lg">
+                <h2>We are presently operating in eight European countries</h2>
+                <a href="#" class="btn btn-primary add-fwd-icon">Find your local clinic</a>
+            </div>
         </div>
     </section>
 
     <section class="page-section page-section-fp-countries">
-        <div class="container-fullwidth">
+        <div class="container-lg">
             <ul class="country-logo-list">
                 <li>
                     <a href="#">
@@ -127,5 +137,22 @@
             </ul>
         </div>
     </section>
+
+    <section class="page-section page-section-fp-contact">
+            <div class="section-two-col-cta">
+                <div class="col-md-6 col-img">
+                    <img src="img/frontpage-contact.jpg" alt="Dentist">
+                </div>
+                <div class="col-md-6 col-txt">
+                    <div class="content-box">
+                        <h2>Get in Touch</h2>
+                        <p>Thinking about downscaling as a prelude to retirement? Or perhaps selling your practice to work directly with us? Get in touch with our national executives who deal with acquisitions.</p>
+                        <a href="#" class="btn btn-primary add-fwd-icon">Contact us</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
 
 <?php require 'region-footer.php'; ?>

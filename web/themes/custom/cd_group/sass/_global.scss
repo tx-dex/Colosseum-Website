@@ -120,7 +120,7 @@ img {
   width: 4.500rem;
   height: 4.500rem;
   border-radius: 100%;
-  background-color: $brand-blue-light;
+  background-color: $brand-blue-lighter;
   font-size: 1.75rem;
   transition: background-color .2s ease-in-out;
 
@@ -132,7 +132,7 @@ img {
   &:focus,
   &:active {
     text-decoration: none;
-    background-color: darken($brand-blue-light, 5%);
+    background-color: darken($brand-blue-lighter, 5%);
   }
 
   @include media-breakpoint-up(md) {

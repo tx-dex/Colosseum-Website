@@ -25,8 +25,14 @@
 }
 
 .container-lg {
-  @extend .container;
-  max-width: 1400px;
+  position: relative;
+  @extend .container-fluid;
+
+  @include media-breakpoint-up(xl) {
+    padding-left: $grid-gutter-width/2;
+    padding-right: $grid-gutter-width/2;
+    max-width: 1100px;
+  }
 }
 
 .container-fullwidth {

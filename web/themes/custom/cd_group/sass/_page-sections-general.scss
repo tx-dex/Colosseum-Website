@@ -1,0 +1,52 @@
+
+// Two columns CTA with image
+// -------------------------------------
+
+.section-two-col-cta {
+  @extend .row;
+  margin: 0;
+
+  .col-img {
+    padding: 0;
+  }
+
+  .col-txt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .content-box {
+      padding: 2rem $margin-width-sm;
+
+      .btn {
+        margin-top: 1.5rem;
+      }
+
+      p {
+        font-size: 1.125rem;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .col-img {
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+      }
+    }
+
+    .col-txt {
+      .content-box {
+        padding: 3.5rem $margin-width-md;
+        max-width: 540px;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+
+  }
+}
