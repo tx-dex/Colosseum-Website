@@ -3,10 +3,14 @@
 <section class="page-section page-section-basic-page section-visible">
     <div class="container">
         <h1 class="page-title">
-
             <span property="schema:name" data-quickedit-field-id="node/14/title/en/full" class="field field--name-title field--type-string field--label-hidden">Medical Governance</span>
-
         </h1>
+        <div class="page-image">
+            <img src="img/frontpage-team.jpg?itok=DZzzdIG-" alt="Our team">
+        </div>
+        <p class="lead-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+        </p>
         <div class="article-content">
 
             <h2>Sed ut perspiciatis unde omnis iste natus</h2>

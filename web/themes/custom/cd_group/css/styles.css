@@ -16843,6 +16843,12 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
 .page-section-basic-page .page-title {
   margin-bottom: 2rem;
 }
+.page-section-basic-page .page-image {
+  margin-bottom: 2rem;
+}
+.page-section-basic-page .lead-text {
+  margin-bottom: 2rem;
+}
 
 .page-section-bp {
   padding: 2rem 0;
