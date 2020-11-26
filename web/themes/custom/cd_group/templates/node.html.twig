@@ -12,22 +12,14 @@
             {{ content.body }}
 
             {% if content.field_iframe_embed is not empty %}
-                <p>Iframe:</p>
-                {{ content.field_iframe_embed }}
-
                 {% set embed_code = {
                     '#type': 'processed_text',
                     '#text': content.field_iframe_embed[0]['#context']['value'],
                     '#format': 'full_html',
                 } %}
-                <div class="responsive-embed">
+                <div class="embed-responsive embed-responsive-16by9">
                     {{ embed_code }}
                 </div>
-            {% endif %}
-
-            {% if content.field_iframe_embed_2 is not empty %}
-                <p>Iframe 2:</p>
-                {{ content.field_iframe_embed_2 }}
             {% endif %}
         </div>
     </div>
