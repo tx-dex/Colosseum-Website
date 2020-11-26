@@ -72,8 +72,10 @@
 
         <div class="section-content section-2-columns">
             <div class="container">
+                <h2 class="h3 section-title">Treprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur</h2>
                 <div class="row article-content">
                     <div class="col-md-6">
+                        <h3>Fenim ad minima veniam, quis nostrum exercitationem </h3>
                         <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
                     </div>
                     <div class="col-md-6">

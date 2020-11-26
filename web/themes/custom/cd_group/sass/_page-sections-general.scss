@@ -56,6 +56,10 @@
 
 .page-section-basic-page {
   padding-bottom: 0;
+
+  .page-title {
+    margin-bottom: 2rem;
+  }
 }
 
 .page-section-bp {
@@ -63,6 +67,13 @@
 
   &.even {
     background-color: $white;
+  }
+
+  .section-2-columns {
+    .section-title {
+      max-width: 800px;
+      margin-bottom: 1.5rem;
+    }
   }
 
   @include media-breakpoint-up(md) {

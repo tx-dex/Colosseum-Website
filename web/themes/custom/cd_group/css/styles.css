@@ -15543,27 +15543,62 @@ a {
   margin-top: 0;
 }
 .article-content h2, .article-content .h2 {
-  font-size: 1.625rem;
+  font-size: 1.5rem;
   margin-bottom: 1.5rem;
 }
+@media (min-width: 768px) {
+  .article-content h2, .article-content .h2 {
+    font-size: 1.625rem;
+  }
+}
+@media (min-width: 1024px) {
+  .article-content h2, .article-content .h2 {
+    font-size: 2.25rem;
+  }
+}
 .article-content h3, .article-content .h3 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 1.4;
   margin-bottom: 1.2rem;
 }
+@media (min-width: 768px) {
+  .article-content h3, .article-content .h3 {
+    font-size: 1.375rem;
+  }
+}
+@media (min-width: 1024px) {
+  .article-content h3, .article-content .h3 {
+    font-size: 1.625rem;
+  }
+}
 .article-content h4, .article-content .h4 {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 1.4;
 }
+@media (min-width: 768px) {
+  .article-content h4, .article-content .h4 {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 1024px) {
+  .article-content h4, .article-content .h4 {
+    font-size: 1.5rem;
+  }
+}
 .article-content h5, .article-content .h5 {
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.4;
   font-weight: 500;
 }
-.article-content h6, .article-content .h6 {
-  font-size: 1.25rem;
-  line-height: 1.4;
-  font-weight: 400;
+@media (min-width: 768px) {
+  .article-content h5, .article-content .h5 {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .article-content h5, .article-content .h5 {
+    font-size: 1.25rem;
+  }
 }
 .article-content ol, .article-content ul, .article-content dl {
   margin-top: 0;
@@ -16805,12 +16840,19 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
 .page-section-basic-page {
   padding-bottom: 0;
 }
+.page-section-basic-page .page-title {
+  margin-bottom: 2rem;
+}
 
 .page-section-bp {
   padding: 2rem 0;
 }
 .page-section-bp.even {
   background-color: #fff;
+}
+.page-section-bp .section-2-columns .section-title {
+  max-width: 800px;
+  margin-bottom: 1.5rem;
 }
 @media (min-width: 768px) {
   .page-section-bp {
