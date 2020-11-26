@@ -8,8 +8,11 @@
         <h1 class="page-title">
             {{ label }}
         </h1>
-        <div class="article-content">
-            {{ content.body }}
-        </div>
+        {% if content.body is not empty %}
+            <div class="article-content">
+                {{ content.body }}
+            </div>
+        {% endif %}
     </div>
+    {{ content.field_page_sections }}
 </section>
