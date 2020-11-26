@@ -10,17 +10,6 @@
         </h1>
         <div class="article-content">
             {{ content.body }}
-
-            {% if content.field_iframe_embed is not empty %}
-                {% set embed_code = {
-                    '#type': 'processed_text',
-                    '#text': content.field_iframe_embed[0]['#context']['value'],
-                    '#format': 'full_html',
-                } %}
-                <div class="embed-responsive embed-responsive-16by9">
-                    {{ embed_code }}
-                </div>
-            {% endif %}
         </div>
     </div>
 </section>
