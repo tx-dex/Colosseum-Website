@@ -13,7 +13,7 @@
         </div>
         <div class="col-md-6 col-img">
             {% if content.field_image|render|trim is not empty %}
-                <img src="{{ content.field_image[0]['#media'].field_media_image.entity.uri.value | image_style('fullwidth_content_image') }}" alt="{{ content.field_image[0]['#media'].field_media_image.alt }}">
+                <img src="{{ content.field_image[0]['#media'].field_media_image.entity.uri.value | image_style('link_box_image_16_9') }}" alt="{{ content.field_image[0]['#media'].field_media_image.alt }}">
             {% endif %}
         </div>
     </div>
