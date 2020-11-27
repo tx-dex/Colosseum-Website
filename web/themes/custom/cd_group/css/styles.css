@@ -4253,14 +4253,14 @@ input[type=button].btn-block {
   list-style: none;
 }
 
-.nav-link, .footer .countries-nav .nav-item a, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a {
+.nav-link, .footer .countries-nav .nav-item a {
   display: block;
   padding: 0.5rem 1rem;
 }
-.nav-link:hover, .footer .countries-nav .nav-item a:hover, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a:hover, .nav-link:focus, .footer .countries-nav .nav-item a:focus, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a:focus {
+.nav-link:hover, .footer .countries-nav .nav-item a:hover, .nav-link:focus, .footer .countries-nav .nav-item a:focus {
   text-decoration: none;
 }
-.nav-link.disabled, .footer .countries-nav .nav-item a.disabled, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a.disabled {
+.nav-link.disabled, .footer .countries-nav .nav-item a.disabled {
   color: #6c757d;
   pointer-events: none;
   cursor: default;
@@ -4272,25 +4272,23 @@ input[type=button].btn-block {
 .nav-tabs .nav-item {
   margin-bottom: -1px;
 }
-.nav-tabs .nav-link, .nav-tabs .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .nav-tabs a, .nav-tabs .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .nav-tabs a {
+.nav-tabs .nav-link, .nav-tabs .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .nav-tabs a {
   border: 1px solid transparent;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-.nav-tabs .nav-link:hover, .nav-tabs .footer .countries-nav .nav-item a:hover, .footer .countries-nav .nav-item .nav-tabs a:hover, .nav-tabs .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a:hover, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .nav-tabs a:hover, .nav-tabs .nav-link:focus, .nav-tabs .footer .countries-nav .nav-item a:focus, .footer .countries-nav .nav-item .nav-tabs a:focus, .nav-tabs .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a:focus, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .nav-tabs a:focus {
+.nav-tabs .nav-link:hover, .nav-tabs .footer .countries-nav .nav-item a:hover, .footer .countries-nav .nav-item .nav-tabs a:hover, .nav-tabs .nav-link:focus, .nav-tabs .footer .countries-nav .nav-item a:focus, .footer .countries-nav .nav-item .nav-tabs a:focus {
   border-color: #e9ecef #e9ecef #dee2e6;
 }
-.nav-tabs .nav-link.disabled, .nav-tabs .footer .countries-nav .nav-item a.disabled, .footer .countries-nav .nav-item .nav-tabs a.disabled, .nav-tabs .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a.disabled, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .nav-tabs a.disabled {
+.nav-tabs .nav-link.disabled, .nav-tabs .footer .countries-nav .nav-item a.disabled, .footer .countries-nav .nav-item .nav-tabs a.disabled {
   color: #6c757d;
   background-color: transparent;
   border-color: transparent;
 }
-.nav-tabs .nav-link.active, .nav-tabs .footer .countries-nav .nav-item a.active, .footer .countries-nav .nav-item .nav-tabs a.active, .nav-tabs .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a.active, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .nav-tabs a.active,
+.nav-tabs .nav-link.active, .nav-tabs .footer .countries-nav .nav-item a.active, .footer .countries-nav .nav-item .nav-tabs a.active,
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .footer .countries-nav .nav-item.show a,
-.footer .countries-nav .nav-tabs .nav-item.show a,
-.nav-tabs .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item.show a,
-.navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-tabs .nav-item.show a {
+.footer .countries-nav .nav-tabs .nav-item.show a {
   color: #495057;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
@@ -4301,26 +4299,24 @@ input[type=button].btn-block {
   border-top-right-radius: 0;
 }
 
-.nav-pills .nav-link, .nav-pills .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .nav-pills a, .nav-pills .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .nav-pills a {
+.nav-pills .nav-link, .nav-pills .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .nav-pills a {
   border-radius: 5px;
 }
-.nav-pills .nav-link.active, .nav-pills .footer .countries-nav .nav-item a.active, .footer .countries-nav .nav-item .nav-pills a.active, .nav-pills .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a.active, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .nav-pills a.active,
+.nav-pills .nav-link.active, .nav-pills .footer .countries-nav .nav-item a.active, .footer .countries-nav .nav-item .nav-pills a.active,
 .nav-pills .show > .nav-link,
 .nav-pills .footer .countries-nav .nav-item .show > a,
-.footer .countries-nav .nav-item .nav-pills .show > a,
-.nav-pills .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .show > a,
-.navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .nav-pills .show > a {
+.footer .countries-nav .nav-item .nav-pills .show > a {
   color: #fff;
   background-color: #006BA6;
 }
 
-.nav-fill > .nav-link, .footer .countries-nav .nav-item .nav-fill > a, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .nav-fill > a,
+.nav-fill > .nav-link, .footer .countries-nav .nav-item .nav-fill > a,
 .nav-fill .nav-item {
   flex: 1 1 auto;
   text-align: center;
 }
 
-.nav-justified > .nav-link, .footer .countries-nav .nav-item .nav-justified > a, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .nav-justified > a,
+.nav-justified > .nav-link, .footer .countries-nav .nav-item .nav-justified > a,
 .nav-justified .nav-item {
   flex-basis: 0;
   flex-grow: 1;
@@ -4372,7 +4368,7 @@ input[type=button].btn-block {
   margin-bottom: 0;
   list-style: none;
 }
-.navbar-nav .nav-link, .navbar-nav .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .navbar-nav a, .navbar-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .navbar-nav a {
+.navbar-nav .nav-link, .navbar-nav .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .navbar-nav a {
   padding-right: 0;
   padding-left: 0;
 }
@@ -4436,7 +4432,7 @@ input[type=button].btn-block {
   .navbar-expand-sm .navbar-nav .dropdown-menu {
     position: absolute;
   }
-  .navbar-expand-sm .navbar-nav .nav-link, .navbar-expand-sm .navbar-nav .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .navbar-expand-sm .navbar-nav a, .navbar-expand-sm .navbar-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .navbar-expand-sm .navbar-nav a {
+  .navbar-expand-sm .navbar-nav .nav-link, .navbar-expand-sm .navbar-nav .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .navbar-expand-sm .navbar-nav a {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
@@ -4476,7 +4472,7 @@ input[type=button].btn-block {
   .navbar-expand-md .navbar-nav .dropdown-menu {
     position: absolute;
   }
-  .navbar-expand-md .navbar-nav .nav-link, .navbar-expand-md .navbar-nav .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .navbar-expand-md .navbar-nav a, .navbar-expand-md .navbar-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .navbar-expand-md .navbar-nav a {
+  .navbar-expand-md .navbar-nav .nav-link, .navbar-expand-md .navbar-nav .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .navbar-expand-md .navbar-nav a {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
@@ -4516,7 +4512,7 @@ input[type=button].btn-block {
   .navbar-expand-lg .navbar-nav .dropdown-menu {
     position: absolute;
   }
-  .navbar-expand-lg .navbar-nav .nav-link, .navbar-expand-lg .navbar-nav .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .navbar-expand-lg .navbar-nav a, .navbar-expand-lg .navbar-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .navbar-expand-lg .navbar-nav a {
+  .navbar-expand-lg .navbar-nav .nav-link, .navbar-expand-lg .navbar-nav .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .navbar-expand-lg .navbar-nav a {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
@@ -4556,7 +4552,7 @@ input[type=button].btn-block {
   .navbar-expand-xl .navbar-nav .dropdown-menu {
     position: absolute;
   }
-  .navbar-expand-xl .navbar-nav .nav-link, .navbar-expand-xl .navbar-nav .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .navbar-expand-xl .navbar-nav a, .navbar-expand-xl .navbar-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .navbar-expand-xl .navbar-nav a {
+  .navbar-expand-xl .navbar-nav .nav-link, .navbar-expand-xl .navbar-nav .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .navbar-expand-xl .navbar-nav a {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
@@ -4596,7 +4592,7 @@ input[type=button].btn-block {
   .navbar-expand-xxl .navbar-nav .dropdown-menu {
     position: absolute;
   }
-  .navbar-expand-xxl .navbar-nav .nav-link, .navbar-expand-xxl .navbar-nav .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .navbar-expand-xxl .navbar-nav a, .navbar-expand-xxl .navbar-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .navbar-expand-xxl .navbar-nav a {
+  .navbar-expand-xxl .navbar-nav .nav-link, .navbar-expand-xxl .navbar-nav .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .navbar-expand-xxl .navbar-nav a {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
@@ -4633,7 +4629,7 @@ input[type=button].btn-block {
 .navbar-expand .navbar-nav .dropdown-menu {
   position: absolute;
 }
-.navbar-expand .navbar-nav .nav-link, .navbar-expand .navbar-nav .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .navbar-expand .navbar-nav a, .navbar-expand .navbar-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .navbar-expand .navbar-nav a {
+.navbar-expand .navbar-nav .nav-link, .navbar-expand .navbar-nav .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .navbar-expand .navbar-nav a {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
 }
@@ -4658,31 +4654,25 @@ input[type=button].btn-block {
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
   color: rgba(0, 0, 0, 0.9);
 }
-.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .navbar-light .navbar-nav a, .navbar-light .navbar-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .navbar-light .navbar-nav a {
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .navbar-light .navbar-nav a {
   color: rgba(0, 0, 0, 0.5);
 }
-.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .footer .countries-nav .nav-item a:hover, .footer .countries-nav .nav-item .navbar-light .navbar-nav a:hover, .navbar-light .navbar-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a:hover, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .navbar-light .navbar-nav a:hover, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .footer .countries-nav .nav-item a:focus, .footer .countries-nav .nav-item .navbar-light .navbar-nav a:focus, .navbar-light .navbar-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a:focus, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .navbar-light .navbar-nav a:focus {
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .footer .countries-nav .nav-item a:hover, .footer .countries-nav .nav-item .navbar-light .navbar-nav a:hover, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .footer .countries-nav .nav-item a:focus, .footer .countries-nav .nav-item .navbar-light .navbar-nav a:focus {
   color: rgba(0, 0, 0, 0.7);
 }
-.navbar-light .navbar-nav .nav-link.disabled, .navbar-light .navbar-nav .footer .countries-nav .nav-item a.disabled, .footer .countries-nav .nav-item .navbar-light .navbar-nav a.disabled, .navbar-light .navbar-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a.disabled, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .navbar-light .navbar-nav a.disabled {
+.navbar-light .navbar-nav .nav-link.disabled, .navbar-light .navbar-nav .footer .countries-nav .nav-item a.disabled, .footer .countries-nav .nav-item .navbar-light .navbar-nav a.disabled {
   color: rgba(0, 0, 0, 0.3);
 }
-.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .footer .countries-nav .nav-item .show > a, .footer .countries-nav .nav-item .navbar-light .navbar-nav .show > a, .navbar-light .navbar-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .show > a, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .navbar-light .navbar-nav .show > a,
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .footer .countries-nav .nav-item .show > a, .footer .countries-nav .nav-item .navbar-light .navbar-nav .show > a,
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .footer .countries-nav .nav-item .active > a,
 .footer .countries-nav .nav-item .navbar-light .navbar-nav .active > a,
-.navbar-light .navbar-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .active > a,
-.navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .navbar-light .navbar-nav .active > a,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .footer .countries-nav .nav-item a.show,
 .footer .countries-nav .nav-item .navbar-light .navbar-nav a.show,
-.navbar-light .navbar-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a.show,
-.navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .navbar-light .navbar-nav a.show,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .footer .countries-nav .nav-item a.active,
-.footer .countries-nav .nav-item .navbar-light .navbar-nav a.active,
-.navbar-light .navbar-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a.active,
-.navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .navbar-light .navbar-nav a.active {
+.footer .countries-nav .nav-item .navbar-light .navbar-nav a.active {
   color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-toggler {
@@ -4708,31 +4698,25 @@ input[type=button].btn-block {
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
   color: #fff;
 }
-.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .navbar-dark .navbar-nav a, .navbar-dark .navbar-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .navbar-dark .navbar-nav a {
+.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .navbar-dark .navbar-nav a {
   color: rgba(255, 255, 255, 0.5);
 }
-.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .footer .countries-nav .nav-item a:hover, .footer .countries-nav .nav-item .navbar-dark .navbar-nav a:hover, .navbar-dark .navbar-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a:hover, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .navbar-dark .navbar-nav a:hover, .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .footer .countries-nav .nav-item a:focus, .footer .countries-nav .nav-item .navbar-dark .navbar-nav a:focus, .navbar-dark .navbar-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a:focus, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .navbar-dark .navbar-nav a:focus {
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .footer .countries-nav .nav-item a:hover, .footer .countries-nav .nav-item .navbar-dark .navbar-nav a:hover, .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .footer .countries-nav .nav-item a:focus, .footer .countries-nav .nav-item .navbar-dark .navbar-nav a:focus {
   color: rgba(255, 255, 255, 0.75);
 }
-.navbar-dark .navbar-nav .nav-link.disabled, .navbar-dark .navbar-nav .footer .countries-nav .nav-item a.disabled, .footer .countries-nav .nav-item .navbar-dark .navbar-nav a.disabled, .navbar-dark .navbar-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a.disabled, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .navbar-dark .navbar-nav a.disabled {
+.navbar-dark .navbar-nav .nav-link.disabled, .navbar-dark .navbar-nav .footer .countries-nav .nav-item a.disabled, .footer .countries-nav .nav-item .navbar-dark .navbar-nav a.disabled {
   color: rgba(255, 255, 255, 0.25);
 }
-.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .footer .countries-nav .nav-item .show > a, .footer .countries-nav .nav-item .navbar-dark .navbar-nav .show > a, .navbar-dark .navbar-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .show > a, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .navbar-dark .navbar-nav .show > a,
+.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .footer .countries-nav .nav-item .show > a, .footer .countries-nav .nav-item .navbar-dark .navbar-nav .show > a,
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .footer .countries-nav .nav-item .active > a,
 .footer .countries-nav .nav-item .navbar-dark .navbar-nav .active > a,
-.navbar-dark .navbar-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .active > a,
-.navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .navbar-dark .navbar-nav .active > a,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .footer .countries-nav .nav-item a.show,
 .footer .countries-nav .nav-item .navbar-dark .navbar-nav a.show,
-.navbar-dark .navbar-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a.show,
-.navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .navbar-dark .navbar-nav a.show,
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .footer .countries-nav .nav-item a.active,
-.footer .countries-nav .nav-item .navbar-dark .navbar-nav a.active,
-.navbar-dark .navbar-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a.active,
-.navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .navbar-dark .navbar-nav a.active {
+.footer .countries-nav .nav-item .navbar-dark .navbar-nav a.active {
   color: #fff;
 }
 .navbar-dark .navbar-toggler {
@@ -14991,7 +14975,7 @@ body {
 }
 @media (min-width: 1024px) {
   body {
-    padding-top: 122px;
+    padding-top: 114px;
   }
 }
 
@@ -15111,7 +15095,7 @@ body {
 .some-nav {
   margin: -0.5rem 0 0 -0.5rem;
 }
-.some-nav .nav-link, .some-nav .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .some-nav a, .some-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .some-nav a {
+.some-nav .nav-link, .some-nav .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .some-nav a {
   padding: 0.5rem;
   font-size: 1.5rem;
 }
@@ -15124,7 +15108,7 @@ body {
   flex-grow: 1;
   max-width: 100%;
 }
-.page-section-tabs .nav-item .nav-link, .page-section-tabs .footer .countries-nav .nav-item a, .footer .countries-nav .page-section-tabs .nav-item a, .page-section-tabs .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .page-section-tabs .nav-item a {
+.page-section-tabs .nav-item .nav-link, .page-section-tabs .footer .countries-nav .nav-item a, .footer .countries-nav .page-section-tabs .nav-item a {
   position: relative;
   background-color: #fff;
   border: none;
@@ -15132,35 +15116,35 @@ body {
   color: #041E42;
   padding: 1rem 20px;
 }
-.page-section-tabs .nav-item .nav-link .badge, .page-section-tabs .footer .countries-nav .nav-item a .badge, .footer .countries-nav .page-section-tabs .nav-item a .badge, .page-section-tabs .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a .badge, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .page-section-tabs .nav-item a .badge {
+.page-section-tabs .nav-item .nav-link .badge, .page-section-tabs .footer .countries-nav .nav-item a .badge, .footer .countries-nav .page-section-tabs .nav-item a .badge {
   display: inline-block;
   margin: -0.1rem 0 0 0.4rem;
   vertical-align: middle;
 }
-.page-section-tabs .nav-item .nav-link.active, .page-section-tabs .footer .countries-nav .nav-item a.active, .footer .countries-nav .page-section-tabs .nav-item a.active, .page-section-tabs .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a.active, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .page-section-tabs .nav-item a.active {
+.page-section-tabs .nav-item .nav-link.active, .page-section-tabs .footer .countries-nav .nav-item a.active, .footer .countries-nav .page-section-tabs .nav-item a.active {
   background-color: transparent;
 }
 @media (min-width: 481px) {
-  .page-section-tabs .nav-item .nav-link, .page-section-tabs .footer .countries-nav .nav-item a, .footer .countries-nav .page-section-tabs .nav-item a, .page-section-tabs .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .page-section-tabs .nav-item a {
+  .page-section-tabs .nav-item .nav-link, .page-section-tabs .footer .countries-nav .nav-item a, .footer .countries-nav .page-section-tabs .nav-item a {
     padding: 1.2rem 20px;
     font-size: 1.125rem;
   }
 }
 @media (min-width: 768px) {
-  .page-section-tabs .nav-item .nav-link, .page-section-tabs .footer .countries-nav .nav-item a, .footer .countries-nav .page-section-tabs .nav-item a, .page-section-tabs .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .page-section-tabs .nav-item a {
+  .page-section-tabs .nav-item .nav-link, .page-section-tabs .footer .countries-nav .nav-item a, .footer .countries-nav .page-section-tabs .nav-item a {
     padding: 1.5rem 5vw;
     font-size: 1.375rem;
   }
 }
 @media (min-width: 1024px) {
-  .page-section-tabs .nav-item .nav-link, .page-section-tabs .footer .countries-nav .nav-item a, .footer .countries-nav .page-section-tabs .nav-item a, .page-section-tabs .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .page-section-tabs .nav-item a {
+  .page-section-tabs .nav-item .nav-link, .page-section-tabs .footer .countries-nav .nav-item a, .footer .countries-nav .page-section-tabs .nav-item a {
     padding: 1.75rem 5vw;
     font-size: 1.5rem;
     font-weight: 700;
   }
 }
 @media (min-width: 1200px) {
-  .page-section-tabs .nav-item .nav-link, .page-section-tabs .footer .countries-nav .nav-item a, .footer .countries-nav .page-section-tabs .nav-item a, .page-section-tabs .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .page-section-tabs .nav-item a {
+  .page-section-tabs .nav-item .nav-link, .page-section-tabs .footer .countries-nav .nav-item a, .footer .countries-nav .page-section-tabs .nav-item a {
     padding: 2.25rem 7vw;
     font-size: 1.625rem;
   }
@@ -15333,10 +15317,10 @@ body.toolbar-fixed.toolbar-horizontal.toolbar-tray-open {
 }
 @media (min-width: 1024px) {
   body.toolbar-fixed.toolbar-horizontal, body.toolbar-fixed.toolbar-vertical, body.toolbar-vertical {
-    padding-top: 161px !important;
+    padding-top: 153px !important;
   }
   body.toolbar-fixed.toolbar-horizontal.toolbar-tray-open {
-    padding-top: 201px !important;
+    padding-top: 193px !important;
   }
 }
 
@@ -16227,6 +16211,31 @@ html [type=button]:focus,
   background-color: #fff;
   z-index: 99;
   overflow: auto;
+  /*.col-country-links {
+    width: 100%;
+    padding: 0.5rem 0 1.5rem;
+
+    .countries-nav .nav{
+
+      .nav-item {
+        margin-right: 1rem;
+      }
+
+      .nav-item a {
+        @extend .nav-link;
+        color: $default-text-color;
+        font-weight: $font-weight-medium;
+        font-size: .875rem;
+        padding: .5rem 0;
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: $brand-blue;
+        }
+      }
+    }
+  }*/
 }
 .navbar-main .navbar-collapse.show {
   display: flex;
@@ -16234,37 +16243,21 @@ html [type=button]:focus,
 }
 .navbar-main .navbar-collapse .col-main-links {
   width: 100%;
-  padding: 1rem 0 0.5rem;
+  padding: 1rem 0 1.5rem;
 }
 .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav {
   flex-direction: column;
 }
-.navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .nav-link, .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav a, .navbar-main .navbar-collapse .col-main-links .nav-main-full .col-country-links .countries-nav .nav .nav-item a, .navbar-main .navbar-collapse .col-country-links .countries-nav .col-main-links .nav-main-full .nav .nav-item a {
+.navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .nav-link, .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav a {
   color: #041E42;
   font-weight: 500;
   font-size: 1.125rem;
   padding: 0.5rem 0;
 }
-.navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .nav-link:hover, .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .footer .countries-nav .nav-item a:hover, .footer .countries-nav .nav-item .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav a:hover, .navbar-main .navbar-collapse .col-main-links .nav-main-full .col-country-links .countries-nav .nav .nav-item a:hover, .navbar-main .navbar-collapse .col-country-links .countries-nav .col-main-links .nav-main-full .nav .nav-item a:hover, .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .nav-link:focus, .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .footer .countries-nav .nav-item a:focus, .footer .countries-nav .nav-item .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav a:focus, .navbar-main .navbar-collapse .col-main-links .nav-main-full .col-country-links .countries-nav .nav .nav-item a:focus, .navbar-main .navbar-collapse .col-country-links .countries-nav .col-main-links .nav-main-full .nav .nav-item a:focus, .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .nav-link:active, .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .footer .countries-nav .nav-item a:active, .footer .countries-nav .nav-item .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav a:active, .navbar-main .navbar-collapse .col-main-links .nav-main-full .col-country-links .countries-nav .nav .nav-item a:active, .navbar-main .navbar-collapse .col-country-links .countries-nav .col-main-links .nav-main-full .nav .nav-item a:active {
+.navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .nav-link:hover, .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .footer .countries-nav .nav-item a:hover, .footer .countries-nav .nav-item .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav a:hover, .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .nav-link:focus, .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .footer .countries-nav .nav-item a:focus, .footer .countries-nav .nav-item .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav a:focus, .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .nav-link:active, .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .footer .countries-nav .nav-item a:active, .footer .countries-nav .nav-item .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav a:active {
   color: #006BA6;
 }
-.navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .nav-link.active, .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .footer .countries-nav .nav-item a.active, .footer .countries-nav .nav-item .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav a.active, .navbar-main .navbar-collapse .col-main-links .nav-main-full .col-country-links .countries-nav .nav .nav-item a.active, .navbar-main .navbar-collapse .col-country-links .countries-nav .col-main-links .nav-main-full .nav .nav-item a.active {
-  color: #006BA6;
-}
-.navbar-main .navbar-collapse .col-country-links {
-  width: 100%;
-  padding: 0.5rem 0 1.5rem;
-}
-.navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item {
-  margin-right: 1rem;
-}
-.navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a {
-  color: #041E42;
-  font-weight: 500;
-  font-size: 0.875rem;
-  padding: 0.5rem 0;
-}
-.navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a:hover, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a:focus, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a:active {
+.navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .nav-link.active, .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .footer .countries-nav .nav-item a.active, .footer .countries-nav .nav-item .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav a.active {
   color: #006BA6;
 }
 @media (min-width: 481px) {
@@ -16296,36 +16289,6 @@ html [type=button]:focus,
   .navbar-main .navbar-toggler {
     font-size: 2.5rem;
   }
-  .navbar-main .navbar-collapse {
-    top: 0;
-    position: fixed;
-    padding: 7rem 0 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.95);
-  }
-  .navbar-main .navbar-collapse .container-fullwidth {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-  }
-  .navbar-main .navbar-collapse .col-main-links {
-    width: 70%;
-    padding: 0;
-  }
-  .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .nav-link, .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav a, .navbar-main .navbar-collapse .col-main-links .nav-main-full .col-country-links .countries-nav .nav .nav-item a, .navbar-main .navbar-collapse .col-country-links .countries-nav .col-main-links .nav-main-full .nav .nav-item a {
-    font-size: 1.375rem;
-  }
-  .navbar-main .navbar-collapse .col-country-links {
-    width: 30%;
-    padding: 1rem 0 0;
-  }
-  .navbar-main .navbar-collapse .col-country-links .countries-nav .nav {
-    columns: 10px 2;
-  }
-  .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a {
-    font-size: 1rem;
-  }
 }
 @media (min-width: 1024px) {
   .navbar-main {
@@ -16340,67 +16303,31 @@ html [type=button]:focus,
     order: 0;
     margin-left: auto;
   }
-  .navbar-main .navbar-collapse {
-    padding-top: 20vh;
-  }
-  .navbar-main .navbar-collapse .container-fullwidth {
-    justify-content: flex-start;
-    flex-shrink: 0;
-  }
-  .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .nav-link, .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav a, .navbar-main .navbar-collapse .col-main-links .nav-main-full .col-country-links .countries-nav .nav .nav-item a, .navbar-main .navbar-collapse .col-country-links .countries-nav .col-main-links .nav-main-full .nav .nav-item a {
-    font-size: 1.5rem;
-  }
 }
-@media (min-width: 1200px) {
-  .navbar-main .navbar-collapse .col-main-links {
-    max-width: 800px;
-  }
-  .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .nav-link, .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav a, .navbar-main .navbar-collapse .col-main-links .nav-main-full .col-country-links .countries-nav .nav .nav-item a, .navbar-main .navbar-collapse .col-country-links .countries-nav .col-main-links .nav-main-full .nav .nav-item a {
-    font-size: 2rem;
-  }
-  .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a {
-    font-size: 1.125rem;
-  }
-}
-@media (min-width: 1500px) {
-  .navbar-main .navbar-collapse .col-main-links {
-    max-width: 900px;
-  }
-  .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .nav-link, .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav a, .navbar-main .navbar-collapse .col-main-links .nav-main-full .col-country-links .countries-nav .nav .nav-item a, .navbar-main .navbar-collapse .col-country-links .countries-nav .col-main-links .nav-main-full .nav .nav-item a {
-    font-size: 2.5rem;
-  }
-  .navbar-main .navbar-collapse .col-country-links .small-ac-title {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
-  .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a {
-    font-size: 1.25rem;
-  }
-}
-
 body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.main-menu-opened .navbar-main .navbar-toggler .btn.add-back-icon:before, body.main-menu-opened .navbar-main .navbar-toggler .add-back-icon.button:before {
   content: "";
 }
 
 .nav-main {
   box-shadow: none;
-  padding: 0.5rem 1rem 0.5rem 0;
+  padding: 0.5rem 1rem 0 0;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-start;
   flex-wrap: nowrap;
   flex-grow: 1;
+  width: 100%;
 }
-.nav-main .nav-link, .nav-main .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .nav-main a, .nav-main .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .nav-main a {
+.nav-main .nav-link, .nav-main .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .nav-main a {
   padding: 0.3rem 0;
   color: #000;
   font-weight: 500;
   font-size: 1rem;
   white-space: nowrap;
 }
-.nav-main .nav-link.active, .nav-main .footer .countries-nav .nav-item a.active, .footer .countries-nav .nav-item .nav-main a.active, .nav-main .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a.active, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .nav-main a.active {
+.nav-main .nav-link.active, .nav-main .footer .countries-nav .nav-item a.active, .footer .countries-nav .nav-item .nav-main a.active {
   color: #006BA6;
 }
-.nav-main .nav-link:hover, .nav-main .footer .countries-nav .nav-item a:hover, .footer .countries-nav .nav-item .nav-main a:hover, .nav-main .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a:hover, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .nav-main a:hover, .nav-main .nav-link:active, .nav-main .footer .countries-nav .nav-item a:active, .footer .countries-nav .nav-item .nav-main a:active, .nav-main .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a:active, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .nav-main a:active, .nav-main .nav-link:focus, .nav-main .footer .countries-nav .nav-item a:focus, .footer .countries-nav .nav-item .nav-main a:focus, .nav-main .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a:focus, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .nav-main a:focus {
+.nav-main .nav-link:hover, .nav-main .footer .countries-nav .nav-item a:hover, .footer .countries-nav .nav-item .nav-main a:hover, .nav-main .nav-link:active, .nav-main .footer .countries-nav .nav-item a:active, .footer .countries-nav .nav-item .nav-main a:active, .nav-main .nav-link:focus, .nav-main .footer .countries-nav .nav-item a:focus, .footer .countries-nav .nav-item .nav-main a:focus {
   color: #006BA6;
 }
 .nav-main .nav-item {
@@ -16409,15 +16336,21 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
 .nav-main .nav-item:last-of-type {
   margin-right: 0;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .nav-main {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 0.5rem 0;
+    justify-content: flex-end;
+    width: auto;
   }
+}
+@media (min-width: 1200px) {
   .nav-main .nav-item {
     margin-right: 2.5rem;
   }
-  .nav-main .nav-link, .nav-main .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .nav-main a, .nav-main .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .nav-main a {
+  .nav-main .nav-item:last-of-type {
+    margin-right: 0;
+  }
+  .nav-main .nav-link, .nav-main .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .nav-main a {
     font-size: 1rem;
   }
 }
@@ -16499,12 +16432,12 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   display: inline-block;
   width: 100%;
 }
-.footer .footer-main-nav .nav-link, .footer .footer-main-nav .countries-nav .nav-item a, .footer .countries-nav .nav-item .footer-main-nav a, .footer .footer-main-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .footer .footer-main-nav a {
+.footer .footer-main-nav .nav-link, .footer .footer-main-nav .countries-nav .nav-item a, .footer .countries-nav .nav-item .footer-main-nav a {
   font-size: 1rem;
   color: #fff;
   padding: 0.3rem 0;
 }
-.footer .footer-main-nav .nav-link.active, .footer .footer-main-nav .countries-nav .nav-item a.active, .footer .countries-nav .nav-item .footer-main-nav a.active, .footer .footer-main-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a.active, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .footer .footer-main-nav a.active {
+.footer .footer-main-nav .nav-link.active, .footer .footer-main-nav .countries-nav .nav-item a.active, .footer .countries-nav .nav-item .footer-main-nav a.active {
   color: #69B3E7;
 }
 .footer .countries-nav {
@@ -16519,26 +16452,26 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   color: #fff;
   padding: 0.3rem 0;
 }
-.footer .some-nav .nav-link, .footer .some-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .footer .some-nav a, .footer .some-nav .countries-nav .nav-item a, .footer .countries-nav .nav-item .some-nav a {
+.footer .some-nav .nav-link, .footer .some-nav .countries-nav .nav-item a, .footer .countries-nav .nav-item .some-nav a {
   color: #fff;
   opacity: 0.6;
 }
-.footer .some-nav .nav-link:hover, .footer .some-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a:hover, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .footer .some-nav a:hover, .footer .some-nav .countries-nav .nav-item a:hover, .footer .countries-nav .nav-item .some-nav a:hover, .footer .some-nav .nav-link:active, .footer .some-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a:active, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .footer .some-nav a:active, .footer .some-nav .countries-nav .nav-item a:active, .footer .countries-nav .nav-item .some-nav a:active, .footer .some-nav .nav-link:focus, .footer .some-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a:focus, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .footer .some-nav a:focus, .footer .some-nav .countries-nav .nav-item a:focus, .footer .countries-nav .nav-item .some-nav a:focus {
+.footer .some-nav .nav-link:hover, .footer .some-nav .countries-nav .nav-item a:hover, .footer .countries-nav .nav-item .some-nav a:hover, .footer .some-nav .nav-link:active, .footer .some-nav .countries-nav .nav-item a:active, .footer .countries-nav .nav-item .some-nav a:active, .footer .some-nav .nav-link:focus, .footer .some-nav .countries-nav .nav-item a:focus, .footer .countries-nav .nav-item .some-nav a:focus {
   opacity: 1;
 }
 .footer .footer-policies-nav {
   margin-top: 0.5rem;
 }
-.footer .footer-policies-nav .nav-link, .footer .footer-policies-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .footer .footer-policies-nav a, .footer .footer-policies-nav .countries-nav .nav-item a, .footer .countries-nav .nav-item .footer-policies-nav a {
+.footer .footer-policies-nav .nav-link, .footer .footer-policies-nav .countries-nav .nav-item a, .footer .countries-nav .nav-item .footer-policies-nav a {
   font-size: 0.875rem;
   color: #fff;
   padding-left: 0;
   margin-right: 0.5rem;
 }
-.footer .footer-policies-nav .nav-link.active, .footer .footer-policies-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a.active, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .footer .footer-policies-nav a.active, .footer .footer-policies-nav .countries-nav .nav-item a.active, .footer .countries-nav .nav-item .footer-policies-nav a.active {
+.footer .footer-policies-nav .nav-link.active, .footer .footer-policies-nav .countries-nav .nav-item a.active, .footer .countries-nav .nav-item .footer-policies-nav a.active {
   color: #69B3E7;
 }
-.footer .footer-policies-nav .nav-link:last-of-type, .footer .footer-policies-nav .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item a:last-of-type, .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item .footer .footer-policies-nav a:last-of-type, .footer .footer-policies-nav .countries-nav .nav-item a:last-of-type, .footer .countries-nav .nav-item .footer-policies-nav a:last-of-type {
+.footer .footer-policies-nav .nav-link:last-of-type, .footer .footer-policies-nav .countries-nav .nav-item a:last-of-type, .footer .countries-nav .nav-item .footer-policies-nav a:last-of-type {
   margin-right: 0;
 }
 .footer .footer-copyright {

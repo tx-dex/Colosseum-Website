@@ -1,24 +1,27 @@
 <nav class="navbar navbar-main" role="navigation">
     <div class="container-fullwidth">
         <a class="navbar-brand" href="index.php"><img src="../web/themes/custom/cd_group/img/cdg-logo-blue.svg" alt="Logo"></a>
-        <ul class="nav nav-main d-none d-lg-flex">
+        <ul class="nav nav-main d-none d-md-flex">
             <li class="nav-item">
-                <a class="nav-link active" href="page-about-us.php">About</a>
+                <a class="nav-link active" href="page-about-us.php">Who we are</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="page-medical-board.php">Medical board</a>
+                <a class="nav-link" href="page-leading-dentistry.php">Leading dentistry</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="page-selling-your-practice.php">Selling your practice</a>
+                <a class="nav-link" href="page-charitable-cause.php">Charitable cause</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="page-careers.php">Careers</a>
+                <a class="nav-link" href="page-join-us.php">Join us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="page-contact.php">Contact us</a>
             </li>
         </ul>
-        <button class="navbar-toggler" type="button" aria-controls="allMainNavigationLinks" aria-expanded="false" aria-label="Toggle full navigation">
+        <button class="navbar-toggler d-md-none" type="button" aria-controls="allMainNavigationLinks" aria-expanded="false" aria-label="Toggle full navigation">
             <i class="material-icons menu"></i>
         </button>
-        <div class="navbar-collapse collapse" id="allMainNavigationLinks">
+        <div class="navbar-collapse collapse d-md-none" id="allMainNavigationLinks">
             <div class="container-fullwidth">
                 <div class="col-main-links">
                     <div class="nav-main-full">
@@ -50,7 +53,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-country-links">
+                <!--<div class="col-country-links">
                     <h5 class="small-ac-title">Countries</h5>
                     <div class="countries-nav">
                         <ul class="nav">
@@ -80,7 +83,7 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
     </div>
