@@ -16771,7 +16771,7 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   }
 }
 .page-section-basic-page {
-  padding-bottom: 0;
+  padding-bottom: 2rem;
 }
 .page-section-basic-page .page-title {
   margin-bottom: 2rem;
@@ -16782,9 +16782,12 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
 .page-section-basic-page .lead-text {
   margin-bottom: 2rem;
 }
+.page-section-basic-page .page-section-bp:first-of-type {
+  padding-top: 0;
+}
 
 .page-section-bp {
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 .page-section-bp.even {
   background-color: #fff;
@@ -16795,12 +16798,12 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
 }
 @media (min-width: 768px) {
   .page-section-bp {
-    padding: 3rem 0;
+    padding: 2rem 0;
   }
 }
 @media (min-width: 1200px) {
   .page-section-bp {
-    padding: 4rem 0;
+    padding: 3rem 0;
   }
 }
 

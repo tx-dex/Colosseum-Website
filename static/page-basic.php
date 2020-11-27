@@ -11,7 +11,7 @@
         <p class="lead-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
         </p>
-        <div class="article-content">
+        <!--<div class="article-content">
 
             <h2>Sed ut perspiciatis unde omnis iste natus</h2>
 
@@ -21,7 +21,7 @@
 
             <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
 
-        </div>
+        </div>-->
     </div>
 
     <section class="page-section-bp ">
