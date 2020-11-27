@@ -18,7 +18,7 @@
                 <a class="nav-link" href="page-contact.php">Contact us</a>
             </li>
         </ul>
-            <button class="navbar-toggler d-md-none" type="button" aria-controls="allMainNavigationLinks" aria-expanded="false" aria-label="Toggle full navigation">
+        <button class="navbar-toggler d-md-none" type="button" aria-controls="allMainNavigationLinks" aria-expanded="false" aria-label="Toggle full navigation">
             <i class="material-icons menu"></i>
         </button>
         <div class="navbar-collapse collapse d-md-none" id="allMainNavigationLinks">
