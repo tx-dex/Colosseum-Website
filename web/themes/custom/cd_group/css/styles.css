@@ -131,7 +131,7 @@ body {
   line-height: 1.6;
   color: #041E42;
   text-align: left;
-  background-color: #F2F6F9;
+  background-color: #fff;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -544,7 +544,7 @@ mark,
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #F2F6F9;
+  background-color: #fff;
   border: 1px solid #dee2e6;
   border-radius: 5px;
   max-width: 100%;
@@ -4112,13 +4112,13 @@ input[type=button].btn-block {
   outline: none;
 }
 .custom-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #F2F6F9, inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: 0 0 0 1px #fff, inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .custom-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #F2F6F9, inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: 0 0 0 1px #fff, inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .custom-range:focus::-ms-thumb {
-  box-shadow: 0 0 0 1px #F2F6F9, inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: 0 0 0 1px #fff, inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .custom-range::-moz-focus-outer {
   border: 0;
@@ -4292,8 +4292,8 @@ input[type=button].btn-block {
 .nav-tabs .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-item.show a,
 .navbar-main .navbar-collapse .col-country-links .countries-nav .nav .nav-tabs .nav-item.show a {
   color: #495057;
-  background-color: #F2F6F9;
-  border-color: #dee2e6 #dee2e6 #F2F6F9;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
 }
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
@@ -16193,7 +16193,7 @@ html [type=button]:focus,
   width: 100%;
   padding: 0;
   z-index: 10;
-  background-color: #F2F6F9;
+  background-color: #fff;
 }
 .navbar-main .navbar-brand {
   position: relative;
@@ -16902,6 +16902,7 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
 
 .hero-frontpage {
   position: relative;
+  background-color: #F2F6F9;
 }
 .hero-frontpage .hero-img {
   position: relative;
@@ -16956,6 +16957,9 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   }
 }
 
+.page-section-fp-intro {
+  background-color: #F2F6F9;
+}
 .page-section-fp-intro h2 {
   margin-bottom: 3rem;
   max-width: 800px;
@@ -17082,6 +17086,7 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
 
 .page-section-find-a-clinic {
   position: relative;
+  background-color: #F2F6F9;
   padding: 0;
 }
 .page-section-find-a-clinic .col-map {

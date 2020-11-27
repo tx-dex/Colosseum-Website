@@ -1,6 +1,6 @@
 <?php require 'region-header.php'; ?>
 
-<section class="page-section page-section-basic-page section-visible">
+<section class="page-section page-section-basic-page">
     <div class="container">
         <h1 class="page-title">
             <span property="schema:name" data-quickedit-field-id="node/14/title/en/full" class="field field--name-title field--type-string field--label-hidden">Medical Governance</span>

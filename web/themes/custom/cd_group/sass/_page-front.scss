@@ -6,6 +6,7 @@
 
 .hero-frontpage {
   position: relative;
+  background-color: $brand-blue-lighter;
 
   .hero-img {
     position: relative;
@@ -74,6 +75,7 @@
 // -------------------------------------
 
 .page-section-fp-intro {
+  background-color: $brand-blue-lighter;
 
   h2 {
     margin-bottom: 3rem;
@@ -242,6 +244,7 @@
 
 .page-section-find-a-clinic {
   position: relative;
+  background-color: $brand-blue-lighter;
   padding: 0;
 
   .col-map {

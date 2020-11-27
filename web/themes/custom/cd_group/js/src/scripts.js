@@ -19,7 +19,7 @@
     // PAGE ANIMATIONS
     // **************************
 
-    if (!!window.IntersectionObserver) {
+    /*if (!!window.IntersectionObserver) {
 
       document.getElementsByTagName('html')[0].classList.add("animation-enabled");
 
@@ -37,7 +37,7 @@
       document.querySelectorAll('.page-section').forEach(section => {
         observer.observe(section)
       });
-    }
+    }*/
 
     // VIDEO MODAL
     // **************************
@@ -76,37 +76,6 @@
       }
     })
 
-    // ENROLLMENT FORM VALIDATION
-    // **************************
-
-
-    var $form = $('.proceed-to-payment-form')
-    $form.on('submit', function (event) {
-      event.preventDefault();
-      event.stopPropagation();
-      if ($form.get(0).checkValidity()) {
-        var stripe = Stripe(drupalSettings.stripe.public_key);
-        var startPaymentUrl = $(this).attr('action')
-        $.ajax({
-          type: 'POST',
-          url: startPaymentUrl,
-          data: $form.serialize(),
-          dataType: 'json',
-          success: function (data) {
-            stripe.redirectToCheckout({
-              sessionId: data.session_id
-            }).then(function (result) {
-              result.error && alert(result.error.message)
-            })
-          },
-          error: function (xhr, statusText) {
-            alert(xhr.responseText)
-          }
-        });
-      }
-      $form.addClass('was-validated');
-      return false;
-    })
   });
 
 })(window.jQuery);
