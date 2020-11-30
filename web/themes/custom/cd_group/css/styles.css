@@ -15102,6 +15102,7 @@ body {
 
 .breadcrumb .breadcrumb-item {
   padding-right: 0.5rem;
+  font-size: 0.875rem;
 }
 .breadcrumb .breadcrumb-item:last-child {
   display: inline-block;
