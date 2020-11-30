@@ -5,11 +5,8 @@
 {% macro menu_links(items, attributes, menu_level, user_edit_url) %}
     {% import _self as menus %}
     {% if items %}
-        {% set randomId = random(100000) %}
         {% if menu_level == 0 %}
             <ul class="nav navbar-nav">
-        {% else %}
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown-{{ randomId }}">
         {% endif %}
         {% for item in items %}
             {% if item.below %}
@@ -21,7 +18,9 @@
                         <a href="#" class="dropdown-toggle" id="navbarDropdown-{{ randomId }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="material-icons keyboard_arrow_down"></i>
                         </a>
-                        {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown-{{ randomId }}">
+                            {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
+                        </ul>
                     </li>
                 {% endif %}
             {% else %}
@@ -31,6 +30,8 @@
                 </li>
             {% endif %}
         {% endfor %}
-        </ul>
+        {% if menu_level == 0 %}
+            </ul>
+        {% endif %}
     {% endif %}
 {% endmacro %}
