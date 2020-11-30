@@ -16185,7 +16185,7 @@ html [type=button]:focus,
 }
 
 .navbar-main {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -16262,6 +16262,14 @@ html [type=button]:focus,
 .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav {
   flex-direction: column;
 }
+.navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .nav-item {
+  position: relative;
+}
+.navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .nav-item .dropdown-toggle {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .nav-link, .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav a {
   color: #041E42;
   font-weight: 500;
@@ -16280,7 +16288,6 @@ html [type=button]:focus,
   }
   .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav {
     display: block;
-    columns: 10px 2;
   }
   .navbar-main .navbar-collapse .col-country-links {
     max-width: 600px;
@@ -16295,6 +16302,7 @@ html [type=button]:focus,
 }
 @media (min-width: 768px) {
   .navbar-main {
+    position: fixed;
     padding: 1rem 0;
   }
   .navbar-main .navbar-brand img {

@@ -3,7 +3,7 @@
 // -------------------------------------
 
 .navbar-main {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -67,6 +67,16 @@
       .nav-main-full .nav {
         flex-direction: column;
 
+        .nav-item {
+          position: relative;
+
+          .dropdown-toggle {
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
+        }
+
         .nav-link {
           color: $default-text-color;
           font-weight: $font-weight-medium;
@@ -120,7 +130,7 @@
 
         .nav-main-full .nav {
           display: block;
-          columns: 10px 2;
+          //columns: 10px 2;
         }
       }
 
@@ -141,6 +151,7 @@
 
 
   @include media-breakpoint-up(md) {
+    position: fixed;
     padding: 1rem 0;
 
     .navbar-brand {

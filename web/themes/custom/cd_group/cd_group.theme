@@ -90,7 +90,14 @@ function cd_group_theme_suggestions_node_alter(array &$suggestions, array $varia
  * Implements hook_preprocess_HOOK() for Block document templates.
  */
 function cd_group_preprocess_block(array &$variables) {
-
+    /**
+     * Pass block region value to content so this can be used in
+     * cd_group_theme_suggestions_menu_alter.
+     */
+    if (isset($variables['elements']['#id'])) {
+        $region = Block::load($variables['elements']['#id'])->getRegion();
+        $variables['content']['#attributes']['region'] = $region;
+    }
 }
 
 /**
@@ -189,6 +196,19 @@ function cd_group_theme_suggestions_views_view_list_alter(&$suggestions, $variab
 
 function cd_group_preprocess_region(&$variables) {
 
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ *
+ * Provide region based menu suggestions.
+ */
+function cd_group_theme_suggestions_menu_alter(&$suggestions, array $variables) {
+    if (isset($variables['attributes']['region'])) {
+        $suggestion = 'menu__' . $variables['menu_name'] . '__' . $variables['attributes']['region'];
+        $suggestion = str_replace('-', '_', $suggestion);
+        $suggestions[] = $suggestion;
+    }
 }
 
 /**

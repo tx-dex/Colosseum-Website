@@ -25,12 +25,20 @@
             <div class="container-fullwidth">
                 <div class="col-main-links">
                     <div class="nav-main-full">
-                        <ul class="nav">
+                        <ul class="nav navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">About</a>
+                                <a class="nav-link active" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Medical board</a>
+                                <a class="nav-link" href="#">Leading Dentistry</a>
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    D
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Selling your practice</a>
@@ -53,37 +61,6 @@
                         </ul>
                     </div>
                 </div>
-                <!--<div class="col-country-links">
-                    <h5 class="small-ac-title">Countries</h5>
-                    <div class="countries-nav">
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a href="#" target="_blank">Denmark</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" target="_blank">Finland</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" target="_blank">Germany</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" target="_blank">Italy</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" target="_blank">Norway</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" target="_blank">Sweden</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" target="_blank">Switzerland</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" target="_blank">UK</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>-->
             </div>
         </div>
     </div>
