@@ -8,7 +8,7 @@
         {% if menu_level == 0 %}
             <ul class="nav navbar-nav">
         {% else %}
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
         {% endif %}
         {% for item in items %}
             {% if item.below %}
@@ -33,10 +33,6 @@
                 </li>
             {% endif %}
         {% endfor %}
-        {% if menu_level == 0 %}
-            </ul>
-        {% else %}
-            </div>
-        {% endif %}
+        </ul>
     {% endif %}
 {% endmacro %}
