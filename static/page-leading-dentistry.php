@@ -1,13 +1,27 @@
 <?php require 'region-header.php'; ?>
 
-    <nav aria-label="breadcrumb">
-        <div class="container-fullwidth">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Newsroom</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Library</li>
-            </ol>
-        </div>
-    </nav>
+
+<nav role="navigation" class="navbar navbar-sub">
+    <div class="container-fullwidth">
+        <ul class="nav navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link " href="/leading-dentistry/medical-governance">Medical Governance</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="/leading-dentistry/medical-governance">Tässä toinen alasivu</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<nav aria-label="breadcrumb">
+    <div class="container-fullwidth">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Newsroom</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol>
+    </div>
+</nav>
 
 <section class="page-section">
     <div class="container">

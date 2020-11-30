@@ -1,8 +1,6 @@
 {% import _self as menus %}
 
-{{ menus.menu_links(items, attributes, 0, user_edit_url) }}
-
-{% macro menu_links(items, attributes, menu_level, user_edit_url) %}
+{% macro menu_links(items, attributes, menu_level) %}
     {% import _self as menus %}
     {% if items %}
         {% if menu_level == 0 %}
@@ -35,3 +33,9 @@
         {% endif %}
     {% endif %}
 {% endmacro %}
+
+<nav role="navigation" class="navbar navbar-sub">
+    <div class="container-fullwidth">
+        {{ menus.menu_links(items, attributes, 0) }}
+    </div>
+</nav>

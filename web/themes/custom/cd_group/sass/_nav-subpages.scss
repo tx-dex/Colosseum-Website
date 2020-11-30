@@ -1,0 +1,39 @@
+
+// Nav styling
+// -------------------------------------
+
+.navbar-sub {
+  display: none;
+  background-color: $brand-blue-lighter;
+  padding: 0.5rem 0;
+
+  .navbar-nav {
+    flex-direction: row;
+
+    .nav-item {
+      margin-right: 1rem;
+    }
+
+    .nav-link {
+      font-size: .875rem;
+      font-weight: $font-weight-medium;
+      color: $default-text-color;
+
+      &.active {
+        color: $brand-blue;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $brand-blue;
+      }
+    }
+  }
+
+
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+}
+

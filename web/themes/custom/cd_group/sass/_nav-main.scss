@@ -116,32 +116,6 @@
         }
       }
     }
-
-    /*.col-country-links {
-      width: 100%;
-      padding: 0.5rem 0 1.5rem;
-
-      .countries-nav .nav{
-
-        .nav-item {
-          margin-right: 1rem;
-        }
-
-        .nav-item a {
-          @extend .nav-link;
-          color: $default-text-color;
-          font-weight: $font-weight-medium;
-          font-size: .875rem;
-          padding: .5rem 0;
-
-          &:hover,
-          &:focus,
-          &:active {
-            color: $brand-blue;
-          }
-        }
-      }
-    }*/
   }
 
   @include media-breakpoint-up(sm) {
