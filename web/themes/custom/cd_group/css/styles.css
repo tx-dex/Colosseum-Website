@@ -15103,6 +15103,13 @@ body {
 .breadcrumb .breadcrumb-item {
   padding-right: 0.5rem;
   font-size: 0.875rem;
+  color: #686D8A;
+}
+.breadcrumb .breadcrumb-item a {
+  color: inherit;
+}
+.breadcrumb .breadcrumb-item a:hover, .breadcrumb .breadcrumb-item a:active, .breadcrumb .breadcrumb-item a:focus {
+  color: #006BA6;
 }
 .breadcrumb .breadcrumb-item:last-child {
   display: inline-block;

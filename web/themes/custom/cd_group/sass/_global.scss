@@ -176,6 +176,17 @@ img {
   .breadcrumb-item {
     padding-right: 0.5rem;
     font-size: .875rem;
+    color: $light-text-color;
+
+    a {
+      color: inherit;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $brand-blue;
+      }
+    }
 
     &:last-child {
       display: inline-block;
