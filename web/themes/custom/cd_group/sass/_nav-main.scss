@@ -71,9 +71,30 @@
           position: relative;
 
           .dropdown-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             position: absolute;
             right: 0;
             top: 0;
+            width: 2rem;
+            height: 2rem;
+            text-decoration: none;
+
+            &::after {
+              display: none;
+            }
+          }
+
+          .dropdown-menu {
+            padding-top: 0;
+            padding-left: 1rem;
+
+            .nav-link {
+              font-weight: $font-weight-normal;
+              font-size: .875rem;
+              padding: 0.4rem 0;
+            }
           }
         }
 

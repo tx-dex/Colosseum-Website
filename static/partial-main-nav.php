@@ -29,16 +29,26 @@
                             <li class="nav-item">
                                 <a class="nav-link active" href="#">Home</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Leading Dentistry</a>
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    D
+                            <li class="nav-item has-dropdown">
+                                <a href="/leading-dentistry" class="nav-link ">Leading Dentistry</a>
+                                <a href="#" class="dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons keyboard_arrow_down"></i>
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li class="nav-item kissa">
+                                        <a class="nav-link " href="/leading-dentistry/medical-governance">Medical Governance</a>
+                                    </li>
+                                    <li class="nav-item kissa">
+                                        <a class="nav-link " href="/leading-dentistry/medical-governance">Medical Governance</a>
+                                    </li>
+                                    <li class="nav-item kissa">
+                                        <a class="nav-link " href="/leading-dentistry/medical-governance">Medical Governance</a>
+                                    </li>
+                                    <li class="nav-item kissa">
+                                        <a class="nav-link " href="/leading-dentistry/medical-governance">Medical Governance</a>
+                                    </li>
+                                </ul>
+
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Selling your practice</a>

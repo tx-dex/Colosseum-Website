@@ -16266,9 +16266,27 @@ html [type=button]:focus,
   position: relative;
 }
 .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .nav-item .dropdown-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   right: 0;
   top: 0;
+  width: 2rem;
+  height: 2rem;
+  text-decoration: none;
+}
+.navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .nav-item .dropdown-toggle::after {
+  display: none;
+}
+.navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .nav-item .dropdown-menu {
+  padding-top: 0;
+  padding-left: 1rem;
+}
+.navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .nav-item .dropdown-menu .nav-link, .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .footer .countries-nav .nav-item .dropdown-menu a, .footer .countries-nav .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .nav-item .dropdown-menu a {
+  font-weight: 400;
+  font-size: 0.875rem;
+  padding: 0.4rem 0;
 }
 .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .nav-link, .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav a {
   color: #041E42;

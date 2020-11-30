@@ -8,7 +8,8 @@
         {% if menu_level == 0 %}
             <ul class="nav navbar-nav">
         {% else %}
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            {% set randomId = random(100000) %}
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown-{{ randomId }}">
         {% endif %}
         {% for item in items %}
             {% if item.below %}
@@ -16,15 +17,15 @@
                 {% if menu_level == 0 %}
                     <li class="nav-item has-dropdown">
                         <a href="{{ item.url }}" class="nav-link {{ item.in_active_trail ? 'active':'' }}">{{ item.title }}</a>
-                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="icon-toggle"></span>
+                        <a href="#" class="dropdown-toggle" id="navbarDropdown-{{ randomId }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="material-icons keyboard_arrow_down"></i>
                         </a>
                         {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
                     </li>
                 {% endif %}
             {% else %}
                 {# This is the basic level 0 menu item where there is no submenu #}
-                <li class="nav-item kissa" {{ item.attributes }}>
+                <li class="nav-item" {{ item.attributes }}>
                     <a class="nav-link {{ item.in_active_trail ? 'active':'' }}" href="{{ item.url }}">{{ item.title }}</a>
                 </li>
             {% endif %}
