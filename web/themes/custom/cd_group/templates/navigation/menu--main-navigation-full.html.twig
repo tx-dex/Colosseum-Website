@@ -12,17 +12,13 @@
         {% endif %}
         {% for item in items %}
             {% if item.below %}
+                {# Level 0 menu item where there is a submenu #}
                 {% if menu_level == 0 %}
-                    <li class="nav-item jossa-dropdown">
+                    <li class="nav-item has-dropdown">
                         <a href="{{ item.url }}" class="nav-link {{ item.in_active_trail ? 'active':'' }}">{{ item.title }}</a>
                         <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="icon-toggle"></span>
                         </a>
-                        {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
-                    </li>
-                {% else %}
-                    <li class="dropdown-submenu">
-                        <a class="nav-link {{ item.in_active_trail ? 'active':'' }}" href="{{ item.url }}">{{ item.title }}</a>
                         {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
                     </li>
                 {% endif %}
