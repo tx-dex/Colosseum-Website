@@ -1,12 +1,11 @@
 {% import _self as menus %}
 
-{% set randomId = random(100000) %}
-
 {{ menus.menu_links(items, attributes, 0, user_edit_url) }}
 
 {% macro menu_links(items, attributes, menu_level, user_edit_url) %}
     {% import _self as menus %}
     {% if items %}
+        {% set randomId = random(100000) %}
         {% if menu_level == 0 %}
             <ul class="nav navbar-nav">
         {% else %}
@@ -17,11 +16,11 @@
                 {# Level 0 menu item where there is a submenu #}
                 {% if menu_level == 0 %}
                     <li class="nav-item has-dropdown">
+                        {% set randomId = random(100000) %}
                         <a href="{{ item.url }}" class="nav-link {{ item.in_active_trail ? 'active':'' }}">{{ item.title }}</a>
                         <a href="#" class="dropdown-toggle" id="navbarDropdown-{{ randomId }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="material-icons keyboard_arrow_down"></i>
                         </a>
-                        {% set randomId = random(100000) %}
                         {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
                     </li>
                 {% endif %}
