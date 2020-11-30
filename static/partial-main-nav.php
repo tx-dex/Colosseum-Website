@@ -36,16 +36,16 @@
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li class="nav-item kissa">
-                                        <a class="nav-link " href="/leading-dentistry/medical-governance">Medical Governance</a>
+                                        <a class="nav-link " href="#">Medical Governance</a>
                                     </li>
                                     <li class="nav-item kissa">
-                                        <a class="nav-link " href="/leading-dentistry/medical-governance">Medical Governance</a>
+                                        <a class="nav-link " href="#">Medical Governance</a>
                                     </li>
                                     <li class="nav-item kissa">
-                                        <a class="nav-link " href="/leading-dentistry/medical-governance">Medical Governance</a>
+                                        <a class="nav-link " href="#">Medical Governance</a>
                                     </li>
                                     <li class="nav-item kissa">
-                                        <a class="nav-link " href="/leading-dentistry/medical-governance">Medical Governance</a>
+                                        <a class="nav-link " href="#">Medical Governance</a>
                                     </li>
                                 </ul>
 

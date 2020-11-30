@@ -7,13 +7,20 @@
     var currentSiteLang = $('html').attr('lang');
 
     // MAIN NAVIGATION TOGGLE
-
+    // **************************
     $('.navbar-toggler').on('click', function (e) {
       console.log('open main menu')
       var $pageBody = $('body');
       $('#allMainNavigationLinks').toggleClass('show');
       $pageBody.toggleClass('main-menu-opened');
     })
+
+    // MAIN NAVIGATION (mobile) DROPDOWNS
+    // **************************
+    /* Prevent dropdown from closing when a link clicked */
+    $(document).on('click', '.nav-main-full .dropdown-menu', function (e) {
+      e.stopPropagation();
+    });
 
 
     // PAGE ANIMATIONS

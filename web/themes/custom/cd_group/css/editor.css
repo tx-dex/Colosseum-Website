@@ -6565,22 +6565,6 @@ html [type=button],
   -moz-appearance: none;
   appearance: none;
 }
-button:hover, button:active, button:focus,
-html [type=button]:hover,
-html [type=button]:active,
-html [type=button]:focus,
-[type=reset]:hover,
-[type=reset]:active,
-[type=reset]:focus,
-[type=submit]:hover,
-[type=submit]:active,
-[type=submit]:focus {
-  outline: none;
-}
-
-.btn:hover, .btn:active, .btn:focus {
-  outline: none;
-}
 .btn.btn-primary, .btn.btn-primary:not(:disabled):not(.disabled) {
   color: #fff;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2), 0px 0px 2px 0px rgba(0, 0, 0, 0.12);
@@ -6618,7 +6602,6 @@ html [type=button]:focus,
 .btn.btn-link:hover, .btn.btn-link:active, .btn.btn-link:focus, .btn.btn-link:not(:disabled):not(.disabled):hover, .btn.btn-link:not(:disabled):not(.disabled):active, .btn.btn-link:not(:disabled):not(.disabled):focus {
   color: #003a5a;
   text-decoration: none;
-  outline: none;
   box-shadow: none;
 }
 .btn.btn-full-width {
