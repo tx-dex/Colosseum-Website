@@ -13,7 +13,7 @@
         {% for item in items %}
             {% if item.below %}
                 {% if menu_level == 0 %}
-                    <li class="nav-item">
+                    <li class="nav-item jossa-dropdown">
                         <a href="{{ item.url }}" class="nav-link {{ item.in_active_trail ? 'active':'' }}">{{ item.title }}</a>
                         <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="icon-toggle"></span>
@@ -28,7 +28,7 @@
                 {% endif %}
             {% else %}
                 {# This is the basic level 0 menu item where there is no submenu #}
-                <li class="nav-item" {{ item.attributes }}>
+                <li class="nav-item kissa" {{ item.attributes }}>
                     <a class="nav-link {{ item.in_active_trail ? 'active':'' }}" href="{{ item.url }}">{{ item.title }}</a>
                 </li>
             {% endif %}
