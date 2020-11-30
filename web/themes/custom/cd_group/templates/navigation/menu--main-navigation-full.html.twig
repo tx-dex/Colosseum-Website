@@ -1,5 +1,7 @@
 {% import _self as menus %}
 
+{% set randomId = random(100000) %}
+
 {{ menus.menu_links(items, attributes, 0, user_edit_url) }}
 
 {% macro menu_links(items, attributes, menu_level, user_edit_url) %}
@@ -8,7 +10,6 @@
         {% if menu_level == 0 %}
             <ul class="nav navbar-nav">
         {% else %}
-            {% set randomId = random(100000) %}
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown-{{ randomId }}">
         {% endif %}
         {% for item in items %}
@@ -20,6 +21,7 @@
                         <a href="#" class="dropdown-toggle" id="navbarDropdown-{{ randomId }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="material-icons keyboard_arrow_down"></i>
                         </a>
+                        {% set randomId = random(100000) %}
                         {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
                     </li>
                 {% endif %}

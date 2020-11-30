@@ -147,11 +147,8 @@
   @include media-breakpoint-up(sm) {
     .navbar-collapse {
       .col-main-links {
-        max-width: 600px;
-
         .nav-main-full .nav {
           display: block;
-          //columns: 10px 2;
         }
       }
 

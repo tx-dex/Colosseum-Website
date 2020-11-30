@@ -16301,9 +16301,6 @@ html [type=button]:focus,
   color: #006BA6;
 }
 @media (min-width: 481px) {
-  .navbar-main .navbar-collapse .col-main-links {
-    max-width: 600px;
-  }
   .navbar-main .navbar-collapse .col-main-links .nav-main-full .nav {
     display: block;
   }
