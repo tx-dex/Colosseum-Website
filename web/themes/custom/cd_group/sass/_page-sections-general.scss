@@ -97,8 +97,86 @@
   }
 }
 
-.page-section-links {
-  .block-link-fw-2-col {
+.page-section-subpage-links {
+  position: relative;
 
+  &:before {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 100%;
+    height: 300px;
+    background-color: $brand-blue-lighter;
+    z-index: -1;
+  }
+
+  .block-link {
+    margin-bottom: 3rem;
+    background-color: $white;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    .block-link-fw-2-col {
+      p.lead-text {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .col-img {
+        order: 0;
+        margin-bottom: 1rem;
+      }
+
+      .col-txt {
+        order: 1;
+        padding: 1rem 3rem;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+
+    .block-link {
+      margin-bottom: 0;
+
+      .block-link-fw-2-col {
+        padding: 7%;
+
+        .col-img {
+          margin: 0;
+        }
+        .col-txt {
+          padding: 0 $grid-gutter-width/2;
+        }
+      }
+
+      &.odd .block-link-fw-2-col {
+        .col-img {
+          order: 1;
+        }
+        .col-txt {
+          order: 0;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+
+    .block-link {
+
+      .block-link-fw-2-col {
+        p.lead-text {
+          font-size: 1.125rem;
+        }
+        .row {
+          align-items: center;
+        }
+      }
+    }
   }
 }

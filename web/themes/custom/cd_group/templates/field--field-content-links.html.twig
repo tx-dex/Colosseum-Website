@@ -39,7 +39,7 @@
 #}
 
 {% for key, item in items %}
-    <div class="block-link {{ key is even ? '':'even' }}">
+    <div class="block-link {{ key is even ? 'odd':'even' }}">
         {{ item.content }}
     </div>
 {% endfor %}

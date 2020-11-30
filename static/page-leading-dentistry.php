@@ -9,163 +9,63 @@
         </div>
     </nav>
 
-<section class="page-section page-section-links">
+<section class="page-section">
     <div class="container">
+        <div class="page-header">
+            <h1 class="h2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+            </h1>
+            <!--<p>Here will be the links to subsections etc.</p>-->
+        </div>
+    </div>
+</section>
 
-
-        <!-- THEME DEBUG -->
-        <!-- THEME HOOK: 'field' -->
-        <!-- FILE NAME SUGGESTIONS:
-           * field--node--field-content-links--leading-dentistry.html.twig
-           * field--node--field-content-links.html.twig
-           * field--node--leading-dentistry.html.twig
-           * field--field-content-links.html.twig
-           * field--entity-reference-revisions.html.twig
-           x field.html.twig
-        -->
-        <!-- BEGIN OUTPUT from 'themes/custom/cd_group/templates/field.html.twig' -->
-
-
-
-        <!-- THEME DEBUG -->
-        <!-- THEME HOOK: 'paragraph' -->
-        <!-- FILE NAME SUGGESTIONS:
-           * paragraph--block-link-fw-2-col--default.html.twig
-           * paragraph--block-link-fw-2-col.html.twig
-           * paragraph--default.html.twig
-           * paragraph.html.twig
-        -->
-        <!-- BEGIN OUTPUT from 'themes/custom/cd_group/templates/paragraphs/paragraph--block_link_fw_2_col.html.twig' -->
-        <div class="block-link-fw-2-col">
-            <div class="row">
-                <div class="col-md-6 col-txt">
-                    <div class="content-box">
-                        <h2>
-
-                            <!-- THEME DEBUG -->
-                            <!-- THEME HOOK: 'field' -->
-                            <!-- FILE NAME SUGGESTIONS:
-                               * field--paragraph--field-title--block-link-fw-2-col.html.twig
-                               * field--paragraph--field-title.html.twig
-                               * field--paragraph--block-link-fw-2-col.html.twig
-                               * field--field-title.html.twig
-                               * field--string.html.twig
-                               x field.html.twig
-                            -->
-                            <!-- BEGIN OUTPUT from 'themes/custom/cd_group/templates/field.html.twig' -->
-
-                            Medical governance
-
-
-                            <!-- END OUTPUT from 'themes/custom/cd_group/templates/field.html.twig' -->
-
-                        </h2>
-                        <p class="lead-text">
-
-                            <!-- THEME DEBUG -->
-                            <!-- THEME HOOK: 'field' -->
-                            <!-- FILE NAME SUGGESTIONS:
-                               * field--paragraph--field-lead-text--block-link-fw-2-col.html.twig
-                               * field--paragraph--field-lead-text.html.twig
-                               * field--paragraph--block-link-fw-2-col.html.twig
-                               * field--field-lead-text.html.twig
-                               * field--string-long.html.twig
-                               x field.html.twig
-                            -->
-                            <!-- BEGIN OUTPUT from 'themes/custom/cd_group/templates/field.html.twig' -->
-
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-
-
-                            <!-- END OUTPUT from 'themes/custom/cd_group/templates/field.html.twig' -->
-
-                        </p>
-                        <a href="/medical-governance" class="btn btn-primary add-fwd-icon">
-                            Read more
-                        </a>
+<section class="page-section page-section-subpage-links">
+    <div class="container">
+        <div class="block-link odd">
+            <div class="block-link-fw-2-col">
+                <div class="row">
+                    <div class="col-md-6 col-txt">
+                        <div class="content-box">
+                            <h2 class="h3">
+                                Medical governance
+                            </h2>
+                            <p class="lead-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                            </p>
+                            <a href="/medical-governance" class="btn btn-primary add-fwd-icon">
+                                Read more
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-img">
-                    <img src="img/frontpage-contact.jpg?itok=hS5BdaZ-" alt="A dentist">
+                    <div class="col-md-6 col-img">
+                        <img src="img/frontpage-contact.jpg?itok=hS5BdaZ-" alt="A dentist">
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- END OUTPUT from 'themes/custom/cd_group/templates/paragraphs/paragraph--block_link_fw_2_col.html.twig' -->
-
-
-
-
-        <!-- THEME DEBUG -->
-        <!-- THEME HOOK: 'paragraph' -->
-        <!-- FILE NAME SUGGESTIONS:
-           * paragraph--block-link-fw-2-col--default.html.twig
-           * paragraph--block-link-fw-2-col.html.twig
-           * paragraph--default.html.twig
-           * paragraph.html.twig
-        -->
-        <!-- BEGIN OUTPUT from 'themes/custom/cd_group/templates/paragraphs/paragraph--block_link_fw_2_col.html.twig' -->
-        <div class="block-link-fw-2-col">
-            <div class="row">
-                <div class="col-md-6 col-txt">
-                    <div class="content-box">
-                        <h2>
-
-                            <!-- THEME DEBUG -->
-                            <!-- THEME HOOK: 'field' -->
-                            <!-- FILE NAME SUGGESTIONS:
-                               * field--paragraph--field-title--block-link-fw-2-col.html.twig
-                               * field--paragraph--field-title.html.twig
-                               * field--paragraph--block-link-fw-2-col.html.twig
-                               * field--field-title.html.twig
-                               * field--string.html.twig
-                               x field.html.twig
-                            -->
-                            <!-- BEGIN OUTPUT from 'themes/custom/cd_group/templates/field.html.twig' -->
-
-                            Colosseum Academy
-
-
-                            <!-- END OUTPUT from 'themes/custom/cd_group/templates/field.html.twig' -->
-
-                        </h2>
-                        <p class="lead-text">
-
-                            <!-- THEME DEBUG -->
-                            <!-- THEME HOOK: 'field' -->
-                            <!-- FILE NAME SUGGESTIONS:
-                               * field--paragraph--field-lead-text--block-link-fw-2-col.html.twig
-                               * field--paragraph--field-lead-text.html.twig
-                               * field--paragraph--block-link-fw-2-col.html.twig
-                               * field--field-lead-text.html.twig
-                               * field--string-long.html.twig
-                               x field.html.twig
-                            -->
-                            <!-- BEGIN OUTPUT from 'themes/custom/cd_group/templates/field.html.twig' -->
-
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-
-
-                            <!-- END OUTPUT from 'themes/custom/cd_group/templates/field.html.twig' -->
-
-                        </p>
-                        <a href="/medical-governance" class="btn btn-primary add-fwd-icon">
-                            Read more
-                        </a>
+        <div class="block-link even">
+            <div class="block-link-fw-2-col">
+                <div class="row">
+                    <div class="col-md-6 col-txt">
+                        <div class="content-box">
+                            <h2 class="h3">
+                                Colosseum Academy
+                            </h2>
+                            <p class="lead-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                            </p>
+                            <a href="/medical-governance" class="btn btn-primary add-fwd-icon">
+                                Read more
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-img">
-                    <img src="img/frontpage-contact.jpg?itok=hS5BdaZ-" alt="A dentist">
+                    <div class="col-md-6 col-img">
+                        <img src="img/frontpage-contact.jpg?itok=hS5BdaZ-" alt="A dentist">
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- END OUTPUT from 'themes/custom/cd_group/templates/paragraphs/paragraph--block_link_fw_2_col.html.twig' -->
-
-
-
-
-        <!-- END OUTPUT from 'themes/custom/cd_group/templates/field.html.twig' -->
-
-
     </div>
 </section>
 
