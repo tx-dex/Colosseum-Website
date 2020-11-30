@@ -1,13 +1,27 @@
 <?php require 'region-header.php'; ?>
 
-    <nav aria-label="breadcrumb">
-        <div class="container-fullwidth">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Newsroom</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Library</li>
-            </ol>
-        </div>
-    </nav>
+<nav aria-label="breadcrumb" role="navigation">
+    <div class="container-fullwidth">
+        <ol class="breadcrumb">
+
+            <li class="breadcrumb-item">
+                <a href="/">Home</a>
+            </li>
+
+
+            <li class="breadcrumb-item">
+                <a href="/newsroom">Newsroom</a>
+            </li>
+
+
+            <li class="breadcrumb-item active" aria-current="page">
+                The Colosseum Dental Group Academy Opens With A New Digital Curriculum
+            </li>
+
+
+        </ol>
+    </div>
+</nav>
 
     <section class="page-section page-section-basic-page">
         <div class="container">

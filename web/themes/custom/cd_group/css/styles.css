@@ -14970,7 +14970,7 @@ body {
 }
 @media (min-width: 768px) {
   body {
-    padding-top: 90px;
+    padding-top: 120px;
   }
 }
 @media (min-width: 1024px) {
@@ -15098,6 +15098,20 @@ body {
 .some-nav .nav-link, .some-nav .footer .countries-nav .nav-item a, .footer .countries-nav .nav-item .some-nav a {
   padding: 0.5rem;
   font-size: 1.5rem;
+}
+
+.breadcrumb .breadcrumb-item {
+  padding-right: 0.5rem;
+}
+.breadcrumb .breadcrumb-item:last-child {
+  display: inline-block;
+  max-width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.breadcrumb .breadcrumb-item + .breadcrumb-item {
+  padding-left: 0;
 }
 
 .page-section-tabs {
@@ -15309,10 +15323,10 @@ body.toolbar-fixed.toolbar-horizontal.toolbar-tray-open {
 }
 @media (min-width: 768px) {
   body.toolbar-fixed.toolbar-horizontal, body.toolbar-fixed.toolbar-vertical, body.toolbar-vertical {
-    padding-top: 129px !important;
+    padding-top: 159px !important;
   }
   body.toolbar-fixed.toolbar-horizontal.toolbar-tray-open {
-    padding-top: 169px !important;
+    padding-top: 199px !important;
   }
 }
 @media (min-width: 1024px) {

@@ -99,6 +99,7 @@ img {
 }
 
 // Common ui elements
+// -------------------------------------
 
 .columns-2 {
   @include media-breakpoint-up(md) {
@@ -165,6 +166,27 @@ img {
   .nav-link {
     padding: .5rem;
     font-size: 1.5rem;
+  }
+}
+
+// Breadcrumb
+// -------------------------------------
+
+.breadcrumb {
+  .breadcrumb-item {
+    padding-right: 0.5rem;
+
+    &:last-child {
+      display: inline-block;
+      max-width: 200px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .breadcrumb-item + .breadcrumb-item {
+    padding-left: 0;
   }
 }
 
