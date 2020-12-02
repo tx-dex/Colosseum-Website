@@ -2,14 +2,36 @@
     Find a clinic page
 #}
 
-<section class="page-section">
-    <div class="container">
-        <h1 class="page-title">
-            {{ label }}
-        </h1>
-        <div class="article-content">
-            {{ content.body }}
+{% set hasHeroImage = content.field_main_image|render|trim is not empty %}
+
+<section class="hero-basic-page {{ hasHeroImage ? 'with-image' : '' }}">
+    <div class="container-fullwidth">
+        <div class="hero-content">
+            <h1>
+                {% if content.field_page_title|render|trim is not empty %}
+                    {{ content.field_page_title }}
+                {% else %}
+                    {{ label }}
+                {% endif %}
+            </h1>
         </div>
-        {{ drupal_view('countries', 'block_2') }}
     </div>
+
+    {% if content.field_main_image|render|trim is not empty %}
+        <div class="hero-img">
+            <img src="{{ node.field_main_image.entity.field_media_image.entity.uri.value | image_style('basic_page_hero') }}" alt="{{ node.field_main_image.entity.field_media_image.alt }}">
+        </div>
+    {% endif %}
 </section>
+
+<div class="page-sections">
+    <section class="section-main-content">
+        <div class="main-content-container">
+            <div class="container-fullwidth">
+                {{ content.body }}
+
+                {{ drupal_view('countries', 'block_2') }}
+            </div>
+        </div>
+    </section>
+</div>
