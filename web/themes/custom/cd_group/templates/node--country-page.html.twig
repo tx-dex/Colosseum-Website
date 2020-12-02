@@ -14,11 +14,19 @@
 
 <section class="page-section">
     <div class="container">
+        {% if content.field_logo|render|trim is not empty %}
+            <img src="{{ node.field_logo.entity.field_media_image.entity.uri.value | image_style('country_organisation_logo') }}" alt="{{ node.field_logo.entity.field_media_image.alt }}">
+        {% endif %}
         <h1 class="page-title">
-            {{ label }}
+            {{ label }} {% if content.field_organisation_name|render|trim is not empty %}: {{ content.field_organisation_name }}{% endif %}
         </h1>
         <div class="article-content">
             {{ content.body }}
+        </div>
+        <div class="contact-information">
+            <p>
+                <strong>Website: </strong>{{ content.field_website_link[0]['#url'] }}
+            </p>
         </div>
     </div>
 </section>
