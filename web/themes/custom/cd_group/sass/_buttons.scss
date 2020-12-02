@@ -152,6 +152,16 @@ html [type="button"],
     }
   }
 
+  &.add-fwd-icon-before {
+    &:before {
+      @extend .material-icons;
+      content: "\e5c8";
+      vertical-align: middle;
+      font-size: 1.3rem;
+      margin: -1px .3rem 0 0;
+    }
+  }
+
   > .material-icons {
     vertical-align: middle;
     font-size: 1.3rem;

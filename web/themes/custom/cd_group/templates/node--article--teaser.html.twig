@@ -5,12 +5,22 @@
 {% set articleCategoryClass = content.field_article_category|render|striptags('<!-- -->')|lower|replace({' ':''})|trim %}
 
 <a href="{{ path('entity.node.canonical', {'node': node.id}) }}" class="item">
-    <span class="category-badge {{ articleCategoryClass }}">{{ content.field_article_category|render|striptags('<!-- -->')|trim }}</span>
-    <h4 class="card-title">
-        {{ label }}
-    </h4>
-    {#<div class="article-lead">
-        {{ content.field_lead_text }}
-    </div>#}
-    <button class="btn btn-link add-fwd-icon">Read more</button>
+    <div class="col-date">
+        <div class="square-wrapper">
+            <div class="sw-content">
+                <div class="date">
+                    <span class="day">{{ node.createdtime|date('U')|format_date('day') }}</span>
+                    <span class="month">{{ node.createdtime|date('U')|format_date('month_full_name') }}</span>
+                    <span class="year">{{ node.createdtime|date('U')|format_date('year') }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-txt">
+        <span class="category-badge {{ articleCategoryClass }}">
+            {{ content.field_article_category|render|striptags('<!-- -->')|trim }}
+        </span>
+        <h3 class="article-title">{{ label }}</h3>
+        <button class="btn btn-link add-fwd-icon">Read more</button>
+    </div>
 </a>

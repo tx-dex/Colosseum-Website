@@ -2,13 +2,24 @@
     Country page teaser
 #}
 
-<a href="{{ path('entity.node.canonical', {'node': node.id}) }}" class="item mb-4">
-    <h4>
-        {{ label }}
-    </h4>
-    <div class="article-lead">
-        {{ content.body }}
+{# {{ path('entity.node.canonical', {'node': node.id}) }} #}
+
+<div class="item">
+    <div class="col-img">
+        <div class="square-wrapper">
+            <div class="sw-content">
+                {% if content.field_logo|render|trim is not empty %}
+                    <img src="{{ node.field_logo.entity.field_media_image.entity.uri.value | image_style('country_organisation_logo') }}" alt="{{ node.field_logo.entity.field_media_image.alt }}">
+                {% endif %}
+            </div>
+        </div>
     </div>
-    <button class="btn btn-link add-fwd-icon">Read more</button>
-</a>
+    <div class="col-txt">
+        <h3 class="article-title">{{ label }}: {{ content.field_organisation_name }}</h3>
+        <div class="article-lead">
+            {{ content.body }}
+        </div>
+        <a class="btn btn-link add-fwd-icon-before">{{ content.field_website_link[0]['#url'] }}</a>
+    </div>
+</div>
 
