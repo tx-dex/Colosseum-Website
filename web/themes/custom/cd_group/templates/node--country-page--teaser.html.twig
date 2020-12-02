@@ -19,7 +19,11 @@
         <div class="article-lead">
             {{ content.body }}
         </div>
-        <a class="btn btn-link add-fwd-icon-before" target="_blank">{{ content.field_website_link[0]['#url'] }}</a>
+        {% if content.field_conference_url[0]['#url'] is not empty %}
+            <a href="{{ content.field_website_link[0]['#url'] }}" class="btn btn-link add-fwd-icon-before" target="_blank">{{ content.field_website_link[0]['#url'] }}</a>
+        {% else %}
+            <a href="{{ path('entity.node.canonical', {'node': node.id}) }}" class="btn btn-link add-fwd-icon-before" target="_blank">Read more</a>
+        {% endif %}
     </div>
 </div>
 
