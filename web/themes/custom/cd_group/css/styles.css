@@ -16760,6 +16760,9 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   max-height: 500px;
   overflow: hidden;
 }
+.hero-basic-page .hero-img img {
+  max-width: none;
+}
 @media (min-width: 481px) {
   .hero-basic-page .hero-content {
     padding: 1rem 0 2.5rem;
