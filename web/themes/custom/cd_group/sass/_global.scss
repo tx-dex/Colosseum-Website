@@ -309,6 +309,15 @@ img {
 // Article list
 // -------------------------------------
 
+.article-list-header {
+  /* Above the article list */
+  padding-bottom: 1rem;
+
+  @include media-breakpoint-up(md) {
+    padding-bottom: 1.5rem;
+  }
+}
+
 .article-list {
   list-style-type: none;
   margin-bottom: 0;

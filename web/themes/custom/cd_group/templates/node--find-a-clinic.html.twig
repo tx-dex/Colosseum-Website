@@ -28,7 +28,11 @@
     <section class="section-main-content">
         <div class="main-content-container">
             <div class="container-fullwidth">
-                {{ content.body }}
+                {% if content.body is not empty %}
+                    <div class="article-list-header">
+                        {{ content.body }}
+                    </div>
+                {% endif %}
 
                 {{ drupal_view('countries', 'block_2') }}
             </div>

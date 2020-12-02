@@ -40,7 +40,9 @@
         <div class="main-content-container">
             <div class="container-fullwidth">
 
-                <h2>Find your local clinic:</h2>
+                <div class="article-list-header">
+                    <h2>Find your local clinic:</h2>
+                </div>
 
                 <ul class="article-list country-list">
                     <li class="item">

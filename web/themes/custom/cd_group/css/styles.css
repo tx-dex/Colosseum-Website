@@ -15228,6 +15228,16 @@ body {
   }
 }
 
+.article-list-header {
+  /* Above the article list */
+  padding-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .article-list-header {
+    padding-bottom: 1.5rem;
+  }
+}
+
 .article-list {
   list-style-type: none;
   margin-bottom: 0;
