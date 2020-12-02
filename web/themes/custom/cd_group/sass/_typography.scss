@@ -173,6 +173,10 @@ p {
 p.lead-text {
   font-size: $lead-font-size;
   line-height: 1.6;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 1.375rem;
+  }
 }
 
 a {
@@ -255,8 +259,44 @@ figcaption,
     }
   }
 
+  img {
+    display: block;
+    margin: 1.5rem auto;
+    width: auto;
+
+    &.align-center,
+    &.align-left,
+    &.align-right {
+      display: block;
+      float: none;
+      margin: 1.5rem auto;
+    }
+  }
+
+  p img {
+    margin: 1.5rem 0;
+  }
+
+  figure {
+    display: block;
+    margin: 1.5rem 0;
+
+    figcaption {
+      padding-bottom: 0;
+    }
+
+    img {
+      margin: 0;
+    }
+  }
+
   @include media-breakpoint-up(lg) {
     font-size: 1.125rem;
+
+    img,
+    figure {
+      margin: 2rem auto;
+    }
   }
 }
 

@@ -305,8 +305,22 @@
 .page-sections {
   .bp-section {
     padding-bottom: 1.5rem;
+  }
 
+  .section-main-content:last-of-type .bp-section {
+    padding-bottom: 0;
+  }
 
+  @include media-breakpoint-up(md) {
+    .bp-section {
+      padding-bottom: 2rem;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .bp-section {
+      padding-bottom: 3rem;
+    }
   }
 }
 

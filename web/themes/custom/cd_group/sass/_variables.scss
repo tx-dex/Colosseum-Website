@@ -231,8 +231,8 @@ $display3-weight:             $font-weight-bold !default;
 $display4-weight:             $font-weight-bold !default;
 $display-line-height:         $headings-line-height !default;
 
-$lead-font-size:              $font-size-base * 1.25 !default;
-$lead-font-weight:            300 !default;
+$lead-font-size:              1.25rem !default;
+$lead-font-weight:            $font-weight-normal !default;
 
 $small-font-size:             80% !default;
 

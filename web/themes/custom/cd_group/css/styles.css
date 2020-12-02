@@ -455,7 +455,7 @@ h6, .h6 {
 
 .lead {
   font-size: 1.25rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .display-1 {
@@ -15563,6 +15563,11 @@ p.lead-text {
   font-size: 1.25rem;
   line-height: 1.6;
 }
+@media (min-width: 1024px) {
+  p.lead-text {
+    font-size: 1.375rem;
+  }
+}
 
 a {
   transition: color 200ms ease;
@@ -15629,9 +15634,36 @@ figcaption,
   border-radius: 50%;
   text-align: center;
 }
+.article-content img {
+  display: block;
+  margin: 1.5rem auto;
+  width: auto;
+}
+.article-content img.align-center, .article-content img.align-left, .article-content img.align-right {
+  display: block;
+  float: none;
+  margin: 1.5rem auto;
+}
+.article-content p img {
+  margin: 1.5rem 0;
+}
+.article-content figure {
+  display: block;
+  margin: 1.5rem 0;
+}
+.article-content figure figcaption {
+  padding-bottom: 0;
+}
+.article-content figure img {
+  margin: 0;
+}
 @media (min-width: 1024px) {
   .article-content {
     font-size: 1.125rem;
+  }
+  .article-content img,
+.article-content figure {
+    margin: 2rem auto;
   }
 }
 
@@ -16987,6 +17019,19 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
 }
 .page-sections .bp-section {
   padding-bottom: 1.5rem;
+}
+.page-sections .section-main-content:last-of-type .bp-section {
+  padding-bottom: 0;
+}
+@media (min-width: 768px) {
+  .page-sections .bp-section {
+    padding-bottom: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .page-sections .bp-section {
+    padding-bottom: 3rem;
+  }
 }
 
 .bp-section.section-fullwidth-image figure,

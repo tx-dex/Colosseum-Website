@@ -72,7 +72,14 @@
             <div class="bp-section section-basic-content">
                 <div class="container article-content">
                     <h2>Ut enim ad minima veniam, quis nostrum exercitationem</h2>
+                    <img src="img/hero-basic-page-example.jpg" alt="">
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+
+                    <figure role="group" class="caption caption-img align-center"><img alt="values" data-entity-type="file" data-entity-uuid="07dfffdb-efe7-4750-87ef-2e02901248b0" src="img/hero-basic-page-example.jpg"><figcaption>Our three main values</figcaption></figure>
+
+                    <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit.</p>
+
+                    <img src="img/hero-basic-page-example.jpg" alt="">
 
                     <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit.</p>
                 </div>
