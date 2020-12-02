@@ -2,16 +2,6 @@
     Country page
 #}
 
-{# Old hardcoded breadcrumb #}
-{#<nav aria-label="breadcrumb">
-    <div class="container-fullwidth">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{{ path('entity.node.canonical', {'node': 11}) }}">Find a Clinic</a></li>
-            <li class="breadcrumb-item active" aria-current="page">{{ node.label }}</li>
-        </ol>
-    </div>
-</nav>#}
-
 <section class="page-section">
     <div class="container">
         {% if content.field_logo|render|trim is not empty %}
@@ -25,7 +15,14 @@
         </div>
         <div class="contact-information">
             <p>
-                <strong>Website: </strong>{{ content.field_website_link[0]['#url'] }}
+                <strong>Website: </strong>
+                <a href="{{ content.field_website_link[0]['#url'] }}" target="_blank">{{ content.field_website_link[0]['#url'] }}</a>
+            </p>
+            <p>
+                <strong>Email: </strong>
+                <a href="mailto:{% spaceless %}{{ content.field_email_address|escape|striptags('<!-- -->') }}{% endspaceless %}">
+                    {{ content.field_email_address }}
+                </a>
             </p>
         </div>
     </div>
