@@ -4,7 +4,7 @@
 
 {% set articleCategoryClass = content.field_article_category|render|striptags('<!-- -->')|lower|replace({' ':''})|trim %}
 
-<a href="{{ path('entity.node.canonical', {'node': node.id}) }}" class="item">
+<a href="{{ path('entity.node.canonical', {'node': node.id}) }}" class="article-list-item">
     <div class="col-date">
         <div class="square-wrapper">
             <div class="sw-content">

@@ -314,7 +314,11 @@ img {
   margin-bottom: 0;
   padding: 0;
 
-  .item {
+  .item + .item {
+    margin-top: 1.5rem;
+  }
+
+  .article-list-item {
     display: flex;
     background-color: $brand-blue-lighter;
     padding: 1rem;
@@ -384,7 +388,7 @@ img {
   }
 
   @include media-breakpoint-up(md) {
-    .item {
+    .article-list-item {
       padding: 2rem;
 
       .col-txt {
@@ -411,7 +415,7 @@ img {
   }
 
   @include media-breakpoint-up(xl) {
-    .item {
+    .article-list-item {
       padding: 3rem;
 
       .col-txt {

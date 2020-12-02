@@ -42,45 +42,87 @@
 
                 <h2>Find your local clinic:</h2>
 
-                <div class="article-list country-list">
-                    <a href="#" class="item mb-4">
-                        <div class="col-img">
-                            <div class="square-wrapper">
-                                <div class="sw-content">
-                                    <img src="img/country-logos/logo-colosseum-dental-uk.jpg" alt="UK">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-txt">
-                            <h3 class="article-title">Denmark: Colosseum Tandlæge</h3>
-                            <div class="article-lead">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                            </div>
-                            <button class="btn btn-link add-fwd-icon-before">https://www.colosseumdental.co.uk</button>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="article-list">
-                    <a href="#" class="item mb-4">
-                        <div class="col-date">
-                            <div class="square-wrapper">
-                                <div class="sw-content">
-                                    <div class="date">
-                                        <span class="day">24</span>
-                                        <span class="month">December</span>
-                                        <span class="year">2020</span>
+                <ul class="article-list country-list">
+                    <li class="item">
+                        <div class="article-list-item">
+                            <div class="col-img">
+                                <div class="square-wrapper">
+                                    <div class="sw-content">
+                                        <img src="img/country-logos/logo-colosseum-dental-uk.jpg" alt="UK">
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-txt">
+                                <h3 class="article-title">Denmark: Colosseum Tandlæge</h3>
+                                <div class="article-lead">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                </div>
+                                <a class="btn btn-link add-fwd-icon-before">https://www.colosseumdental.co.uk</a>
+                            </div>
                         </div>
-                        <div class="col-txt">
-                            <span class="category-badge">Press release</span>
-                            <h3 class="article-title">The Colosseum Dental Group Academy opens with a new digital curriculum</h3>
-                            <button class="btn btn-link add-fwd-icon">Read more</button>
+                    </li>
+                    <li class="item">
+                        <div class="article-list-item">
+                            <div class="col-img">
+                                <div class="square-wrapper">
+                                    <div class="sw-content">
+                                        <img src="img/country-logos/logo-colosseum-dental-uk.jpg" alt="UK">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-txt">
+                                <h3 class="article-title">Denmark: Colosseum Tandlæge</h3>
+                                <div class="article-lead">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                </div>
+                                <a class="btn btn-link add-fwd-icon-before">https://www.colosseumdental.co.uk</a>
+                            </div>
                         </div>
-                    </a>
-                </div>
+                    </li>
+                </ul>
+
+                <ul class="article-list">
+                    <li class="item">
+                        <a href="#" class="article-list-item">
+                            <div class="col-date">
+                                <div class="square-wrapper">
+                                    <div class="sw-content">
+                                        <div class="date">
+                                            <span class="day">24</span>
+                                            <span class="month">December</span>
+                                            <span class="year">2020</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-txt">
+                                <span class="category-badge">Press release</span>
+                                <h3 class="article-title">The Colosseum Dental Group Academy opens with a new digital curriculum</h3>
+                                <button class="btn btn-link add-fwd-icon">Read more</button>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="article-list-item">
+                            <div class="col-date">
+                                <div class="square-wrapper">
+                                    <div class="sw-content">
+                                        <div class="date">
+                                            <span class="day">24</span>
+                                            <span class="month">December</span>
+                                            <span class="year">2020</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-txt">
+                                <span class="category-badge">Press release</span>
+                                <h3 class="article-title">The Colosseum Dental Group Academy opens with a new digital curriculum</h3>
+                                <button class="btn btn-link add-fwd-icon">Read more</button>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>

@@ -4,7 +4,7 @@
 
 {# {{ path('entity.node.canonical', {'node': node.id}) }} #}
 
-<div class="item">
+<div class="article-list-item">
     <div class="col-img">
         <div class="square-wrapper">
             <div class="sw-content">
@@ -19,7 +19,7 @@
         <div class="article-lead">
             {{ content.body }}
         </div>
-        <a class="btn btn-link add-fwd-icon-before">{{ content.field_website_link[0]['#url'] }}</a>
+        <a class="btn btn-link add-fwd-icon-before" target="_blank">{{ content.field_website_link[0]['#url'] }}</a>
     </div>
 </div>
 
