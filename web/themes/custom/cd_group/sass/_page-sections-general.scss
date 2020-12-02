@@ -1,5 +1,5 @@
 
-// Hero with just title
+// Hero with just title (used in 1st and 2nd level pages)
 // -------------------------------------
 
 .hero-basic-page {
@@ -16,7 +16,7 @@
     overflow: hidden;
 
     img {
-      max-width: none;
+      width: 100%;
     }
   }
 
@@ -301,3 +301,28 @@
 
 // Basic page sections
 // -------------------------------------
+
+.page-sections {
+  .bp-section {
+    padding-bottom: 1.5rem;
+
+
+  }
+}
+
+.bp-section {
+  &.section-fullwidth-image {
+    figure,
+    img {
+      margin: 0;
+    }
+  }
+
+  &.section-video-embed {
+
+  }
+
+  &.section-2-columns {
+
+  }
+}

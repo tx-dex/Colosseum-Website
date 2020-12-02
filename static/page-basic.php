@@ -99,7 +99,7 @@
         <div class="main-content-container">
             <div class="bp-section section-2-columns">
                 <div class="container">
-                    <h2 class="h3 section-title">Treprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur</h2>
+                    <h2 class="section-title">Treprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur</h2>
                     <div class="row article-content">
                         <div class="col-md-6">
                             <h3>Fenim ad minima veniam, quis nostrum exercitationem </h3>

@@ -179,6 +179,13 @@ a {
   transition: color 200ms ease;
 }
 
+figcaption,
+.video-description {
+  font-size: .875rem;
+  color: $light-text-color;
+  padding: .3rem 0;
+}
+
 // Article content
 // -------------------------------------
 
