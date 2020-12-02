@@ -187,8 +187,17 @@ figcaption,
 .video-description {
   font-size: .875rem;
   color: $light-text-color;
-  padding: .3rem 0;
+  padding: .5rem 0 0;
 }
+
+figure {
+  // Drupal styles override
+  &.caption > figcaption {
+    display: block;
+  }
+}
+
+
 
 // Article content
 // -------------------------------------

@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="drupal-css/ajax-progress.module.css">
     <link rel="stylesheet" href="drupal-css/user.css">
     <link rel="stylesheet" href="drupal-css/user.module.css">
+    <link rel="stylesheet" href="drupal-css/filter.caption.css">
 
     <!-- Main css -->
     <link rel="stylesheet" href="../web/themes/custom/cd_group/css/styles.css?v=<?php echo rand(); ?>">

@@ -15577,7 +15577,11 @@ figcaption,
 .video-description {
   font-size: 0.875rem;
   color: #686D8A;
-  padding: 0.3rem 0;
+  padding: 0.5rem 0 0;
+}
+
+figure.caption > figcaption {
+  display: block;
 }
 
 .article-content h1, .article-content .h1, .article-content h2, .article-content .h2, .article-content h3, .article-content .h3, .article-content h4, .article-content .h4, .article-content h5, .article-content .h5, .article-content h6, .article-content .h6 {
@@ -17038,6 +17042,10 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
 .bp-section.section-fullwidth-image img {
   margin: 0;
 }
+.bp-section.section-2-columns .section-title {
+  margin-bottom: 1.25rem;
+}
+
 .login-page hr {
   margin: 2.5rem 0;
 }
