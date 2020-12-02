@@ -16,12 +16,7 @@
  * @see template_preprocess_views_view_list()
  */
 #}
-<nav role="navigation" class="countries-nav">
-    <ul class="nav">
-        {% for row in rows %}
-            <li class="nav-item">
-                {{- row.content -}}
-            </li>
-        {% endfor %}
-    </ul>
-</nav>
+
+{% for row in rows %}
+    {{- row.content -}}
+{% endfor %}
