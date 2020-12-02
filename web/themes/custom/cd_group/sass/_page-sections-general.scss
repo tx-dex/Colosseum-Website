@@ -1,5 +1,253 @@
 
+// Hero with just title
+// -------------------------------------
+
+.hero-basic-page {
+  .hero-content {
+    padding: 1rem 0 2rem;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  .hero-img {
+    max-height: 500px;
+    overflow: hidden;
+  }
+
+  @include media-breakpoint-up(sm) {
+    .hero-content {
+      padding: 1rem 0 2.5rem;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .hero-content {
+      padding: 2rem 0 3.5rem;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+
+    .hero-content {
+      padding: 3rem 0 4.5rem;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .hero-content {
+      padding: 4rem 0 5.5rem;
+      max-width: 900px;
+    }
+  }
+}
+
+.page-sections {
+  padding-bottom: 2rem;
+
+  @include media-breakpoint-up(md) {
+    padding-bottom: 4rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 5.5rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 7rem;
+  }
+}
+
+.section-main-content {
+  position: relative;
+  z-index: 2;
+
+  /* Here the padding comes from the container of the inside content section */
+  padding-left: 0;
+  padding-right: 0;
+
+  .main-content-container {
+    background-color: $white;
+  }
+
+
+  @include media-breakpoint-up(md) {
+    padding-left: $margin-width-md;
+    padding-right: $margin-width-md;
+
+    .main-content-container {
+      padding-left: $margin-width-md;
+      padding-right: $margin-width-md;
+
+      /*
+      The padding comes from the main-content-container
+      We control the container width with just max-width
+      */
+      .container-fullwidth,
+      .container-lg,
+      .container {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .container {
+        max-width: 900px;
+      }
+
+      .container-lg {
+        max-width: 1150px;
+      }
+
+      .container-fullwidth {
+        max-width: 1200px;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding-left: $margin-width-xl;
+    padding-right: $margin-width-xl;
+
+    .main-content-container {
+      padding-left: $margin-width-xl;
+      padding-right: $margin-width-xl;
+    }
+  }
+}
+
+.hero-basic-page.with-image + .page-sections .section-main-content:first-of-type {
+  .main-content-container {
+    padding-top: 2rem;
+
+    @include media-breakpoint-up(md) {
+      margin-top: -3rem;
+      padding-top: 3rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin-top: -6rem;
+      padding-top: 3.5rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+      margin-top: -9rem;
+      padding-top: 4rem;
+    }
+  }
+}
+
+
+// 1st level pages with block-links to subpages
+// -------------------------------------
+
+.page-section-subpage-links {
+  position: relative;
+
+  .block-link {
+    .block-link-fw-2-col {
+      margin-bottom: 3rem;
+      display: flex;
+      flex-wrap: wrap;
+
+      p.lead-text {
+        font-size: 1rem;
+      }
+
+      .col-img {
+        flex: 0 0 100%;
+        max-width: 100%;
+        order: 0;
+        margin-bottom: 1rem;
+      }
+
+      .col-txt {
+        flex: 0 0 100%;
+        max-width: 100%;
+        order: 1;
+      }
+    }
+
+    &:last-of-type .block-link-fw-2-col {
+      margin-bottom: 0;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+
+    .block-link {
+      .block-link-fw-2-col {
+        margin-bottom: 4rem;
+
+        .col-img {
+          flex: 0 0 55%;
+          max-width: 55%;
+          margin: 0;
+        }
+
+        .col-txt {
+          flex: 0 0 45%;
+          max-width: 45%;
+        }
+      }
+
+      &.even .block-link-fw-2-col {
+        .col-txt {
+          padding-left: $margin-width-md;
+        }
+      }
+
+      &.odd .block-link-fw-2-col {
+        .col-img {
+          order: 1;
+        }
+        .col-txt {
+          order: 0;
+          padding-right: $margin-width-md;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .block-link {
+      .block-link-fw-2-col {
+        align-items: center;
+
+        p.lead-text {
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .block-link {
+      .block-link-fw-2-col {
+        margin-bottom: 6rem;
+
+        p.lead-text {
+          font-size: 1.375rem;
+        }
+      }
+
+      &.even .block-link-fw-2-col {
+        .col-txt {
+          padding-left: $margin-width-xl;
+        }
+      }
+
+      &.odd .block-link-fw-2-col {
+        .col-txt {
+          padding-right: $margin-width-xl;
+        }
+      }
+    }
+  }
+}
+
 // Two columns CTA with image
+// Used in front page (page-section-fp-contact)
 // -------------------------------------
 
 .section-two-col-cta {
@@ -15,12 +263,8 @@
     align-items: center;
     justify-content: center;
 
-    .content-box {
+    .cta-content-box {
       padding: 2rem $margin-width-sm;
-
-      .btn {
-        margin-top: 1.5rem;
-      }
 
       p {
         font-size: 1.125rem;
@@ -39,7 +283,7 @@
     }
 
     .col-txt {
-      .content-box {
+      .cta-content-box {
         padding: 3.5rem $margin-width-md;
         max-width: 540px;
       }
@@ -53,130 +297,3 @@
 
 // Basic page sections
 // -------------------------------------
-
-.page-section-basic-page {
-  padding-bottom: 2rem;
-
-  .page-title {
-    margin-bottom: 2rem;
-  }
-
-  .page-image {
-    margin-bottom: 2rem;
-  }
-
-  .lead-text {
-    margin-bottom: 2rem;
-  }
-
-  .page-section-bp:first-of-type {
-    padding-top: 0;
-  }
-}
-
-.page-section-bp {
-  padding: 1rem 0;
-
-  &.even {
-    background-color: $white;
-  }
-
-  .section-2-columns {
-    .section-title {
-      max-width: 800px;
-      margin-bottom: 1.5rem;
-    }
-  }
-
-  @include media-breakpoint-up(md) {
-    padding: 2rem 0;
-  }
-
-  @include media-breakpoint-up(xl) {
-    padding: 3rem 0;
-  }
-}
-
-.page-section-subpage-links {
-  position: relative;
-
-  &:before {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    content: '';
-    width: 100%;
-    height: 300px;
-    background-color: $brand-blue-lighter;
-    z-index: -1;
-  }
-
-  .block-link {
-    margin-bottom: 3rem;
-    background-color: $white;
-
-    &:last-of-type {
-      margin-bottom: 0;
-    }
-
-    .block-link-fw-2-col {
-      p.lead-text {
-        font-size: 1rem;
-        margin-bottom: 1.5rem;
-      }
-
-      .col-img {
-        order: 0;
-        margin-bottom: 1rem;
-      }
-
-      .col-txt {
-        order: 1;
-        padding: 1rem 3rem;
-      }
-    }
-  }
-
-  @include media-breakpoint-up(md) {
-
-    .block-link {
-      margin-bottom: 0;
-
-      .block-link-fw-2-col {
-        padding: 7%;
-
-        .col-img {
-          margin: 0;
-        }
-        .col-txt {
-          padding: 0 $grid-gutter-width/2;
-        }
-      }
-
-      &.odd .block-link-fw-2-col {
-        .col-img {
-          order: 1;
-        }
-        .col-txt {
-          order: 0;
-        }
-      }
-    }
-  }
-
-  @include media-breakpoint-up(lg) {
-
-    .block-link {
-
-      .block-link-fw-2-col {
-        p.lead-text {
-          font-size: 1.125rem;
-        }
-        .row {
-          align-items: center;
-        }
-      }
-    }
-  }
-}

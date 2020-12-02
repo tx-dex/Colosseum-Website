@@ -47,18 +47,16 @@
 <js-bottom-placeholder token="{{ placeholder_token|raw }}">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    {#<script async src="https://www.googletagmanager.com/gtag/js?id=G-RJ17DYBF5X"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
+    {#<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EH3MM4PV72">
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
 
-      function gtag() {
-        dataLayer.push(arguments);
-      }
+ gtag('config', 'G-EH3MM4PV72');
+</script>#}
 
-      gtag('js', new Date());
-      gtag('config', 'G-RJ17DYBF5X');
-
-    </script>#}
     {# Osano Cookie consent #}
     {#<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
     <script>

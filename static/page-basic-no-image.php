@@ -22,16 +22,13 @@
     </div>
 </nav>
 
-<section class="hero-basic-page with-image">
+<section class="hero-basic-page">
     <div class="container-fullwidth">
         <div class="hero-content">
             <h1>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
             </h1>
         </div>
-    </div>
-    <div class="hero-img">
-        <img src="img/hero-basic-page-example.jpg" alt="">
     </div>
 </section>
 
@@ -114,6 +111,8 @@
         </div>
     </section>
 </div>
+
+
 
 
 <?php require 'region-footer.php'; ?>

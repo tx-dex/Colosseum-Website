@@ -4,7 +4,7 @@
         <div class="hero-img" style="background-image: url(img/hero-example.jpg);"></div>
         <div class="container-fullwidth">
             <div class="hero-content">
-                <h1 class="h3 hero-title">Welcome to Colosseum Dental Group</h1>
+                <h1 class="h2 hero-title">Welcome to Colosseum Dental Group</h1>
                 <p class="hero-lead">We want to provide modern, quality dentistry services for the benefit of patients, dentists, employees and shareholders, striving for continuous growth and excellence.</p>
                 <a href="#" class="btn btn-primary add-fwd-icon">
                     About us
@@ -32,7 +32,7 @@
 
     <section class="page-section page-section-fp-intro">
         <div class="container-lg">
-            <h2 class="h3">
+            <h2>
                 Colosseum Dental Group is a <span>leading dentistry</span> company in the European dental services market.
             </h2>
             <ul class="page-list row">
@@ -72,9 +72,9 @@
 
     <section class="page-section page-section-fp-feature">
         <img src="img/frontpage-charitable-cause.jpg" alt="img">
-        <div class="content-box">
-            <h3 class="small-ac-title">Our charitable cause</h3>
-            <p class="h3">Jacobs Foundation, one of the world’s leading charities for children and youth, is the ultimate economic beneficiary. </p>
+        <div class="cta-content-box">
+            <h2 class="small-ac-title">Our charitable cause</h2>
+            <p class="h2">Jacobs Foundation, one of the world’s leading charities for children and youth, is the ultimate economic beneficiary. </p>
             <a href="#" class="btn btn-primary add-fwd-icon">Read more</a>
         </div>
     </section>
@@ -85,7 +85,7 @@
         </div>
         <div class="cta">
             <div class="container-lg">
-                <h2>We are presently operating in eight European countries</h2>
+                <h2 class="h1">We are presently operating in eight European countries</h2>
                 <a href="#" class="btn btn-primary add-fwd-icon">Find your local clinic</a>
             </div>
         </div>
@@ -144,8 +144,8 @@
                     <img src="img/frontpage-contact.jpg" alt="Dentist">
                 </div>
                 <div class="col-md-6 col-txt">
-                    <div class="content-box">
-                        <h2>Get in Touch</h2>
+                    <div class="cta-content-box">
+                        <h2 class="h1">Get in Touch</h2>
                         <p>Thinking about downscaling as a prelude to retirement? Or perhaps selling your practice to work directly with us? Get in touch with our national executives who deal with acquisitions.</p>
                         <a href="#" class="btn btn-primary add-fwd-icon">Contact us</a>
                     </div>

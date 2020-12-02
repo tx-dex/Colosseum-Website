@@ -23,65 +23,81 @@
     </div>
 </nav>
 
-<section class="page-section">
-    <div class="container">
-        <div class="page-header">
-            <h1 class="h2">
+<section class="hero-basic-page with-image">
+    <div class="container-fullwidth">
+        <div class="hero-content">
+            <h1>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
             </h1>
-            <!--<p>Here will be the links to subsections etc.</p>-->
         </div>
+    </div>
+    <div class="hero-img">
+        <img src="img/hero-basic-page-example.jpg" alt="">
     </div>
 </section>
 
-<section class="page-section page-section-subpage-links">
-    <div class="container">
-        <div class="block-link odd">
-            <div class="block-link-fw-2-col">
-                <div class="row">
-                    <div class="col-md-6 col-txt">
-                        <div class="content-box">
-                            <h2 class="h3">
-                                Medical governance
-                            </h2>
-                            <p class="lead-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                            </p>
-                            <a href="/medical-governance" class="btn btn-primary add-fwd-icon">
-                                Read more
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-img">
-                        <img src="img/frontpage-contact.jpg?itok=hS5BdaZ-" alt="A dentist">
-                    </div>
-                </div>
+<div class="page-sections">
+    <!--<section class="section-main-content">
+        <div class="main-content-container">
+            <div class="container-fullwidth article-content">
+                <h2>Ut enim ad minima veniam, quis nostrum exercitationem</h2>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+
+                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit.</p>
             </div>
         </div>
-        <div class="block-link even">
-            <div class="block-link-fw-2-col">
-                <div class="row">
-                    <div class="col-md-6 col-txt">
-                        <div class="content-box">
-                            <h2 class="h3">
-                                Colosseum Academy
-                            </h2>
-                            <p class="lead-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                            </p>
-                            <a href="/medical-governance" class="btn btn-primary add-fwd-icon">
-                                Read more
-                            </a>
+    </section>-->
+
+    <section class="section-main-content">
+        <div class="main-content-container">
+            <div class="container-fullwidth">
+                <section class="page-section-subpage-links">
+                    <div class="block-link odd">
+                        <div class="block-link-fw-2-col">
+                            <div class="col-txt">
+                                <div class="cta-content-box">
+                                    <h2>
+                                        Medical governance
+                                    </h2>
+                                    <p class="lead-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                    </p>
+                                    <a href="/medical-governance" class="btn btn-primary add-fwd-icon">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-img">
+                                <img src="img/frontpage-contact.jpg?itok=hS5BdaZ-" alt="A dentist">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-img">
-                        <img src="img/frontpage-contact.jpg?itok=hS5BdaZ-" alt="A dentist">
+                    <div class="block-link even">
+                        <div class="block-link-fw-2-col">
+                            <div class="col-txt">
+                                <div class="cta-content-box">
+                                    <h2>
+                                        Colosseum Academy
+                                    </h2>
+                                    <p class="lead-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
+                                    </p>
+                                    <a href="/medical-governance" class="btn btn-primary add-fwd-icon">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-img">
+                                <img src="img/frontpage-contact.jpg?itok=hS5BdaZ-" alt="A dentist">
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </section>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+</div>
+
 
 <?php require 'region-footer.php'; ?>
 

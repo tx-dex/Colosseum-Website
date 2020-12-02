@@ -39,7 +39,9 @@
 #}
 
 {% for key, item in items %}
-    <section class="page-section-bp {{ key is even ? '':'even' }}">
-        {{ item.content }}
+    <section class="section-main-content {{ key is even ? '':'even' }}">
+        <div class="main-content-container">
+            {{ item.content }}
+        </div>
     </section>
 {% endfor %}

@@ -13,11 +13,11 @@
                 <h2>Layouts</h2>
                 <ul>
                     <li><a href="page-front.php">Front page</a></li>
-                    <li><a href="page-about-us.php">About us page</a></li>
+                    <li><a href="page-leading-dentistry.php">Leading dentistry</a></li>
+                    <li><a href="page-basic.php">Basic page</a></li>
+                    <li><a href="page-basic-no-image.php">Basic page without an image</a></li>
                     <li><a href="page-newsroom.php">Newsroom page</a></li>
                     <li><a href="page-contact.php">Contact page</a></li>
-                    <li><a href="page-basic.php">Basic page</a></li>
-                    <li><a href="page-leading-dentistry.php">Leading dentistry</a></li>
                 </ul>
             </div>
             <div class="col-md-6">

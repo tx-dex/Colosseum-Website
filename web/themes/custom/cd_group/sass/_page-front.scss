@@ -27,8 +27,12 @@
       margin-bottom: 1rem;
     }
 
+    p {
+      margin: 0;
+    }
+
     .btn {
-      margin-top: 1rem;
+      margin-top: 2rem;
     }
   }
 
@@ -58,7 +62,7 @@
       }
 
       .btn {
-        margin-top: 1.5rem;
+        margin-top: 2rem;
       }
     }
   }
@@ -181,7 +185,7 @@
 .page-section-fp-feature {
   padding-top: 0;
 
-  .content-box {
+  .cta-content-box {
     position: relative;
     z-index: 2;
     margin: -4% $margin-width-sm 0;
@@ -194,7 +198,7 @@
       margin-bottom: 1rem;
     }
 
-    p.h3 {
+    p.h2 {
       color: $brand-blue-light;
       margin-bottom: 2rem;
     }
@@ -204,7 +208,7 @@
     img {
       width: 95%;
     }
-    .content-box {
+    .cta-content-box {
       margin: -15% 0 0 auto;
       padding: 3rem $margin-width-md;
       max-width: 600px;
@@ -213,14 +217,14 @@
         margin-bottom: 1.5rem;
       }
 
-      p.h3 {
+      p.h2 {
         margin-bottom: 2.5rem;
       }
     }
   }
 
   @include media-breakpoint-up(lg) {
-    .content-box {
+    .cta-content-box {
       margin: -15% 0 0 auto;
       padding: 4rem $margin-width-md;
       max-width: 700px;
@@ -231,7 +235,7 @@
     img {
       width: 93%;
     }
-    .content-box {
+    .cta-content-box {
       margin: -15rem 0 0 auto;
       padding: 5rem $margin-width-md;
       max-width: 800px;
