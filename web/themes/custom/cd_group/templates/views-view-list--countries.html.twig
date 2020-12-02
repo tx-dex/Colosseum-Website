@@ -16,7 +16,10 @@
  * @see template_preprocess_views_view_list()
  */
 #}
-
-{% for row in rows %}
-    {{- row.content -}}
-{% endfor %}
+<ul class="article-list country-list">
+    {% for row in rows %}
+        <li class="item">
+            {{- row.content -}}
+        </li>
+    {% endfor %}
+</ul>
