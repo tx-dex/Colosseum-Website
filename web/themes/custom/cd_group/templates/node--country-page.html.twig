@@ -14,7 +14,7 @@
             {{ content.body }}
         </div>
         <div class="contact-information">
-            <p>
+            {#<p>
                 {{ content.field_address }}
             </p>
             <p>
@@ -26,6 +26,14 @@
                 {{ node.field_address.postal_code }}<br>
                 {{ node.field_address.locality }}<br>
                 {{ node.field_address.country.name }}<br>
+            </address>#}
+
+            <address>
+                {{ content.field_address.0.['organization']['#value'] }}<br>
+                {{ content.field_address.0.['address_line1']['#value'] }}<br>
+                {{ content.field_address.0.['postal_code']['#value'] }}<br>
+                {{ content.field_address.0.['locality']['#value'] }}<br>
+                {{ content.field_address.0.['country']['#value'] }}<br>
             </address>
 
             <ol>
