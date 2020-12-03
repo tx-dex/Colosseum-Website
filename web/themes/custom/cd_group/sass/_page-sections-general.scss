@@ -47,7 +47,7 @@
   }
 }
 
-.page-sections {
+/*.page-sections {
   padding-bottom: 2rem;
 
   @include media-breakpoint-up(md) {
@@ -61,7 +61,7 @@
   @include media-breakpoint-up(xl) {
     padding-bottom: 7rem;
   }
-}
+}*/
 
 .section-main-content {
   position: relative;
@@ -308,18 +308,26 @@
   }
 
   .section-main-content:last-of-type .bp-section {
-    padding-bottom: 0;
+    padding-bottom: 3rem;
   }
 
   @include media-breakpoint-up(md) {
     .bp-section {
       padding-bottom: 2rem;
     }
+
+    .section-main-content:last-of-type .bp-section {
+      padding-bottom: 4rem;
+    }
   }
 
   @include media-breakpoint-up(xl) {
     .bp-section {
       padding-bottom: 3rem;
+    }
+
+    .section-main-content:last-of-type .bp-section {
+      padding-bottom: 5rem;
     }
   }
 }
@@ -339,6 +347,71 @@
   &.section-2-columns {
     .section-title {
       margin-bottom: 1.25rem;
+    }
+  }
+
+  &.section-team {
+    padding: 2.5rem 0 2rem !important;
+
+    .section-title {
+      margin-bottom: 2rem;
+    }
+
+    .team-grid-title {
+      margin-bottom: 2rem;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    &.section-team {
+      padding: 4rem 0 3rem !important;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    &.section-team {
+      padding: 6rem 0 4rem !important;
+    }
+  }
+}
+
+.section-main-content-team {
+  background-color: $brand-blue-lighter;
+
+  .main-content-container {
+    background-color: transparent;
+  }
+}
+
+.team-grid {
+  .person-card {
+    margin-bottom: 2rem;
+
+    img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 1.5rem;
+      filter: grayscale(100%);
+    }
+
+    .person-name {
+      color: $default-text-color;
+      font-weight: $font-weight-medium;
+    }
+    .person-title {
+      margin: 0;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .person-card {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .person-card {
+      margin-bottom: 4rem;
     }
   }
 }

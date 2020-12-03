@@ -120,6 +120,139 @@
             </div>
         </div>
     </section>
+
+    <section class="section-main-content section-main-content-team">
+        <div class="main-content-container">
+            <div class="bp-section section-team">
+                <div class="container">
+                    <h2 class="section-title">Meet the people</h2>
+                    <h3 class="team-grid-title">
+                        Academy team
+                    </h3>
+
+                    <div class="row team-grid">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="person-card">
+                                <div class="img-wrapper">
+                                    <img src="img/team-member-img.jpg" alt="Gio">
+                                </div>
+                                <h5 class="person-name">Dr. Bessie Cooper</h5>
+                                <p class="person-title">
+                                    DMD, PhD and specialist in endodontics
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="person-card">
+                                <div class="img-wrapper">
+                                    <img src="img/team-member-img.jpg" alt="Gio">
+                                </div>
+                                <h5 class="person-name">Dr. Bessie Cooper</h5>
+                                <p class="person-title">
+                                    DMD, PhD and specialist in endodontics
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="person-card">
+                                <div class="img-wrapper">
+                                    <img src="img/team-member-img.jpg" alt="Gio">
+                                </div>
+                                <h5 class="person-name">Dr. Bessie Cooper</h5>
+                                <p class="person-title">
+                                    DMD, PhD and specialist in endodontics
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="person-card">
+                                <div class="img-wrapper">
+                                    <img src="img/team-member-img.jpg" alt="Gio">
+                                </div>
+                                <h5 class="person-name">Dr. Bessie Cooper</h5>
+                                <p class="person-title">
+                                    DMD, PhD and specialist in endodontics
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="person-card">
+                                <div class="img-wrapper">
+                                    <img src="img/team-member-img.jpg" alt="Gio">
+                                </div>
+                                <h5 class="person-name">Dr. Bessie Cooper</h5>
+                                <p class="person-title">
+                                    DMD, PhD and specialist in endodontics
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="team-grid-title">
+                        Academy team
+                    </h3>
+
+                    <div class="row team-grid">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="person-card">
+                                <div class="img-wrapper">
+                                    <img src="img/team-member-img.jpg" alt="Gio">
+                                </div>
+                                <h5 class="person-name">Dr. Bessie Cooper</h5>
+                                <p class="person-title">
+                                    DMD, PhD and specialist in endodontics
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="person-card">
+                                <div class="img-wrapper">
+                                    <img src="img/team-member-img.jpg" alt="Gio">
+                                </div>
+                                <h5 class="person-name">Dr. Bessie Cooper</h5>
+                                <p class="person-title">
+                                    DMD, PhD and specialist in endodontics
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="person-card">
+                                <div class="img-wrapper">
+                                    <img src="img/team-member-img.jpg" alt="Gio">
+                                </div>
+                                <h5 class="person-name">Dr. Bessie Cooper</h5>
+                                <p class="person-title">
+                                    DMD, PhD and specialist in endodontics
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="person-card">
+                                <div class="img-wrapper">
+                                    <img src="img/team-member-img.jpg" alt="Gio">
+                                </div>
+                                <h5 class="person-name">Dr. Bessie Cooper</h5>
+                                <p class="person-title">
+                                    DMD, PhD and specialist in endodontics
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="person-card">
+                                <div class="img-wrapper">
+                                    <img src="img/team-member-img.jpg" alt="Gio">
+                                </div>
+                                <h5 class="person-name">Dr. Bessie Cooper</h5>
+                                <p class="person-title">
+                                    DMD, PhD and specialist in endodontics
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 
 
