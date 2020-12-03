@@ -37,11 +37,10 @@
  * @see template_preprocess_field()
  */
 #}
-
+{# {{ key is even ? '':'even' }} #}
 {% for key, item in items %}
-    <section class="section-main-content {{ key is even ? '':'even' }}">
+    <section class="section-main-content">
         <div class="main-content-container">
-            {{ item.attributes  }}
             {{ item.content }}
         </div>
     </section>

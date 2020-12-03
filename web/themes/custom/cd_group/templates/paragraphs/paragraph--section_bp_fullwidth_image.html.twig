@@ -1,12 +1,16 @@
-<div class="bp-section section-fullwidth-image">
-    <div class="container">
-        {% if content.field_image|render|trim is not empty %}
-            <figure>
-                <img src="{{ content.field_image[0]['#media'].field_media_image.entity.uri.value | image_style('fullwidth_content_image') }}" alt="{{ content.field_image[0]['#media'].field_media_image.alt }}">
-                {% if content.field_description is not empty %}
-                    <figcaption>{{ content.field_description }}</figcaption>
+<section class="section-main-content">
+    <div class="main-content-container">
+        <div class="bp-section section-fullwidth-image">
+            <div class="container">
+                {% if content.field_image|render|trim is not empty %}
+                    <figure>
+                        <img src="{{ content.field_image[0]['#media'].field_media_image.entity.uri.value | image_style('fullwidth_content_image') }}" alt="{{ content.field_image[0]['#media'].field_media_image.alt }}">
+                        {% if content.field_description is not empty %}
+                            <figcaption>{{ content.field_description }}</figcaption>
+                        {% endif %}
+                    </figure>
                 {% endif %}
-            </figure>
-        {% endif %}
+            </div>
+        </div>
     </div>
-</div>
+</section>

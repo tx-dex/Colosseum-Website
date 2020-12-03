@@ -1,13 +1,17 @@
-<div class="bp-section section-basic-content">
-    <div class="container">
-        <div class="article-content">
-            {% if content.field_title|render|trim is not empty %}
-                <div class="article-content-header">
-                    <h2>{{ content.field_title }}</h2>
-                </div>
-            {% endif %}
+<section class="section-main-content">
+    <div class="main-content-container">
+        <div class="bp-section section-basic-content">
+            <div class="container">
+                <div class="article-content">
+                    {% if content.field_title|render|trim is not empty %}
+                        <div class="article-content-header">
+                            <h2>{{ content.field_title }}</h2>
+                        </div>
+                    {% endif %}
 
-            {{ content.field_body }}
+                    {{ content.field_body }}
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</section>

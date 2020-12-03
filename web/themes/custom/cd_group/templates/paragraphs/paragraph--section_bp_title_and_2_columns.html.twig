@@ -1,16 +1,19 @@
-
-<div class="bp-section section-2-columns">
-    <div class="container">
-        {% if content.field_title is not empty %}
-            <h2 class="section-title">{{ content.field_title }}</h2>
-        {% endif %}
-        <div class="row article-content">
-            <div class="col-md-6">
-                {{ content.field_column_1_content }}
-            </div>
-            <div class="col-md-6">
-                {{ content.field_column_2_content }}
+<section class="section-main-content">
+    <div class="main-content-container">
+        <div class="bp-section section-2-columns">
+            <div class="container">
+                {% if content.field_title is not empty %}
+                    <h2 class="section-title">{{ content.field_title }}</h2>
+                {% endif %}
+                <div class="row article-content">
+                    <div class="col-md-6">
+                        {{ content.field_column_1_content }}
+                    </div>
+                    <div class="col-md-6">
+                        {{ content.field_column_2_content }}
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</section>
