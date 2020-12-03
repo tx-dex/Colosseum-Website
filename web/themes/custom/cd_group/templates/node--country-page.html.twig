@@ -14,6 +14,13 @@
             {{ content.body }}
         </div>
         <div class="contact-information">
+            <address>
+                {{ node.field_address.company }}<br>
+                {{ node.field_address.address_line_1 }}<br>
+                {{ node.field_address.postal_code }}<br>
+                {{ node.field_address.locality }}<br>
+                {{ node.field_address.country }}<br>
+            </address>
             <p>
                 <strong>Website: </strong>
                 <a href="{{ content.field_website_link[0]['#url'] }}" target="_blank">{{ content.field_website_link[0]['#url'] }}</a>

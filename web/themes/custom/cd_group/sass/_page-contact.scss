@@ -2,145 +2,233 @@
 // Contact page specific styles
 // -------------------------------------
 
-.hero-contact {
-  min-height: 200px;
-  flex-direction: column;
-
-  .hero-content {
-    .hero-title {
-      margin-bottom: 1.5rem;
-    }
-  }
-}
-
-.hero-contact-info {
-  font-size: 1.125rem;
-
-  .contact {
-    margin-bottom: 2rem;
-
-    a {
-      display: block;
-      width: auto;
-      color: $default-text-color;
-      margin-bottom: .5rem;
-
-      span {
-        display: inline-block;
-        line-height: 2;
-        border-bottom: 1px solid $border-color;
-        transition: border-color .25s ease-in-out;
-      }
-
-      &:hover,
-      &:active,
-      &:focus {
-        text-decoration: none;
-
-        span {
-          border-color: $default-text-color;
-        }
-      }
-    }
-  }
-
-  .address {
-    margin-bottom: .5rem;
-  }
-
-  @include media-breakpoint-up(md) {
-    font-size: 1.325rem;
-  }
-
-  @include media-breakpoint-up(xl) {
-    font-size: 1.65rem;
-  }
-}
-
-.page-section-contact-img {
-  position: relative;
-  background-color: $brand-blue-lighter;
-
-  &:before {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 50%;
-    content: '';
-    background-color: $white;
-    z-index: 0;
-  }
-
-  .section-img {
-    position: relative;
-
-    .btn-scroll-down {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%) translateY(-50%);
-    }
-  }
-
-  @include media-breakpoint-up(md) {
-    padding-top: 4rem;
-
-    .section-img {
-      width: 70%;
-      max-width: 900px;
-
-      .btn-scroll-down {
-        left: 0;
-      }
-    }
-  }
+.page-sections.contact-page-sections {
+  padding-bottom: 0;
 }
 
 .page-section-contact-form {
-  background-color: $brand-blue-lighter;
 
-  .contact-form-box {
-    position: relative;
-    z-index: 1;
-    background-color: $white;
-    padding: 3rem $grid-gutter-width/2;
-    margin: 0 auto;
-    max-width: 980px;
+  .col-contact-form {
+    background-color: $brand-blue-lighter;
+    padding: 1.5rem $grid-gutter-width/2;
 
     .section-title {
       margin-bottom: 1rem;
     }
+  }
 
-    form {
-      margin-top: 2.5rem;
-    }
+  .col-links {
+    background-color: $brand-blue-darkest;
+    padding: 1.5rem $grid-gutter-width/2;
   }
 
   @include media-breakpoint-up(md) {
-    padding: 0 $margin-width-md 4rem;
+    display: flex;
 
-    .contact-form-box {
-      margin-top: -5rem;
-      padding: 4rem;
+    .col-contact-form,
+    .col-links {
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding: $margin-width-md;
     }
   }
 
   @include media-breakpoint-up(lg) {
-    padding: 0 $margin-width-md 6rem;
 
-    .contact-form-box {
-      margin-top: -7rem;
-      padding: 5rem 7rem;
+    .col-contact-form {
+
     }
   }
 
   @include media-breakpoint-up(xl) {
-    padding: 0 $margin-width-md 6rem;
 
-    .contact-form-box {
-      margin-top: -7rem;
+    .col-contact-form {
+
+    }
+  }
+}
+
+.contact-section-links {
+  @extend .list-unstyled;
+}
+
+// Group contact
+// -------------------------------------
+
+.page-section-contact-group-contact {
+  padding-bottom: 0;
+
+  .section-title {
+    margin-bottom: 1rem;
+  }
+
+  address,
+  .contact-links {
+    line-height: 1.63;
+  }
+
+  .contact-links {
+    a {
+      color: $default-text-color;
+      text-decoration: underline;
+
+      &:hover,
+      &:focus {
+        color: $brand-blue;
+      }
+    }
+  }
+
+  .col-img {
+    margin-top: 2rem;
+    padding: 0;
+  }
+
+  @include media-breakpoint-up(sm) {
+    .col-info {
+      margin: 0 0 1.5rem 0;
+    }
+
+    .col-img {
+      margin: 0 0 -3rem;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+
+    address,
+    .contact-links {
+      font-size: 1.125rem;
+    }
+
+    .col-img {
+      margin: 0 0 -4rem;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+
+    .section-title {
+      margin-bottom: 2rem;
+    }
+
+    .col-info {
+      margin: 0;
+    }
+
+    address {
+      margin-bottom: 2rem;
+    }
+
+    address,
+    .contact-links {
+      font-size: 1.375rem;
+    }
+
+    .col-img {
+      margin: 0 0 -7rem;
+    }
+  }
+}
+
+// Country organisations section
+// -------------------------------------
+
+.page-section-contact-countries {
+  padding: 2.5rem 0 2rem;
+  background-color: $brand-blue-lighter;
+
+  .section-title {
+    margin-bottom: 1.5rem;
+  }
+
+  @include media-breakpoint-up(sm) {
+    padding: 5rem 0 2rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding: 6rem 0 2.5rem;
+
+    .section-title {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 7rem 0 2.5rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding: 9rem 0 4rem;
+  }
+}
+
+
+// Country organisation lists
+// -------------------------------------
+
+.country-organisation-card {
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 1rem 1rem 1.5rem;
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    width: 160px;
+    height: 60px;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  .item-title {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-info {
+    a {
+      color: $default-text-color;
+      text-decoration: underline;
+
+      &:hover,
+      &:focus {
+        color: $brand-blue;
+      }
+    }
+    .country {
+      font-weight: $font-weight-medium;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .item-title {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.country-organisation-list-cards {
+  @extend .list-unstyled;
+
+  .item {
+    margin-bottom: $grid-gutter-width/2;
+
+    .country-organisation-card {
+      height: 100%;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .item {
+      margin-bottom: $grid-gutter-width;
     }
   }
 }
