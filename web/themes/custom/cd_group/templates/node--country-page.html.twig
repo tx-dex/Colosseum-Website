@@ -21,6 +21,12 @@
                 {{ node.field_address.locality }}<br>
                 {{ node.field_address.country.name }}<br>
             </address>
+
+            <ol>
+                {% for key, value in node.field_address.country %}
+                    <li>{{ key }}</li>
+                {% endfor %}
+            </ol>
             <p>
                 <strong>Website: </strong>
                 <a href="{{ content.field_website_link[0]['#url'] }}" target="_blank">{{ content.field_website_link[0]['#url'] }}</a>
