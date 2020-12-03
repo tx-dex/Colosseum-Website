@@ -29,10 +29,15 @@
             </address>
 
             <ol>
-                {% for key, value in node.field_address.0 %}
+                {% for key, value in content.field_address.0 %}
                     <li>{{ key }}</li>
                 {% endfor %}
             </ol>
+            <p>
+                <strong>Address:</strong><br>
+                {{ node.field_address.address_line1 }}, {{ node.field_address.postal_code }} {{ node.field_address.locality }}<br>
+                {{ content.field_address.0['country']['#value'] }}
+            </p>
             <p>
                 <strong>Website: </strong>
                 <a href="{{ content.field_website_link[0]['#url'] }}" target="_blank">{{ content.field_website_link[0]['#url'] }}</a>
