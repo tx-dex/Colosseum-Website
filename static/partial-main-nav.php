@@ -32,7 +32,7 @@
                             <li class="nav-item has-dropdown">
                                 <a href="/leading-dentistry" class="nav-link ">Leading Dentistry</a>
                                 <a href="#" class="dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="material-icons keyboard_arrow_down"></i>
+                                    <i class="material-icons"></i>
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li class="nav-item kissa">
