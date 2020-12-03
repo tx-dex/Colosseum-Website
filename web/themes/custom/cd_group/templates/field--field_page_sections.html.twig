@@ -41,6 +41,7 @@
 {% for key, item in items %}
     <section class="section-main-content {{ key is even ? '':'even' }}">
         <div class="main-content-container">
+            {{ item.attributes  }}
             {{ item.content }}
         </div>
     </section>
