@@ -91,48 +91,7 @@
 
 <section class="page-section page-section-fp-countries">
     <div class="container-lg">
-        <ul class="country-logo-list">
-            <li>
-                <a href="#">
-                    <img src="{{ base_path ~ directory }}/img/temp-img/logos/coloseum_dk_ny.png" alt="Colosseum">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="{{ base_path ~ directory }}/img/temp-img/logos/logo_high_odontosalute.png" alt="Colosseum">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="{{ base_path ~ directory }}/img/temp-img/logos/logo_high_colloseum-1.png" alt="Colosseum">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="{{ base_path ~ directory }}/img/temp-img/logos/smile_logo_2018_rgb.jpg" alt="Colosseum">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="{{ base_path ~ directory }}/img/temp-img/logos/logo_high_swiss_smile-1.png" alt="Colosseum">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="{{ base_path ~ directory }}/img/temp-img/logos/Colosseum-Dental-Logo-UK.png" alt="Colosseum">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="{{ base_path ~ directory }}/img/temp-img/logos/oral_logo_RGB-72ppi.jpg" alt="Colosseum">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="{{ base_path ~ directory }}/img/temp-img/logos/smile_de.png" alt="Colosseum">
-                </a>
-            </li>
-        </ul>
+        {{ drupal_view('countries', 'block_3') }}
     </div>
 </section>
 

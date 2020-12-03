@@ -1,0 +1,11 @@
+{#
+    Country organisation logo with link to website
+#}
+
+<a href="{{ content.field_website_link[0]['#url'] }}" target="_blank">
+    {% if content.field_logo|render|trim is not empty %}
+        <img src="{{ node.field_logo.entity.field_media_image.entity.uri.value | image_style('country_organisation_logo') }}" alt="{{ node.field_logo.entity.field_media_image.alt }}">
+    {% endif %}
+    <span class="country">{{ content.field_address.0['country']['#value'] }}</span>
+</a>
+
