@@ -25,11 +25,13 @@ $grid-breakpoints: (
         xxl: $break-desktop-full
 ) !default;
 
-$container-max-width: calc(1100px + 14vw);
-
-$container-max-widths: (
-        md: $container-max-width
-) !default;
+$container-max-width: 1020px;
+$container-lg-max-width: 1200px;
+$container-sm-max-width: 960px;
+//
+//$container-max-widths: (
+//        md: $container-max-width
+//) !default;
 
 $navbar-height-xs: 54px;
 $navbar-height-md: 120px;

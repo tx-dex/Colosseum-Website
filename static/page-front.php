@@ -2,7 +2,7 @@
 
     <section class="hero-frontpage">
         <div class="hero-img" style="background-image: url(img/hero-example.jpg);"></div>
-        <div class="container-fullwidth">
+        <div class="container-lg">
             <div class="hero-content">
                 <h1 class="h2 hero-title">Welcome to Colosseum Dental Group</h1>
                 <p class="hero-lead">We want to provide modern, quality dentistry services for the benefit of patients, dentists, employees and shareholders, striving for continuous growth and excellence.</p>
