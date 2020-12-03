@@ -14,37 +14,10 @@
             {{ content.body }}
         </div>
         <div class="contact-information">
-            {#<p>
-                {{ content.field_address }}
-            </p>
-            <p>
-                {{ content.field_address.0['country']['#value'] }}
-            </p>
-            <address>
-                {{ node.field_address.organization }}<br>
-                {{ node.field_address.address_line1 }}<br>
-                {{ node.field_address.postal_code }}<br>
-                {{ node.field_address.locality }}<br>
-                {{ node.field_address.country.name }}<br>
-            </address>#}
-
-            <address>
-                {{ content.field_address.0['organization']['#value'] }}<br>
-                {{ content.field_address.0['address_line1']['#value'] }}<br>
-                {{ content.field_address.0['postal_code']['#value'] }}<br>
-                {{ content.field_address.0['locality']['#value'] }}<br>
-                {{ content.field_address.0['country']['#value'] }}<br>
-            </address>
-
-            <ol>
-                {% for key, value in content.field_address.0 %}
-                    <li>{{ key }}</li>
-                {% endfor %}
-            </ol>
             <p>
                 <strong>Address:</strong><br>
-                {{ node.field_address.address_line1 }}, {{ node.field_address.postal_code }} {{ node.field_address.locality }}<br>
-                {{ content.field_address.0['country']['#value'] }}
+                {{ content.field_address.0['address_line1']['#value'] }}, {{ content.field_address.0['postal_code']['#value'] }} {{ content.field_address.0['locality']['#value'] }}<br>
+                <span class="country">{{ content.field_address.0['country']['#value'] }}</span>
             </p>
             <p>
                 <strong>Website: </strong>
