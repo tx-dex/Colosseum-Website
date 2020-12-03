@@ -23,7 +23,7 @@
             </address>
 
             <ol>
-                {% for key, value in node.field_address %}
+                {% for key, value in node.field_address.0 %}
                     <li>{{ key }}</li>
                 {% endfor %}
             </ol>
