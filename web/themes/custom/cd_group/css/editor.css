@@ -6685,3 +6685,55 @@ html [type=button],
 a {
   color: #006BA6;
 }
+
+a.btn.btn-primary {
+  color: #fff;
+}
+
+p.lead-text {
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+@media (min-width: 1024px) {
+  p.lead-text {
+    font-size: 1.375rem;
+  }
+}
+
+ol, ul, dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+ol li, ul li, dl li {
+  margin-bottom: 0.5rem;
+}
+ol li > ul, ol li > ol, ul li > ul, ul li > ol, dl li > ul, dl li > ol {
+  margin-top: 0.5rem;
+}
+
+ol {
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 35px;
+}
+ol li {
+  margin: 0 0 1.5rem 0;
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+ol li::before, ol li.btn.add-back-icon:before {
+  content: counter(my-awesome-counter);
+  color: #fff;
+  font-size: 1rem;
+  position: absolute;
+  --size: 24px;
+  left: -35px;
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 1px;
+  background: #000;
+  border-radius: 50%;
+  text-align: center;
+}
