@@ -29,36 +29,11 @@
         <div class="main-content-container no-padding">
             <div class="page-section-contact-form">
                 <div class="col-contact-form">
-                    <h2 class="section-title">General inquiries</h2>
+                    <h2 class="section-title">{{ content.field_form_title }}</h2>
                     {{ drupal_entity('webform', 'contact') }}
                 </div>
                 <div class="col-links">
-                    <ul class="contact-section-links">
-                        <li>
-                            <a href="" class="contact-section-link">
-                                <span class="small-ac-title">Practitioners & Partners</span>
-                                <h4>Selling your clinic</h4>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="contact-section-link">
-                                <span class="small-ac-title">Practitioners & Partners</span>
-                                <h4>Selling your clinic</h4>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="contact-section-link">
-                                <span class="small-ac-title">Practitioners & Partners</span>
-                                <h4>Selling your clinic</h4>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="contact-section-link">
-                                <span class="small-ac-title">Practitioners & Partners</span>
-                                <h4>Selling your clinic</h4>
-                            </a>
-                        </li>
-                    </ul>
+                    {{ content.field_contact_section_links }}
                 </div>
             </div>
         </div>
@@ -68,18 +43,25 @@
         <div class="container-fullwidth">
             <div class="row align-items-center">
                 <div class="col-sm-6 col-info">
-                    <h2 class="section-title">Group contact</h2>
+                    <h2 class="section-title">{{ content.field_group_contact_title }}</h2>
                     <address>
-                        Gutenbergstrasse 10<br>
-                        CH-8002, Zürich, Switzerland
+                        {{ content.field_address.0['address_line1']['#value'] }}<br>
+                        {{ content.field_address.0['postal_code']['#value'] }} {{ content.field_address.0['locality']['#value'] }},
+                        {{ content.field_address.0['country']['#value'] }}
                     </address>
                     <p class="contact-links">
-                        <a href="tel:+4746473830">+47 464 73 830</a><br>
-                        <a href="mailto:info@colosseumdental.com">info@colosseumdental.com</a>
+                        <a href="tel:{% spaceless %}{{ content.field_phone_number|escape|striptags('<!-- -->')|render|replace({' ': ''}) }}{% endspaceless %}">
+                            <span>{{ content.field_phone_number }}</span>
+                        </a>
+                        <a href="mailto:{% spaceless %}{{ content.field_email_address|escape|striptags('<!-- -->') }}{% endspaceless %}">
+                            <span>{{ content.field_email_address }}</span>
+                        </a>
                     </p>
                 </div>
                 <div class="col-sm-6 col-img">
-                    <img src="img/contact-page-img.jpg" alt="Office">
+                    {% if content.field_group_contact_image|render|trim is not empty %}
+                        <img src="{{ node.field_group_contact_image.entity.field_media_image.entity.uri.value | image_style('group_contact_image') }}" alt="{{ node.field_group_contact_image.entity.field_media_image.alt }}">
+                    {% endif %}
                 </div>
             </div>
         </div>
@@ -87,7 +69,7 @@
 
     <section class="page-section page-section-contact-countries">
         <div class="container-lg">
-            <h2 class="section-title">Country organizations</h2>
+            <h2 class="section-title">{{ content.field_countries_list_title }}</h2>
             {{ drupal_view('countries', 'block_1') }}
         </div>
     </section>

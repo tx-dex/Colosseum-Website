@@ -78,25 +78,25 @@
                             <li>
                                 <a href="" class="contact-section-link">
                                     <span class="small-ac-title">Practitioners & Partners</span>
-                                    <h4>Selling your clinic</h4>
+                                    <h3 class="link-title">Selling your clinic <i class="material-icons arrow_forward"></i></h3>
                                 </a>
                             </li>
                             <li>
                                 <a href="" class="contact-section-link">
                                     <span class="small-ac-title">Practitioners & Partners</span>
-                                    <h4>Selling your clinic</h4>
+                                    <h3 class="link-title">Selling your clinic <i class="material-icons arrow_forward"></i></h3>
                                 </a>
                             </li>
                             <li>
                                 <a href="" class="contact-section-link">
                                     <span class="small-ac-title">Practitioners & Partners</span>
-                                    <h4>Selling your clinic</h4>
+                                    <h3 class="link-title">Selling your clinic <i class="material-icons arrow_forward"></i></h3>
                                 </a>
                             </li>
                             <li>
                                 <a href="" class="contact-section-link">
                                     <span class="small-ac-title">Practitioners & Partners</span>
-                                    <h4>Selling your clinic</h4>
+                                    <h3 class="link-title">Find your local clinic <i class="material-icons arrow_forward"></i></h3>
                                 </a>
                             </li>
                         </ul>

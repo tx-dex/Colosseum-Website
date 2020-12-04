@@ -17682,6 +17682,46 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
     padding: 5%;
   }
 }
+.contact-section-links .contact-section-link {
+  display: block;
+  border-bottom: 1px solid #224b73;
+  padding: 1.5rem 0;
+}
+.contact-section-links .contact-section-link .small-ac-title {
+  display: block;
+  color: #fff;
+  margin-bottom: 0.3rem;
+}
+.contact-section-links .contact-section-link .link-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #69B3E7;
+  margin: 0;
+}
+.contact-section-links .contact-section-link .link-title .material-icons, .contact-section-links .contact-section-link .link-title .ui-dialog .ui-dialog-titlebar-close:after, .ui-dialog .contact-section-links .contact-section-link .link-title .ui-dialog-titlebar-close:after, .contact-section-links .contact-section-link .link-title .btn.add-back-icon:before, .contact-section-links .contact-section-link .link-title .add-back-icon.button:before, .contact-section-links .contact-section-link .link-title .btn.add-fwd-icon:after, .contact-section-links .contact-section-link .link-title .add-fwd-icon.button:after, .contact-section-links .contact-section-link .link-title .btn.add-fwd-icon-before:before, .contact-section-links .contact-section-link .link-title .add-fwd-icon-before.button:before {
+  font-size: 1.25em;
+}
+@media (min-width: 768px) {
+  .contact-section-links .contact-section-link {
+    padding: 2rem 0;
+  }
+  .contact-section-links .contact-section-link .small-ac-title {
+    margin-bottom: 0.75rem;
+  }
+  .contact-section-links li:first-child .contact-section-link {
+    padding-top: 0.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .contact-section-links .contact-section-link {
+    padding: 2.5rem 0;
+  }
+  .contact-section-links .contact-section-link .small-ac-title {
+    margin-bottom: 0.75rem;
+  }
+}
+
 .page-section-contact-group-contact {
   padding-bottom: 0;
 }

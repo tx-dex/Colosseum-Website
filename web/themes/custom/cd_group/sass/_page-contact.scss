@@ -50,6 +50,54 @@
 
 .contact-section-links {
   @extend .list-unstyled;
+
+  .contact-section-link {
+    display: block;
+    border-bottom: 1px solid #224b73;
+    padding: 1.5rem 0;
+
+    .small-ac-title {
+      display: block;
+      color: $white;
+      margin-bottom: .3rem;
+    }
+
+    .link-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: $brand-blue-light;
+      margin: 0;
+
+      .material-icons {
+        font-size: 1.25em;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .contact-section-link {
+      padding: 2rem 0;
+
+      .small-ac-title {
+        margin-bottom: .75rem;
+      }
+    }
+
+    li:first-child .contact-section-link {
+      padding-top: .5rem;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .contact-section-link {
+      padding: 2.5rem 0;
+
+      .small-ac-title {
+        margin-bottom: .75rem;
+      }
+    }
+  }
 }
 
 // Group contact
