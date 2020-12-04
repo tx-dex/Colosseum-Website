@@ -1,61 +1,81 @@
 <?php require 'region-header.php'; ?>
 
-<nav aria-label="breadcrumb" role="navigation">
+<nav aria-label="breadcrumb">
     <div class="container-fullwidth">
         <ol class="breadcrumb">
-
-            <li class="breadcrumb-item">
-                <a href="/">Home</a>
-            </li>
-
-
-            <li class="breadcrumb-item">
-                <a href="/newsroom">Newsroom</a>
-            </li>
-
-
-            <li class="breadcrumb-item active" aria-current="page">
-                The Colosseum Dental Group Academy Opens With A New Digital Curriculum
-            </li>
-
-
+            <li class="breadcrumb-item"><a href="#">Newsroom</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Library</li>
         </ol>
     </div>
 </nav>
 
-    <section class="page-section page-section-basic-page">
-        <div class="container">
-            <h1 class="page-title">Privacy & terms</h1>
-            <div class="article-content">
-                <p>Lorem ipsum</p>
+<section class="hero-basic-page with-image">
+    <div class="container-fullwidth">
+        <div class="hero-content">
+            <h1>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+            </h1>
+        </div>
+    </div>
+    <div class="hero-img">
+        <img src="img/hero-basic-page-example.jpg" alt="">
+    </div>
+</section>
+
+<div class="page-sections">
+    <section class="main-content-section main-content-section-newsroom">
+        <div class="main-content-container">
+            <div class="container-fullwidth">
+                <div class="article-list-header">
+                    <h2>Our latest:</h2>
+                </div>
+                <ul class="article-list">
+                    <li class="item">
+                        <a href="#" class="article-list-item">
+                            <div class="col-date">
+                                <div class="square-wrapper">
+                                    <div class="sw-content">
+                                        <div class="date">
+                                            <span class="day">24</span>
+                                            <span class="month">December</span>
+                                            <span class="year">2020</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-txt">
+                                <span class="category-badge">Press release</span>
+                                <h3 class="article-title">The Colosseum Dental Group Academy opens with a new digital curriculum</h3>
+                                <button class="btn btn-link add-fwd-icon">Read more</button>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="article-list-item">
+                            <div class="col-date">
+                                <div class="square-wrapper">
+                                    <div class="sw-content">
+                                        <div class="date">
+                                            <span class="day">24</span>
+                                            <span class="month">December</span>
+                                            <span class="year">2020</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-txt">
+                                <span class="category-badge">Press release</span>
+                                <h3 class="article-title">The Colosseum Dental Group Academy opens with a new digital curriculum</h3>
+                                <button class="btn btn-link add-fwd-icon">Read more</button>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <ul class="article-list row">
-                <li class="col-md-6 col-lg-4">
-                    <a href="/node/9" class="item">
-                        <h4 class="article-title">
-                            Mia Grundstrøm appointed as CEO of Colosseum Tannlege/Head of Colosseum Norway
-                        </h4>
-                        <div class="article-lead">
-
-                        </div>
-                        <button class="btn btn-link add-fwd-icon">Read more</button>
-                    </a>
-                </li>
-                <li class="col-md-6 col-lg-4">
-                    <a href="/node/8" class="item">
-                        <h4 class="article-title">
-                           The Colosseum Dental Group Academy opens with a new digital curriculum
-                        </h4>
-                        <div class="article-lead">
-
-                        </div>
-                        <button class="btn btn-link add-fwd-icon">Read more</button>
-                    </a>
-                </li>
-
-            </ul>
         </div>
     </section>
+</div>
+
 
 <?php require 'region-footer.php'; ?>
 

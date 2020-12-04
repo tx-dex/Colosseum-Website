@@ -14895,10 +14895,10 @@ a.text-dark:hover, a.text-dark:focus {
   content: "\e56b";
 }
 
-.animation-enabled .page-section.animate, .animation-enabled .animate.main-content-section-findaclinic, .animation-enabled .animate.page-section-subpage-links {
+.animation-enabled .page-section.animate, .animation-enabled .animate.main-content-section-findaclinic, .animation-enabled .animate.main-content-section-newsroom, .animation-enabled .animate.page-section-subpage-links {
   opacity: 0;
 }
-.animation-enabled .page-section.animate.section-visible, .animation-enabled .animate.section-visible.main-content-section-findaclinic, .animation-enabled .animate.section-visible.page-section-subpage-links {
+.animation-enabled .page-section.animate.section-visible, .animation-enabled .animate.section-visible.main-content-section-findaclinic, .animation-enabled .animate.section-visible.main-content-section-newsroom, .animation-enabled .animate.section-visible.page-section-subpage-links {
   opacity: 1;
 }
 .animation-enabled .section-visible .slide-in-left {
@@ -15233,26 +15233,26 @@ body {
     padding: 5rem 0 0;
   }
 }*/
-.page-section, .main-content-section-findaclinic, .page-section-subpage-links {
+.page-section, .main-content-section-findaclinic, .main-content-section-newsroom, .page-section-subpage-links {
   padding: 2.5rem 0;
 }
-.page-section::after, .main-content-section-findaclinic::after, .page-section-subpage-links::after {
+.page-section::after, .main-content-section-findaclinic::after, .main-content-section-newsroom::after, .page-section-subpage-links::after {
   display: block;
   clear: both;
   content: "";
 }
 @media (min-width: 768px) {
-  .page-section, .main-content-section-findaclinic, .page-section-subpage-links {
+  .page-section, .main-content-section-findaclinic, .main-content-section-newsroom, .page-section-subpage-links {
     padding: 4rem 0;
   }
 }
 @media (min-width: 1024px) {
-  .page-section, .main-content-section-findaclinic, .page-section-subpage-links {
+  .page-section, .main-content-section-findaclinic, .main-content-section-newsroom, .page-section-subpage-links {
     padding: 5rem 0;
   }
 }
 @media (min-width: 1200px) {
-  .page-section, .main-content-section-findaclinic, .page-section-subpage-links {
+  .page-section, .main-content-section-findaclinic, .main-content-section-newsroom, .page-section-subpage-links {
     padding: 7rem 0;
   }
 }
@@ -17685,6 +17685,10 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
 .page-section-fp-contact {
   background-color: #fff;
   padding: 0;
+}
+
+.main-content-section-newsroom {
+  padding-top: 0;
 }
 
 .main-content-section-findaclinic {
