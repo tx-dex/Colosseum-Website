@@ -92,46 +92,70 @@
     </section>
 
     <section class="page-section page-section-fp-countries">
-        <div class="container-lg">
+        <div class="container-fullwidth">
             <ul class="country-logo-list">
                 <li>
                     <a href="#">
-                        <img src="img/logos/coloseum_dk_ny.png" alt="Colosseum">
+                        <div class="img-container">
+                            <img src="img/country-logos/logo-denmark-colosseum.png" alt="Colosseum">
+                        </div>
+                        <span class="country">Denmark</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="img/logos/logo_high_odontosalute.png" alt="Colosseum">
+                        <div class="img-container">
+                            <img src="img/country-logos/logo-finland-oral.png" alt="Colosseum">
+                        </div>
+                        <span class="country">Finland</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="img/logos/logo_high_colloseum-1.png" alt="Colosseum">
+                        <div class="img-container">
+                            <img src="img/country-logos/logo-germany-colosseum.png" alt="Colosseum">
+                        </div>
+                        <span class="country">Germany</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="img/logos/smile_logo_2018_rgb.jpg" alt="Colosseum">
+                        <div class="img-container">
+                            <img src="img/country-logos/logo-italy-odontosalute.png" alt="Colosseum">
+                        </div>
+                        <span class="country">Italy</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="img/logos/logo_high_swiss_smile-1.png" alt="Colosseum">
+                        <div class="img-container">
+                            <img src="img/country-logos/logo-norway-colosseum.png" alt="Colosseum">
+                        </div>
+                        <span class="country">Norway</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="img/logos/Colosseum-Dental-Logo-UK.png" alt="Colosseum">
+                        <div class="img-container">
+                            <img src="img/country-logos/logo-sweden-smile.png" alt="Colosseum">
+                        </div>
+                        <span class="country">Sweden</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="img/logos/oral_logo_RGB-72ppi.jpg" alt="Colosseum">
+                        <div class="img-container">
+                            <img src="img/country-logos/logo-swiss-smile.png" alt="Colosseum">
+                        </div>
+                        <span class="country">Switzerland</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="img/logos/smile_de.png" alt="Colosseum">
+                        <div class="img-container">
+                            <img src="img/country-logos/logo-uk-colosseum.png" alt="Colosseum">
+                        </div>
+                        <span class="country">United Kingdom</span>
                     </a>
                 </li>
             </ul>

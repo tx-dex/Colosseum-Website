@@ -17349,7 +17349,8 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   background-position: center center;
   background-size: cover;
 }
-.hero-frontpage .container-fullwidth {
+.hero-frontpage .container-fullwidth,
+.hero-frontpage .container-lg {
   background-color: #fff;
 }
 .hero-frontpage .hero-content {
@@ -17374,7 +17375,8 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   .hero-frontpage .hero-img {
     padding-bottom: 45%;
   }
-  .hero-frontpage .container-fullwidth {
+  .hero-frontpage .container-fullwidth,
+.hero-frontpage .container-lg {
     background-color: transparent;
   }
   .hero-frontpage .hero-content {
@@ -17594,6 +17596,12 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   background-color: #fff;
 }
 
+/* Logo list styles in page-find-a-clinic */
+.page-section-fp-contact {
+  background-color: #fff;
+  padding: 0;
+}
+
 .country-logo-list {
   list-style-type: none;
   padding: 0;
@@ -17608,7 +17616,7 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   width: 50%;
   display: flex;
   align-items: center;
-  padding: 1.5% 20px;
+  padding: 0.75rem 20px;
 }
 .country-logo-list li a {
   display: inline-block;
@@ -17619,10 +17627,24 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   filter: grayscale(0);
   opacity: 1;
 }
+.country-logo-list li a span.country {
+  display: block;
+  font-size: 14px;
+  letter-spacing: 0.02rem;
+  color: #686D8A;
+  margin-top: 0.5rem;
+}
+.country-logo-list li .img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 130px;
+  height: 40px;
+  margin: 0 auto;
+}
 .country-logo-list li img {
   display: inline-block;
-  max-width: 100%;
-  max-height: 50px;
+  max-height: 40px;
   width: auto;
   height: auto;
   filter: grayscale(100%);
@@ -17630,8 +17652,14 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   transition: all 200ms ease-in-out;
 }
 @media (min-width: 481px) {
+  .country-logo-list {
+    /*li {
+      width: 33.3333%;
+    }*/
+  }
   .country-logo-list li {
-    width: 33.3333%;
+    width: auto;
+    max-width: 200px;
   }
 }
 @media (min-width: 768px) {
@@ -17649,11 +17677,6 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
     max-width: 200px;
     padding: 0 20px;
   }
-}
-
-.page-section-fp-contact {
-  background-color: #fff;
-  padding: 0;
 }
 
 .page-sections.contact-page-sections {
