@@ -134,7 +134,7 @@
                         <div class="country-organisation-card">
                             <div class="item-header">
                                 <div class="logo-container">
-                                    <img src="img/country-logos/logo-colosseum-dental-uk.png" alt="Logo">
+                                    <img src="img/country-logos/logo-uk-colosseum.png" alt="Logo">
                                 </div>
                                 <h3 class="item-title">Colosseum Tandlægerne</h3>
                             </div>
@@ -170,7 +170,25 @@
                         <div class="country-organisation-card">
                             <div class="item-header">
                                 <div class="logo-container">
-                                    <img src="img/country-logos/logo-swiss-smile.png" alt="Logo">
+                                    <img src="img/country-logos/logo-finland-oral.png" alt="Logo">
+                                </div>
+                                <h3 class="item-title">Colosseum Dental Deutschland</h3>
+                            </div>
+
+                            <div class="contact-info">
+                                <address>
+                                    Borupvang 2B, 2750 Ballerup<br>
+                                    <span class="country">Denmark</span>
+                                </address>
+                                <a href="mailto:info@colosseumtand.dk">info@colosseumtand.dk</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item col-md-6 col-xl-4">
+                        <div class="country-organisation-card">
+                            <div class="item-header">
+                                <div class="logo-container">
+                                    <img src="img/country-logos/logo-sweden-smile.png" alt="Logo">
                                 </div>
                                 <h3 class="item-title">Colosseum Dental Deutschland</h3>
                             </div>

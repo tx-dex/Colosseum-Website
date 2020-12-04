@@ -17711,8 +17711,8 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
 .country-organisation-card .logo-container {
   display: flex;
   align-items: center;
-  width: 160px;
-  height: 60px;
+  width: 150px;
+  height: 50px;
 }
 .country-organisation-card .logo-container img {
   max-width: 100%;
@@ -17733,6 +17733,18 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   font-weight: 500;
 }
 @media (min-width: 768px) {
+  .country-organisation-card {
+    padding: 1.5rem 1.5rem 2rem;
+  }
+  .country-organisation-card .item-title {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .country-organisation-card {
+    padding: 2rem 2.5rem 2.5rem;
+  }
   .country-organisation-card .item-title {
     margin-top: 3rem;
     margin-bottom: 3rem;

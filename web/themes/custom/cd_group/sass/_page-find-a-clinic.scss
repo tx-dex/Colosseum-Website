@@ -122,8 +122,8 @@
   .logo-container {
     display: flex;
     align-items: center;
-    width: 160px;
-    height: 60px;
+    width: 150px;
+    height: 50px;
 
     img {
       max-width: 100%;
@@ -152,6 +152,17 @@
   }
 
   @include media-breakpoint-up(md) {
+    padding: 1.5rem 1.5rem 2rem;
+
+    .item-title {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding: 2rem 2.5rem 2.5rem;
+
     .item-title {
       margin-top: 3rem;
       margin-bottom: 3rem;
