@@ -43,7 +43,9 @@
 
     <div class="contact-info">
         <address>
-            {{ content.field_address.0['address_line1']['#value'] }}, {{ content.field_address.0['postal_code']['#value'] }} {{ content.field_address.0['locality']['#value'] }}<br>
+            {% if content.field_address.0['locality']['#value'] is not empty %}
+                {{ content.field_address.0['address_line1']['#value'] }}, {{ content.field_address.0['postal_code']['#value'] }} {{ content.field_address.0['locality']['#value'] }}<br>
+            {% endif %}
             <span class="country">{{ content.field_address.0['country']['#value'] }}</span>
         </address>
         {% if content.field_email_address|render|trim is not empty %}
