@@ -53,6 +53,7 @@
                         <a href="tel:{% spaceless %}{{ content.field_phone_number|escape|striptags('<!-- -->')|render|replace({' ': ''}) }}{% endspaceless %}">
                             <span>{{ content.field_phone_number }}</span>
                         </a>
+                        <br>
                         <a href="mailto:{% spaceless %}{{ content.field_email_address|escape|striptags('<!-- -->') }}{% endspaceless %}">
                             <span>{{ content.field_email_address }}</span>
                         </a>
