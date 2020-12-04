@@ -16,6 +16,7 @@
                     <li><a href="page-leading-dentistry.php">Leading dentistry</a></li>
                     <li><a href="page-basic.php">Basic page</a></li>
                     <li><a href="page-basic-no-image.php">Basic page without an image</a></li>
+                    <li><a href="page-basic-accordions.php">Accordions</a></li>
                     <li><a href="page-find-a-clinic.php">Find a clinic</a></li>
                     <li><a href="page-newsroom.php">Newsroom page</a></li>
                     <li><a href="page-contact.php">Contact page</a></li>

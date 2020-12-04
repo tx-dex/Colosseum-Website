@@ -1,0 +1,15 @@
+{% set randomId = random(100000) %}
+
+<div class="bp-accordion-item">
+    <div class="bp-accordion-item-header" id="heading-{{ randomId }}">
+        <a class="bp-accordion-title collapsed" type="button" data-toggle="collapse" data-target="#collapse-{{ randomId }}" aria-expanded="false" aria-controls="collapse-{{ randomId }}">
+            {{ content.field_title }}
+        </a>
+    </div>
+
+    <div id="collapseOne" class="collapse" aria-labelledby="heading-{{ randomId }}" data-parent="#accordionExample">
+        <div class="bp-accordion-item-body">
+            {{ content.field_body }}
+        </div>
+    </div>
+</div>

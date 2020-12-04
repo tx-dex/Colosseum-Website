@@ -383,6 +383,9 @@
   }
 }
 
+// Team member grid
+// -------------------------------------
+
 .team-grid {
   .person-card {
     margin-bottom: 2rem;
@@ -412,6 +415,94 @@
   @include media-breakpoint-up(xl) {
     .person-card {
       margin-bottom: 4rem;
+    }
+  }
+}
+
+// Accordions
+// -------------------------------------
+
+.bp-accordion {
+  .bp-accordion-item {
+    //border-bottom: 1px solid $border-color;
+    + .bp-accordion-item {
+      padding-top: 1.5rem;
+    }
+  }
+
+  .bp-accordion-item-header {
+    h2, h3, h4 {
+      margin: 0;
+    }
+
+    .bp-accordion-title {
+      display: block;
+      position: relative;
+      width: 100%;
+      text-align: left;
+      border: none;
+      -webkit-appearance: none;
+      font-size: 1.125rem;
+      font-weight: $font-weight-medium;
+      color: $default-text-color;
+      background-color: $brand-blue-lighter;
+      padding: 1.25rem 2.5rem 1.25rem 1rem;
+
+
+      &.collapsed:after {
+        content: "\e145";
+      }
+
+      &:after {
+        @extend .material-icons;
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        content: "\e15b";
+        font-size: 1.5rem;
+        color: $brand-blue;
+      }
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        color: $brand-blue;
+      }
+    }
+  }
+
+  .bp-accordion-item-body {
+    padding: 1.5rem 1rem 0;
+  }
+
+  @include media-breakpoint-up(md) {
+    .bp-accordion-item-header {
+      .bp-accordion-title {
+        font-size: 1.25rem;
+        padding: 1.5rem 3rem 1.5rem 1.5rem;
+
+        &:after {
+          right: 1.5rem;
+          font-size: 1.75rem;
+        }
+      }
+    }
+
+    .bp-accordion-item-body {
+      padding: 2rem 1.5rem 0;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .bp-accordion-item-header {
+      .bp-accordion-title {
+        padding: 2rem 3rem 2rem 1.5rem;
+      }
+    }
+
+    .bp-accordion-item-body {
+
     }
   }
 }
