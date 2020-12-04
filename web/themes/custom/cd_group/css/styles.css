@@ -17269,7 +17269,7 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   }
 }
 
-.bp-section.section-basic-content .article-content p:last-of-type {
+.bp-section.section-basic-content .article-content > p:last-of-type {
   margin-bottom: 0;
 }
 .bp-section.section-fullwidth-image figure,

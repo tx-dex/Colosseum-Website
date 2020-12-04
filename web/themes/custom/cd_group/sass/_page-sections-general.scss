@@ -338,7 +338,7 @@
 
   &.section-basic-content {
     .article-content {
-      p:last-of-type {
+      > p:last-of-type {
         margin-bottom: 0;
       }
     }
