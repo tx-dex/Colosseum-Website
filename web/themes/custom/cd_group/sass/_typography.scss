@@ -234,16 +234,23 @@ figure {
 
   ol, ul, dl {
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     padding-left: 1rem;
 
     li {
-      margin-bottom: .5rem;
+      margin-bottom: 1rem;
 
       > ul, > ol {
         margin-top: .5rem;
       }
     }
+  }
+
+  p + ol,
+  p + ul,
+  p + dl {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
   ol {
@@ -311,6 +318,13 @@ figure {
     img,
     figure {
       margin: 2rem auto;
+    }
+
+    p + ol,
+    p + ul,
+    p + dl {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
     }
   }
 }

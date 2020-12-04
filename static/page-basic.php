@@ -45,7 +45,17 @@
                     </p>
 
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
-
+                    <ol>
+                        <li>“Science of Learning” investigates the limits of individual learning and development globally. The foundation funds world-class research institutes and promotes the creation of sustainable research capacity.</li>
+                        <li>“Early Childhood Education and Care” contributes to the development of relevant policies and programs in Switzerland and other European countries. The foundation is seeking dialogue with decision-makers and society at large and helps to drive the research agenda by forming strategic partnerships.</li>
+                        <li>“Rural Livelihoods” is a program in Ivory Coast called TRECC (Transforming Education in Cocoa Communities), which is a long term multi-stakeholder partnership with the cocoa and chocolate industry, the Ivorian government and philanthropic partners to improve the quality of education at the national level and in the cocoa-growing regions.</li>
+                    </ol>
+                    <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit.</p>
+                    <ul>
+                        <li>“Science of Learning” investigates the limits of individual learning and development globally. The foundation funds world-class research institutes and promotes the creation of sustainable research capacity.</li>
+                        <li>“Early Childhood Education and Care” contributes to the development of relevant policies and programs in Switzerland and other European countries. The foundation is seeking dialogue with decision-makers and society at large and helps to drive the research agenda by forming strategic partnerships.</li>
+                        <li>“Rural Livelihoods” is a program in Ivory Coast called TRECC (Transforming Education in Cocoa Communities), which is a long term multi-stakeholder partnership with the cocoa and chocolate industry, the Ivorian government and philanthropic partners to improve the quality of education at the national level and in the cocoa-growing regions.</li>
+                    </ul>
                     <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit.</p>
                 </div>
             </div>

@@ -15751,14 +15751,20 @@ figure.caption > figcaption {
 }
 .article-content ol, .article-content ul, .article-content dl {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   padding-left: 1rem;
 }
 .article-content ol li, .article-content ul li, .article-content dl li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 .article-content ol li > ul, .article-content ol li > ol, .article-content ul li > ul, .article-content ul li > ol, .article-content dl li > ul, .article-content dl li > ol {
   margin-top: 0.5rem;
+}
+.article-content p + ol,
+.article-content p + ul,
+.article-content p + dl {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .article-content ol {
   counter-reset: my-awesome-counter;
@@ -15815,6 +15821,12 @@ figure.caption > figcaption {
   .article-content img,
 .article-content figure {
     margin: 2rem auto;
+  }
+  .article-content p + ol,
+.article-content p + ul,
+.article-content p + dl {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 }
 
