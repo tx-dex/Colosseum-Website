@@ -147,6 +147,8 @@
 
 .page-section-subpage-links {
   position: relative;
+  @extend .page-section;
+  padding-top: 0;
 
   .block-link {
     .block-link-fw-2-col {
@@ -465,9 +467,14 @@
       }
 
       &:hover,
+      &:active,
       &:focus {
         text-decoration: none;
         color: $brand-blue;
+      }
+
+      &:focus {
+        outline: 1px solid $brand-blue-lighter;
       }
     }
   }
