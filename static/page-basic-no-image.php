@@ -33,7 +33,7 @@
 </section>
 
 <div class="page-sections">
-    <section class="section-main-content">
+    <section class="main-content-section">
         <div class="main-content-container">
             <div class="bp-section section-basic-content">
                 <div class="container article-content">
@@ -49,7 +49,7 @@
         </div>
     </section>
 
-    <section class="section-main-content">
+    <section class="main-content-section">
         <div class="main-content-container">
             <div class="bp-section section-video-embed">
                 <div class="container">
@@ -64,7 +64,7 @@
         </div>
     </section>
 
-    <section class="section-main-content">
+    <section class="main-content-section">
         <div class="main-content-container">
             <div class="bp-section section-basic-content">
                 <div class="container article-content">
@@ -77,7 +77,7 @@
         </div>
     </section>
 
-    <section class="section-main-content">
+    <section class="main-content-section">
         <div class="main-content-container">
             <div class="bp-section section-fullwidth-image">
                 <div class="container">
@@ -92,7 +92,7 @@
         </div>
     </section>
 
-    <section class="section-main-content">
+    <section class="main-content-section">
         <div class="main-content-container">
             <div class="bp-section section-2-columns">
                 <div class="container">

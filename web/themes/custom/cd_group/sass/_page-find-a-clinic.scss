@@ -1,5 +1,13 @@
 
-// Country list
+// Page specific styles
+// -------------------------------------
+
+.main-content-section-findaclinic {
+  @extend .page-section;
+  padding-top: 0;
+}
+
+// Country logo list on frontpage
 // -------------------------------------
 
 .country-logo-list {
@@ -22,22 +30,18 @@
       display: inline-block;
       width: 100%;
       text-align: center;
+      color: $light-text-color;
 
       &:hover,
       &:focus,
       &:active {
+        text-decoration: none;
+        color: $brand-blue;
+
         img {
           filter: grayscale(0);
           opacity: 1;
         }
-      }
-
-      span.country {
-        display: block;
-        font-size: 14px;
-        letter-spacing: .02rem;
-        color: $light-text-color;
-        margin-top: .5rem;
       }
     }
 
@@ -48,34 +52,44 @@
       max-width: 130px;
       height: 40px;
       margin: 0 auto;
+
+      img {
+        display: inline-block;
+        max-height:40px;
+        width: auto;
+        height: auto;
+        filter: grayscale(100%);
+        opacity: .8;
+        transition: all 200ms ease-in-out;
+      }
     }
 
-    img {
-      display: inline-block;
-      max-height:40px;
-      width: auto;
-      height: auto;
-      filter: grayscale(100%);
-      opacity: .8;
-      transition: all 200ms ease-in-out;
+    span.country {
+      display: block;
+      font-size: 14px;
+      letter-spacing: .02rem;
+      margin-top: .5rem;
     }
   }
 
   @include media-breakpoint-up(sm) {
-    /*li {
-      width: 33.3333%;
-    }*/
-
     li {
       width: auto;
       max-width: 200px;
-      //padding: 0 20px;
     }
   }
 
   @include media-breakpoint-up(md) {
     li {
       width: 20%;
+
+      .img-container {
+        height: 45px;
+
+        img {
+          max-height: 45px;
+        }
+      }
     }
   }
 
@@ -86,6 +100,79 @@
       width: auto;
       max-width: 200px;
       padding: 0 20px;
+
+      span.country {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+// Country organisation list on contact page
+// -------------------------------------
+
+.country-organisation-card {
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 1rem 1rem 1.5rem;
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    width: 160px;
+    height: 60px;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  .item-title {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-info {
+    a {
+      color: $default-text-color;
+      text-decoration: underline;
+
+      &:hover,
+      &:focus {
+        color: $brand-blue;
+      }
+    }
+    .country {
+      font-weight: $font-weight-medium;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .item-title {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.country-organisation-list-cards {
+  @extend .list-unstyled;
+
+  .item {
+    margin-bottom: $grid-gutter-width/2;
+
+    .country-organisation-card {
+      height: 100%;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .item {
+      margin-bottom: $grid-gutter-width;
     }
   }
 }

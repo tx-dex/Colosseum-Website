@@ -501,7 +501,7 @@ mark,
   background-color: #fcf8e3;
 }
 
-.list-unstyled, .country-organisation-list-cards, .contact-section-links, .page-section-fp-intro .page-list {
+.list-unstyled, .contact-section-links, .country-organisation-list-cards, .page-section-fp-intro .page-list {
   padding-left: 0;
   list-style: none;
 }
@@ -14895,10 +14895,10 @@ a.text-dark:hover, a.text-dark:focus {
   content: "\e56b";
 }
 
-.animation-enabled .page-section.animate {
+.animation-enabled .page-section.animate, .animation-enabled .animate.main-content-section-findaclinic {
   opacity: 0;
 }
-.animation-enabled .page-section.animate.section-visible {
+.animation-enabled .page-section.animate.section-visible, .animation-enabled .animate.section-visible.main-content-section-findaclinic {
   opacity: 1;
 }
 .animation-enabled .section-visible .slide-in-left {
@@ -15233,26 +15233,26 @@ body {
     padding: 5rem 0 0;
   }
 }*/
-.page-section {
+.page-section, .main-content-section-findaclinic {
   padding: 2.5rem 0;
 }
-.page-section::after {
+.page-section::after, .main-content-section-findaclinic::after {
   display: block;
   clear: both;
   content: "";
 }
 @media (min-width: 768px) {
-  .page-section {
+  .page-section, .main-content-section-findaclinic {
     padding: 4rem 0;
   }
 }
 @media (min-width: 1024px) {
-  .page-section {
+  .page-section, .main-content-section-findaclinic {
     padding: 5rem 0;
   }
 }
 @media (min-width: 1200px) {
-  .page-section {
+  .page-section, .main-content-section-findaclinic {
     padding: 7rem 0;
   }
 }
@@ -15310,11 +15310,20 @@ body {
 .article-list .article-list-item .col-date .square-wrapper div.sw-content {
   display: flex;
   align-items: center;
+  justify-content: center;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+}
+.article-list .article-list-item .col-img .square-wrapper div.sw-content.co-logo,
+.article-list .article-list-item .col-date .square-wrapper div.sw-content.co-logo {
+  padding: 8%;
+}
+.article-list .article-list-item .col-img .square-wrapper div.sw-content.co-logo img,
+.article-list .article-list-item .col-date .square-wrapper div.sw-content.co-logo img {
+  max-height: 55px;
 }
 .article-list .article-list-item .col-img .date,
 .article-list .article-list-item .col-date .date {
@@ -17050,22 +17059,22 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
     padding-bottom: 7rem;
   }
 }*/
-.section-main-content {
+.main-content-section {
   position: relative;
   z-index: 2;
   /* Here the padding comes from the container of the inside content section */
   padding-left: 0;
   padding-right: 0;
 }
-.section-main-content .main-content-container {
+.main-content-section .main-content-container {
   background-color: #fff;
 }
 @media (min-width: 768px) {
-  .section-main-content {
+  .main-content-section {
     padding-left: 5%;
     padding-right: 5%;
   }
-  .section-main-content .main-content-container {
+  .main-content-section .main-content-container {
     padding-left: 5%;
     padding-right: 5%;
     /*
@@ -17073,51 +17082,51 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
     We control the container width with just max-width
     */
   }
-  .section-main-content .main-content-container .container-fullwidth,
-.section-main-content .main-content-container .container-lg,
-.section-main-content .main-content-container .container,
-.section-main-content .main-content-container .container-sm {
+  .main-content-section .main-content-container .container-fullwidth,
+.main-content-section .main-content-container .container-lg,
+.main-content-section .main-content-container .container,
+.main-content-section .main-content-container .container-sm {
     padding-left: 0;
     padding-right: 0;
   }
-  .section-main-content .main-content-container .container, .section-main-content .main-content-container .container-sm {
+  .main-content-section .main-content-container .container, .main-content-section .main-content-container .container-sm {
     max-width: 900px;
   }
-  .section-main-content .main-content-container .container-lg {
+  .main-content-section .main-content-container .container-lg {
     max-width: 1150px;
   }
-  .section-main-content .main-content-container .container-fullwidth {
+  .main-content-section .main-content-container .container-fullwidth {
     max-width: 1200px;
   }
 }
 @media (min-width: 1200px) {
-  .section-main-content {
+  .main-content-section {
     padding-left: 7%;
     padding-right: 7%;
   }
-  .section-main-content .main-content-container {
+  .main-content-section .main-content-container {
     padding-left: 7%;
     padding-right: 7%;
   }
 }
 
-.hero-basic-page.with-image + .page-sections .section-main-content:first-of-type .main-content-container {
+.hero-basic-page.with-image + .page-sections .main-content-section:first-of-type .main-content-container {
   padding-top: 2rem;
 }
 @media (min-width: 768px) {
-  .hero-basic-page.with-image + .page-sections .section-main-content:first-of-type .main-content-container {
+  .hero-basic-page.with-image + .page-sections .main-content-section:first-of-type .main-content-container {
     margin-top: -3rem;
     padding-top: 3rem;
   }
 }
 @media (min-width: 1024px) {
-  .hero-basic-page.with-image + .page-sections .section-main-content:first-of-type .main-content-container {
+  .hero-basic-page.with-image + .page-sections .main-content-section:first-of-type .main-content-container {
     margin-top: -6rem;
     padding-top: 3.5rem;
   }
 }
 @media (min-width: 1200px) {
-  .hero-basic-page.with-image + .page-sections .section-main-content:first-of-type .main-content-container {
+  .hero-basic-page.with-image + .page-sections .main-content-section:first-of-type .main-content-container {
     margin-top: -9rem;
     padding-top: 4rem;
   }
@@ -17227,14 +17236,14 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
 .page-sections .bp-section {
   padding-bottom: 1.5rem;
 }
-.page-sections .section-main-content:last-of-type .bp-section {
+.page-sections .main-content-section:last-of-type .bp-section {
   padding-bottom: 3rem;
 }
 @media (min-width: 768px) {
   .page-sections .bp-section {
     padding-bottom: 2rem;
   }
-  .page-sections .section-main-content:last-of-type .bp-section {
+  .page-sections .main-content-section:last-of-type .bp-section {
     padding-bottom: 4rem;
   }
 }
@@ -17242,7 +17251,7 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   .page-sections .bp-section {
     padding-bottom: 3rem;
   }
-  .page-sections .section-main-content:last-of-type .bp-section {
+  .page-sections .main-content-section:last-of-type .bp-section {
     padding-bottom: 5rem;
   }
 }
@@ -17274,10 +17283,10 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   }
 }
 
-.section-main-content-team {
+.main-content-section-team {
   background-color: #F2F6F9;
 }
-.section-main-content-team .main-content-container {
+.main-content-section-team .main-content-container {
   background-color: transparent;
 }
 
@@ -17602,6 +17611,10 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   padding: 0;
 }
 
+.main-content-section-findaclinic {
+  padding-top: 0;
+}
+
 .country-logo-list {
   list-style-type: none;
   padding: 0;
@@ -17622,17 +17635,15 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   display: inline-block;
   width: 100%;
   text-align: center;
+  color: #686D8A;
+}
+.country-logo-list li a:hover, .country-logo-list li a:focus, .country-logo-list li a:active {
+  text-decoration: none;
+  color: #006BA6;
 }
 .country-logo-list li a:hover img, .country-logo-list li a:focus img, .country-logo-list li a:active img {
   filter: grayscale(0);
   opacity: 1;
-}
-.country-logo-list li a span.country {
-  display: block;
-  font-size: 14px;
-  letter-spacing: 0.02rem;
-  color: #686D8A;
-  margin-top: 0.5rem;
 }
 .country-logo-list li .img-container {
   display: flex;
@@ -17642,7 +17653,7 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   height: 40px;
   margin: 0 auto;
 }
-.country-logo-list li img {
+.country-logo-list li .img-container img {
   display: inline-block;
   max-height: 40px;
   width: auto;
@@ -17651,12 +17662,13 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   opacity: 0.8;
   transition: all 200ms ease-in-out;
 }
+.country-logo-list li span.country {
+  display: block;
+  font-size: 14px;
+  letter-spacing: 0.02rem;
+  margin-top: 0.5rem;
+}
 @media (min-width: 481px) {
-  .country-logo-list {
-    /*li {
-      width: 33.3333%;
-    }*/
-  }
   .country-logo-list li {
     width: auto;
     max-width: 200px;
@@ -17665,6 +17677,12 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
 @media (min-width: 768px) {
   .country-logo-list li {
     width: 20%;
+  }
+  .country-logo-list li .img-container {
+    height: 45px;
+  }
+  .country-logo-list li .img-container img {
+    max-height: 45px;
   }
 }
 @media (min-width: 1200px) {
@@ -17676,6 +17694,60 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
     width: auto;
     max-width: 200px;
     padding: 0 20px;
+  }
+  .country-logo-list li span.country {
+    margin-top: 1rem;
+  }
+}
+
+.country-organisation-card {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 1rem 1rem 1.5rem;
+}
+.country-organisation-card .logo-container {
+  display: flex;
+  align-items: center;
+  width: 160px;
+  height: 60px;
+}
+.country-organisation-card .logo-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.country-organisation-card .item-title {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.country-organisation-card .contact-info a {
+  color: #041E42;
+  text-decoration: underline;
+}
+.country-organisation-card .contact-info a:hover, .country-organisation-card .contact-info a:focus {
+  color: #006BA6;
+}
+.country-organisation-card .contact-info .country {
+  font-weight: 500;
+}
+@media (min-width: 768px) {
+  .country-organisation-card .item-title {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.country-organisation-list-cards .item {
+  margin-bottom: 20px;
+}
+.country-organisation-list-cards .item .country-organisation-card {
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .country-organisation-list-cards .item {
+    margin-bottom: 40px;
   }
 }
 
@@ -17833,53 +17905,4 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   }
 }
 
-.country-organisation-card {
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: hidden;
-  padding: 1rem 1rem 1.5rem;
-}
-.country-organisation-card .logo-container {
-  display: flex;
-  align-items: center;
-  width: 160px;
-  height: 60px;
-}
-.country-organisation-card .logo-container img {
-  max-width: 100%;
-  max-height: 100%;
-}
-.country-organisation-card .item-title {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-.country-organisation-card .contact-info a {
-  color: #041E42;
-  text-decoration: underline;
-}
-.country-organisation-card .contact-info a:hover, .country-organisation-card .contact-info a:focus {
-  color: #006BA6;
-}
-.country-organisation-card .contact-info .country {
-  font-weight: 500;
-}
-@media (min-width: 768px) {
-  .country-organisation-card .item-title {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-  }
-}
-
-.country-organisation-list-cards .item {
-  margin-bottom: 20px;
-}
-.country-organisation-list-cards .item .country-organisation-card {
-  height: 100%;
-}
-@media (min-width: 768px) {
-  .country-organisation-list-cards .item {
-    margin-bottom: 40px;
-  }
-}
+/* Styles are in _page-find-a-clinic.scss */

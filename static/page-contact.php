@@ -23,7 +23,7 @@
     </section>
 
     <div class="page-sections contact-page-sections">
-        <section class="section-main-content">
+        <section class="main-content-section">
             <div class="main-content-container no-padding">
                 <div class="page-section-contact-form">
                     <div class="col-contact-form">

@@ -36,7 +36,7 @@
 </section>
 
 <div class="page-sections">
-    <section class="section-main-content">
+    <section class="main-content-section main-content-section-findaclinic">
         <div class="main-content-container">
             <div class="container-fullwidth">
 
@@ -49,8 +49,8 @@
                         <div class="article-list-item">
                             <div class="col-img">
                                 <div class="square-wrapper">
-                                    <div class="sw-content">
-                                        <img src="img/country-logos/logo-colosseum-dental-uk.jpg" alt="UK">
+                                    <div class="sw-content co-logo">
+                                        <img src="img/country-logos/logo-uk-colosseum.png" alt="UK">
                                     </div>
                                 </div>
                             </div>
@@ -67,8 +67,8 @@
                         <div class="article-list-item">
                             <div class="col-img">
                                 <div class="square-wrapper">
-                                    <div class="sw-content">
-                                        <img src="img/country-logos/logo-colosseum-dental-uk.jpg" alt="UK">
+                                    <div class="sw-content co-logo">
+                                        <img src="img/country-logos/logo-swiss-smile.png" alt="UK">
                                     </div>
                                 </div>
                             </div>

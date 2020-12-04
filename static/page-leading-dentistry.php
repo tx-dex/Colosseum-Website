@@ -37,7 +37,7 @@
 </section>
 
 <div class="page-sections">
-    <!--<section class="section-main-content">
+    <!--<section class="main-content-section">
         <div class="main-content-container">
             <div class="container-fullwidth article-content">
                 <h2>Ut enim ad minima veniam, quis nostrum exercitationem</h2>
@@ -48,7 +48,7 @@
         </div>
     </section>-->
 
-    <section class="section-main-content">
+    <section class="main-content-section">
         <div class="main-content-container">
             <div class="container-fullwidth">
                 <section class="page-section-subpage-links">

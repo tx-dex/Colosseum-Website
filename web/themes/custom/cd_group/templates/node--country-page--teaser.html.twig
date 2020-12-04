@@ -7,7 +7,7 @@
 <div class="article-list-item">
     <div class="col-img">
         <div class="square-wrapper">
-            <div class="sw-content">
+            <div class="sw-content co-logo">
                 {% if content.field_logo|render|trim is not empty %}
                     <img src="{{ node.field_logo.entity.field_media_image.entity.uri.value | image_style('country_organisation_logo') }}" alt="{{ node.field_logo.entity.field_media_image.alt }}">
                 {% endif %}

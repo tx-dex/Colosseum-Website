@@ -63,7 +63,7 @@
   }
 }*/
 
-.section-main-content {
+.main-content-section {
   position: relative;
   z-index: 2;
 
@@ -120,7 +120,7 @@
   }
 }
 
-.hero-basic-page.with-image + .page-sections .section-main-content:first-of-type {
+.hero-basic-page.with-image + .page-sections .main-content-section:first-of-type {
   .main-content-container {
     padding-top: 2rem;
 
@@ -307,7 +307,7 @@
     padding-bottom: 1.5rem;
   }
 
-  .section-main-content:last-of-type .bp-section {
+  .main-content-section:last-of-type .bp-section {
     padding-bottom: 3rem;
   }
 
@@ -316,7 +316,7 @@
       padding-bottom: 2rem;
     }
 
-    .section-main-content:last-of-type .bp-section {
+    .main-content-section:last-of-type .bp-section {
       padding-bottom: 4rem;
     }
   }
@@ -326,7 +326,7 @@
       padding-bottom: 3rem;
     }
 
-    .section-main-content:last-of-type .bp-section {
+    .main-content-section:last-of-type .bp-section {
       padding-bottom: 5rem;
     }
   }
@@ -375,7 +375,7 @@
   }
 }
 
-.section-main-content-team {
+.main-content-section-team {
   background-color: $brand-blue-lighter;
 
   .main-content-container {
