@@ -6694,11 +6694,6 @@ p.lead-text {
   font-size: 1.25rem;
   line-height: 1.6;
 }
-@media (min-width: 1024px) {
-  p.lead-text {
-    font-size: 1.375rem;
-  }
-}
 
 ol, ul, dl {
   margin-top: 0;
