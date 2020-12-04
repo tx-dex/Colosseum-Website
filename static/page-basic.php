@@ -54,6 +54,23 @@
 
     <section class="main-content-section">
         <div class="main-content-container">
+            <div class="bp-section section-basic-content">
+                <div class="container article-content">
+                    <div class="article-content-header">
+                        <h2>
+                            Focus areas of the Jacobs Foundation
+                        </h2>
+                    </div>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+
+                    <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-content-section">
+        <div class="main-content-container">
             <div class="bp-section section-video-embed">
                 <div class="container">
                     <div class="embed-responsive embed-responsive-16by9">

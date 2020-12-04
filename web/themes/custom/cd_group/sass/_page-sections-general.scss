@@ -335,6 +335,15 @@
 }
 
 .bp-section {
+
+  &.section-basic-content {
+    .article-content {
+      p:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
   &.section-fullwidth-image {
     figure,
     img {
