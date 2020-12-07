@@ -19,6 +19,7 @@
                     <li><a href="page-basic-accordions.php">Accordions</a></li>
                     <li><a href="page-find-a-clinic.php">Find a clinic</a></li>
                     <li><a href="page-newsroom.php">Newsroom page</a></li>
+                    <li><a href="page-news-article.php">News article</a></li>
                     <li><a href="page-contact.php">Contact page</a></li>
                 </ul>
             </div>

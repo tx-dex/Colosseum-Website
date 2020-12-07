@@ -6,3 +6,48 @@
   @extend .page-section;
   padding-top: 0;
 }
+
+// News article styles
+// -------------------------------------
+
+.section-news-article-plain {
+  .container-sm {
+    max-width: 800px;
+  }
+  .article-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .article-lead {
+    margin-bottom: 1.5rem;
+  }
+
+  .article-content {
+
+  }
+
+  @include media-breakpoint-up(md) {
+
+    .article-header {
+      margin-bottom: 2rem;
+    }
+
+    .article-lead {
+      margin-bottom: 2rem;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .container-sm {
+      max-width: 900px;
+    }
+
+    .article-header {
+      margin-bottom: 2.5rem;
+    }
+
+    .article-lead {
+      margin-bottom: 2.5rem;
+    }
+  }
+}

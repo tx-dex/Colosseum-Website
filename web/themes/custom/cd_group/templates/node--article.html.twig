@@ -6,7 +6,7 @@
 
 {% set hasHeroImage = content.field_main_image|render|trim is not empty %}
 
-<section class="hero-basic-page {{ hasHeroImage ? 'with-image' : '' }}">
+{#<section class="hero-basic-page {{ hasHeroImage ? 'with-image' : '' }}">
     <div class="container-fullwidth">
         <div class="hero-content">
             <span class="category-badge {{ articleCategoryClass }}">
@@ -43,11 +43,19 @@
             </div>
         </section>
     {% endif %}
-</div>
+</div>#}
 
-{#
-<section class="page-section">
+<section class="page-section news-article-plain">
     <div class="container">
+
+        <div class="article-header">
+            <span class="category-badge {{ articleCategoryClass }}">
+                {{ content.field_article_category|render|striptags('<!-- -->')|trim }}
+            </span>
+            <h1>
+                {{ label }}
+            </h1>
+        </div>
 
         {% if content.field_main_image|render|trim is not empty %}
             <div class="article-main-image">
@@ -63,4 +71,4 @@
             {{ content.body }}
         </div>
     </div>
-</section>#}
+</section>

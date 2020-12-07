@@ -17691,6 +17691,35 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   padding-top: 0;
 }
 
+.section-news-article-plain .container-sm {
+  max-width: 800px;
+}
+.section-news-article-plain .article-header {
+  margin-bottom: 1.5rem;
+}
+.section-news-article-plain .article-lead {
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .section-news-article-plain .article-header {
+    margin-bottom: 2rem;
+  }
+  .section-news-article-plain .article-lead {
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .section-news-article-plain .container-sm {
+    max-width: 900px;
+  }
+  .section-news-article-plain .article-header {
+    margin-bottom: 2.5rem;
+  }
+  .section-news-article-plain .article-lead {
+    margin-bottom: 2.5rem;
+  }
+}
+
 .main-content-section-findaclinic {
   padding-top: 0;
 }
