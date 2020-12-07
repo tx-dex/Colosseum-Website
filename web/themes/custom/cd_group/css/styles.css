@@ -17914,9 +17914,16 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   justify-content: space-between;
   color: #69B3E7;
   margin: 0;
+  transition: all 200ms ease-in-out;
 }
 .contact-section-links .contact-section-link .link-title .material-icons, .contact-section-links .contact-section-link .link-title .ui-dialog .ui-dialog-titlebar-close:after, .ui-dialog .contact-section-links .contact-section-link .link-title .ui-dialog-titlebar-close:after, .contact-section-links .contact-section-link .link-title .btn.add-back-icon:before, .contact-section-links .contact-section-link .link-title .add-back-icon.button:before, .contact-section-links .contact-section-link .link-title .btn.add-fwd-icon:after, .contact-section-links .contact-section-link .link-title .add-fwd-icon.button:after, .contact-section-links .contact-section-link .link-title .btn.add-fwd-icon-before:before, .contact-section-links .contact-section-link .link-title .add-fwd-icon-before.button:before, .contact-section-links .contact-section-link .link-title .bp-accordion .bp-accordion-item-header .bp-accordion-title:after, .bp-accordion .bp-accordion-item-header .contact-section-links .contact-section-link .link-title .bp-accordion-title:after {
   font-size: 1.25em;
+}
+.contact-section-links .contact-section-link:hover, .contact-section-links .contact-section-link:active, .contact-section-links .contact-section-link:focus {
+  text-decoration: none;
+}
+.contact-section-links .contact-section-link:hover .link-title, .contact-section-links .contact-section-link:active .link-title, .contact-section-links .contact-section-link:focus .link-title {
+  color: #fff;
 }
 @media (min-width: 768px) {
   .contact-section-links .contact-section-link {

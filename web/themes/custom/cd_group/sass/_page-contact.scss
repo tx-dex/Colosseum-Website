@@ -68,9 +68,20 @@
       justify-content: space-between;
       color: $brand-blue-light;
       margin: 0;
+      transition: all 200ms ease-in-out;
 
       .material-icons {
         font-size: 1.25em;
+      }
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+
+      .link-title {
+        color: $white;
       }
     }
   }
