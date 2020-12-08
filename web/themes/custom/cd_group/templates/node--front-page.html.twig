@@ -21,10 +21,8 @@
         <div class="hero-content">
             <h1 class="h2 hero-title">{{ content.field_hero_title }}</h1>
             <p class="hero-lead">
-                {{ content.field_hero_title }}
+                {{ content.field_hero_lead_text }}
             </p>
-            {{ field_hero_link }}
-
             {% if content.field_hero_link[0]['#url'] is not empty %}
                 <a href="{{ content.field_hero_link[0]['#url'] }}" class="btn btn-primary add-fwd-icon">
                     {{ content.field_hero_link[0]['#title'] }}
@@ -42,7 +40,6 @@
 </section>
 
 <section class="page-section page-section-fp-feature">
-    <img src="{{ base_path ~ directory }}/img/temp-img/frontpage-charitable-cause.jpg" alt="img">
     {% if content.field_fp_feature_image|render|trim is not empty %}
         <img src="{{ content.field_fp_feature_image[0]['#media'].field_media_image.entity.uri.value | image_style('frontpage_feature') }}" alt="{{ content.field_fp_feature_image[0]['#media'].field_media_image.alt }}">
     {% endif %}
@@ -63,8 +60,8 @@
 
 <section class="page-section page-section-find-a-clinic">
     <div class="col-map">
-        {{ content.field_map_image }}
-        {#<img src="{{ file_url(content.field_map_image['#items'].0.entity.uri.value) }}" alt="Map">#}
+        {#{{ content.field_map_image }}#}
+        <img src="{{ file_url(node.field_map_image.entity.field_media_image.entity.fileuri) }}" alt="Map of Europe">
     </div>
     <div class="cta">
         <div class="container-lg">
@@ -89,8 +86,6 @@
 <section class="page-section page-section-fp-contact">
     <div class="section-two-col-cta">
         <div class="col-md-6 col-img">
-            field_fp_contact_image
-
             {% if content.field_fp_contact_image|render|trim is not empty %}
                 <img src="{{ content.field_fp_contact_image[0]['#media'].field_media_image.entity.uri.value | image_style('frontpage_contact') }}" alt="{{ content.field_fp_contact_image[0]['#media'].field_media_image.alt }}">
             {% endif %}
