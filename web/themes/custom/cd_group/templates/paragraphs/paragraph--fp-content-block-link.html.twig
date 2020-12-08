@@ -1,0 +1,10 @@
+<a href="{{ content.field_link[0]['#url'] }}" class="item">
+    <h3 class="small-ac-title">{{ content.field_section_name }}</h3>
+    {% if content.field_image|render|trim is not empty %}
+        <img src="{{ content.field_image[0]['#media'].field_media_image.entity.uri.value | image_style('frontpage_link_box') }}" alt="{{ content.field_image[0]['#media'].field_media_image.alt }}">
+    {% endif %}
+    <p class="h4">
+        {{ content.field_title }}
+    </p>
+    <button class="btn btn-link add-fwd-icon">{{ content.field_link[0]['#title'] }}</button>
+</a>

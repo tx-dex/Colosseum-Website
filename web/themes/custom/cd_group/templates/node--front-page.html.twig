@@ -16,75 +16,66 @@
 #}
 
 <section class="hero-frontpage">
-    <div class="hero-img" style="background-image: url({{ base_path ~ directory }}/img/temp-img/hero-example.jpg);"></div>
+    <div class="hero-img" style="background-image: url({{ content.field_main_image[0]['#media'].field_media_image.entity.uri.value | image_style('basic_page_hero') }});"></div>
     <div class="container-lg">
         <div class="hero-content">
-            <h1 class="h2 hero-title">Welcome to Colosseum Dental Group</h1>
-            <p class="hero-lead">We want to provide modern, quality dentistry services for the benefit of patients, dentists, employees and shareholders, striving for continuous growth and excellence.</p>
-            <a href="/who-we-are" class="btn btn-primary add-fwd-icon">
-                About us
-            </a>
+            <h1 class="h2 hero-title">{{ content.field_hero_title }}</h1>
+            <p class="hero-lead">
+                {{ content.field_hero_title }}
+            </p>
+            {{ field_hero_link }}
+
+            {% if content.field_hero_link[0]['#url'] is not empty %}
+                <a href="{{ content.field_hero_link[0]['#url'] }}" class="btn btn-primary add-fwd-icon">
+                    {{ content.field_hero_link[0]['#title'] }}
+                </a>
+            {% endif %}
         </div>
     </div>
 </section>
 
 <section class="page-section page-section-fp-intro">
     <div class="container-lg">
-        <h2>
-            Colosseum Dental Group is a <span>leading dentistry</span> company in the European dental services market.
-        </h2>
-        <ul class="page-list row">
-            <li class="col-md-4">
-                <a href="#" class="item">
-                    <h3 class="small-ac-title">Medical governance</h3>
-                    <img src="{{ base_path ~ directory }}/img/temp-img/frontpage-featured-1.png" alt="img">
-                    <p class="h4">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    </p>
-                    <button class="btn btn-link add-fwd-icon">Read more</button>
-                </a>
-            </li>
-            <li class="col-md-4">
-                <a href="#" class="item">
-                    <h3 class="small-ac-title">Colosseum Academy</h3>
-                    <img src="{{ base_path ~ directory }}/img/temp-img/frontpage-featured-2.png" alt="img">
-                    <p class="h4">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    </p>
-                    <button class="btn btn-link add-fwd-icon">Read more</button>
-                </a>
-            </li>
-            <li class="col-md-4">
-                <a href="#" class="item">
-                    <h3 class="small-ac-title">Innovation</h3>
-                    <img src="{{ base_path ~ directory }}/img/temp-img/frontpage-featured-3.png" alt="img">
-                    <p class="h4">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    </p>
-                    <button class="btn btn-link add-fwd-icon">Read more</button>
-                </a>
-            </li>
-        </ul>
+        {{ content.body }}
+        {{ content.field_fp_intro_links }}
     </div>
 </section>
 
 <section class="page-section page-section-fp-feature">
     <img src="{{ base_path ~ directory }}/img/temp-img/frontpage-charitable-cause.jpg" alt="img">
+    {% if content.field_fp_feature_image|render|trim is not empty %}
+        <img src="{{ content.field_fp_feature_image[0]['#media'].field_media_image.entity.uri.value | image_style('frontpage_feature') }}" alt="{{ content.field_fp_feature_image[0]['#media'].field_media_image.alt }}">
+    {% endif %}
     <div class="cta-content-box">
-        <h2 class="small-ac-title">Our charitable cause</h2>
-        <p class="h2">Jacobs Foundation, one of the world’s leading charities for children and youth, is the ultimate economic beneficiary. </p>
-        <a href="/charitable-cause" class="btn btn-primary add-fwd-icon">Read more</a>
+        <h2 class="small-ac-title">
+            {{ content.field_fp_feature_section }}
+        </h2>
+        <p class="h2">
+            {{ content.field_fp_feature_title }}
+        </p>
+        {% if content.field_fp_feature_link[0]['#url'] is not empty %}
+            <a href="{{ content.field_fp_feature_link[0]['#url'] }}" class="btn btn-primary add-fwd-icon">
+                {{ content.field_fp_feature_link[0]['#title'] }}
+            </a>
+        {% endif %}
     </div>
 </section>
 
 <section class="page-section page-section-find-a-clinic">
     <div class="col-map">
-        <img src="{{ base_path ~ directory }}/img/temp-img/frontpage-map.png" alt="Map">
+        {{ content.field_map_image }}
+        {#<img src="{{ file_url(content.field_map_image['#items'].0.entity.uri.value) }}" alt="Map">#}
     </div>
     <div class="cta">
         <div class="container-lg">
-            <h2 class="h1">We are presently operating in eight European countries</h2>
-            <a href="#" class="btn btn-primary add-fwd-icon">Find your local clinic</a>
+            <h2 class="h1">
+                {{ content.field_fp_fyc_title }}
+            </h2>
+            {% if content.field_fp_fyc_link[0]['#url'] is not empty %}
+                <a href="{{ content.field_fp_fyc_link[0]['#url'] }}" class="btn btn-primary add-fwd-icon">
+                    {{ content.field_fp_fyc_link[0]['#title'] }}
+                </a>
+            {% endif %}
         </div>
     </div>
 </section>
@@ -98,13 +89,25 @@
 <section class="page-section page-section-fp-contact">
     <div class="section-two-col-cta">
         <div class="col-md-6 col-img">
-            <img src="{{ base_path ~ directory }}/img/temp-img/frontpage-contact.jpg" alt="Dentist">
+            field_fp_contact_image
+
+            {% if content.field_fp_contact_image|render|trim is not empty %}
+                <img src="{{ content.field_fp_contact_image[0]['#media'].field_media_image.entity.uri.value | image_style('frontpage_contact') }}" alt="{{ content.field_fp_contact_image[0]['#media'].field_media_image.alt }}">
+            {% endif %}
         </div>
         <div class="col-md-6 col-txt">
             <div class="cta-content-box">
-                <h1>Get in Touch</h1>
-                <p>Thinking about downscaling as a prelude to retirement? Or perhaps selling your practice to work directly with us? Get in touch with our national executives who deal with acquisitions.</p>
-                <a href="/contact-us" class="btn btn-primary add-fwd-icon">Contact us</a>
+                <h1>
+                    {{ content.field_fp_contact_title }}
+                </h1>
+                <p>
+                    {{ content.field_fp_contact_lead_text }}
+                </p>
+                {% if content.field_fp_contact_link[0]['#url'] is not empty %}
+                    <a href="{{ content.field_fp_contact_link[0]['#url'] }}" class="btn btn-primary add-fwd-icon">
+                        {{ content.field_fp_contact_link[0]['#title'] }}
+                    </a>
+                {% endif %}
             </div>
         </div>
     </div>
