@@ -2,19 +2,6 @@
     Front page of the site
 #}
 
-{#
-<section class="page-section page-section-basic-page">
-    <div class="container">
-        <h1 class="page-title">
-            {{ label }}
-        </h1>
-        <div class="article-content">
-            {{ content.body }}
-        </div>
-    </div>
-</section>
-#}
-
 <section class="hero-frontpage">
     <div class="hero-img" style="background-image: url({{ content.field_main_image[0]['#media'].field_media_image.entity.uri.value | image_style('basic_page_hero') }});"></div>
     <div class="container-lg">
