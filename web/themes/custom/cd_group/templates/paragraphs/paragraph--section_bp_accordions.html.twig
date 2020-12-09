@@ -2,6 +2,9 @@
     <div class="main-content-container">
         <div class="bp-section section-accordions">
             <div class="container">
+                {% if content.field_title is not empty %}
+                    <h2 class="section-title">{{ content.field_title }}</h2>
+                {% endif %}
                 {{ content.field_accordion_items }}
             </div>
         </div>

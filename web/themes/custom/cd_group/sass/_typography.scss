@@ -246,9 +246,9 @@ figure {
     }
   }
 
-  p + ol,
-  p + ul,
-  p + dl {
+  * + ol,
+  * + ul,
+  * + dl {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
   }
@@ -312,19 +312,33 @@ figure {
     }
   }
 
+  hr {
+    margin: 2rem 0;
+  }
+
   @include media-breakpoint-up(lg) {
     font-size: 1.125rem;
+
+    hr {
+      margin: 3rem 0;
+    }
 
     img,
     figure {
       margin: 2rem auto;
     }
 
-    p + ol,
-    p + ul,
-    p + dl {
+    * + ol,
+    * + ul,
+    * + dl {
       margin-top: 2rem;
       margin-bottom: 2rem;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    hr {
+      margin: 4rem 0;
     }
   }
 }

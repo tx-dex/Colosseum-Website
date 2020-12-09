@@ -15760,9 +15760,9 @@ figure.caption > figcaption {
 .article-content ol li > ul, .article-content ol li > ol, .article-content ul li > ul, .article-content ul li > ol, .article-content dl li > ul, .article-content dl li > ol {
   margin-top: 0.5rem;
 }
-.article-content p + ol,
-.article-content p + ul,
-.article-content p + dl {
+.article-content * + ol,
+.article-content * + ul,
+.article-content * + dl {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
@@ -15814,19 +15814,30 @@ figure.caption > figcaption {
 .article-content figure img {
   margin: 0;
 }
+.article-content hr {
+  margin: 2rem 0;
+}
 @media (min-width: 1024px) {
   .article-content {
     font-size: 1.125rem;
+  }
+  .article-content hr {
+    margin: 3rem 0;
   }
   .article-content img,
 .article-content figure {
     margin: 2rem auto;
   }
-  .article-content p + ol,
-.article-content p + ul,
-.article-content p + dl {
+  .article-content * + ol,
+.article-content * + ul,
+.article-content * + dl {
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .article-content hr {
+    margin: 4rem 0;
   }
 }
 
@@ -17269,15 +17280,21 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   }
 }
 
-.bp-section.section-basic-content .article-content > p:last-of-type {
-  margin-bottom: 0;
-}
 .bp-section.section-fullwidth-image figure,
 .bp-section.section-fullwidth-image img {
   margin: 0;
 }
 .bp-section.section-2-columns .section-title {
   margin-bottom: 1.25rem;
+}
+.bp-section.section-2-columns .col-md-6 > *:first-child {
+  margin-top: 0;
+}
+.bp-section.section-accordions {
+  padding-bottom: 3rem;
+}
+.bp-section.section-accordions .section-title {
+  margin-bottom: 1.5rem;
 }
 .bp-section.section-team {
   padding: 2.5rem 0 2rem !important;
@@ -17289,11 +17306,17 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   margin-bottom: 2rem;
 }
 @media (min-width: 768px) {
+  .bp-section.section-accordions {
+    padding-bottom: 3.75rem;
+  }
   .bp-section.section-team {
     padding: 4rem 0 3rem !important;
   }
 }
 @media (min-width: 1200px) {
+  .bp-section.section-accordions {
+    padding-bottom: 4.5rem;
+  }
   .bp-section.section-team {
     padding: 6rem 0 4rem !important;
   }

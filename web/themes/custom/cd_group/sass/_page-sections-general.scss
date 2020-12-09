@@ -339,7 +339,11 @@
   &.section-basic-content {
     .article-content {
       > p:last-of-type {
-        margin-bottom: 0;
+        //margin-bottom: 0;
+      }
+
+      > *:last-child {
+        //margin-bottom: 0;
       }
     }
   }
@@ -359,6 +363,20 @@
     .section-title {
       margin-bottom: 1.25rem;
     }
+
+    .col-md-6 {
+      > *:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &.section-accordions {
+    padding-bottom: 3rem;
+
+    .section-title {
+      margin-bottom: 1.5rem;
+    }
   }
 
   &.section-team {
@@ -374,12 +392,20 @@
   }
 
   @include media-breakpoint-up(md) {
+    &.section-accordions {
+      padding-bottom: 3.75rem;
+    }
+
     &.section-team {
       padding: 4rem 0 3rem !important;
     }
   }
 
   @include media-breakpoint-up(xl) {
+    &.section-accordions {
+      padding-bottom: 4.5rem;
+    }
+
     &.section-team {
       padding: 6rem 0 4rem !important;
     }
