@@ -21,6 +21,10 @@
             </h1>
         </div>
 
+        <div class="article-main-image">
+            <img src="img/frontpage-faq.jpg" alt="kissa">
+        </div>
+
         <!--{% if content.field_main_image|render|trim is not empty %}
         <div class="article-main-image">
             <img src="#" alt="{{ node.field_main_image.entity.field_media_image.alt }}">
