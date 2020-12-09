@@ -15138,6 +15138,9 @@ body {
 .header-notification-bar .notification-content {
   position: relative;
 }
+.header-notification-bar p {
+  margin: 0;
+}
 .header-notification-bar a {
   display: inline-block;
   margin-left: 0.5rem;

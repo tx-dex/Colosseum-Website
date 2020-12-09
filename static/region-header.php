@@ -49,8 +49,11 @@
 <div class="notification-bar header-notification-bar" id="headerNotification">
     <div class="container-fullwidth">
         <div class="notification-content">
-            <strong>COVID-19 information:</strong> Learn about the Colosseum Dental Group's preparations against Covid-19.
-            <a href="/covid-19-information">Read more</a>
+            <p>
+                <strong>COVID-19 information:</strong> Learn about the Colosseum Dental Group's preparations against Covid-19.
+                <a href="/covid-19-information">Read more</a>
+            </p>
+
             <button class="btn btn-dismiss" aria-label="Dismiss notification"><i class="material-icons close"></i></button>
         </div>
     </div>
