@@ -15129,6 +15129,49 @@ body {
   font-size: 1.5rem;
 }
 
+.header-notification-bar {
+  background-color: #041E42;
+  padding: 1rem 0;
+  color: #fff;
+  display: none;
+}
+.header-notification-bar .notification-content {
+  position: relative;
+}
+.header-notification-bar a {
+  display: inline-block;
+  margin-left: 0.5rem;
+  color: #fff;
+  text-decoration: underline;
+}
+.header-notification-bar a:hover, .header-notification-bar a:focus, .header-notification-bar a:active {
+  color: #69B3E7;
+}
+.header-notification-bar .btn-dismiss {
+  padding: 0.3rem;
+  line-height: 1;
+  border-radius: 0;
+  position: absolute;
+  right: -0.3rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header-notification-bar .btn-dismiss .close {
+  color: #fff;
+  text-shadow: none;
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+}
+.header-notification-bar .btn-dismiss:hover .close, .header-notification-bar .btn-dismiss:focus .close, .header-notification-bar .btn-dismiss:active .close {
+  color: #69B3E7;
+}
+@media (min-width: 1200px) {
+  .header-notification-bar {
+    padding: 1.4rem 0;
+  }
+}
+
 .breadcrumb {
   padding: 1.5rem 0 0;
 }

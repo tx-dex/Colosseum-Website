@@ -169,6 +169,61 @@ img {
   }
 }
 
+.header-notification-bar {
+  background-color: $brand-blue-darkest;
+  padding: 1rem 0;
+  color: $white;
+  display: none;
+
+  .notification-content {
+    position: relative;
+  }
+
+  a {
+    display: inline-block;
+    margin-left: .5rem;
+    color: $white;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $brand-blue-light;
+    }
+  }
+
+  .btn-dismiss {
+    padding: .3rem;
+    line-height: 1;
+    border-radius: 0;
+    position: absolute;
+    right: -.3rem;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .close {
+      color: $white;
+      text-shadow: none;
+      margin: 0;
+      padding: 0;
+      opacity: 1;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      .close {
+        color: $brand-blue-light;
+      }
+
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding: 1.4rem 0;
+  }
+}
+
 // Breadcrumb
 // -------------------------------------
 

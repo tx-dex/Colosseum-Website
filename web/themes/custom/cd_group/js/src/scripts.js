@@ -22,6 +22,45 @@
       e.stopPropagation();
     });
 
+    // NOTIFICATION BAR
+    // **************************
+
+    $.fn.notificationBar = function() {
+      return this.each(function () {
+        var $dismissBtn = $(this).find('.btn-dismiss');
+        var $notificationBar = $(this);
+
+        $dismissBtn.click(function (e) {
+          e.preventDefault();
+
+          $notificationBar
+            .animate({ opacity: 0 }, 500)
+            .animate({ height: '0px' }, 500, function() {
+              $notificationBar.css('display', 'none');
+            });
+
+          var notificationDismissed = true;
+
+          var d = new Date();
+          d.setTime(d.getTime() + (24*60*60*1000));
+
+          document.cookie =
+            'CDGNotificationDismissed=' + notificationDismissed +
+            '; expires=' + d.toUTCString() +
+            '; path=/';
+        });
+      });
+    };
+
+    $('.notification-bar').notificationBar();
+
+    var cdgNotificationDismissed = (document.cookie.match(/^(?:.*;)?\s*CDGNotificationDismissed\s*=\s*([^;]+)(?:.*)?$/)||[,null])[1]
+
+    if(!cdgNotificationDismissed) {
+      $('.notification-bar').show();
+    }
+
+    console.log(cdgNotificationDismissed);
 
     // PAGE ANIMATIONS
     // **************************
