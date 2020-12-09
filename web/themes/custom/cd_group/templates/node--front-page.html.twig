@@ -3,7 +3,7 @@
 #}
 
 <section class="hero-frontpage">
-    {% if content.field_embed_code is not empty %}
+    {% if content.field_embed_code|render|trim is not empty %}
         {% set embed_code = {
             '#type': 'processed_text',
             '#text': content.field_embed_code[0]['#context']['value'],
