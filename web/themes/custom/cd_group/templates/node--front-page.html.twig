@@ -3,7 +3,19 @@
 #}
 
 <section class="hero-frontpage">
-    <div class="hero-img" style="background-image: url({{ content.field_main_image[0]['#media'].field_media_image.entity.uri.value | image_style('basic_page_hero') }});"></div>
+    {% if content.field_embed_code is not empty %}
+        {% set embed_code = {
+            '#type': 'processed_text',
+            '#text': content.field_embed_code[0]['#context']['value'],
+            '#format': 'full_html',
+        } %}
+        <div class="embed-video-background">
+            {{ embed_code }}
+        </div>
+    {% else %}
+        <div class="hero-img" style="background-image: url({{ content.field_main_image[0]['#media'].field_media_image.entity.uri.value | image_style('basic_page_hero') }});"></div>
+    {% endif %}
+
     <div class="container-lg">
         <div class="hero-content">
             <h1 class="h2 hero-title">{{ content.field_hero_title }}</h1>

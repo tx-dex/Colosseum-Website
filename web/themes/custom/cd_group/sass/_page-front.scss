@@ -4,6 +4,37 @@
 
 // Hero
 
+.hero-frontpage .embed-video-background {
+  position: relative;
+  pointer-events: none;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  padding-bottom: 55%;
+
+  iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 56.25vw;
+    transform: translate(-50%, -50%);
+  }
+
+  @include media-breakpoint-up(sm) {
+    padding-bottom: 50%;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding-bottom: 45%;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 0;
+      height: 500px;
+  }
+}
+
 .hero-frontpage {
   position: relative;
   background-color: $brand-blue-lighter;
