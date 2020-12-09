@@ -60,7 +60,30 @@
       $('.notification-bar').show();
     }
 
-    console.log(cdgNotificationDismissed);
+    // ACCORDRIONS
+    // **************************
+
+    // We want the page to scroll to the accordion item when it's opened
+    $('.collapse').on('show.bs.collapse', function(e) {
+      var $card = $(this).closest('.bp-accordion-item');
+      var $open = $($(this).data('parent')).find('.collapse.show');
+
+      var additionalOffset = 0;
+      if($card.prevAll().filter($open.closest('.bp-accordion-item')).length !== 0)
+      {
+        additionalOffset =  $open.height();
+      }
+
+      var $navbarHeight = $('.navbar-main').outerHeight();
+
+      if (window.innerWidth < 768) {
+        $navbarHeight = 0;
+      }
+
+      $('html,body').animate({
+        scrollTop: $card.offset().top - additionalOffset - $navbarHeight
+      }, 500);
+    });
 
     // PAGE ANIMATIONS
     // **************************

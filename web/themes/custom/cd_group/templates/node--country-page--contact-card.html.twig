@@ -2,29 +2,6 @@
     Country organisation card
 #}
 
-{#<div class="article-list-item">
-    <div class="col-img">
-        <div class="square-wrapper">
-            <div class="sw-content">
-                {% if content.field_logo|render|trim is not empty %}
-                    <img src="{{ node.field_logo.entity.field_media_image.entity.uri.value | image_style('country_organisation_logo') }}" alt="{{ node.field_logo.entity.field_media_image.alt }}">
-                {% endif %}
-            </div>
-        </div>
-    </div>
-    <div class="col-txt">
-        <h3 class="article-title">{{ label }}{% if content.field_organisation_name|render|trim is not empty %}: {{ content.field_organisation_name }}{% endif %}</h3>
-        <div class="article-lead">
-            {{ content.body }}
-        </div>
-        {% if content.field_website_link[0]['#url'] is not empty %}
-            <a href="{{ content.field_website_link[0]['#url'] }}" class="btn btn-link add-fwd-icon-before" target="_blank">{{ content.field_website_link[0]['#url'] }}</a>
-        {% else %}
-            <a href="{{ path('entity.node.canonical', {'node': node.id}) }}" class="btn btn-link add-fwd-icon-before">Read more</a>
-        {% endif %}
-    </div>
-</div>#}
-
 <div class="country-organisation-card">
     <div class="item-header">
         <div class="logo-container">
