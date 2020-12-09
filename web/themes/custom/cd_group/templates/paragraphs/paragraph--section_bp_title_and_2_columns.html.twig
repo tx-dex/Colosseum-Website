@@ -1,11 +1,17 @@
+
+{% set addBgColor = (content.field_add_background_color['#items'].0.value == 1) ? true : false %}
+
 <section class="main-content-section">
     <div class="main-content-container">
         <div class="bp-section section-2-columns">
             <div class="container">
-                {% if content.field_title is not empty %}
-                    <h2 class="section-title">{{ content.field_title }}</h2>
-                {% endif %}
-                <div class="row article-content">
+                <div class="row article-content {% if addBgColor %}bg-lightblue{% endif %}">
+                    {% if content.field_title is not empty %}
+                    <div class="col-12">
+                        <h2 class="section-title">{{ content.field_title }}</h2>
+                    </div>
+                    {% endif %}
+
                     <div class="col-md-6">
                         {{ content.field_column_1_content }}
                     </div>

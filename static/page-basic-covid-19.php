@@ -39,7 +39,7 @@
         <div class="main-content-container">
             <div class="bp-section section-2-columns">
                 <div class="container">
-                    <div class="row article-content">
+                    <div class="row article-content bg-lightblue">
                         <div class="col-md-6">
                             <figure role="group" class="caption caption-img align-center">
                                 <img alt="values" data-entity-type="file" data-entity-uuid="07dfffdb-efe7-4750-87ef-2e02901248b0" src="img/Eddie-Coyle.jpg">

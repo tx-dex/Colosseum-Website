@@ -360,6 +360,11 @@
   }
 
   &.section-2-columns {
+    .article-content.bg-lightblue {
+      background-color: $brand-blue-lighter;
+      padding-top: 1.75rem;
+      padding-bottom: 1.25rem;
+    }
     .section-title {
       margin-bottom: 1.25rem;
     }
@@ -392,6 +397,14 @@
   }
 
   @include media-breakpoint-up(md) {
+    &.section-2-columns {
+      .article-content.bg-lightblue {
+        margin-left: -$grid-gutter-width;
+        margin-right: -$grid-gutter-width;
+        padding: 2.5rem $grid-gutter-width/2 1.5rem;
+      }
+    }
+
     &.section-accordions {
       padding-bottom: 3.75rem;
     }
@@ -404,6 +417,10 @@
   @include media-breakpoint-up(xl) {
     &.section-accordions {
       padding-bottom: 4.5rem;
+
+      .section-title {
+        margin-bottom: 2rem;
+      }
     }
 
     &.section-team {

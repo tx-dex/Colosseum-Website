@@ -17284,6 +17284,11 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
 .bp-section.section-fullwidth-image img {
   margin: 0;
 }
+.bp-section.section-2-columns .article-content.bg-lightblue {
+  background-color: #F2F6F9;
+  padding-top: 1.75rem;
+  padding-bottom: 1.25rem;
+}
 .bp-section.section-2-columns .section-title {
   margin-bottom: 1.25rem;
 }
@@ -17306,6 +17311,11 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   margin-bottom: 2rem;
 }
 @media (min-width: 768px) {
+  .bp-section.section-2-columns .article-content.bg-lightblue {
+    margin-left: -40px;
+    margin-right: -40px;
+    padding: 2.5rem 20px 1.5rem;
+  }
   .bp-section.section-accordions {
     padding-bottom: 3.75rem;
   }
@@ -17316,6 +17326,9 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
 @media (min-width: 1200px) {
   .bp-section.section-accordions {
     padding-bottom: 4.5rem;
+  }
+  .bp-section.section-accordions .section-title {
+    margin-bottom: 2rem;
   }
   .bp-section.section-team {
     padding: 6rem 0 4rem !important;
