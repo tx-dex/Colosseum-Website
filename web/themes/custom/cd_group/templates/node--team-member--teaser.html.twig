@@ -4,11 +4,18 @@
 
 {# Page content #}
 <div class="col-sm-6 col-lg-4">
-    <div class="person-card">
+    <a class="person-card" data-toggle="modal" data-target="#memberInfoModal">
         {% if node.field_main_image.entity.field_media_image.entity.uri.value is not empty %}
-            <img src="{{ node.field_main_image.entity.field_media_image.entity.uri.value | image_style('team_member_image') }}" alt="{{ node.field_main_image.entity.field_media_image.alt }}">
+            <div class="person-image">
+                <img src="{{ node.field_main_image.entity.field_media_image.entity.uri.value | image_style('team_member_image') }}" alt="{{ node.field_main_image.entity.field_media_image.alt }}">
+            </div>
         {% endif %}
-        <h5 class="person-name">{{ label }}</h5>
-        <p class="person-title">{{ content.field_job_title }}</p>
-    </div>
+        <div class="person-info">
+            <h5 class="person-name">{{ label }}</h5>
+            <p class="person-title">{{ content.field_job_title }}</p>
+            <div class="person-bio d-none">
+                {{ content.body }}
+            </div>
+        </div>
+    </a>
 </div>

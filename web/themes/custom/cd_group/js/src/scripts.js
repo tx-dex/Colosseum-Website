@@ -60,7 +60,7 @@
       $('.notification-bar').show();
     }
 
-    // ACCORDRIONS
+    // ACCORDIONS
     // **************************
 
     // We want the page to scroll to the accordion item when it's opened
@@ -84,6 +84,20 @@
         scrollTop: $card.offset().top - additionalOffset - $navbarHeight
       }, 500);
     });
+
+    // TEAM MEMBER INFO MODAL
+    // **************************
+
+    $('#memberInfoModal').on('show.bs.modal', function (event) {
+      var $button = $(event.relatedTarget); // Button that triggered the modal
+
+      var memberImage = $button.find('.person-image').html();
+      var memberInfo = $button.find('.person-info').html();
+
+      var modal = $(this);
+      modal.find('.person-image').html(memberImage);
+      modal.find('.person-info').html(memberInfo);
+    })
 
     // PAGE ANIMATIONS
     // **************************

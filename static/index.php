@@ -18,6 +18,7 @@
                     <li><a href="page-basic-no-image.php">Basic page without an image</a></li>
                     <li><a href="page-basic-covid-19.php">Covid 19 article</a></li>
                     <li><a href="page-basic-accordions.php">Accordions</a></li>
+                    <li><a href="page-basic-team.php">Team</a></li>
                     <li><a href="page-find-a-clinic.php">Find a clinic</a></li>
                     <li><a href="page-newsroom.php">Newsroom page</a></li>
                     <li><a href="page-news-article.php">News article</a></li>

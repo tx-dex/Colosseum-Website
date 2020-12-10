@@ -9,6 +9,32 @@
     //margin: 15px;
   }
 
+  button.close {
+    opacity: 1;
+    float: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: .5rem;
+
+    .close {
+      color: $brand-blue;
+      text-shadow: none;
+      margin: 0;
+      padding: 0;
+      opacity: 1;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      .close {
+        color: $brand-blue-light;
+      }
+
+    }
+  }
+
   .modal-header {
     padding: $modal-inner-padding;
   }
@@ -29,6 +55,11 @@
   @include media-breakpoint-up(sm) {
     .modal-dialog {
       width: 90%;
+      max-width: 740px;
+    }
+
+    button.close {
+      padding: 1rem;
     }
   }
 
@@ -43,6 +74,51 @@
 
     .modal-footer {
       padding: 0 $modal-inner-padding-lg $modal-inner-padding-lg;
+    }
+  }
+}
+
+// Member info modal
+
+.modal.member-info-modal {
+  .modal-content {
+    background-color: $brand-blue-lighter;
+    padding: 2.5rem 0 1rem;
+
+    .person-image {
+      margin-bottom: 1rem;
+    }
+
+    .person-title {
+      font-size: 1.125rem;
+    }
+
+    .person-bio.d-none {
+      display: block !important;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    .modal-content {
+      padding: 3rem 0 1.5rem;
+      .container {
+        padding: 0 5%;
+      }
+      .person-image {
+        padding-right: 1%;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .modal-content {
+      padding: 3rem 0 2rem;
+      .container {
+        padding: 0 3rem;
+      }
+      .person-image {
+        padding-right: $grid-gutter-width/2;
+      }
     }
   }
 }
