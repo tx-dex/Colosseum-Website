@@ -16184,8 +16184,8 @@ html [type=button],
   opacity: 1;
   float: none;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 1px;
+  top: 1px;
   padding: 0.5rem;
 }
 .modal button.close .close {
@@ -16195,8 +16195,15 @@ html [type=button],
   padding: 0;
   opacity: 1;
 }
+.modal button.close:hover, .modal button.close:focus, .modal button.close:active {
+  opacity: 1;
+}
 .modal button.close:hover .close, .modal button.close:focus .close, .modal button.close:active .close {
-  color: #69B3E7;
+  opacity: 1;
+  color: #008cd9;
+}
+.modal button.close:focus, .modal button.close:active {
+  outline: 1px solid #dee2e6;
 }
 .modal .modal-header {
   padding: 1.5rem;
@@ -16467,8 +16474,8 @@ html [type=button],
   opacity: 1;
   float: none;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 1px;
+  top: 1px;
   padding: 0.5rem;
 }
 .modal button.close .close {
@@ -16478,8 +16485,15 @@ html [type=button],
   padding: 0;
   opacity: 1;
 }
+.modal button.close:hover, .modal button.close:focus, .modal button.close:active {
+  opacity: 1;
+}
 .modal button.close:hover .close, .modal button.close:focus .close, .modal button.close:active .close {
-  color: #69B3E7;
+  opacity: 1;
+  color: #008cd9;
+}
+.modal button.close:focus, .modal button.close:active {
+  outline: 1px solid #dee2e6;
 }
 .modal .modal-header {
   padding: 1.5rem;
@@ -17507,6 +17521,7 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
 .team-grid .person-card {
   display: block;
   margin-bottom: 2rem;
+  cursor: pointer;
 }
 .team-grid .person-card img {
   width: 100%;
@@ -17517,9 +17532,21 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
 .team-grid .person-card .person-name {
   color: #041E42;
   font-weight: 500;
+  transition: color 0.2s ease-in-out;
 }
 .team-grid .person-card .person-title {
+  color: #041E42;
   margin: 0;
+  transition: color 0.2s ease-in-out;
+}
+.team-grid .person-card:hover, .team-grid .person-card:focus, .team-grid .person-card:active {
+  text-decoration: none;
+}
+.team-grid .person-card:hover .person-name, .team-grid .person-card:focus .person-name, .team-grid .person-card:active .person-name {
+  color: #006BA6;
+}
+.team-grid .person-card:hover .person-title, .team-grid .person-card:focus .person-title, .team-grid .person-card:active .person-title {
+  color: #006BA6;
 }
 @media (min-width: 768px) {
   .team-grid .person-card {

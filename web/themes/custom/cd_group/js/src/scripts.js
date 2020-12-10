@@ -88,15 +88,24 @@
     // TEAM MEMBER INFO MODAL
     // **************************
 
-    $('#memberInfoModal').on('show.bs.modal', function (event) {
+    var $memberInfoModal = $('#memberInfoModal');
+
+    $memberInfoModal.on('show.bs.modal', function (event) {
       var $button = $(event.relatedTarget); // Button that triggered the modal
+      var modal = $(this);
 
       var memberImage = $button.find('.person-image').html();
       var memberInfo = $button.find('.person-info').html();
 
-      var modal = $(this);
       modal.find('.person-image').html(memberImage);
       modal.find('.person-info').html(memberInfo);
+    })
+
+    $memberInfoModal.on('hidden.bs.modal', function (event) {
+      var modal = $(this);
+
+      modal.find('.person-image').html('');
+      modal.find('.person-info').html('');
     })
 
     // PAGE ANIMATIONS

@@ -444,6 +444,7 @@
   .person-card {
     display: block;
     margin-bottom: 2rem;
+    cursor: pointer;
 
     img {
       width: 100%;
@@ -455,9 +456,25 @@
     .person-name {
       color: $default-text-color;
       font-weight: $font-weight-medium;
+      transition: color .2s ease-in-out;
     }
     .person-title {
+      color: $default-text-color;
       margin: 0;
+      transition: color .2s ease-in-out;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: none;
+
+      .person-name {
+        color: $brand-blue;
+      }
+      .person-title {
+        color: $brand-blue;
+      }
     }
   }
 

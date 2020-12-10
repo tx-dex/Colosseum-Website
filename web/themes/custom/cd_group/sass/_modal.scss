@@ -13,8 +13,8 @@
     opacity: 1;
     float: none;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 1px;
+    top: 1px;
     padding: .5rem;
 
     .close {
@@ -28,10 +28,17 @@
     &:hover,
     &:focus,
     &:active {
-      .close {
-        color: $brand-blue-light;
-      }
+      opacity: 1;
 
+      .close {
+        opacity: 1;
+        color: lighten($brand-blue, 10%);
+      }
+    }
+
+    &:focus,
+    &:active {
+      outline: 1px solid $border-color;
     }
   }
 
