@@ -17880,8 +17880,8 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   padding: 0;
 }
 .page-section-find-a-clinic .col-map {
-  width: 80%;
-  max-width: 770px;
+  width: 100%;
+  max-width: 850px;
   min-height: 300px;
   padding-bottom: 2rem;
   margin-left: auto;
@@ -17912,8 +17912,9 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
 }
 @media (min-width: 768px) {
   .page-section-find-a-clinic .col-map {
-    width: 70%;
+    width: 84%;
     margin-left: auto;
+    padding-bottom: 1.5rem;
   }
   .page-section-find-a-clinic .cta {
     top: 20%;
@@ -17925,7 +17926,7 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
 }
 @media (min-width: 1024px) {
   .page-section-find-a-clinic .col-map {
-    width: 70%;
+    width: 85%;
     margin-left: auto;
   }
   .page-section-find-a-clinic .col-map img {

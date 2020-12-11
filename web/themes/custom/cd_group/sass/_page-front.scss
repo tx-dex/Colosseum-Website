@@ -285,8 +285,8 @@
   padding: 0;
 
   .col-map {
-    width: 80%;
-    max-width: 770px;
+    width: 100%;
+    max-width: 850px;
     min-height: 300px;
     padding-bottom: 2rem;
     margin-left: auto;
@@ -326,8 +326,9 @@
 
   @include media-breakpoint-up(md) {
     .col-map {
-      width: 70%;
+      width: 84%;
       margin-left: auto;
+      padding-bottom: 1.5rem;
     }
     .cta {
       top: 20%;
@@ -341,7 +342,7 @@
 
   @include media-breakpoint-up(lg) {
     .col-map {
-      width: 70%;
+      width: 85%;
       margin-left: auto;
 
       img {
