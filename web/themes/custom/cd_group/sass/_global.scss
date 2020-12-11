@@ -614,7 +614,7 @@ body.is_admin .dialog-off-canvas-main-canvas {
   .ui-dialog-titlebar {
     padding: 1rem;
     border: none;
-    background: $brand-blue;
+    background: $brand-blue-darkest;
     color: $white;
     font-weight: $font-weight-medium;
     font-size: 1.5rem;
@@ -639,6 +639,17 @@ body.is_admin .dialog-off-canvas-main-canvas {
     height: 30px;
     overflow: hidden;
     //color: transparent;
+    color: $white;
+
+    &:hover,
+    &:focus {
+      color: $brand-blue-light;
+      outline: none;
+    }
+
+    &:active {
+      color: $brand-blue-lighter;
+    }
 
     &:after {
       display: block;
@@ -647,7 +658,7 @@ body.is_admin .dialog-off-canvas-main-canvas {
       text-indent: 0;
       top: 0;
       left: 0;
-      color: #fff;
+      color: inherit;
       content: "\e5cd";
       width: 100%;
       height: 100%;
