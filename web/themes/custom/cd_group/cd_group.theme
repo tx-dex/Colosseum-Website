@@ -17,22 +17,22 @@ function cd_group_preprocess(array &$variables) {
   $variables['base_path'] = base_path();
   $variables['base_url'] = $GLOBALS['base_url'];
   $variables['theme_path'] = base_path() . $variables['directory'];
-
+  $variables['is_prod'] = getenv('MODE') !== 'DEV';
   /** @var \Drupal\user\UserInterface $user */
   $user = User::load(\Drupal::currentUser()->id());
   $variables['user_id'] = $user->id();
   $variables['is_logged_in'] = $user->isAuthenticated();
   $variables['is_admin'] = $user->hasPermission('access administration pages');
 
-  $variables['node_edit_url'] = "/node/" . \Drupal::routeMatch()
-      ->getRawParameter('node') . "/edit";
+
 }
 
 /**
  * Implements hook_preprocess_HOOK() for html.html.twig.
  */
 function cd_group_preprocess_html(array &$variables) {
-
+  $variables['node_edit_url'] = "/node/" . \Drupal::routeMatch()
+      ->getRawParameter('node') . "/edit";
 }
 
 /**

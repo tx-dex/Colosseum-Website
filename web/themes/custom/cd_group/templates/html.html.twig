@@ -15,14 +15,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {# <title>{{ head_title|safe_join(' | ') }}</title> #}
     <title>{{ head_title.title }}</title>
-      <!-- CookiePro Cookies Consent Notice start for www.colosseumdental.com -->
-      <script type="text/javascript" src="https://cookie-cdn.cookiepro.com/consent/dfca7411-c793-421e-92dd-30a90a83a854-test/OtAutoBlock.js" ></script>
-      <script src="https://cookie-cdn.cookiepro.com/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="dfca7411-c793-421e-92dd-30a90a83a854-test" ></script>
-      <script type="text/javascript">
-        function OptanonWrapper() { }
-      </script>
-      <!-- CookiePro Cookies Consent Notice end for www.colosseumdental.com -->
+      {% if is_prod %}
 
+      {% else %}
+        <!-- CookiePro Cookies Consent Notice start for www.colosseumdental.com -->
+        <script type="text/javascript" src="https://cookie-cdn.cookiepro.com/consent/dfca7411-c793-421e-92dd-30a90a83a854-test/OtAutoBlock.js" ></script>
+        <script src="https://cookie-cdn.cookiepro.com/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="dfca7411-c793-421e-92dd-30a90a83a854-test" ></script>
+        <script type="text/javascript">
+          function OptanonWrapper() { }
+        </script>
+        <!-- CookiePro Cookies Consent Notice end for www.colosseumdental.com -->
+      {% endif %}
     {# Add font import here if from google etc... #}
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,900&display=swap&subset=latin-ext" rel="stylesheet">
 
@@ -53,8 +56,8 @@
 
 <js-bottom-placeholder token="{{ placeholder_token|raw }}">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    {#<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+{% if is_prod %}
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-EH3MM4PV72">
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -62,30 +65,8 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
  gtag('config', 'G-EH3MM4PV72');
-</script>#}
-
-    {# Osano Cookie consent #}
-    {#<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-    <script>
-      window.cookieconsent.initialise({
-        "palette": {
-          "popup": {
-            "background": "#006ba6"
-          },
-          "button": {
-            "background": "#fff",
-            "color": "#006ba6"
-          }
-        },
-        "content": {
-          "message": "This website uses cookies to gather analytics and ensure you get the best experience on our website. We handle the data according to our privacy policy.",
-          "dismiss": "Got it!",
-          "link": "Read more",
-          "href": "https://academy.colosseumdental.com/privacy-policy"
-        },
-        "theme": "colosseum"
-      });
-    </script>#}
+</script>
+{% endif %}
 </body>
 </html>
 
