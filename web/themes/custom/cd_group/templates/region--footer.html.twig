@@ -7,15 +7,17 @@
                     <img src="{{ base_path ~ directory }}/img/cdg-logo-white.svg" alt="Colosseum Dental Group logo">
                 </a>
                 <div class="footer-contact-info">
-                    <p class="contact">
+                    {#<p class="contact">
                         <a href=""><span>info@colosseumdental.com</span></a>
                         <a href=""><span>+47 464 73 830</span></a>
-                    </p>
-                    <p class="address">
-                        Colosseum Academy<br>
-                        Sørkedalsveien 10A<br>
-                        0368 Oslo
-                    </p>
+                    </p>#}
+                    {#<p class="address">
+                        Colosseum Dental Group<br>
+                        Gutenbergstrasse 10<br>
+                        CH-8002, Zürich<br>
+                        Switzerland
+                    </p>#}
+                    {{ drupal_block('footercontactinfo') }}
                 </div>
             </div>
             <div class="col-md-4">
@@ -35,9 +37,9 @@
                     <a class="nav-link" href="https://www.linkedin.com/company/colosseum-dental-group/" target="_blank" aria-label="Colosseum Dental in LinkedIn">
                         <span class="cdg-icon-linkedin-square"></span>
                     </a>
-                    <a class="nav-link" href="https://www.facebook.com/colosseumdental"  target="_blank" aria-label="Colosseum Dental in Facebook">
+                    {#<a class="nav-link" href="https://www.facebook.com/colosseumdental"  target="_blank" aria-label="Colosseum Dental in Facebook">
                         <span class="cdg-icon-facebook-square"></span>
-                    </a>
+                    </a>#}
                 </nav>
             </div>
             <div class="col-md-12 col-lg-auto order-md-3 order-lg-1">

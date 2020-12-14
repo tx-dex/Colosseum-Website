@@ -7,14 +7,15 @@
                     <img src="../web/themes/custom/cd_group/img/cdg-logo-white.svg" alt="Colosseum Dental Group logo">
                 </a>
                 <div class="footer-contact-info">
-                    <p class="contact">
+                    <!--<p class="contact">
                         <a href=""><span>info@colosseumdental.com</span></a>
                         <a href=""><span>+47 464 73 830</span></a>
-                    </p>
+                    </p>-->
                     <p class="address">
-                        Colosseum Academy<br>
-                        Sørkedalsveien 10A<br>
-                        0368 Oslo
+                        Colosseum Dental Group<br>
+                        Gutenbergstrasse 10<br>
+                        CH-8002, Zürich<br>
+                        Switzerland
                     </p>
                 </div>
             </div>
