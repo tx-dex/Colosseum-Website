@@ -1,0 +1,195 @@
+
+// Common variables
+// -----------------------------------
+
+$ot-banner-font-size:     16px;
+$ot-popup-font-size-base: 14px;
+$ot-popup-font-size-sm:   13px;
+
+$ot-btn-font-size:        14px;
+$ot-btn-border-radius:    40px;
+$ot-btn-font-weight:      $font-weight-medium;
+$ot-btn-padding-x:        1rem;
+$ot-btn-padding-y:        12px;
+
+
+// Bottom banner
+// -----------------------------------
+
+#onetrust-consent-sdk {
+
+  .ot-sdk-container {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    .ot-sdk-row {
+      width: 100%;
+
+      // Policy text in banner
+      #onetrust-group-container {
+        width: 100%;
+        padding: $grid-gutter-width/2;
+        margin: 0;
+
+        #onetrust-policy {
+          margin: 0;
+        }
+
+        #onetrust-policy-text {
+          float: none;
+          font-size: 16px;
+          margin: 0;
+        }
+      }
+
+      // Buttons in banner
+      #onetrust-button-group-parent {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        bottom: auto !important;
+        right: auto !important;
+        transform: none;
+        width: 100%;
+        padding: $grid-gutter-width/2;
+        padding-top: 0;
+        margin: 0;
+        text-align: left;
+
+        #onetrust-button-group {
+          button {
+            margin: 0;
+            white-space: nowrap;
+            min-width: 0;
+            font-weight: $ot-btn-font-weight;
+            border-radius: $ot-btn-border-radius;
+            font-size: $ot-btn-font-size !important;
+
+            + button {
+              margin: .5rem 0 0;
+            }
+
+            &#onetrust-accept-btn-handler {
+              padding: $ot-btn-padding-y $ot-btn-padding-x !important;
+            }
+          }
+        }
+      }
+
+      #onetrust-close-btn-container {
+        display: none;
+      }
+
+    }
+  }
+
+  @media only screen and (min-width: 426px) {
+    .ot-sdk-container {
+      .ot-sdk-row {
+        #onetrust-button-group-parent {
+          #onetrust-button-group {
+            button {
+              + button {
+                margin: 0 0 0 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .ot-sdk-container {
+      .ot-sdk-row {
+        #onetrust-group-container {
+          padding: $grid-gutter-width/2 5%;
+        }
+
+        #onetrust-button-group-parent {
+          padding: $grid-gutter-width/2 5%;
+          padding-top: 0;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .ot-sdk-container {
+      .ot-sdk-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        #onetrust-group-container {
+          width: auto;
+          float: none;
+          flex: 1 1 auto;
+        }
+
+        #onetrust-button-group-parent {
+          width: auto;
+          float: none;
+          padding: $grid-gutter-width/2 5%;
+          flex: 1 0 auto;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+// Cookie info popup
+// -----------------------------------
+
+#onetrust-pc-sdk {
+
+  button {
+    white-space: nowrap !important;
+    font-weight: $ot-btn-font-weight !important;
+    border-radius: $ot-btn-border-radius !important;
+    letter-spacing: 0.01rem !important;
+    font-size: $ot-btn-font-size !important;
+    //padding: $ot-btn-padding-y $ot-btn-padding-x !important;
+  }
+
+  .ot-pc-header {
+    position: relative;
+
+    .ot-close-icon#close-pc-btn-handler {
+      height: 15px;
+      width: 15px;
+    }
+
+    #close-pc-btn-handler {
+      top: 50% !important;
+      margin-top: -7px;
+    }
+  }
+
+  #ot-pc-content {
+    #ot-pc-desc {
+      font-size: $ot-popup-font-size-base;
+
+      .privacy-notice-link {
+        display: block;
+        margin: .3rem 0 0;
+      }
+    }
+  }
+
+  .ot-host-desc,
+  .ot-host-info,
+  .ot-host-opt li>div div {
+    font-size: $ot-popup-font-size-sm !important;
+  }
+
+  .ot-host-opt li>div div {
+    min-height: 25px; // otherwise empty divs cause the layout to break.
+  }
+
+  .ot-host-expand {
+    font-size: $ot-popup-font-size-sm !important;
+  }
+}
