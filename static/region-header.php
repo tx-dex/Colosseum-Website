@@ -6,6 +6,14 @@
     <title>Colosseum Dental Academy</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap&subset=latin-ext" rel="stylesheet">
 
+    <!-- CookiePro Cookies Consent Notice start for www.colosseumdental.com -->
+    <script type="text/javascript" src="https://cookie-cdn.cookiepro.com/consent/dfca7411-c793-421e-92dd-30a90a83a854-test/OtAutoBlock.js" ></script>
+    <script src="https://cookie-cdn.cookiepro.com/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="dfca7411-c793-421e-92dd-30a90a83a854-test" ></script>
+    <script type="text/javascript">
+      function OptanonWrapper() { }
+    </script>
+    <!-- CookiePro Cookies Consent Notice end for www.colosseumdental.com -->
+
     <!-- Drupal css -->
 
     <link rel="stylesheet" href="drupal-css/jquery-ui/core.css">

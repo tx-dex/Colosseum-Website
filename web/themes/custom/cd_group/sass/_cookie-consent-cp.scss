@@ -2,7 +2,7 @@
 // Common variables
 // -----------------------------------
 
-$ot-banner-font-size:     16px;
+$ot-banner-font-size:     15px;
 $ot-popup-font-size-base: 14px;
 $ot-popup-font-size-sm:   13px;
 
@@ -38,7 +38,7 @@ $ot-btn-padding-y:        12px;
 
         #onetrust-policy-text {
           float: none;
-          font-size: 16px;
+          font-size: $ot-banner-font-size;
           margin: 0;
         }
       }
@@ -65,13 +65,28 @@ $ot-btn-padding-y:        12px;
             font-weight: $ot-btn-font-weight;
             border-radius: $ot-btn-border-radius;
             font-size: $ot-btn-font-size !important;
+            border: 1px solid transparent;
 
             + button {
               margin: .5rem 0 0;
             }
 
+            &:focus {
+              outline: none;
+              box-shadow: 0 0 2pt 0 $brand-blue-light;
+            }
+
+            &#onetrust-pc-btn-handler.cookie-setting-link {
+              padding: $ot-btn-padding-y $ot-btn-padding-x !important;
+              border-radius: $ot-btn-border-radius;
+              border: 1px solid $border-color;
+              text-decoration: none;
+              color: $brand-blue;
+            }
+
             &#onetrust-accept-btn-handler {
               padding: $ot-btn-padding-y $ot-btn-padding-x !important;
+              background-color: $brand-blue;
             }
           }
         }
@@ -115,7 +130,7 @@ $ot-btn-padding-y:        12px;
     }
   }
 
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(xl) {
     .ot-sdk-container {
       .ot-sdk-row {
         display: flex;
@@ -131,7 +146,7 @@ $ot-btn-padding-y:        12px;
         #onetrust-button-group-parent {
           width: auto;
           float: none;
-          padding: $grid-gutter-width/2 5%;
+          padding: $grid-gutter-width/2 $margin-width-xl;
           flex: 1 0 auto;
           text-align: right;
         }
@@ -143,28 +158,41 @@ $ot-btn-padding-y:        12px;
 // Cookie info popup
 // -----------------------------------
 
+
 #onetrust-pc-sdk {
 
-  button {
+  button,
+  button.save-preference-btn-handler {
     white-space: nowrap !important;
     font-weight: $ot-btn-font-weight !important;
     border-radius: $ot-btn-border-radius !important;
     letter-spacing: 0.01rem !important;
     font-size: $ot-btn-font-size !important;
-    //padding: $ot-btn-padding-y $ot-btn-padding-x !important;
   }
 
   .ot-pc-header {
     position: relative;
 
+    .ot-pc-logo {
+      display: none;
+    }
+
     .ot-close-icon#close-pc-btn-handler {
-      height: 15px;
-      width: 15px;
+      height: 20px;
+      width: 20px;
+      background-size: 12px 12px;
+
+      &:hover,
+      &:active,
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 2pt 0 $brand-blue-light;
+      }
     }
 
     #close-pc-btn-handler {
       top: 50% !important;
-      margin-top: -7px;
+      margin-top: -10px;
     }
   }
 
@@ -175,6 +203,24 @@ $ot-btn-padding-y:        12px;
       .privacy-notice-link {
         display: block;
         margin: .3rem 0 0;
+      }
+    }
+
+    .ot-cat-item>button:focus {
+      outline: $brand-blue-light solid 1px;
+    }
+
+    button#accept-recommended-btn-handler {
+      width: auto;
+    }
+  }
+
+  .ot-pc-footer {
+    .ot-btn-container {
+      //padding: 0 10px;
+
+      button {
+        width: auto;
       }
     }
   }
