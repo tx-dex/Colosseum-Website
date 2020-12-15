@@ -45,7 +45,7 @@
                     <a href="#" class="item">
                         <h3 class="small-ac-title">Medical governance</h3>
                         <img src="img/frontpage-featured-1.png" alt="img">
-                        <p class="h4">
+                        <p class="h4 page-title">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         </p>
                         <button class="btn btn-link add-fwd-icon">Read more</button>
@@ -55,7 +55,7 @@
                     <a href="#" class="item">
                         <h3 class="small-ac-title">Colosseum Academy</h3>
                         <img src="img/frontpage-featured-2.png" alt="img">
-                        <p class="h4">
+                        <p class="h4 page-title">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         </p>
                         <button class="btn btn-link add-fwd-icon">Read more</button>
@@ -65,7 +65,7 @@
                     <a href="#" class="item">
                         <h3 class="small-ac-title">Innovation</h3>
                         <img src="img/frontpage-featured-3.png" alt="img">
-                        <p class="h4">
+                        <p class="h4 page-title">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         </p>
                         <button class="btn btn-link add-fwd-icon">Read more</button>
@@ -81,6 +81,34 @@
             <h2 class="small-ac-title">Our charitable cause</h2>
             <p class="h2">Jacobs Foundation, one of the world’s leading charities for children and youth, is the ultimate economic beneficiary. </p>
             <a href="#" class="btn btn-primary add-fwd-icon">Read more</a>
+        </div>
+    </section>
+
+    <section class="page-section page-section-fp-highlights">
+        <div class="container-lg">
+            <h2 class="h1 section-title">Highlights</h2>
+            <ul class="page-list page-list-highlights row">
+                <li class="col-md-6">
+                    <a href="#" class="item">
+                        <span class="small-ac-title">Medical governance</span>
+                        <img src="img/video-preview-img.jpg" alt="img">
+                        <h3 class="page-title">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        </h3>
+                        <button class="btn btn-link add-fwd-icon">Read more</button>
+                    </a>
+                </li>
+                <li class="col-md-6">
+                    <a href="#" class="item">
+                        <span class="small-ac-title">Medical governance</span>
+                        <img src="img/video-preview-img.jpg" alt="img">
+                        <h3 class="page-title">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        </h3>
+                        <button class="btn btn-link add-fwd-icon">Read more</button>
+                    </a>
+                </li>
+            </ul>
         </div>
     </section>
 

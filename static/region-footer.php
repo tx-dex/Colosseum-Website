@@ -91,6 +91,9 @@
                     <a class="nav-link" href="#" aria-label="Colosseum Dental in Facebook">
                         <span class="cdg-icon-facebook-square"></span>
                     </a>
+                    <a class="nav-link" href="https://www.youtube.com/channel/UChqXzq_8NnwtepFgPqJ8WJQ" target="_blank" aria-label="Colosseum Dental in Youtube">
+                        <span class="cdg-icon-youtube-square"></span>
+                    </a>
                 </nav>
             </div>
             <div class="col-md-12 col-lg-auto order-md-3 order-lg-1">

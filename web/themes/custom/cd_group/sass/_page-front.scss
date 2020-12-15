@@ -123,47 +123,7 @@
       color: $brand-blue;
     }
   }
-  .page-list {
-    @extend .list-unstyled;
 
-    .item {
-      display: flex;
-      flex-direction: column;
-      justify-content: left;
-      margin-bottom: 1.5rem;
-
-      h3 {
-        margin-bottom: .75rem;
-        order: 1;
-      }
-
-      img {
-        margin-bottom: 1rem;
-        order: 0;
-      }
-
-      p {
-        margin-bottom: 0;
-        color: $default-text-color;
-        order: 2;
-      }
-
-      .btn {
-        margin-right: auto;
-        order: 3;
-      }
-
-      &:focus,
-      &:hover,
-      &:active {
-        text-decoration: none;
-
-        .btn {
-          color: $link-hover-color;
-        }
-      }
-    }
-  }
 
   @include media-breakpoint-up(md) {
     h2 {
@@ -171,7 +131,80 @@
     }
 
     .page-list .item {
-      h3 {
+
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    h2 {
+      margin-bottom: 6rem;
+    }
+
+    .page-list .item {
+
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    h2 {
+      margin-bottom: 7rem;
+    }
+  }
+}
+
+.page-list {
+  @extend .list-unstyled;
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-bottom: 1.5rem;
+
+    .small-ac-title {
+      display: block;
+      margin-bottom: .75rem;
+      order: 1;
+    }
+
+    img {
+      margin-bottom: 1rem;
+      order: 0;
+    }
+
+    .page-title {
+      margin-bottom: 0;
+      color: $default-text-color;
+      order: 2;
+    }
+
+    .btn {
+      margin-right: auto;
+      order: 3;
+    }
+
+    &:focus,
+    &:hover,
+    &:active {
+      text-decoration: none;
+
+      .btn {
+        color: $link-hover-color;
+      }
+    }
+  }
+
+  &.page-list-highlights .item {
+    .page-title {
+      font-size: 1.25rem;
+      font-weight: $font-weight-normal;
+      line-height: 1.5;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .item {
+      .small-ac-title {
         margin-bottom: 1.25rem;
       }
 
@@ -186,12 +219,8 @@
   }
 
   @include media-breakpoint-up(lg) {
-    h2 {
-      margin-bottom: 6rem;
-    }
-
-    .page-list .item {
-      h3 {
+    .item {
+      .small-ac-title {
         margin-bottom: 1.25rem;
       }
 
@@ -202,12 +231,6 @@
       .btn {
         margin-top: 1rem;
       }
-    }
-  }
-
-  @include media-breakpoint-up(xl) {
-    h2 {
-      margin-bottom: 7rem;
     }
   }
 }
@@ -272,6 +295,32 @@
       margin: -15rem 0 0 auto;
       padding: 5rem $margin-width-md;
       max-width: 800px;
+    }
+  }
+}
+
+// Highlights
+// -------------------------------------
+
+.page-section-fp-highlights {
+  padding-top: 2rem;
+  padding-bottom: 0;
+
+  .section-title {
+    margin-bottom: 1.4rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 0;
+    padding-bottom: 4rem;
+
+    .section-title {
+      margin-bottom: 2rem;
     }
   }
 }
