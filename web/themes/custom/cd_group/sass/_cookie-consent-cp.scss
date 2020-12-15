@@ -141,6 +141,7 @@ $ot-btn-padding-y:        12px;
           width: auto;
           float: none;
           flex: 1 1 auto;
+          padding: $grid-gutter-width/2 0 $grid-gutter-width/2 $margin-width-xl;
         }
 
         #onetrust-button-group-parent {

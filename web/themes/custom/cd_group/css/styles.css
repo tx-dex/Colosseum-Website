@@ -17231,6 +17231,7 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
     width: auto;
     float: none;
     flex: 1 1 auto;
+    padding: 20px 0 20px 7%;
   }
   #onetrust-consent-sdk .ot-sdk-container .ot-sdk-row #onetrust-button-group-parent {
     width: auto;
