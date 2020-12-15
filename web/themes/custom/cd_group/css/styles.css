@@ -17874,6 +17874,8 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   order: 1;
 }
 .page-list .item img {
+  width: 100%;
+  height: auto;
   margin-bottom: 1rem;
   order: 0;
 }
