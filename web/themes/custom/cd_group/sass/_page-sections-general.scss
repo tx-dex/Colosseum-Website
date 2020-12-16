@@ -192,21 +192,21 @@
     }
   }
 
-  @include media-breakpoint-up(md) {
+  @media (min-width: 600px) {
 
     .block-link {
       .block-link-fw-2-col {
         margin-bottom: 4rem;
 
         .col-img {
-          flex: 0 0 55%;
-          max-width: 55%;
-          margin: 0;
+          flex: 0 0 45%;
+          max-width: 45%;
+          margin: .5rem 0 0;
         }
 
         .col-txt {
-          flex: 0 0 45%;
-          max-width: 45%;
+          flex: 0 0 55%;
+          max-width: 55%;
         }
       }
 
@@ -228,10 +228,31 @@
     }
   }
 
+  @include media-breakpoint-up(md) {
+    .block-link {
+      .block-link-fw-2-col {
+        .col-img {
+          flex: 0 0 55%;
+          max-width: 55%;
+          margin: 0;
+        }
+
+        .col-txt {
+          flex: 0 0 45%;
+          max-width: 45%;
+        }
+      }
+    }
+  }
+
   @include media-breakpoint-up(lg) {
     .block-link {
       .block-link-fw-2-col {
         align-items: center;
+
+        .col-img {
+          margin: 0;
+        }
 
         p.lead-text {
           font-size: 1.25rem;
