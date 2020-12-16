@@ -12,28 +12,41 @@
   }
 
   .hero-img {
-    max-height: 500px;
     overflow: hidden;
 
     img {
-      width: 100%;
+      width: 180%;
+      max-width: none;
+      transform: translateX(-25%);
     }
   }
 
   @include media-breakpoint-up(sm) {
+    .hero-img {
+      img {
+        width: 140%;
+        transform: translateX(-15%);
+      }
+    }
+
     .hero-content {
       padding: 1rem 0 2.5rem;
     }
   }
 
   @include media-breakpoint-up(md) {
+    .hero-img {
+      img {
+        width: 100%;
+        transform: translateX(0);
+      }
+    }
     .hero-content {
       padding: 2rem 0 3.5rem;
     }
   }
 
   @include media-breakpoint-up(lg) {
-
     .hero-content {
       padding: 3rem 0 4.5rem;
     }

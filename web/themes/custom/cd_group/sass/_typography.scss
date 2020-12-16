@@ -133,11 +133,15 @@ h6, .h6 {
 }
 
 .small-ac-title {
-  font-size: 0.875rem;
+  font-size: .8125rem;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
   font-weight: $font-weight-medium;
   color: $light-text-color;
+
+  @include media-breakpoint-up(md) {
+    font-size: .875rem;
+  }
 }
 
 // Misc

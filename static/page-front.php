@@ -41,30 +41,36 @@
                 Colosseum Dental Group is a <span>leading dentistry</span> company in the European dental services market.
             </h2>
             <ul class="page-list row">
-                <li class="col-md-4">
+                <li class="col-sm-6 col-md-4">
                     <a href="#" class="item">
                         <h3 class="small-ac-title">Medical governance</h3>
-                        <img src="img/frontpage-featured-1.png" alt="img">
+                        <div class="item-img">
+                            <img src="img/frontpage-featured-1.png" alt="img">
+                        </div>
                         <p class="h4 page-title">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         </p>
                         <button class="btn btn-link add-fwd-icon">Read more</button>
                     </a>
                 </li>
-                <li class="col-md-4">
+                <li class="col-sm-6 col-md-4">
                     <a href="#" class="item">
                         <h3 class="small-ac-title">Colosseum Academy</h3>
-                        <img src="img/frontpage-featured-2.png" alt="img">
+                        <div class="item-img">
+                            <img src="img/frontpage-featured-2.png" alt="img">
+                        </div>
                         <p class="h4 page-title">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         </p>
                         <button class="btn btn-link add-fwd-icon">Read more</button>
                     </a>
                 </li>
-                <li class="col-md-4">
+                <li class="col-sm-6 col-md-4">
                     <a href="#" class="item">
                         <h3 class="small-ac-title">Innovation</h3>
-                        <img src="img/frontpage-featured-3.png" alt="img">
+                        <div class="item-img">
+                            <img src="img/frontpage-featured-3.png" alt="img">
+                        </div>
                         <p class="h4 page-title">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         </p>
@@ -88,20 +94,24 @@
         <div class="container-lg">
             <h2 class="h1 section-title">Highlights</h2>
             <ul class="page-list page-list-highlights row">
-                <li class="col-md-6">
+                <li class="col-sm-6">
                     <a href="#" class="item">
                         <span class="small-ac-title">Medical governance</span>
-                        <img src="img/video-preview-img.jpg" alt="img">
+                        <div class="item-img">
+                            <img src="img/video-preview-img.jpg" alt="img">
+                        </div>
                         <h3 class="page-title">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         </h3>
                         <button class="btn btn-link add-fwd-icon">Read more</button>
                     </a>
                 </li>
-                <li class="col-md-6">
+                <li class="col-sm-6">
                     <a href="#" class="item">
                         <span class="small-ac-title">Medical governance</span>
-                        <img src="img/video-preview-img.jpg" alt="img">
+                        <div class="item-img">
+                            <img src="img/video-preview-img.jpg" alt="img">
+                        </div>
                         <h3 class="page-title">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         </h3>

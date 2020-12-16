@@ -1,7 +1,9 @@
 <a href="{{ content.field_link[0]['#url'] }}" class="item">
     <span class="small-ac-title">{{ content.field_section_name }}</span>
     {% if content.field_image|render|trim is not empty %}
-        <img src="{{ content.field_image[0]['#media'].field_media_image.entity.uri.value | image_style('frontpage_highlight') }}" alt="{{ content.field_image[0]['#media'].field_media_image.alt }}">
+        <div class="item-img">
+            <img src="{{ content.field_image[0]['#media'].field_media_image.entity.uri.value | image_style('frontpage_highlight') }}" alt="{{ content.field_image[0]['#media'].field_media_image.alt }}">
+        </div>
     {% endif %}
     <h3 class="page-title">
         {{ content.field_title }}
