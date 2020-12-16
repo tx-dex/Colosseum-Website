@@ -17787,7 +17787,7 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
 }
 @media (min-width: 1024px) {
   .hero-frontpage .embed-video-background {
-    padding-bottom: 35%;
+    padding-bottom: 37%;
   }
 }
 @media (min-width: 1500px) {
@@ -17839,10 +17839,9 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
     background-color: transparent;
   }
   .hero-frontpage .hero-content {
-    width: 70%;
-    max-width: 700px;
+    width: 65%;
     padding: 3rem 5%;
-    margin-top: -15%;
+    margin-top: -13%;
   }
   .hero-frontpage .hero-content .hero-lead {
     font-size: 1.125rem;
@@ -17853,7 +17852,13 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
 }
 @media (min-width: 1024px) {
   .hero-frontpage .hero-img {
-    padding-bottom: 35%;
+    padding-bottom: 37%;
+  }
+}
+@media (min-width: 1200px) {
+  .hero-frontpage .hero-content {
+    margin-top: -15%;
+    max-width: 700px;
   }
 }
 @media (min-width: 1500px) {

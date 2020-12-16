@@ -1,11 +1,11 @@
 <?php require 'region-header.php'; ?>
 
     <section class="hero-frontpage">
-        <!--<div class="hero-img" style="background-image: url(img/hero-example.jpg);"></div>-->
+        <div class="hero-img" style="background-image: url(img/hero-example-2.jpg);"></div>
 
-        <div class="embed-video-background">
+        <!--<div class="embed-video-background">
             <iframe src="https://player.vimeo.com/video/472960223?background=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        </div>
+        </div>-->
 
         <div class="container-lg">
             <div class="hero-content">
