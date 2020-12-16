@@ -16372,6 +16372,7 @@ html [type=button],
 .container-fullwidth, .navbar-main > .container-fullwidth,
 .container-lg {
   position: relative;
+  max-width: 1800px;
 }
 
 .container-fullwidth, .navbar-main > .container-fullwidth,
@@ -17370,6 +17371,9 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   /* Here the padding comes from the container of the inside content section */
   padding-left: 0;
   padding-right: 0;
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .main-content-section .main-content-container {
   background-color: #fff;
@@ -17633,6 +17637,7 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
 
 .main-content-section-team {
   background-color: #F2F6F9;
+  max-width: none;
 }
 .main-content-section-team .main-content-container {
   background-color: transparent;
@@ -17971,7 +17976,7 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
 .page-section-fp-feature .cta-content-box {
   position: relative;
   z-index: 2;
-  margin: -4% 20px 0;
+  margin: 0;
   padding: 2rem 20px;
   background-color: #041E42;
   max-width: 500px;
@@ -17982,6 +17987,12 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
 }
 .page-section-fp-feature .cta-content-box p.h2 {
   color: #69B3E7;
+}
+@media (min-width: 481px) {
+  .page-section-fp-feature .cta-content-box {
+    margin: -10% 20px 0;
+    padding: 2rem 20px;
+  }
 }
 @media (min-width: 768px) {
   .page-section-fp-feature img {
@@ -18011,6 +18022,15 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
     margin: -15rem 0 0 auto;
     padding: 5rem 5%;
     max-width: 800px;
+  }
+}
+@media (min-width: 1700px) {
+  .page-section-fp-feature {
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+  .page-section-fp-feature img {
+    max-width: 1700px;
   }
 }
 
@@ -18044,7 +18064,6 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
 }
 .page-section-find-a-clinic .col-map {
   width: 100%;
-  max-width: 850px;
   min-height: 300px;
   padding-bottom: 2rem;
   margin-left: auto;
@@ -18075,9 +18094,14 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
 }
 @media (min-width: 768px) {
   .page-section-find-a-clinic .col-map {
-    width: 84%;
-    margin-left: auto;
     padding-bottom: 1.5rem;
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+  .page-section-find-a-clinic .col-map img {
+    width: 84%;
+    max-width: 950px;
+    margin-left: auto;
   }
   .page-section-find-a-clinic .cta {
     top: 20%;
@@ -18089,11 +18113,12 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
 }
 @media (min-width: 1024px) {
   .page-section-find-a-clinic .col-map {
-    width: 85%;
+    /*width: 85%;
     margin-left: auto;
-  }
-  .page-section-find-a-clinic .col-map img {
-    margin-left: 0;
+
+    img {
+      margin-left: 0;
+    }*/
   }
   .page-section-find-a-clinic .cta {
     top: 20%;
@@ -18103,7 +18128,6 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
     margin-bottom: 3rem;
   }
 }
-
 .page-section-fp-countries {
   background-color: #fff;
 }

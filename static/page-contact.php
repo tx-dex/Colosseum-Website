@@ -120,14 +120,14 @@
                         </p>
                     </div>
                     <div class="col-sm-6 col-img">
-                        <img src="img/contact-page-img.jpg" alt="Office">
+                        <img src="img/CDG-office.jpg" alt="Office">
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="page-section page-section-contact-countries">
-            <div class="container-lg">
+            <div class="container-fullwidth">
                 <h2 class="section-title">Country organizations</h2>
                 <ul class="country-organisation-list-cards row small-gutters">
                     <li class="item col-md-6 col-xl-4">

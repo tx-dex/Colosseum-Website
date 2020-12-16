@@ -84,6 +84,10 @@
   padding-left: 0;
   padding-right: 0;
 
+  max-width: $container-fullwidth-max-width;
+  margin-left: auto;
+  margin-right: auto;
+
   .main-content-container {
     background-color: $white;
   }
@@ -463,6 +467,7 @@
 
 .main-content-section-team {
   background-color: $brand-blue-lighter;
+  max-width: none;
 
   .main-content-container {
     background-color: transparent;

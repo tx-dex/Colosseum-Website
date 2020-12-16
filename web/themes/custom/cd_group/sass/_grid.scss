@@ -47,6 +47,7 @@
 .container-lg {
   position: relative;
   @extend .container-fluid;
+  max-width: $container-fullwidth-max-width;
 }
 
 .container-fullwidth,
