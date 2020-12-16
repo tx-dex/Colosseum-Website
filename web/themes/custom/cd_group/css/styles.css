@@ -17733,6 +17733,10 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
 .login-page .messages {
   margin: 0 0 2rem;
 }
+.login-page .login-home-logo {
+  display: block;
+  margin: 0 0 2rem;
+}
 
 .hero-frontpage .embed-video-background {
   position: relative;

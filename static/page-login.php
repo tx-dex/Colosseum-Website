@@ -12,6 +12,8 @@
                 </div>
             </div>
 
+            <a href="index.php" class="login-home-logo"><img src="../web/themes/custom/cd_group/img/cdg-logo-blue.svg" alt="CDG logo"></a>
+
             <h1 class="h2 mb-4">Sign in with Colosseum Academy account</h1>
 
             <form class="user-login-form" data-drupal-selector="user-login-form" action="/user/login" method="post" id="user-login-form" accept-charset="UTF-8">
