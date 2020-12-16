@@ -2736,33 +2736,33 @@ fieldset:disabled a.button {
   pointer-events: none;
 }
 
-.btn-primary, .openid-connect-login-form .button.form-submit, .user-login-form .button.form-submit, form .button.form-submit, .button--primary {
+.btn-primary, .user-login-form .button.form-submit, form .button.form-submit, .button--primary {
   color: #fff;
   background-color: #006BA6;
   border-color: #006BA6;
 }
-.btn-primary:hover, .openid-connect-login-form .button.form-submit:hover, .user-login-form .button.form-submit:hover, form .button.form-submit:hover, .button--primary:hover {
+.btn-primary:hover, .user-login-form .button.form-submit:hover, form .button.form-submit:hover, .button--primary:hover {
   color: #fff;
   background-color: #005280;
   border-color: #004a73;
 }
-.btn-primary:focus, .openid-connect-login-form .button.form-submit:focus, .user-login-form .button.form-submit:focus, form .button.form-submit:focus, .button--primary:focus, .btn-primary.focus, .openid-connect-login-form .focus.button.form-submit, .user-login-form .focus.button.form-submit, form .focus.button.form-submit, .focus.button--primary {
+.btn-primary:focus, .user-login-form .button.form-submit:focus, form .button.form-submit:focus, .button--primary:focus, .btn-primary.focus, .user-login-form .focus.button.form-submit, form .focus.button.form-submit, .focus.button--primary {
   color: #fff;
   background-color: #005280;
   border-color: #004a73;
   box-shadow: 0 0 0 0.2rem rgba(38, 129, 179, 0.5);
 }
-.btn-primary.disabled, .openid-connect-login-form .disabled.button.form-submit, .user-login-form .disabled.button.form-submit, form .disabled.button.form-submit, .disabled.button--primary, .btn-primary:disabled, .openid-connect-login-form .button.form-submit:disabled, .user-login-form .button.form-submit:disabled, form .button.form-submit:disabled, .button--primary:disabled {
+.btn-primary.disabled, .user-login-form .disabled.button.form-submit, form .disabled.button.form-submit, .disabled.button--primary, .btn-primary:disabled, .user-login-form .button.form-submit:disabled, form .button.form-submit:disabled, .button--primary:disabled {
   color: #fff;
   background-color: #006BA6;
   border-color: #006BA6;
 }
-.btn-primary:not(:disabled):not(.disabled):active, .openid-connect-login-form .button.form-submit:not(:disabled):not(.disabled):active, .user-login-form .button.form-submit:not(:disabled):not(.disabled):active, form .button.form-submit:not(:disabled):not(.disabled):active, .button--primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .openid-connect-login-form .button.form-submit:not(:disabled):not(.disabled).active, .user-login-form .button.form-submit:not(:disabled):not(.disabled).active, form .button.form-submit:not(:disabled):not(.disabled).active, .button--primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle, .openid-connect-login-form .show > .dropdown-toggle.button.form-submit, .user-login-form .show > .dropdown-toggle.button.form-submit, form .show > .dropdown-toggle.button.form-submit, .show > .dropdown-toggle.button--primary {
+.btn-primary:not(:disabled):not(.disabled):active, .user-login-form .button.form-submit:not(:disabled):not(.disabled):active, form .button.form-submit:not(:disabled):not(.disabled):active, .button--primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .user-login-form .button.form-submit:not(:disabled):not(.disabled).active, form .button.form-submit:not(:disabled):not(.disabled).active, .button--primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle, .user-login-form .show > .dropdown-toggle.button.form-submit, form .show > .dropdown-toggle.button.form-submit, .show > .dropdown-toggle.button--primary {
   color: #fff;
   background-color: #004a73;
   border-color: #004266;
 }
-.btn-primary:not(:disabled):not(.disabled):active:focus, .openid-connect-login-form .button.form-submit:not(:disabled):not(.disabled):active:focus, .user-login-form .button.form-submit:not(:disabled):not(.disabled):active:focus, form .button.form-submit:not(:disabled):not(.disabled):active:focus, .button--primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .openid-connect-login-form .button.form-submit:not(:disabled):not(.disabled).active:focus, .user-login-form .button.form-submit:not(:disabled):not(.disabled).active:focus, form .button.form-submit:not(:disabled):not(.disabled).active:focus, .button--primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus, .openid-connect-login-form .show > .dropdown-toggle.button.form-submit:focus, .user-login-form .show > .dropdown-toggle.button.form-submit:focus, form .show > .dropdown-toggle.button.form-submit:focus, .show > .dropdown-toggle.button--primary:focus {
+.btn-primary:not(:disabled):not(.disabled):active:focus, .user-login-form .button.form-submit:not(:disabled):not(.disabled):active:focus, form .button.form-submit:not(:disabled):not(.disabled):active:focus, .button--primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .user-login-form .button.form-submit:not(:disabled):not(.disabled).active:focus, form .button.form-submit:not(:disabled):not(.disabled).active:focus, .button--primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus, .user-login-form .show > .dropdown-toggle.button.form-submit:focus, form .show > .dropdown-toggle.button.form-submit:focus, .show > .dropdown-toggle.button--primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(38, 129, 179, 0.5);
 }
 
@@ -16025,11 +16025,11 @@ html [type=button],
   -moz-appearance: none;
   appearance: none;
 }
-.btn.btn-primary, .btn-primary.button, .openid-connect-login-form .button.form-submit, .user-login-form .button.form-submit, .btn.button--primary, .button.button--primary, form .button.form-submit, .btn.btn-primary:not(:disabled):not(.disabled) {
+.btn.btn-primary, .btn-primary.button, .user-login-form .button.form-submit, .btn.button--primary, .button.button--primary, form .button.form-submit, .btn.btn-primary:not(:disabled):not(.disabled) {
   color: #fff;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2), 0px 0px 2px 0px rgba(0, 0, 0, 0.12);
 }
-.btn.btn-primary:hover, .btn-primary.button:hover, .openid-connect-login-form .button.form-submit:hover, .user-login-form .button.form-submit:hover, .btn.button--primary:hover, .button.button--primary:hover, form .button.form-submit:hover, .btn.btn-primary:active, .btn-primary.button:active, .openid-connect-login-form .button.form-submit:active, .user-login-form .button.form-submit:active, .btn.button--primary:active, .button.button--primary:active, form .button.form-submit:active, .btn.btn-primary:focus, .btn-primary.button:focus, .openid-connect-login-form .button.form-submit:focus, .user-login-form .button.form-submit:focus, .btn.button--primary:focus, .button.button--primary:focus, form .button.form-submit:focus, .btn.btn-primary:not(:disabled):not(.disabled):hover, .btn.btn-primary:not(:disabled):not(.disabled):active, .btn.btn-primary:not(:disabled):not(.disabled):focus {
+.btn.btn-primary:hover, .btn-primary.button:hover, .user-login-form .button.form-submit:hover, .btn.button--primary:hover, .button.button--primary:hover, form .button.form-submit:hover, .btn.btn-primary:active, .btn-primary.button:active, .user-login-form .button.form-submit:active, .btn.button--primary:active, .button.button--primary:active, form .button.form-submit:active, .btn.btn-primary:focus, .btn-primary.button:focus, .user-login-form .button.form-submit:focus, .btn.button--primary:focus, .button.button--primary:focus, form .button.form-submit:focus, .btn.btn-primary:not(:disabled):not(.disabled):hover, .btn.btn-primary:not(:disabled):not(.disabled):active, .btn.btn-primary:not(:disabled):not(.disabled):focus {
   color: #fff;
 }
 .btn.btn-outline-primary:hover, .btn-outline-primary.button:hover, .btn.btn-outline-primary:active, .btn-outline-primary.button:active, .btn.btn-outline-primary:focus, .btn-outline-primary.button:focus, .btn.btn-outline-primary:not(:disabled):not(.disabled):hover, .btn.btn-outline-primary:not(:disabled):not(.disabled):active, .btn.btn-outline-primary:not(:disabled):not(.disabled):focus {
@@ -17730,33 +17730,8 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   }
 }
 
-.login-page hr {
-  margin: 2.5rem 0;
-}
 .login-page .messages {
   margin: 0 0 2rem;
-}
-.login-page .login-alt-instructions h3, .login-page .login-alt-instructions h4 {
-  margin-bottom: 1rem;
-}
-.login-page .login-alt-instructions .btn.btn-link, .login-page .login-alt-instructions .btn-link.button {
-  margin: 0 !important;
-  text-align: left;
-  padding: 0.3rem 0;
-}
-@media (min-width: 768px) {
-  .login-page hr {
-    margin: 4rem 0;
-  }
-}
-
-.openid-connect-login-form {
-  margin-bottom: 2rem;
-}
-@media (min-width: 768px) {
-  .openid-connect-login-form {
-    margin-bottom: 2.5rem;
-  }
 }
 
 .hero-frontpage .embed-video-background {
