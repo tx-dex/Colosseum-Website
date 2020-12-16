@@ -82,11 +82,13 @@
     </section>
 
     <section class="page-section page-section-fp-feature">
-        <img src="img/frontpage-charitable-cause.jpg" alt="img">
-        <div class="cta-content-box">
-            <h2 class="small-ac-title">Our charitable cause</h2>
-            <p class="h2">Jacobs Foundation, one of the world’s leading charities for children and youth, is the ultimate economic beneficiary. </p>
-            <a href="#" class="btn btn-primary add-fwd-icon">Read more</a>
+        <div class="container-fullwidth">
+            <img src="img/frontpage-charitable-cause.jpg" alt="img">
+            <div class="cta-content-box">
+                <h2 class="small-ac-title">Our charitable cause</h2>
+                <p class="h2">Jacobs Foundation, one of the world’s leading charities for children and youth, is the ultimate economic beneficiary. </p>
+                <a href="#" class="btn btn-primary add-fwd-icon">Read more</a>
+            </div>
         </div>
     </section>
 

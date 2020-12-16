@@ -120,6 +120,7 @@
 
 .page-section-fp-intro {
   background-color: $brand-blue-lighter;
+  padding-bottom: 1rem;
 
   h2 {
     margin-bottom: 3rem;
@@ -133,6 +134,8 @@
 
 
   @include media-breakpoint-up(md) {
+    padding-bottom: 2rem;
+
     h2 {
       margin-bottom: 4rem;
     }
@@ -143,6 +146,8 @@
   }
 
   @include media-breakpoint-up(lg) {
+    padding-bottom: 3rem;
+
     h2 {
       margin-bottom: 6rem;
     }
@@ -153,6 +158,8 @@
   }
 
   @include media-breakpoint-up(xl) {
+    padding-bottom: 4rem;
+
     h2 {
       margin-bottom: 7rem;
     }
@@ -161,6 +168,7 @@
 
 .page-list {
   @extend .list-unstyled;
+  margin-bottom: 0;
 
   .item {
     display: flex;
@@ -207,7 +215,7 @@
 
   &.page-list-highlights .item {
     .page-title {
-      font-size: 1.125rem;
+      font-size: 1rem;
       font-weight: $font-weight-normal;
       line-height: 1.5;
     }
@@ -258,7 +266,12 @@
 // -------------------------------------
 
 .page-section-fp-feature {
+  position: relative;
   padding-top: 0;
+
+  .container-fullwidth {
+    padding: 0;
+  }
 
   .cta-content-box {
     position: relative;
@@ -287,6 +300,19 @@
   }
 
   @include media-breakpoint-up(md) {
+
+    &:before {
+      display: block;
+      content: '';
+      background-color: $brand-blue-lighter;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 40%;
+      width: 100%;
+      z-index: -1;
+    }
+
     img {
       width: 95%;
     }
@@ -314,6 +340,9 @@
   }
 
   @include media-breakpoint-up(xl) {
+    &:before {
+      height: 60%;
+    }
     img {
       width: 93%;
     }
@@ -325,10 +354,6 @@
   }
 
   @media (min-width: 1700px) {
-    max-width: $container-fullwidth-max-width;
-    margin: 0 auto;
-    //padding-right: $margin-width-xl;
-
     img {
       max-width: 1700px;
     }
@@ -447,18 +472,6 @@
         margin-bottom: 3rem;
       }
     }
-  }
-
-  @media (min-width: 1700px) {
-    //.col-map {
-    //  max-width: $container-fullwidth-max-width;
-    //  margin: 0 auto;
-    //
-    //  img {
-    //    margin-left: auto;
-    //    max-width: 850px;
-    //  }
-    //}
   }
 }
 
