@@ -59,4 +59,6 @@ services:
 
 volumes:
   site-files:
+    name: colosseum-website-files
   mysql:
+    name: colosseum-website-mysql
