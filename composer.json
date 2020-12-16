@@ -102,6 +102,12 @@
                 "  * Remove the plugin that prints this message:",
                 "      composer remove drupal/core-project-message"
             ]
+        },
+        "patches": {
+            "drupal/recaptcha": {
+                "Ajax Support": "patches/recaptcha-ajax-2493183-212.patch",
+                "Unknown CAPTCHA session ID": "patches/3035883-29-workaround.patch"
+            }
         }
     }
 }
