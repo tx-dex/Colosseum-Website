@@ -17488,6 +17488,9 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   }
 }
 @media (min-width: 768px) {
+  .page-section-subpage-links .block-link .block-link-fw-2-col {
+    align-items: center;
+  }
   .page-section-subpage-links .block-link .block-link-fw-2-col .col-img {
     flex: 0 0 55%;
     max-width: 55%;
@@ -17501,9 +17504,6 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
 @media (min-width: 1024px) {
   .page-section-subpage-links .block-link .block-link-fw-2-col {
     align-items: center;
-  }
-  .page-section-subpage-links .block-link .block-link-fw-2-col .col-img {
-    margin: 0;
   }
   .page-section-subpage-links .block-link .block-link-fw-2-col p.lead-text {
     font-size: 1.25rem;

@@ -231,6 +231,8 @@
   @include media-breakpoint-up(md) {
     .block-link {
       .block-link-fw-2-col {
+        align-items: center;
+
         .col-img {
           flex: 0 0 55%;
           max-width: 55%;
@@ -249,10 +251,6 @@
     .block-link {
       .block-link-fw-2-col {
         align-items: center;
-
-        .col-img {
-          margin: 0;
-        }
 
         p.lead-text {
           font-size: 1.25rem;
