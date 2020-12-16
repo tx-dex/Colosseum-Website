@@ -3,47 +3,14 @@
 // -------------------------------------
 
 .login-page {
-  hr {
-    margin: 2.5rem 0;
-  }
 
   .messages {
     margin: 0 0 2rem;
-  }
-
-  .login-alt-instructions {
-    h3, h4 {
-      margin-bottom: 1rem;
-    }
-
-    .btn.btn-link {
-      margin: 0 !important;
-      text-align: left;
-      padding: .3rem 0;
-    }
-  }
-
-  @include media-breakpoint-up(md) {
-    hr {
-      margin: 4rem 0;
-    }
   }
 }
 
 .user-login-form {
   .button.form-submit {
     @extend .btn-primary;
-  }
-}
-
-.openid-connect-login-form {
-  margin-bottom: 2rem;
-
-  .button.form-submit {
-    @extend .btn-primary;
-  }
-
-  @include media-breakpoint-up(md) {
-    margin-bottom: 2.5rem;
   }
 }
