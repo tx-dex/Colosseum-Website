@@ -134,7 +134,9 @@
                         <div class="country-organisation-card">
                             <div class="item-header">
                                 <div class="logo-container">
-                                    <img src="img/country-logos/logo-uk-colosseum.png" alt="Logo">
+                                    <a href="">
+                                        <img src="img/country-logos/logo-uk-colosseum.png" alt="Logo">
+                                    </a>
                                 </div>
                                 <h3 class="item-title">Colosseum Tandlægerne</h3>
                             </div>
@@ -152,7 +154,9 @@
                         <div class="country-organisation-card">
                             <div class="item-header">
                                 <div class="logo-container">
-                                    <img src="img/country-logos/logo-swiss-smile.png" alt="Logo">
+                                    <a href="">
+                                        <img src="img/country-logos/logo-swiss-smile.png" alt="Logo">
+                                    </a>
                                 </div>
                                 <h3 class="item-title">Colosseum Dental Deutschland</h3>
                             </div>
@@ -170,7 +174,9 @@
                         <div class="country-organisation-card">
                             <div class="item-header">
                                 <div class="logo-container">
-                                    <img src="img/country-logos/logo-finland-oral.png" alt="Logo">
+                                    <a href="">
+                                        <img src="img/country-logos/logo-finland-oral.png" alt="Logo">
+                                    </a>
                                 </div>
                                 <h3 class="item-title">Colosseum Dental Deutschland</h3>
                             </div>
