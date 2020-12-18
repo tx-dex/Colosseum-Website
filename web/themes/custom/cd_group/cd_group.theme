@@ -39,7 +39,12 @@ function cd_group_preprocess_html(array &$variables) {
  * Implements hook_preprocess_page() for page.html.twig.
  */
 function cd_group_preprocess_page(array &$variables) {
-
+  if (\Drupal::currentUser()->isAnonymous() && !empty($variables['node'])) {
+    $node_type = $variables['node']->getType();
+    if (in_array($node_type, ['country_page', 'team_member'])) {
+      throw new \Symfony\Component\HttpKernel\Exception\NotFoundHttpException();
+    }
+  }
 }
 
 /**

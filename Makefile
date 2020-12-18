@@ -34,7 +34,7 @@ copy-mysql-dev-to-local: drop-sql
 	$(MAKE) updatedb
 
 copy-files-dev-to-local:
-	sudo rsync --rsync-path="sudo rsync" -avz devops@clients.sangre.dev:/var/lib/docker/volumes/colosseum-website-files/_data/ /var/lib/docker/volumes/colosseum-website-files/_data/
+	sudo rsync --rsync-path="sudo rsync" -avz devops@clients.sangre.dev:/var/lib/docker/volumes/colosseum-website_files/_data/ /var/lib/docker/volumes/colosseum-website-files/_data/
 
 copy-mysql-prod-to-local: drop-sql
 	ssh devops@academy.colosseumdental.com "sudo -i PWD=/root/ mysqldump --opt --single-transaction d8_aca_prod"|docker-compose exec -T mysql mysql drupal9_local
