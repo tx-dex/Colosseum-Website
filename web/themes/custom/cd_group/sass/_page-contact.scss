@@ -165,6 +165,12 @@
     }
   }
 
+  @include media-breakpoint-up(lg) {
+    .col-info {
+      margin-top: -4rem;
+    }
+  }
+
   @include media-breakpoint-up(xl) {
 
     .section-title {
@@ -172,7 +178,7 @@
     }
 
     .col-info {
-      margin: 0;
+      margin-top: -10%;
     }
 
     address {

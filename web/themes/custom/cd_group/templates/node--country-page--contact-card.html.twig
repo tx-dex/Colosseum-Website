@@ -6,7 +6,9 @@
     <div class="item-header">
         <div class="logo-container">
             {% if content.field_logo|render|trim is not empty %}
-                <img src="{{ node.field_logo.entity.field_media_image.entity.uri.value | image_style('country_organisation_logo') }}" alt="{{ node.field_logo.entity.field_media_image.alt }}">
+                <a href="{{ content.field_website_link[0]['#url'] }}" target="_blank">
+                    <img src="{{ node.field_logo.entity.field_media_image.entity.uri.value | image_style('country_organisation_logo') }}" alt="{{ node.field_logo.entity.field_media_image.alt }}">
+                </a>
             {% endif %}
         </div>
         <h3 class="item-title">
@@ -25,6 +27,11 @@
             {% endif %}
             <span class="country">{{ content.field_address.0['country']['#value'] }}</span>
         </address>
+        {% if content.field_website_link|render|trim is not empty %}
+            <a href="{{ content.field_website_link[0]['#url'] }}">
+                {{ content.field_website_link[0]['#url'] }}
+            </a>
+        {% endif %}
         {% if content.field_email_address|render|trim is not empty %}
             <a href="mailto:{% spaceless %}{{ content.field_email_address|escape|striptags('<!-- -->') }}{% endspaceless %}">
                 {{ content.field_email_address }}

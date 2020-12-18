@@ -18441,12 +18441,17 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
     margin: 0 0 -4rem;
   }
 }
+@media (min-width: 1024px) {
+  .page-section-contact-group-contact .col-info {
+    margin-top: -4rem;
+  }
+}
 @media (min-width: 1200px) {
   .page-section-contact-group-contact .section-title {
     margin-bottom: 2rem;
   }
   .page-section-contact-group-contact .col-info {
-    margin: 0;
+    margin-top: -10%;
   }
   .page-section-contact-group-contact address {
     margin-bottom: 2rem;
