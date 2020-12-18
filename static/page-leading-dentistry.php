@@ -8,7 +8,7 @@
                 <a class="nav-link " href="/leading-dentistry/medical-governance">Medical Governance</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="/leading-dentistry/medical-governance">Tässä toinen alasivu</a>
+                <a class="nav-link active" href="page-basic.php">Tässä toinen alasivu</a>
             </li>
         </ul>
     </div>

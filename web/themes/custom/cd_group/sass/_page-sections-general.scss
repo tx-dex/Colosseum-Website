@@ -49,6 +49,11 @@
   @include media-breakpoint-up(lg) {
     .hero-content {
       padding: 3rem 0 4.5rem;
+
+      h1.basic-page-main-title {
+        font-size: 2.6rem;
+        line-height: 1.3;
+      }
     }
   }
 

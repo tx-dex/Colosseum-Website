@@ -3,7 +3,7 @@
         <a class="navbar-brand" href="index.php"><img src="../web/themes/custom/cd_group/img/cdg-logo-blue.svg" alt="Logo"></a>
         <ul class="nav nav-main d-none d-md-flex">
             <li class="nav-item">
-                <a class="nav-link active" href="page-about-us.php">Who we are</a>
+                <a class="nav-link active" href="page-leading-dentistry.php">Who we are</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="page-leading-dentistry.php">Leading dentistry</a>

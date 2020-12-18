@@ -323,6 +323,10 @@ figure {
   @include media-breakpoint-up(lg) {
     font-size: 1.125rem;
 
+    h2 {
+      font-size: 2rem;
+    }
+
     hr {
       margin: 3rem 0;
     }
