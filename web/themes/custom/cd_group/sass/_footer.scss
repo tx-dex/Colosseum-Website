@@ -68,17 +68,30 @@
     .nav-item {
       display: inline-block;
       width: 100%;
-    }
-    .nav-link {
-      font-size: 1rem;
-      color: $white;
-      padding: .3rem 0;
 
-      &:hover,
-      &:focus,
-      &:active,
-      &.active {
-        color: #69B3E7;
+      .nav-link {
+        font-size: 1rem;
+        color: $white;
+        padding: .3rem 0;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+          color: #69B3E7;
+        }
+      }
+
+      &.has-dropdown .sub-nav {
+        list-style-type: none;
+        padding-left: .75rem;
+        margin-top: -.2rem;
+        padding-bottom: .2rem;
+
+        .nav-link {
+          font-size: 13px;
+          padding: 0.1rem 0;
+        }
       }
     }
   }
@@ -90,6 +103,12 @@
       display: block;
       columns: 10px 2;
     }
+
+    .nav-item {
+      display: block;
+      margin: 0;
+    }
+
     .nav-item a {
       @extend .nav-link;
       font-size: 1rem;
@@ -170,7 +189,24 @@
     .footer-main-nav {
       .nav {
         display: block;
+        columns: 10px 2;
+      }
+
+      .nav-item {
+        &.has-dropdown .sub-nav {
+          padding-left: 1rem;
+        }
+      }
+    }
+
+    .countries-nav {
+      .nav {
         columns: 10px 1;
+      }
+
+      .nav-item {
+        display: inline-block;
+        margin-right: 1rem;
       }
     }
 
@@ -188,6 +224,17 @@
       .nav {
         display: block;
         columns: 10px 2;
+      }
+    }
+
+    .countries-nav {
+      .nav {
+        columns: 10px 2;
+      }
+
+      .nav-item {
+        display: block;
+        margin: 0;
       }
     }
 

@@ -16919,13 +16919,23 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   display: inline-block;
   width: 100%;
 }
-.footer .footer-main-nav .nav-link, .footer .footer-main-nav .countries-nav .nav-item a, .footer .countries-nav .nav-item .footer-main-nav a {
+.footer .footer-main-nav .nav-item .nav-link, .footer .footer-main-nav .countries-nav .nav-item a, .footer .countries-nav .footer-main-nav .nav-item a {
   font-size: 1rem;
   color: #fff;
   padding: 0.3rem 0;
 }
-.footer .footer-main-nav .nav-link:hover, .footer .footer-main-nav .countries-nav .nav-item a:hover, .footer .countries-nav .nav-item .footer-main-nav a:hover, .footer .footer-main-nav .nav-link:focus, .footer .footer-main-nav .countries-nav .nav-item a:focus, .footer .countries-nav .nav-item .footer-main-nav a:focus, .footer .footer-main-nav .nav-link:active, .footer .footer-main-nav .countries-nav .nav-item a:active, .footer .countries-nav .nav-item .footer-main-nav a:active, .footer .footer-main-nav .nav-link.active, .footer .footer-main-nav .countries-nav .nav-item a.active, .footer .countries-nav .nav-item .footer-main-nav a.active {
+.footer .footer-main-nav .nav-item .nav-link:hover, .footer .footer-main-nav .countries-nav .nav-item a:hover, .footer .countries-nav .footer-main-nav .nav-item a:hover, .footer .footer-main-nav .nav-item .nav-link:focus, .footer .footer-main-nav .countries-nav .nav-item a:focus, .footer .countries-nav .footer-main-nav .nav-item a:focus, .footer .footer-main-nav .nav-item .nav-link:active, .footer .footer-main-nav .countries-nav .nav-item a:active, .footer .countries-nav .footer-main-nav .nav-item a:active, .footer .footer-main-nav .nav-item .nav-link.active, .footer .footer-main-nav .countries-nav .nav-item a.active, .footer .countries-nav .footer-main-nav .nav-item a.active {
   color: #69B3E7;
+}
+.footer .footer-main-nav .nav-item.has-dropdown .sub-nav {
+  list-style-type: none;
+  padding-left: 0.75rem;
+  margin-top: -0.2rem;
+  padding-bottom: 0.2rem;
+}
+.footer .footer-main-nav .nav-item.has-dropdown .sub-nav .nav-link, .footer .footer-main-nav .countries-nav .nav-item.has-dropdown .sub-nav a, .footer .countries-nav .footer-main-nav .nav-item.has-dropdown .sub-nav a {
+  font-size: 13px;
+  padding: 0.1rem 0;
 }
 .footer .countries-nav {
   margin-bottom: 2rem;
@@ -16933,6 +16943,10 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
 .footer .countries-nav .nav {
   display: block;
   columns: 10px 2;
+}
+.footer .countries-nav .nav-item {
+  display: block;
+  margin: 0;
 }
 .footer .countries-nav .nav-item a {
   font-size: 1rem;
@@ -16986,7 +17000,17 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   }
   .footer .footer-main-nav .nav {
     display: block;
+    columns: 10px 2;
+  }
+  .footer .footer-main-nav .nav-item.has-dropdown .sub-nav {
+    padding-left: 1rem;
+  }
+  .footer .countries-nav .nav {
     columns: 10px 1;
+  }
+  .footer .countries-nav .nav-item {
+    display: inline-block;
+    margin-right: 1rem;
   }
   .footer .footer-policies-nav {
     justify-content: flex-end;
@@ -17000,6 +17024,13 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   .footer .footer-main-nav .nav {
     display: block;
     columns: 10px 2;
+  }
+  .footer .countries-nav .nav {
+    columns: 10px 2;
+  }
+  .footer .countries-nav .nav-item {
+    display: block;
+    margin: 0;
   }
   .footer .footer-bottom-row {
     margin-top: 1.5rem;

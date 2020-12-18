@@ -2,7 +2,7 @@
 <footer class="footer">
     <div class="container-lg">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 col-lg-4">
                 <a class="footer-logo" href="index.php">
                     <img src="../web/themes/custom/cd_group/img/cdg-logo-white.svg" alt="Colosseum Dental Group logo">
                 </a>
@@ -19,10 +19,10 @@
                     </p>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-8 col-lg-4">
                 <h6 class="nav-title">Colosseum Dental Group</h6>
                 <nav role="navigation" class="footer-main-nav">
-                    <ul class="nav">
+                    <!--<ul class="nav">
                         <li class="nav-item">
                             <a class="nav-link active" href="#">About</a>
                         </li>
@@ -47,11 +47,70 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Charitable cause</a>
                         </li>
+                    </ul>-->
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link " href="/">Home</a>
+                        </li>
+                        <li class="nav-item has-dropdown">
+                            <a href="/who-we-are" class="nav-link ">Who We Are</a>
+                            <ul class="sub-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link " href="/who-we-are/facts-and-figures">Facts &amp; Figures</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="/who-we-are/meet-our-team">Meet our Team</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item has-dropdown">
+                            <a href="/leading-dentistry" class="nav-link ">Leading Dentistry</a>
+                            <ul class="sub-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link " href="/leading-dentistry/medical-governance">Medical Governance</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="/leading-dentistry/colosseum-academy">Colosseum Academy</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="/leading-dentistry/innovation">Innovation</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/charitable-cause">Charitable Cause</a>
+                        </li>
+                        <li class="nav-item has-dropdown">
+                            <a href="/join-us" class="nav-link ">Join Us</a>
+                            <ul class="sub-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link " href="/join-us/sell-your-practice">Sell Your Practice</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="/join-us/become-partner">Become a Partner</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="/join-us/careers">Careers</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="/contact-us">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="/find-a-clinic">Find a Clinic</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="/newsroom">Newsroom</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
-            <div class="col-md-4">
-                <h6 class="nav-title">Countries</h6>
+            <div class="col-md-12 col-lg-4">
+                <h6 class="nav-title">CDG Country organisations</h6>
                 <nav role="navigation" class="countries-nav">
                     <ul class="nav">
                         <li class="nav-item">
