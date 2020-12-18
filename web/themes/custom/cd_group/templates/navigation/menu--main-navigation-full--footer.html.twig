@@ -1,6 +1,6 @@
 {% import _self as menus %}
 
-{% macro menu_links(items, attributes, menu_level) %}
+{#{% macro menu_links(items, attributes, menu_level) %}
     {% import _self as menus %}
     {% if items %}
         {% for item in items %}
@@ -13,4 +13,34 @@
 
 <ul class="nav">
     {{ menus.menu_links(items, attributes, 0) }}
-</ul>
+</ul>#}
+
+{% macro menu_links(items, attributes, menu_level) %}
+    {% import _self as menus %}
+    {% if items %}
+        {% if menu_level == 0 %}
+            <ul class="nav">
+        {% endif %}
+        {% for item in items %}
+            {% if item.below %}
+                {# Level 0 menu item where there is a submenu #}
+                {% if menu_level == 0 %}
+                    <li class="nav-item has-dropdown">
+                        <a href="{{ item.url }}" class="nav-link {{ item.in_active_trail ? 'active':'' }}">{{ item.title }}</a>
+                        <ul>
+                            {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
+                        </ul>
+                    </li>
+                {% endif %}
+            {% else %}
+                {# This is the basic level 0 menu item where there is no submenu #}
+                <li class="nav-item" {{ item.attributes }}>
+                    <a class="nav-link {{ item.in_active_trail ? 'active':'' }}" href="{{ item.url }}">{{ item.title }}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+        {% if menu_level == 0 %}
+            </ul>
+        {% endif %}
+    {% endif %}
+{% endmacro %}
