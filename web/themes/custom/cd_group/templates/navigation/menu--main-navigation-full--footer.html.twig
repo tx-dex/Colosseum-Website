@@ -29,7 +29,7 @@
                 {% if menu_level == 0 %}
                     <li class="nav-item has-dropdown">
                         <a href="{{ item.url }}" class="nav-link {{ item.in_active_trail ? 'active':'' }}">{{ item.title }}</a>
-                        <ul>
+                        <ul class="sub-nav">
                             {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
                         </ul>
                     </li>
