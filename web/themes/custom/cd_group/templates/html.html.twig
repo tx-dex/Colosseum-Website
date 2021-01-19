@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html{{ html_attributes }}>
 <head>
-{#    {% if is_prod %}
+    {#{% if is_prod %}
 
     {% else %}
 
@@ -23,16 +23,26 @@
     </script>
     <!-- CookiePro Cookies Consent Notice end for www.colosseumdental.com -->
 
-    {# % if is_prod %} #}
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SNSQR6PQHZ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-SNSQR6PQHZ');
-    </script>
-    {# {% endif %} #}
+    {% if is_prod %}
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-SNSQR6PQHZ"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-SNSQR6PQHZ');
+        </script>
+    {% else %}
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-EG60LBXR36"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-EG60LBXR36');
+        </script>
+    {% endif %}
 
     <head-placeholder token="{{ placeholder_token|raw }}">
     <meta charset="utf-8">
