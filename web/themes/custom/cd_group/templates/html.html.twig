@@ -9,17 +9,20 @@
 <!DOCTYPE html>
 <html{{ html_attributes }}>
 <head>
-    {% if is_prod %}
+{#    {% if is_prod %}
 
     {% else %}
-      <!-- CookiePro Cookies Consent Notice start for www.colosseumdental.com -->
-      <script type="text/javascript" src="https://cookie-cdn.cookiepro.com/consent/dfca7411-c793-421e-92dd-30a90a83a854-test/OtAutoBlock.js" ></script>
-      <script src="https://cookie-cdn.cookiepro.com/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="dfca7411-c793-421e-92dd-30a90a83a854-test" ></script>
-      <script type="text/javascript">
-        function OptanonWrapper() { }
-      </script>
-      <!-- CookiePro Cookies Consent Notice end for www.colosseumdental.com -->
-    {% endif %}
+
+    {% endif %}#}
+
+    <!-- CookiePro Cookies Consent Notice start for www.colosseumdental.com -->
+    <script type="text/javascript" src="https://cookie-cdn.cookiepro.com/consent/dfca7411-c793-421e-92dd-30a90a83a854-test/OtAutoBlock.js" ></script>
+    <script src="https://cookie-cdn.cookiepro.com/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="dfca7411-c793-421e-92dd-30a90a83a854-test" ></script>
+    <script type="text/javascript">
+      function OptanonWrapper() { }
+    </script>
+    <!-- CookiePro Cookies Consent Notice end for www.colosseumdental.com -->
+
     {# % if is_prod %} #}
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SNSQR6PQHZ"></script>

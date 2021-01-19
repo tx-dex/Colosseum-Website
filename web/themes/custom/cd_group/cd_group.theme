@@ -23,8 +23,6 @@ function cd_group_preprocess(array &$variables) {
   $variables['user_id'] = $user->id();
   $variables['is_logged_in'] = $user->isAuthenticated();
   $variables['is_admin'] = $user->hasPermission('access administration pages');
-
-
 }
 
 /**
