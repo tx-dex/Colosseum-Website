@@ -49,14 +49,18 @@
                     </li>
                 {% endif %}
             {% else %}
-                {# This is the basic level 0 menu item where there is no submenu #}
-                <li class="nav-item" {{ item.attributes }}>
-                    {% if item.url.external %}
-                        <a class="nav-link {{ item.in_active_trail ? 'active':'' }}" href="{{ item.url }}" target="_blank">{{ item.title }}</a>
-                    {% else %}
-                        <a class="nav-link {{ item.in_active_trail ? 'active':'' }}" href="{{ item.url }}">{{ item.title }}</a>
-                    {% endif %}
-                </li>
+                {% if menu_level != 0 %}
+                    <a class="dropdown-item {{ item.in_active_trail ? 'active':'' }}" href="{{ item.url }}">{{ item.title }}</a>
+                {% else %}
+                    {# This is the basic level 0 menu item where there is no submenu #}
+                    <li class="nav-item" {{ item.attributes }}>
+                        {% if item.url.external %}
+                            <a class="nav-link {{ item.in_active_trail ? 'active':'' }}" href="{{ item.url }}" target="_blank">{{ item.title }}</a>
+                        {% else %}
+                            <a class="nav-link {{ item.in_active_trail ? 'active':'' }}" href="{{ item.url }}">{{ item.title }}</a>
+                        {% endif %}
+                    </li>
+                {% endif %}
             {% endif %}
         {% endfor %}
 
