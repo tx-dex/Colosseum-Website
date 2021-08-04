@@ -16861,21 +16861,21 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
   z-index: 10000;
 }
 
-.toolbar-fixed.toolbar-horizontal .navbar-main,
-.toolbar-fixed.toolbar-vertical .navbar-main,
-.toolbar-vertical .navbar-main {
+.toolbar-fixed.toolbar-horizontal .page-main-header,
+.toolbar-fixed.toolbar-vertical .page-main-header,
+.toolbar-vertical .page-main-header {
   top: 39px;
 }
-.toolbar-fixed.toolbar-horizontal .navbar-main .navbar-collapse,
-.toolbar-fixed.toolbar-vertical .navbar-main .navbar-collapse,
-.toolbar-vertical .navbar-main .navbar-collapse {
+.toolbar-fixed.toolbar-horizontal .page-main-header .navbar-collapse,
+.toolbar-fixed.toolbar-vertical .page-main-header .navbar-collapse,
+.toolbar-vertical .page-main-header .navbar-collapse {
   top: 39px;
 }
 
-.toolbar-fixed.toolbar-horizontal.toolbar-tray-open .navbar-main {
+.toolbar-fixed.toolbar-horizontal.toolbar-tray-open .page-main-header {
   top: 79px;
 }
-.toolbar-fixed.toolbar-horizontal.toolbar-tray-open .navbar-main .navbar-collapse {
+.toolbar-fixed.toolbar-horizontal.toolbar-tray-open .page-main-header .navbar-collapse {
   top: 79px;
 }
 

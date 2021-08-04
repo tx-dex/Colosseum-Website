@@ -349,7 +349,7 @@ body.main-menu-opened .navbar-main {
 .toolbar-fixed.toolbar-horizontal,
 .toolbar-fixed.toolbar-vertical,
 .toolbar-vertical {
-  .navbar-main {
+  .page-main-header {
     top: 39px;
     .navbar-collapse {
       top: 39px;
@@ -358,7 +358,7 @@ body.main-menu-opened .navbar-main {
 }
 
 .toolbar-fixed.toolbar-horizontal.toolbar-tray-open {
-  .navbar-main {
+  .page-main-header {
     top: 79px;
     .navbar-collapse {
       top: 79px;
