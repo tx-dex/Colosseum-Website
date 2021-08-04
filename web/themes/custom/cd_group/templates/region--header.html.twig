@@ -1,14 +1,15 @@
 <header class="page-main-header">
     <nav class="navbar-secondary" role="navigation">
         <div class="container-fullwidth">
-            <ul class="nav nav-secondary">
+            {#<ul class="nav nav-secondary">
                 <li class="nav-item">
                     <a class="nav-link active" href="#">Find a clinic</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Newsroom</a>
                 </li>
-            </ul>
+            </ul>#}
+            {{ drupal_menu('secondary-navigation', expand=true) }}
         </div>
     </nav>
     <nav class="navbar navbar-main">
