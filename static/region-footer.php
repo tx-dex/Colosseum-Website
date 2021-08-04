@@ -54,19 +54,18 @@
                         </li>
                         <li class="nav-item has-dropdown">
                             <a href="/who-we-are" class="nav-link ">Who We Are</a>
-                            <ul class="sub-nav">
+                            <!--<ul class="sub-nav">
                                 <li class="nav-item">
                                     <a class="nav-link " href="/who-we-are/facts-and-figures">Facts &amp; Figures</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link " href="/who-we-are/meet-our-team">Meet our Team</a>
                                 </li>
-
-                            </ul>
+                            </ul>-->
                         </li>
                         <li class="nav-item has-dropdown">
                             <a href="/leading-dentistry" class="nav-link ">Leading Dentistry</a>
-                            <ul class="sub-nav">
+                            <!--<ul class="sub-nav">
                                 <li class="nav-item">
                                     <a class="nav-link " href="/leading-dentistry/medical-governance">Medical Governance</a>
                                 </li>
@@ -76,15 +75,14 @@
                                 <li class="nav-item">
                                     <a class="nav-link " href="/leading-dentistry/innovation">Innovation</a>
                                 </li>
-
-                            </ul>
+                            </ul>-->
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="/charitable-cause">Charitable Cause</a>
                         </li>
                         <li class="nav-item has-dropdown">
                             <a href="/join-us" class="nav-link ">Join Us</a>
-                            <ul class="sub-nav">
+                            <!--<ul class="sub-nav">
                                 <li class="nav-item">
                                     <a class="nav-link " href="/join-us/sell-your-practice">Sell Your Practice</a>
                                 </li>
@@ -94,8 +92,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link " href="/join-us/careers">Careers</a>
                                 </li>
-
-                            </ul>
+                            </ul>-->
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="/contact-us">Contact Us</a>

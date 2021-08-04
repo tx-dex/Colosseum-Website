@@ -1,24 +1,38 @@
-<nav class="navbar navbar-main">
-    <div class="container-fullwidth">
-        <a class="navbar-brand" href="/"><img src="{{ base_path ~ directory }}/img/cdg-logo-blue.svg" alt="Logo"></a>
-        {% if content %}
-            {{ content }}
-        {% endif %}
-        <button class="navbar-toggler d-md-none" type="button" aria-controls="allMainNavigationLinks" aria-expanded="false" aria-label="Toggle full navigation">
-            <i class="material-icons menu"></i>
-        </button>
-        <div class="navbar-collapse collapse d-md-none" id="allMainNavigationLinks">
-            <div class="container-fullwidth">
-                <div class="col-main-links">
-                    <div class="nav-main-full">
-                        {{ drupal_menu('main-navigation-full', expand=true) }}
+<header class="page-main-header">
+    <nav class="navbar-secondary" role="navigation">
+        <div class="container-fullwidth">
+            <ul class="nav nav-secondary">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Find a clinic</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Newsroom</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="navbar navbar-main">
+        <div class="container-fullwidth">
+            <a class="navbar-brand" href="/"><img src="{{ base_path ~ directory }}/img/cdg-logo-blue.svg" alt="Logo"></a>
+            {% if content %}
+                {{ content }}
+            {% endif %}
+            <button class="navbar-toggler d-md-none" type="button" aria-controls="allMainNavigationLinks" aria-expanded="false" aria-label="Toggle full navigation">
+                <i class="material-icons menu"></i>
+            </button>
+            <div class="navbar-collapse collapse d-md-none" id="allMainNavigationLinks">
+                <div class="container-fullwidth">
+                    <div class="col-main-links">
+                        <div class="nav-main-full">
+                            {{ drupal_menu('main-navigation-full', expand=true) }}
+                        </div>
                     </div>
-                </div>
-                {#<div class="col-country-links">
+                    {#<div class="col-country-links">
                     <h5 class="small-ac-title">Countries</h5>
                     {{ drupal_view('countries', 'block_1') }}
                 </div>#}
+                </div>
             </div>
         </div>
-    </div>
-</nav>
+    </nav>
+</header>

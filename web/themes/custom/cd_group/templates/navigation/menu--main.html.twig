@@ -35,14 +35,27 @@
         {% endif %}
 
         {% for item in items %}
-            {% if menu_level == 0 %}
-                {# Level 0 menu item where there is NO submenu #}
-                <li class="nav-item" {{ item.attributes }}>
-                {% if item.url.external %}
-                    <a class="nav-link {{ item.in_active_trail ? 'active':'' }}" href="{{ item.url }}" target="_blank">{{ item.title }}</a>
-                {% else %}
-                    <a class="nav-link {{ item.in_active_trail ? 'active':'' }}" href="{{ item.url }}">{{ item.title }}</a>
+
+            {% if item.below %}
+                {# Level 0 menu item where there is a submenu #}
+                {% if menu_level == 0 %}
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle {{ item.in_active_trail ? 'active':'' }}" href="{{ item.url }}" role="button" aria-haspopup="true" aria-expanded="false">
+                            {{ item.title }}
+                        </a>
+                        <div class="dropdown-menu">
+                            {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
+                        </div>
+                    </li>
                 {% endif %}
+            {% else %}
+                {# This is the basic level 0 menu item where there is no submenu #}
+                <li class="nav-item" {{ item.attributes }}>
+                    {% if item.url.external %}
+                        <a class="nav-link {{ item.in_active_trail ? 'active':'' }}" href="{{ item.url }}" target="_blank">{{ item.title }}</a>
+                    {% else %}
+                        <a class="nav-link {{ item.in_active_trail ? 'active':'' }}" href="{{ item.url }}">{{ item.title }}</a>
+                    {% endif %}
                 </li>
             {% endif %}
         {% endfor %}
