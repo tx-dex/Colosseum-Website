@@ -106,33 +106,33 @@
                     </ul>
                 </nav>
             </div>
-            <div class="col-md-12 col-lg-4">
+            <div class="col-md-12 col-lg-4 col-countries">
                 <h6 class="nav-title">CDG Country organisations</h6>
                 <nav role="navigation" class="countries-nav">
                     <ul class="nav">
                         <li class="nav-item">
-                            <a href="#" target="_blank">Denmark</a>
+                            <a href="#" target="_blank" class="nav-link">Denmark<span>Colosseum Tandlægerne</span></a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" target="_blank">Finland</a>
+                            <a href="#" target="_blank" class="nav-link">Finland<span>Oral</span></a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" target="_blank">Germany</a>
+                            <a href="#" target="_blank" class="nav-link">Germany<span>Colosseum Dental Deutschland</span></a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" target="_blank">Italy</a>
+                            <a href="#" target="_blank" class="nav-link">Italy<span>Mirò Dental Medical Center</span></a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" target="_blank">Norway</a>
+                            <a href="#" target="_blank" class="nav-link">Norway<span>Colosseum Tannlege</span></a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" target="_blank">Sweden</a>
+                            <a href="#" target="_blank" class="nav-link">Sweden<span>Smile</span></a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" target="_blank">Switzerland</a>
+                            <a href="#" target="_blank" class="nav-link">Switzerland<span>Colosseum Tannlege</span></a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" target="_blank">UK</a>
+                            <a href="#" target="_blank" class="nav-link">UK<span>Colosseum Dental UK</span></a>
                         </li>
                     </ul>
                 </nav>

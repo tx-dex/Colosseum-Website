@@ -106,6 +106,8 @@
 
     .nav-item {
       display: block;
+      break-inside: avoid;
+      page-break-inside: avoid;
       margin: 0;
     }
 
@@ -115,11 +117,21 @@
       color: $white;
       padding: .3rem 0;
 
+      span {
+        display: block;
+        color: #B4BBC6;
+        font-size: 12px;
+      }
+
       &:hover,
       &:focus,
       &:active,
       &.active {
         color: #69B3E7;
+
+        span {
+          color: #95cdf5;
+        }
       }
     }
   }
@@ -199,14 +211,12 @@
       }
     }
 
+    .col-countries {
+      padding-top: 1rem;
+    }
     .countries-nav {
       .nav {
-        columns: 10px 1;
-      }
-
-      .nav-item {
-        display: inline-block;
-        margin-right: 1rem;
+        columns: 10px 3;
       }
     }
 
@@ -227,9 +237,13 @@
       }
     }
 
+    .col-countries {
+      padding-top: 0;
+    }
+
     .countries-nav {
       .nav {
-        columns: 10px 2;
+        columns: 5px 2;
       }
 
       .nav-item {
