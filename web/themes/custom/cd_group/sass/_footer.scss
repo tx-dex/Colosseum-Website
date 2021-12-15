@@ -150,7 +150,7 @@
   }
 
   .footer-policies-nav {
-    margin-top: .5rem;
+    margin-bottom: 1rem;
 
     .nav-link {
       font-size: 0.875rem;
@@ -223,6 +223,10 @@
     .footer-policies-nav {
       justify-content: flex-end;
       margin-top: 0;
+
+      .nav-link:last-of-type {
+        padding-right: 0;
+      }
     }
   }
 

@@ -28,7 +28,7 @@
             </div>
         </div>
         <div class="row footer-bottom-row">
-            <div class="col-md-6 col-lg-4 order-md-0">
+            <div class="col-md-auto col-xl-auto order-md-0">
                 <nav role="navigation" class="nav some-nav">
                     <a class="nav-link" href="https://www.linkedin.com/company/colosseum-dental-group/" target="_blank" aria-label="Colosseum Dental in LinkedIn">
                         <span class="cdg-icon-linkedin-square"></span>
@@ -41,13 +41,13 @@
                     </a>#}
                 </nav>
             </div>
-            <div class="col-md-12 col-lg-auto order-md-3 order-lg-1">
+            <div class="col-md-9 col-lg-auto order-md-1 order-xl-1 ml-md-auto mr-xl-auto pl-md-0">
+                {{ drupal_menu('footer-policies-menu') }}
+            </div>
+            <div class="col-md-12 col-xl-auto order-md-3 order-xl-2">
                 <div class="footer-copyright">
                     <div class="copyright">Copyright © Colosseum Dental Group {{ 'now'|date('Y') }}.</div>
                 </div>
-            </div>
-            <div class="col-md-6 col-lg-auto order-md-1 order-lg-2 ml-lg-auto">
-                {{ drupal_menu('footer-policies-menu') }}
             </div>
         </div>
     </div>
