@@ -7,6 +7,37 @@
   padding-top: 0;
 }
 
+.country-list {
+  .article-list-item {
+    .col-img {
+      flex: 0 0 60px;
+      min-width: 60px;
+    }
+
+    .col-txt {
+      flex: 0 0 80%;
+      max-width: 80%;
+    }
+
+    .col-txt .btn-link {
+      position: relative;
+      white-space: nowrap;
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  @media (min-width: 400px) {
+    .item {
+      .col-img {
+        flex: 0 0 20%;
+        min-width: 80px;
+      }
+    }
+  }
+}
+
 // Country logo list on frontpage
 // -------------------------------------
 

@@ -13007,6 +13007,26 @@ body.main-menu-opened .navbar-main .navbar-toggler .material-icons:before, body.
 .main-content-section-findaclinic {
   padding-top: 0; }
 
+.country-list .article-list-item .col-img {
+  flex: 0 0 60px;
+  min-width: 60px; }
+
+.country-list .article-list-item .col-txt {
+  flex: 0 0 80%;
+  max-width: 80%; }
+
+.country-list .article-list-item .col-txt .btn-link {
+  position: relative;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+@media (min-width: 400px) {
+  .country-list .item .col-img {
+    flex: 0 0 20%;
+    min-width: 80px; } }
+
 .country-logo-list {
   list-style-type: none;
   padding: 0;
